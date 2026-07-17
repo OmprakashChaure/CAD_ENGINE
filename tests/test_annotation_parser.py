@@ -127,6 +127,31 @@ class TestAnnotationParser(unittest.TestCase):
         self.assertEqual(parsed.upper_deviation, 0.025)
         self.assertEqual(parsed.validation_status, "validated")
 
+    def test_chamfer_bevel_validation(self):
+        # Chamfer with quantity and angle
+        parsed = self.parser.parse("2X CHAMFER 2MM X 45 DEG")
+        self.assertEqual(parsed.annotation_type, "chamfer")
+        self.assertEqual(parsed.chamfer_size, 2.0)
+        self.assertEqual(parsed.chamfer_angle, 45.0)
+        self.assertEqual(parsed.quantity, 2)
+        
+        # Chamfer without quantity
+        parsed_no_qty = self.parser.parse("CHAMFER 3.5")
+        self.assertEqual(parsed_no_qty.annotation_type, "chamfer")
+        self.assertEqual(parsed_no_qty.chamfer_size, 3.5)
+        self.assertEqual(parsed_no_qty.chamfer_angle, 45.0)
+        self.assertIsNone(parsed_no_qty.quantity)
+        
+        # Bevel / unknown type parsing fallback
+        parsed_bevel = self.parser.parse("3X BEVEL 2")
+        self.assertEqual(parsed_bevel.annotation_type, "unknown")
+        self.assertEqual(parsed_bevel.quantity, 3)
+
+        # Malformed chamfer
+        parsed_malformed = self.parser.parse("CHAMFER ABC")
+        self.assertEqual(parsed_malformed.annotation_type, "unknown")
+        self.assertIsNone(parsed_malformed.quantity)
+
     def test_invalid_and_unknown_parsing(self):
         parsed = self.parser.parse("INVALID_SPECIFICATION_999")
         self.assertEqual(parsed.annotation_type, "unknown")

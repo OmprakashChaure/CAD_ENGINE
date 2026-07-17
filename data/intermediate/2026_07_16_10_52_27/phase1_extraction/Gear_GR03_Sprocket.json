@@ -1,0 +1,765 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            174.8173037694868,
+            94.7682644691906
+          ],
+          [
+            165.0,
+            100.0
+          ],
+          [
+            174.8173037694868,
+            105.2317355308094
+          ],
+          [
+            172.0946271953739,
+            120.67280168627494
+          ],
+          [
+            161.08002035108404,
+            122.23130931616846
+          ],
+          [
+            168.51590932319505,
+            130.50524823068503
+          ],
+          [
+            160.67627457812105,
+            144.0838939219355
+          ],
+          [
+            149.79288880273356,
+            141.78119462962505
+          ],
+          [
+            153.95048502539885,
+            152.0993777844248
+          ],
+          [
+            141.939467760306,
+            162.17781794162812
+          ],
+          [
+            132.5,
+            156.2916512459885
+          ],
+          [
+            132.8778360091808,
+            167.40955347243752
+          ],
+          [
+            118.1441421699751,
+            172.77217947069974
+          ],
+          [
+            111.28713154835047,
+            164.01250394579353
+          ],
+          [
+            107.83963474507401,
+            174.5891421526205
+          ],
+          [
+            92.160365254926,
+            174.58914215262052
+          ],
+          [
+            88.71286845164953,
+            164.01250394579353
+          ],
+          [
+            81.85585783002492,
+            172.77217947069974
+          ],
+          [
+            67.12216399081922,
+            167.40955347243755
+          ],
+          [
+            67.50000000000001,
+            156.29165124598853
+          ],
+          [
+            58.060532239694,
+            162.17781794162812
+          ],
+          [
+            46.04951497460118,
+            152.0993777844248
+          ],
+          [
+            50.207111197266435,
+            141.78119462962508
+          ],
+          [
+            39.32372542187895,
+            144.0838939219355
+          ],
+          [
+            31.48409067680494,
+            130.50524823068503
+          ],
+          [
+            38.91997964891596,
+            122.23130931616848
+          ],
+          [
+            27.905372804626083,
+            120.67280168627494
+          ],
+          [
+            25.182696230513187,
+            105.23173553080942
+          ],
+          [
+            35.0,
+            100.00000000000001
+          ],
+          [
+            25.182696230513187,
+            94.7682644691906
+          ],
+          [
+            27.905372804626083,
+            79.32719831372508
+          ],
+          [
+            38.919979648915955,
+            77.76869068383154
+          ],
+          [
+            31.48409067680494,
+            69.49475176931499
+          ],
+          [
+            39.32372542187894,
+            55.91610607806452
+          ],
+          [
+            50.20711119726643,
+            58.21880537037495
+          ],
+          [
+            46.049514974601166,
+            47.900622215575204
+          ],
+          [
+            58.060532239693956,
+            37.822182058371894
+          ],
+          [
+            67.49999999999997,
+            43.708348754011496
+          ],
+          [
+            67.12216399081916,
+            32.59044652756249
+          ],
+          [
+            81.85585783002492,
+            27.22782052930026
+          ],
+          [
+            88.71286845164953,
+            35.987496054206474
+          ],
+          [
+            92.16036525492599,
+            25.41085784737949
+          ],
+          [
+            107.83963474507398,
+            25.41085784737949
+          ],
+          [
+            111.28713154835044,
+            35.987496054206474
+          ],
+          [
+            118.14414216997505,
+            27.22782052930026
+          ],
+          [
+            132.8778360091808,
+            32.59044652756248
+          ],
+          [
+            132.5,
+            43.70834875401149
+          ],
+          [
+            141.93946776030603,
+            37.82218205837188
+          ],
+          [
+            153.95048502539882,
+            47.90062221557518
+          ],
+          [
+            149.79288880273356,
+            58.21880537037493
+          ],
+          [
+            160.67627457812105,
+            55.9161060780645
+          ],
+          [
+            168.51590932319505,
+            69.49475176931493
+          ],
+          [
+            161.08002035108402,
+            77.7686906838315
+          ],
+          [
+            172.0946271953739,
+            79.32719831372502
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "8F",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 70.0,
+        "diameter": 140.0,
+        "area": 15393.804002589986
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          124.74873734152916,
+          124.74873734152916
+        ],
+        "radius": 12.0,
+        "diameter": 24.0,
+        "area": 452.3893421169302
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          108.74873734152916,
+          124.74873734152916
+        ],
+        "end": [
+          140.74873734152916,
+          124.74873734152916
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          124.74873734152916,
+          108.74873734152916
+        ],
+        "end": [
+          124.74873734152916,
+          140.74873734152916
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          75.25126265847084,
+          124.74873734152916
+        ],
+        "radius": 12.0,
+        "diameter": 24.0,
+        "area": 452.3893421169302
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          59.251262658470836,
+          124.74873734152916
+        ],
+        "end": [
+          91.25126265847084,
+          124.74873734152916
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          75.25126265847084,
+          108.74873734152916
+        ],
+        "end": [
+          75.25126265847084,
+          140.74873734152916
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "96",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          75.25126265847084,
+          75.25126265847084
+        ],
+        "radius": 12.0,
+        "diameter": 24.0,
+        "area": 452.3893421169302
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "97",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          59.251262658470836,
+          75.25126265847084
+        ],
+        "end": [
+          91.25126265847084,
+          75.25126265847084
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "98",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          75.25126265847084,
+          59.251262658470836
+        ],
+        "end": [
+          75.25126265847084,
+          91.25126265847084
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "99",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          124.74873734152916,
+          75.25126265847084
+        ],
+        "radius": 12.0,
+        "diameter": 24.0,
+        "area": 452.3893421169302
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "9A",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          108.74873734152916,
+          75.25126265847084
+        ],
+        "end": [
+          140.74873734152916,
+          75.25126265847084
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "9B",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          124.74873734152916,
+          59.251262658470836
+        ],
+        "end": [
+          124.74873734152916,
+          91.25126265847084
+        ],
+        "length": 32.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9C",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 15.0,
+        "diameter": 30.0,
+        "area": 706.8583470577034
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "9D",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          100.0
+        ],
+        "end": [
+          190.0,
+          100.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "LINE",
+      "handle": "9E",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          10.0
+        ],
+        "end": [
+          100.0,
+          190.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9F",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 150.0,
+        "text": "%%C150mm SPROCKET OD",
+        "position": [
+          25.0,
+          210.0
+        ],
+        "target_points": [
+          [
+            25.0,
+            100.0
+          ],
+          [
+            175.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "AE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 140.0,
+        "text": "%%C140mm PCD",
+        "position": [
+          -30.0,
+          30.0
+        ],
+        "target_points": [
+          [
+            100.0,
+            30.0
+          ],
+          [
+            100.0,
+            170.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "MTEXT",
+      "handle": "BE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "\u00d830mm SHAFT BORE",
+        "position": [
+          160.0,
+          140.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00023",
+      "source_file": "Gear_GR03_Sprocket.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "4X \u00d824mm LIGHTENING HOLE",
+        "position": [
+          160.0,
+          180.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 24.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

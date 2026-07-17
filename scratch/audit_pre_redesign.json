@@ -1,0 +1,1822 @@
+{
+  "matrix": [
+    {
+      "field": "alignment_tab.count",
+      "semantic_count": 5,
+      "train_count": 1,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "alignment_tab.value",
+      "semantic_count": 4,
+      "train_count": 2,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "bend_relief.count",
+      "semantic_count": 7,
+      "train_count": 5,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "bend_relief.value",
+      "semantic_count": 7,
+      "train_count": 10,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "bolt.across_flats",
+      "semantic_count": 4,
+      "train_count": 6,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "bolt.grip_length",
+      "semantic_count": 1,
+      "train_count": 6,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "bolt.nominal_diameter",
+      "semantic_count": 4,
+      "train_count": 6,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "bolt.thread_length",
+      "semantic_count": 1,
+      "train_count": 6,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "chamfer.count",
+      "semantic_count": 7,
+      "train_count": 2,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "chamfer.value",
+      "semantic_count": 7,
+      "train_count": 4,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "channel.channel_width",
+      "semantic_count": 2,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "concentric_bore.base_diameter",
+      "semantic_count": 2,
+      "train_count": 4,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "concentric_bore.bore_diameter",
+      "semantic_count": 67,
+      "train_count": 55,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "concentric_bore.bore_type",
+      "semantic_count": 67,
+      "train_count": 90,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "concentric_bore.boss_diameter",
+      "semantic_count": 10,
+      "train_count": 14,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "concentric_bore.diameter",
+      "semantic_count": 9,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "concentric_bore.flange_diameter",
+      "semantic_count": 3,
+      "train_count": 4,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "concentric_bore.inner_diameter",
+      "semantic_count": 56,
+      "train_count": 11,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "concentric_bore.outer_diameter",
+      "semantic_count": 56,
+      "train_count": 46,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "concentric_bore.pcd_reference_diameter",
+      "semantic_count": 7,
+      "train_count": 15,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "containment.concentric",
+      "semantic_count": 62,
+      "train_count": 486,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "containment.parent_child",
+      "semantic_count": 47,
+      "train_count": 486,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "cope.cope_radius",
+      "semantic_count": 2,
+      "train_count": 2,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "fillet_group.count",
+      "semantic_count": 4,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "fillet_group.radius",
+      "semantic_count": 4,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "fitting.across_flats",
+      "semantic_count": 1,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "fitting.flange_thickness",
+      "semantic_count": 5,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "fitting.hex_height",
+      "semantic_count": 1,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "fitting.neck_length",
+      "semantic_count": 1,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "fitting.taper_length",
+      "semantic_count": 1,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "heatsink_core.diameter",
+      "semantic_count": 3,
+      "train_count": 3,
+      "status": "TARGET"
+    },
+    {
+      "field": "heatsink_fin.count",
+      "semantic_count": 3,
+      "train_count": 6,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "heatsink_fin.pitch",
+      "semantic_count": 3,
+      "train_count": 6,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "heatsink_fin.thickness",
+      "semantic_count": 3,
+      "train_count": 6,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hex_drive.size",
+      "semantic_count": 1,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "hex_head.across_flats",
+      "semantic_count": 5,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "hierarchy.node",
+      "semantic_count": 252,
+      "train_count": 486,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_group.count",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_group.counterbore_depth",
+      "semantic_count": 1,
+      "train_count": 7,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_group.counterbore_diameter",
+      "semantic_count": 1,
+      "train_count": 23,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_group.diameter",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_group.group_type",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_group.offset_x",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_group.offset_y",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_group.pattern_type",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_group.spacing_x",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_group.spacing_y",
+      "semantic_count": 34,
+      "train_count": 86,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_pattern.angular_spacing",
+      "semantic_count": 10,
+      "train_count": 15,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_pattern.counterbore_depth",
+      "semantic_count": 1,
+      "train_count": 4,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_pattern.counterbore_diameter",
+      "semantic_count": 1,
+      "train_count": 10,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_pattern.hole_count",
+      "semantic_count": 10,
+      "train_count": 22,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_pattern.hole_diameter",
+      "semantic_count": 10,
+      "train_count": 22,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "hole_pattern.pattern_type",
+      "semantic_count": 10,
+      "train_count": 22,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "hole_pattern.pcd",
+      "semantic_count": 10,
+      "train_count": 29,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "keyway.depth",
+      "semantic_count": 3,
+      "train_count": 8,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "keyway.width",
+      "semantic_count": 3,
+      "train_count": 4,
+      "status": "TARGET"
+    },
+    {
+      "field": "lube_port.diameter",
+      "semantic_count": 1,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "o_ring.o_ring_diameter",
+      "semantic_count": 1,
+      "train_count": 1,
+      "status": "TARGET"
+    },
+    {
+      "field": "overall_dimensions.height",
+      "semantic_count": 143,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "overall_dimensions.width",
+      "semantic_count": 143,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "pocket.perimeter_wall",
+      "semantic_count": 15,
+      "train_count": 74,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "pocket.pocket_length",
+      "semantic_count": 72,
+      "train_count": 74,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "pocket.pocket_width",
+      "semantic_count": 72,
+      "train_count": 74,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "port.port_depth",
+      "semantic_count": 1,
+      "train_count": 4,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "port.port_diameter",
+      "semantic_count": 4,
+      "train_count": 4,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "port.port_thread",
+      "semantic_count": 1,
+      "train_count": 4,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "relationships.concentric",
+      "semantic_count": 62,
+      "train_count": 486,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "relationships.mirror_symmetry",
+      "semantic_count": 85,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "rib.value",
+      "semantic_count": 5,
+      "train_count": 4,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "screw.drive_size",
+      "semantic_count": 1,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "screw.head_diameter",
+      "semantic_count": 1,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "screw.length",
+      "semantic_count": 1,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "screw.nominal_diameter",
+      "semantic_count": 1,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "sheet_metal_bend.angle",
+      "semantic_count": 3,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "sheet_metal_bend.count",
+      "semantic_count": 3,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "sheet_metal_bend.radius",
+      "semantic_count": 3,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "shoulder.shoulder_diameter",
+      "semantic_count": 1,
+      "train_count": 2,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "shoulder.shoulder_length",
+      "semantic_count": 2,
+      "train_count": 2,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "slot_array.count",
+      "semantic_count": 6,
+      "train_count": 8,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "slot_array.length",
+      "semantic_count": 6,
+      "train_count": 8,
+      "status": "TARGET"
+    },
+    {
+      "field": "slot_array.orientation",
+      "semantic_count": 6,
+      "train_count": 8,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "slot_array.width",
+      "semantic_count": 6,
+      "train_count": 8,
+      "status": "TARGET"
+    },
+    {
+      "field": "structural_profile.fillet_radius",
+      "semantic_count": 5,
+      "train_count": 16,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "structural_profile.flange_thickness",
+      "semantic_count": 5,
+      "train_count": 13,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "structural_profile.inner_radius",
+      "semantic_count": 1,
+      "train_count": 26,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "structural_profile.outer_radius",
+      "semantic_count": 1,
+      "train_count": 26,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "structural_profile.profile_type",
+      "semantic_count": 15,
+      "train_count": 13,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "structural_profile.wall_thickness",
+      "semantic_count": 4,
+      "train_count": 13,
+      "status": "TARGET"
+    },
+    {
+      "field": "structural_profile.web_thickness",
+      "semantic_count": 8,
+      "train_count": 13,
+      "status": "TARGET & CONTEXT"
+    },
+    {
+      "field": "symmetry.mirror_symmetry",
+      "semantic_count": 85,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "thread.nominal_diameter",
+      "semantic_count": 14,
+      "train_count": 7,
+      "status": "TARGET"
+    },
+    {
+      "field": "thread.pitch",
+      "semantic_count": 10,
+      "train_count": 0,
+      "status": "LOST"
+    },
+    {
+      "field": "thread.thread_designation",
+      "semantic_count": 15,
+      "train_count": 7,
+      "status": "CONTEXT"
+    },
+    {
+      "field": "thread.thread_length",
+      "semantic_count": 5,
+      "train_count": 7,
+      "status": "CONTEXT"
+    }
+  ],
+  "empty_count": 80,
+  "empty_examples": [
+    {
+      "task_type": "infer_pocket_dimension",
+      "drawing_id": "Circular_Flange_FL03",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": {
+          "candidate_id": "hc_00001",
+          "candidate_type": "multi_radius",
+          "radius_count": 4
+        },
+        "repetition_context": null,
+        "concentric_context": {
+          "group_id": "conc_00001",
+          "radii": [
+            30.0,
+            45.0,
+            50.0,
+            80.0
+          ],
+          "count": 4
+        },
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "pocket_dimension",
+        "value": 90.0
+      }
+    },
+    {
+      "task_type": "infer_pocket_dimension",
+      "drawing_id": "CrossSection_CS01_Pulley",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "pocket_dimension",
+        "value": 10.0
+      }
+    },
+    {
+      "task_type": "infer_pocket_dimension",
+      "drawing_id": "CrossSection_CS02_BearingHub",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "pocket_dimension",
+        "value": 3.0
+      }
+    },
+    {
+      "task_type": "infer_pocket_dimension",
+      "drawing_id": "Gasket_GS03_DovetailGroove",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "pocket_dimension",
+        "value": 10.0
+      }
+    },
+    {
+      "task_type": "infer_wall_thickness",
+      "drawing_id": "Aero_LW05_IsogridHex",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 1,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "wall_thickness",
+        "value": 15.0
+      }
+    },
+    {
+      "task_type": "infer_wall_thickness",
+      "drawing_id": "Blueprint_PL02_ScrewBoss",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "wall_thickness",
+        "value": 4.0
+      }
+    },
+    {
+      "task_type": "infer_wall_thickness",
+      "drawing_id": "Spring_SP02_BellowsJoint",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "wall_thickness",
+        "value": 3.0
+      }
+    },
+    {
+      "task_type": "infer_wall_thickness",
+      "drawing_id": "Structural_ST06_ZBar",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "wall_thickness",
+        "value": 5.0
+      }
+    },
+    {
+      "task_type": "infer_wall_thickness",
+      "drawing_id": "Structural_ST13_TrapezoidalDeck",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "wall_thickness",
+        "value": 2.0
+      }
+    },
+    {
+      "task_type": "infer_wall_thickness",
+      "drawing_id": "Weldment_WD03_VGroovePrep",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "wall_thickness",
+        "value": 20.0
+      }
+    },
+    {
+      "task_type": "infer_bore_diameter",
+      "drawing_id": "CrossSection_CS01_Pulley",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "bore_diameter",
+        "value": 20.0
+      }
+    },
+    {
+      "task_type": "infer_bore_diameter",
+      "drawing_id": "Kinematic_LK09_QuickReturnCrank",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": {
+          "candidate_id": "hc_00001",
+          "candidate_type": "single_radius",
+          "radius_count": 1
+        },
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "bore_diameter",
+        "value": 16.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Blueprint_PL02_ScrewBoss",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 4.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "CrossSection_CS01_Pulley",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Fluid_PF04_WeldNeck",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Gasket_GS04_SpiralWound",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 140.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Gear_GR01_Spur",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 120.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Optomech_OM04_ChopperWheel",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": {
+          "candidate_id": "hc_00001",
+          "candidate_type": "multi_radius",
+          "radius_count": 2
+        },
+        "repetition_context": null,
+        "concentric_context": {
+          "group_id": "conc_00001",
+          "count": 2
+        },
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Spring_SP01_DieSpring",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 60.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Spring_SP02_BellowsJoint",
+      "context": {
+        "feature_type": "heatsink_core",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "heatsink_core_1",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 60.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Spring_SP02_BellowsJoint",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 90.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Structural_ST11_TSlot",
+      "context": {
+        "feature_type": "heatsink_core",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": {
+          "candidate_id": "hc_00001",
+          "candidate_type": "single_radius",
+          "radius_count": 1
+        },
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "heatsink_core_1",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 6.8
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Thermal_HS02_RadialHeatsink",
+      "context": {
+        "feature_type": "heatsink_core",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "heatsink_core_1",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 30.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Thermal_HS02_RadialHeatsink",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 90.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Thermal_HS05_StatorCasing",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": {
+          "candidate_id": "hc_00001",
+          "candidate_type": "single_radius",
+          "radius_count": 1
+        },
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Tooling_TL02_SnapGauge",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 70.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Turbo_AM04_VenturiNozzle",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 80.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Turbo_AM05_LabyrinthSeal",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 40.0
+      }
+    },
+    {
+      "task_type": "infer_outer_diameter",
+      "drawing_id": "Turbo_AM05_LabyrinthSeal",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "outer_diameter",
+        "value": 80.0
+      }
+    },
+    {
+      "task_type": "infer_slot_dimension",
+      "drawing_id": "Electrical_BB02_TransformerLink",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "slot_dimension",
+        "value": 12.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Blueprint_PL04_LivingHinge",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 40.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "CrossSection_CS02_BearingHub",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 50.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Electrical_BB02_TransformerLink",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 120.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Gasket_GS03_DovetailGroove",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 40.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Kinematic_LK02_ConnectingRod",
+      "context": {
+        "feature_type": "span_dimension",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": null,
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "direction": "horizontal",
+        "feature_centers": [
+          [
+            100.0,
+            100.0
+          ],
+          [
+            300.0,
+            100.0
+          ]
+        ]
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 200.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Kinematic_LK05_GenevaWheel",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 20.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Kinematic_LK10_CrossheadGuide",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 60.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Motor_Bracket_MB04",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 40.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "PCB_PC08_Castellated",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "SheetMetal_SM02_PrecisionZClip",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 40.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Spring_SP01_DieSpring",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Structural_ST06_ZBar",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 50.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Structural_ST10_CraneRail",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 120.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Structural_ST11_TSlot",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 16.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Structural_ST13_TrapezoidalDeck",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 330.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Structural_ST14_BulbFlat",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 35.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Tooling_TL02_SnapGauge",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Turbo_AM03_ImpellerVane",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 142.1267
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Weldment_WD03_VGroovePrep",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 100.0
+      }
+    },
+    {
+      "task_type": "infer_feature_span",
+      "drawing_id": "Structural_ST13_TrapezoidalDeck",
+      "context": {
+        "feature_type": "dimension_annotations",
+        "topology_neighbors": [],
+        "neighbor_dimensions": [],
+        "hierarchy": {
+          "contour_role": "outer",
+          "nesting_depth": 0,
+          "child_count": 0,
+          "has_parent": false
+        },
+        "feature_context": null,
+        "repetition_context": null,
+        "concentric_context": null,
+        "relationships": [],
+        "feature_id": "dimension_annotations",
+        "feature_parameters_visible": {}
+      },
+      "target": {
+        "property": "feature_span",
+        "value": 50.0
+      }
+    }
+  ]
+}

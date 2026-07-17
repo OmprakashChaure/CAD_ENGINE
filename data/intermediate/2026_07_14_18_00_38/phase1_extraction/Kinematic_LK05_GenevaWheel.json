@@ -1,0 +1,318 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            140.0,
+            208.0
+          ],
+          [
+            160.0,
+            208.0
+          ],
+          [
+            160.0,
+            173.0
+          ],
+          [
+            195.0,
+            173.0
+          ],
+          [
+            195.0,
+            158.0
+          ],
+          [
+            210.0,
+            158.0
+          ],
+          [
+            210.0,
+            138.0
+          ],
+          [
+            195.0,
+            138.0
+          ],
+          [
+            195.0,
+            123.0
+          ],
+          [
+            160.0,
+            123.0
+          ],
+          [
+            160.0,
+            88.0
+          ],
+          [
+            140.0,
+            88.0
+          ],
+          [
+            140.0,
+            123.0
+          ],
+          [
+            105.0,
+            123.0
+          ],
+          [
+            105.0,
+            138.0
+          ],
+          [
+            90.0,
+            138.0
+          ],
+          [
+            90.0,
+            158.0
+          ],
+          [
+            105.0,
+            158.0
+          ],
+          [
+            105.0,
+            173.0
+          ],
+          [
+            140.0,
+            173.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          150.0,
+          148.0
+        ],
+        "radius": 16.0,
+        "diameter": 32.0,
+        "area": 804.247719318987
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          70.0,
+          148.0
+        ],
+        "end": [
+          230.0,
+          148.0
+        ],
+        "length": 160.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          150.0,
+          68.0
+        ],
+        "end": [
+          150.0,
+          228.0
+        ],
+        "length": 160.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "93",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 120.0,
+        "text": "120mm INDEX OUTER BOUND",
+        "position": [
+          90.0,
+          63.0
+        ],
+        "target_points": [
+          [
+            90.0,
+            148.0
+          ],
+          [
+            210.0,
+            148.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A2",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 20.0,
+        "text": "20mm SLOT ENTRY WIDTH",
+        "position": [
+          235.0,
+          138.0
+        ],
+        "target_points": [
+          [
+            150.0,
+            138.0
+          ],
+          [
+            150.0,
+            158.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Kinematic_LK05_GenevaWheel.dxf",
+      "entity_type": "MTEXT",
+      "handle": "B2",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "4-STATION GENEVA MECHANISM",
+        "position": [
+          190.0,
+          228.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 4.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            20.0
+          ],
+          [
+            38.0,
+            20.0
+          ],
+          [
+            38.0,
+            22.0
+          ],
+          [
+            42.0,
+            22.0
+          ],
+          [
+            42.0,
+            20.0
+          ],
+          [
+            108.0,
+            20.0
+          ],
+          [
+            108.0,
+            22.0
+          ],
+          [
+            112.0,
+            22.0
+          ],
+          [
+            112.0,
+            20.0
+          ],
+          [
+            150.0,
+            20.0
+          ],
+          [
+            150.0,
+            80.0
+          ],
+          [
+            112.0,
+            80.0
+          ],
+          [
+            112.0,
+            78.0
+          ],
+          [
+            108.0,
+            78.0
+          ],
+          [
+            108.0,
+            80.0
+          ],
+          [
+            42.0,
+            80.0
+          ],
+          [
+            42.0,
+            78.0
+          ],
+          [
+            38.0,
+            78.0
+          ],
+          [
+            38.0,
+            80.0
+          ],
+          [
+            0.0,
+            80.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LINE",
+      "handle": "90",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          40.0,
+          22.0
+        ],
+        "end": [
+          40.0,
+          78.0
+        ],
+        "length": 56.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          110.0,
+          22.0
+        ],
+        "end": [
+          110.0,
+          78.0
+        ],
+        "length": 56.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "92",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          20.0,
+          50.0
+        ],
+        "radius": 6.0,
+        "diameter": 12.0,
+        "area": 113.09733552923255
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LINE",
+      "handle": "93",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          50.0
+        ],
+        "end": [
+          30.0,
+          50.0
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          20.0,
+          40.0
+        ],
+        "end": [
+          20.0,
+          60.0
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "95",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          130.0,
+          50.0
+        ],
+        "radius": 6.0,
+        "diameter": 12.0,
+        "area": 113.09733552923255
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          120.0,
+          50.0
+        ],
+        "end": [
+          140.0,
+          50.0
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "LINE",
+      "handle": "97",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          130.0,
+          40.0
+        ],
+        "end": [
+          130.0,
+          60.0
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "98",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 150.0,
+        "text": "150mm DEVELOPED LENGTH",
+        "position": [
+          0.0,
+          -20.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            20.0
+          ],
+          [
+            150.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A7",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 60.0,
+        "text": "60mm BLANK WIDTH",
+        "position": [
+          -35.0,
+          20.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B6",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 70.0,
+        "text": "70mm %%P0.1 WEB SPACING",
+        "position": [
+          40.0,
+          -45.0
+        ],
+        "target_points": [
+          [
+            40.0,
+            22.0
+          ],
+          [
+            110.0,
+            22.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C6",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "BEND UP 90\u00b0\n R2.0 INSIDE",
+        "position": [
+          5.0,
+          110.0
+        ],
+        "height": null,
+        "text_role": "angle_value",
+        "numeric_value": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C8",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "BEND UP 90\u00b0\n R2.0 INSIDE",
+        "position": [
+          120.0,
+          110.0
+        ],
+        "height": null,
+        "text_role": "angle_value",
+        "numeric_value": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "SheetMetal_SM01_UBracket.dxf",
+      "entity_type": "MTEXT",
+      "handle": "CA",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "2X \u00d812mm THRU\n ALIGNMENT BORE",
+        "position": [
+          45.0,
+          140.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 12.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

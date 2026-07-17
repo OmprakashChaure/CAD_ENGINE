@@ -1,0 +1,907 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            30.0,
+            40.0
+          ],
+          [
+            170.0,
+            40.0
+          ],
+          [
+            170.0,
+            160.0
+          ],
+          [
+            30.0,
+            160.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 35.0,
+        "diameter": 70.0,
+        "area": 3848.4510006474966
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          55.0
+        ],
+        "radius": 4.0,
+        "diameter": 8.0,
+        "area": 50.26548245743669
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          37.0,
+          55.0
+        ],
+        "end": [
+          53.0,
+          55.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          45.0,
+          47.0
+        ],
+        "end": [
+          45.0,
+          63.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          155.0,
+          55.0
+        ],
+        "radius": 4.0,
+        "diameter": 8.0,
+        "area": 50.26548245743669
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          147.0,
+          55.0
+        ],
+        "end": [
+          163.0,
+          55.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          155.0,
+          47.0
+        ],
+        "end": [
+          155.0,
+          63.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "96",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          155.0,
+          145.0
+        ],
+        "radius": 4.0,
+        "diameter": 8.0,
+        "area": 50.26548245743669
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "97",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          147.0,
+          145.0
+        ],
+        "end": [
+          163.0,
+          145.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "98",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          155.0,
+          137.0
+        ],
+        "end": [
+          155.0,
+          153.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "99",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          145.0
+        ],
+        "radius": 4.0,
+        "diameter": 8.0,
+        "area": 50.26548245743669
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "9A",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          37.0,
+          145.0
+        ],
+        "end": [
+          53.0,
+          145.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "9B",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          45.0,
+          137.0
+        ],
+        "end": [
+          45.0,
+          153.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9C",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          55.0
+        ],
+        "radius": 4.0,
+        "diameter": 8.0,
+        "area": 50.26548245743669
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "9D",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          92.0,
+          55.0
+        ],
+        "end": [
+          108.0,
+          55.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "9E",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          47.0
+        ],
+        "end": [
+          100.0,
+          63.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          145.0
+        ],
+        "radius": 4.0,
+        "diameter": 8.0,
+        "area": 50.26548245743669
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "A0",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          92.0,
+          145.0
+        ],
+        "end": [
+          108.0,
+          145.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00020",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "A1",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          137.0
+        ],
+        "end": [
+          100.0,
+          153.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "A2",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          20.0,
+          100.0
+        ],
+        "end": [
+          180.0,
+          100.0
+        ],
+        "length": 160.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00022",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "LINE",
+      "handle": "A3",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          20.0
+        ],
+        "end": [
+          100.0,
+          180.0
+        ],
+        "length": 160.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00023",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A4",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 140.0,
+        "text": "140mm W",
+        "position": [
+          30.0,
+          15.0
+        ],
+        "target_points": [
+          [
+            30.0,
+            40.0
+          ],
+          [
+            170.0,
+            40.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00024",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B3",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 120.0,
+        "text": "120mm H",
+        "position": [
+          10.0,
+          40.0
+        ],
+        "target_points": [
+          [
+            30.0,
+            40.0
+          ],
+          [
+            30.0,
+            160.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00025",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "C2",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 55.0,
+        "text": "2X 55mm = 110mm SPACING",
+        "position": [
+          45.0,
+          -10.0
+        ],
+        "target_points": [
+          [
+            45.0,
+            55.0
+          ],
+          [
+            155.0,
+            55.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00026",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "D1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 90.0,
+        "text": "90mm SPACING",
+        "position": [
+          195.0,
+          55.0
+        ],
+        "target_points": [
+          [
+            170.0,
+            55.0
+          ],
+          [
+            170.0,
+            145.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00027",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "E0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 70.0,
+        "text": "%%C70mm BORE",
+        "position": [
+          65.0,
+          100.0
+        ],
+        "target_points": [
+          [
+            65.0,
+            100.0
+          ],
+          [
+            135.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00028",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "EF",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 8.0,
+        "text": "6X %%C8mm THRU",
+        "position": [
+          41.0,
+          185.0
+        ],
+        "target_points": [
+          [
+            41.0,
+            145.0
+          ],
+          [
+            49.0,
+            145.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00029",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "FE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 15.0,
+        "text": "15mm EDGE OFFSET",
+        "position": [
+          155.0,
+          185.0
+        ],
+        "target_points": [
+          [
+            155.0,
+            145.0
+          ],
+          [
+            170.0,
+            145.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00030",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "10D",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 70.0,
+        "text": "70mm CENTER LOC",
+        "position": [
+          30.0,
+          100.0
+        ],
+        "target_points": [
+          [
+            30.0,
+            100.0
+          ],
+          [
+            100.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00031",
+      "source_file": "Bearing_Housing_BH05.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "11C",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 55.0,
+        "text": "55mm MOUNT LOC",
+        "position": [
+          45.0,
+          185.0
+        ],
+        "target_points": [
+          [
+            45.0,
+            100.0
+          ],
+          [
+            100.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 31,
+        "kept_entities": 31,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 31,
+        "kept_entities": 31,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 31,
+        "kept_entities": 31,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 31,
+        "kept_entities": 31,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 31,
+        "kept_entities": 31,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

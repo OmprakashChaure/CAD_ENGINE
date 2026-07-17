@@ -1,0 +1,54 @@
+{
+  "validation_version": "1.0.0",
+  "dataset_contract_version": "3.0.0",
+  "schema_version": "2.1.0",
+  "prompt_renderer_version": "2.7.3",
+  "pipeline_version": "2.7.4",
+  "total_processed": 574,
+  "accepted_count": 9,
+  "rejected_count": 565,
+  "rejection_breakdown": {
+    "Stage 6 \u2014 Prompt Quality": 230,
+    "Stage 5 \u2014 Target Leakage": 327,
+    "Stage 3 \u2014 Engineering Dataset Contract": 8
+  },
+  "average_prompt_length": 485.78,
+  "average_context_length": 418.89,
+  "processing_duration": 0.2262,
+  "peak_memory": 0.0,
+  "timestamp": "2026-07-03T17:12:55.440011",
+  "version": "3.0.0",
+  "format": "semantic_engineering_supervision",
+  "total_tasks": 9,
+  "task_types": {
+    "infer_pocket_dimension": 6,
+    "infer_outer_diameter": 1,
+    "infer_profile_dimension": 2
+  },
+  "drawings": 5,
+  "splits": {
+    "train": {
+      "count": 8,
+      "task_types": {
+        "infer_pocket_dimension": 5,
+        "infer_outer_diameter": 1,
+        "infer_profile_dimension": 2
+      }
+    },
+    "validation": {
+      "count": 1,
+      "task_types": {
+        "infer_pocket_dimension": 1
+      }
+    },
+    "test": {
+      "count": 0
+    }
+  },
+  "schema": {
+    "task_type": "engineering inference task category",
+    "context": "visible engineering structure",
+    "target": "hidden engineering property to infer"
+  },
+  "total_semantic_records": 137
+}

@@ -1,0 +1,256 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Tooling_TL03_VBlock.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ],
+          [
+            100.0,
+            100.0
+          ],
+          [
+            85.0,
+            100.0
+          ],
+          [
+            53.0,
+            68.0
+          ],
+          [
+            53.0,
+            62.0
+          ],
+          [
+            47.0,
+            62.0
+          ],
+          [
+            47.0,
+            68.0
+          ],
+          [
+            15.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Tooling_TL03_VBlock.dxf",
+      "entity_type": "LINE",
+      "handle": "8F",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          50.0,
+          -20.0
+        ],
+        "end": [
+          50.0,
+          120.0
+        ],
+        "length": 140.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Tooling_TL03_VBlock.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "90",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100.00mm SQUARED BASE",
+        "position": [
+          0.0,
+          -40.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Tooling_TL03_VBlock.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9F",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100.00mm SQUARED H",
+        "position": [
+          -35.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Tooling_TL03_VBlock.dxf",
+      "entity_type": "MTEXT",
+      "handle": "AF",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "90\u00b0 INCLUDED ANGLE\n DATUM V-FACES",
+        "position": [
+          130.0,
+          120.0
+        ],
+        "height": null,
+        "text_role": "angle_value",
+        "numeric_value": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Tooling_TL03_VBlock.dxf",
+      "entity_type": "MTEXT",
+      "handle": "B1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "6x6mm CORNER RELIEF\n FOR CYLINDER CLEARANCE",
+        "position": [
+          130.0,
+          30.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 6.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 6,
+        "kept_entities": 6,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 6,
+        "kept_entities": 6,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 6,
+        "kept_entities": 6,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 6,
+        "kept_entities": 6,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 6,
+        "kept_entities": 6,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

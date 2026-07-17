@@ -1,0 +1,248 @@
+{
+  "shared_vertices": {
+    "vtx_00001": {
+      "vertex_id": "vtx_00001",
+      "x": 190.0,
+      "y": 143.5,
+      "connected_entities": [
+        "ent_00034",
+        "ent_00035"
+      ]
+    },
+    "vtx_00002": {
+      "vertex_id": "vtx_00002",
+      "x": 209.0,
+      "y": 143.5,
+      "connected_entities": [
+        "ent_00034",
+        "ent_00039"
+      ]
+    },
+    "vtx_00003": {
+      "vertex_id": "vtx_00003",
+      "x": 190.0,
+      "y": 153.5,
+      "connected_entities": [
+        "ent_00035",
+        "ent_00036"
+      ]
+    },
+    "vtx_00004": {
+      "vertex_id": "vtx_00004",
+      "x": 206.0,
+      "y": 153.5,
+      "connected_entities": [
+        "ent_00036",
+        "ent_00037"
+      ]
+    },
+    "vtx_00005": {
+      "vertex_id": "vtx_00005",
+      "x": 206.0,
+      "y": 147.0,
+      "connected_entities": [
+        "ent_00037",
+        "ent_00038"
+      ]
+    },
+    "vtx_00006": {
+      "vertex_id": "vtx_00006",
+      "x": 209.0,
+      "y": 144.0,
+      "connected_entities": [
+        "ent_00038",
+        "ent_00040"
+      ]
+    },
+    "vtx_00007": {
+      "vertex_id": "vtx_00007",
+      "x": 211.0,
+      "y": 143.5,
+      "connected_entities": [
+        "ent_00039",
+        "ent_00045"
+      ]
+    },
+    "vtx_00008": {
+      "vertex_id": "vtx_00008",
+      "x": 211.0,
+      "y": 144.0,
+      "connected_entities": [
+        "ent_00040",
+        "ent_00041"
+      ]
+    },
+    "vtx_00009": {
+      "vertex_id": "vtx_00009",
+      "x": 214.0,
+      "y": 147.0,
+      "connected_entities": [
+        "ent_00041",
+        "ent_00042"
+      ]
+    },
+    "vtx_00010": {
+      "vertex_id": "vtx_00010",
+      "x": 214.0,
+      "y": 153.5,
+      "connected_entities": [
+        "ent_00042",
+        "ent_00043"
+      ]
+    },
+    "vtx_00011": {
+      "vertex_id": "vtx_00011",
+      "x": 230.0,
+      "y": 153.5,
+      "connected_entities": [
+        "ent_00043",
+        "ent_00044"
+      ]
+    },
+    "vtx_00012": {
+      "vertex_id": "vtx_00012",
+      "x": 230.0,
+      "y": 143.5,
+      "connected_entities": [
+        "ent_00044",
+        "ent_00045"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "source_entity_id": "ent_00034",
+      "target_entity_id": "ent_00035",
+      "shared_vertex_id": "vtx_00001"
+    },
+    {
+      "source_entity_id": "ent_00034",
+      "target_entity_id": "ent_00039",
+      "shared_vertex_id": "vtx_00002"
+    },
+    {
+      "source_entity_id": "ent_00035",
+      "target_entity_id": "ent_00036",
+      "shared_vertex_id": "vtx_00003"
+    },
+    {
+      "source_entity_id": "ent_00036",
+      "target_entity_id": "ent_00037",
+      "shared_vertex_id": "vtx_00004"
+    },
+    {
+      "source_entity_id": "ent_00037",
+      "target_entity_id": "ent_00038",
+      "shared_vertex_id": "vtx_00005"
+    },
+    {
+      "source_entity_id": "ent_00038",
+      "target_entity_id": "ent_00040",
+      "shared_vertex_id": "vtx_00006"
+    },
+    {
+      "source_entity_id": "ent_00039",
+      "target_entity_id": "ent_00045",
+      "shared_vertex_id": "vtx_00007"
+    },
+    {
+      "source_entity_id": "ent_00040",
+      "target_entity_id": "ent_00041",
+      "shared_vertex_id": "vtx_00008"
+    },
+    {
+      "source_entity_id": "ent_00041",
+      "target_entity_id": "ent_00042",
+      "shared_vertex_id": "vtx_00009"
+    },
+    {
+      "source_entity_id": "ent_00042",
+      "target_entity_id": "ent_00043",
+      "shared_vertex_id": "vtx_00010"
+    },
+    {
+      "source_entity_id": "ent_00043",
+      "target_entity_id": "ent_00044",
+      "shared_vertex_id": "vtx_00011"
+    },
+    {
+      "source_entity_id": "ent_00044",
+      "target_entity_id": "ent_00045",
+      "shared_vertex_id": "vtx_00012"
+    }
+  ],
+  "adjacency_list": {
+    "ent_00034": [
+      "ent_00035",
+      "ent_00039"
+    ],
+    "ent_00035": [
+      "ent_00034",
+      "ent_00036"
+    ],
+    "ent_00039": [
+      "ent_00034",
+      "ent_00045"
+    ],
+    "ent_00036": [
+      "ent_00035",
+      "ent_00037"
+    ],
+    "ent_00037": [
+      "ent_00036",
+      "ent_00038"
+    ],
+    "ent_00038": [
+      "ent_00037",
+      "ent_00040"
+    ],
+    "ent_00040": [
+      "ent_00038",
+      "ent_00041"
+    ],
+    "ent_00045": [
+      "ent_00039",
+      "ent_00044"
+    ],
+    "ent_00041": [
+      "ent_00040",
+      "ent_00042"
+    ],
+    "ent_00042": [
+      "ent_00041",
+      "ent_00043"
+    ],
+    "ent_00043": [
+      "ent_00042",
+      "ent_00044"
+    ],
+    "ent_00044": [
+      "ent_00043",
+      "ent_00045"
+    ]
+  },
+  "orphan_entities": [
+    "ent_00028",
+    "ent_00029",
+    "ent_00030",
+    "ent_00032",
+    "ent_00033",
+    "ent_00046",
+    "ent_00047",
+    "ent_00048",
+    "ent_00049",
+    "ent_00051"
+  ],
+  "statistics": {
+    "total_vertices": 22,
+    "shared_vertices": 12,
+    "orphan_vertices": 10,
+    "entities_processed": 22,
+    "total_edges": 12,
+    "connected_entities": 12,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 10,
+    "total_input_entities": 22
+  }
+}

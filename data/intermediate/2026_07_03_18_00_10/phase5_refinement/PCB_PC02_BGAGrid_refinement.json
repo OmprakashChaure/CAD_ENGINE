@@ -1,0 +1,948 @@
+{
+  "confidence": {
+    "confidence_scores": [
+      {
+        "candidate_id": "hc_00001",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00002",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00003",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00004",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00005",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00006",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00007",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00008",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00009",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00010",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00011",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00012",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00013",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00014",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00015",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00016",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00017",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00018",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00019",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00020",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00021",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00022",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00023",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00024",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00025",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00026",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00027",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00028",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00029",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00030",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00031",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00032",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00033",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00034",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      },
+      {
+        "candidate_id": "hc_00035",
+        "candidate_type": "hole",
+        "structural_confidence": 0.4,
+        "confidence_factors": {
+          "multi_radius": false,
+          "isolated_circle": true
+        }
+      }
+    ],
+    "statistics": {
+      "total_scored": 35,
+      "average_confidence": 0.4,
+      "high_confidence": 0,
+      "medium_confidence": 35,
+      "low_confidence": 0
+    }
+  },
+  "hierarchy": {
+    "hierarchy_nodes": [
+      {
+        "candidate_id": "hc_00001",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00002",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00003",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00004",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00005",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00006",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00007",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00008",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00009",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00010",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00011",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00012",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00013",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00014",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00015",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00016",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00017",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00018",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00019",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00020",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00021",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00022",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00023",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00024",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00025",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00026",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00027",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00028",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00029",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00030",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00031",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00032",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00033",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00034",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      },
+      {
+        "candidate_id": "hc_00035",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "standalone"
+      }
+    ],
+    "root_candidates": [
+      "hc_00001",
+      "hc_00002",
+      "hc_00003",
+      "hc_00004",
+      "hc_00005",
+      "hc_00006",
+      "hc_00007",
+      "hc_00008",
+      "hc_00009",
+      "hc_00010",
+      "hc_00011",
+      "hc_00012",
+      "hc_00013",
+      "hc_00014",
+      "hc_00015",
+      "hc_00016",
+      "hc_00017",
+      "hc_00018",
+      "hc_00019",
+      "hc_00020",
+      "hc_00021",
+      "hc_00022",
+      "hc_00023",
+      "hc_00024",
+      "hc_00025",
+      "hc_00026",
+      "hc_00027",
+      "hc_00028",
+      "hc_00029",
+      "hc_00030",
+      "hc_00031",
+      "hc_00032",
+      "hc_00033",
+      "hc_00034",
+      "hc_00035"
+    ],
+    "statistics": {
+      "total_nodes": 35,
+      "root_count": 35,
+      "max_depth": 0,
+      "pattern_children": 0
+    }
+  },
+  "conflicts": {
+    "conflicts": [],
+    "conflict_free_entities": 35,
+    "statistics": {
+      "total_conflicts": 0,
+      "high_severity": 0,
+      "medium_severity": 0,
+      "low_severity": 0,
+      "conflict_free_entities": 35,
+      "total_claimed_entities": 35
+    }
+  },
+  "repetitions": {
+    "repetition_groups": [
+      {
+        "group_id": "rep_00001",
+        "signature": "hole:(2.0,)",
+        "candidate_ids": [
+          "hc_00001",
+          "hc_00002",
+          "hc_00003",
+          "hc_00004",
+          "hc_00005",
+          "hc_00006",
+          "hc_00007",
+          "hc_00008",
+          "hc_00009",
+          "hc_00010",
+          "hc_00011",
+          "hc_00012",
+          "hc_00013",
+          "hc_00014",
+          "hc_00015",
+          "hc_00016",
+          "hc_00017",
+          "hc_00018",
+          "hc_00019",
+          "hc_00020",
+          "hc_00021",
+          "hc_00022",
+          "hc_00023",
+          "hc_00024",
+          "hc_00025",
+          "hc_00026",
+          "hc_00027",
+          "hc_00028",
+          "hc_00029",
+          "hc_00030",
+          "hc_00031",
+          "hc_00032",
+          "hc_00033",
+          "hc_00034",
+          "hc_00035"
+        ],
+        "repetition_count": 35,
+        "candidate_type": "hole"
+      }
+    ],
+    "unique_candidates": [],
+    "statistics": {
+      "total_repetition_groups": 1,
+      "total_repeated_candidates": 35,
+      "total_unique_candidates": 0,
+      "max_repetition": 35
+    }
+  },
+  "ambiguity": {
+    "ambiguous_candidates": [
+      {
+        "candidate_id": "hc_00001",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00002",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00003",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00004",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00005",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00006",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00007",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00008",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00009",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00010",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00011",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00012",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00013",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00014",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00015",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00016",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00017",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00018",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00019",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00020",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00021",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00022",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00023",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00024",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00025",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00026",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00027",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00028",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00029",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00030",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00031",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00032",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00033",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00034",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      },
+      {
+        "candidate_id": "hc_00035",
+        "ambiguity_reason": "low_structural_confidence",
+        "structural_confidence": 0.4,
+        "conflict_count": 0
+      }
+    ],
+    "ambiguity_summary": {
+      "total_ambiguous": 35,
+      "by_reason": {
+        "low_structural_confidence": 35
+      },
+      "ambiguity_ratio": 1.0
+    },
+    "statistics": {
+      "total_ambiguous": 35,
+      "total_candidates_analyzed": 35,
+      "ambiguity_threshold": 0.5,
+      "ambiguity_ratio": 1.0
+    }
+  },
+  "statistics": {
+    "confidence": {
+      "total_scored": 35,
+      "average_confidence": 0.4,
+      "high_confidence": 0,
+      "medium_confidence": 35,
+      "low_confidence": 0
+    },
+    "hierarchy": {
+      "total_nodes": 35,
+      "root_count": 35,
+      "max_depth": 0,
+      "pattern_children": 0
+    },
+    "conflicts": {
+      "total_conflicts": 0,
+      "high_severity": 0,
+      "medium_severity": 0,
+      "low_severity": 0,
+      "conflict_free_entities": 35,
+      "total_claimed_entities": 35
+    },
+    "repetitions": {
+      "total_repetition_groups": 1,
+      "total_repeated_candidates": 35,
+      "total_unique_candidates": 0,
+      "max_repetition": 35
+    },
+    "ambiguity": {
+      "total_ambiguous": 35,
+      "total_candidates_analyzed": 35,
+      "ambiguity_threshold": 0.5,
+      "ambiguity_ratio": 1.0
+    }
+  }
+}

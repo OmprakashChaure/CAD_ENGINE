@@ -1,0 +1,74 @@
+{
+  "version": "3.0.0",
+  "format": "semantic_engineering_supervision",
+  "total_tasks": 989,
+  "task_types": {
+    "infer_feature_span": 162,
+    "infer_wall_thickness": 100,
+    "infer_profile_dimension": 162,
+    "infer_pocket_dimension": 43,
+    "infer_spacing": 137,
+    "infer_hole_count": 47,
+    "infer_hole_diameter": 47,
+    "infer_bore_diameter": 162,
+    "infer_outer_diameter": 55,
+    "infer_thread_size": 50,
+    "infer_slot_dimension": 24
+  },
+  "drawings": 143,
+  "splits": {
+    "train": {
+      "count": 660,
+      "task_types": {
+        "infer_feature_span": 111,
+        "infer_wall_thickness": 70,
+        "infer_profile_dimension": 102,
+        "infer_pocket_dimension": 32,
+        "infer_spacing": 84,
+        "infer_hole_count": 31,
+        "infer_hole_diameter": 32,
+        "infer_bore_diameter": 109,
+        "infer_outer_diameter": 45,
+        "infer_thread_size": 29,
+        "infer_slot_dimension": 15
+      }
+    },
+    "validation": {
+      "count": 192,
+      "task_types": {
+        "infer_feature_span": 32,
+        "infer_wall_thickness": 18,
+        "infer_profile_dimension": 36,
+        "infer_pocket_dimension": 6,
+        "infer_spacing": 33,
+        "infer_hole_count": 10,
+        "infer_hole_diameter": 9,
+        "infer_bore_diameter": 33,
+        "infer_outer_diameter": 4,
+        "infer_thread_size": 11
+      }
+    },
+    "test": {
+      "count": 137,
+      "task_types": {
+        "infer_feature_span": 19,
+        "infer_wall_thickness": 12,
+        "infer_profile_dimension": 24,
+        "infer_pocket_dimension": 5,
+        "infer_spacing": 20,
+        "infer_hole_count": 6,
+        "infer_hole_diameter": 6,
+        "infer_bore_diameter": 20,
+        "infer_outer_diameter": 6,
+        "infer_thread_size": 10,
+        "infer_slot_dimension": 9
+      }
+    }
+  },
+  "schema": {
+    "task_type": "engineering inference task category",
+    "context": "visible engineering structure",
+    "target": "hidden engineering property to infer"
+  },
+  "total_semantic_records": 143
+}

@@ -1,0 +1,508 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "ARC",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "radius": 30.0,
+        "start_angle": 90.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "ARC",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          150.0,
+          0.0
+        ],
+        "radius": 30.0,
+        "start_angle": 270.0,
+        "end_angle": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          -30.0
+        ],
+        "end": [
+          150.0,
+          -30.0
+        ],
+        "length": 150.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          150.0,
+          30.0
+        ],
+        "end": [
+          0.0,
+          30.0
+        ],
+        "length": 150.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "ARC",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          0.0
+        ],
+        "radius": 15.0,
+        "start_angle": 90.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "ARC",
+      "handle": "94",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          125.0,
+          0.0
+        ],
+        "radius": 15.0,
+        "start_angle": 270.0,
+        "end_angle": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          25.0,
+          -15.0
+        ],
+        "end": [
+          125.0,
+          -15.0
+        ],
+        "length": 100.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          125.0,
+          15.0
+        ],
+        "end": [
+          25.0,
+          15.0
+        ],
+        "length": 100.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "97",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "radius": 12.0,
+        "diameter": 24.0,
+        "area": 452.3893421169302
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "98",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          150.0,
+          0.0
+        ],
+        "radius": 12.0,
+        "diameter": 24.0,
+        "area": 452.3893421169302
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "99",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -40.0,
+          0.0
+        ],
+        "end": [
+          40.0,
+          0.0
+        ],
+        "length": 80.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "9A",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          -40.0
+        ],
+        "end": [
+          0.0,
+          40.0
+        ],
+        "length": 80.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "9B",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          110.0,
+          0.0
+        ],
+        "end": [
+          190.0,
+          0.0
+        ],
+        "length": 80.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "9C",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          150.0,
+          -40.0
+        ],
+        "end": [
+          150.0,
+          40.0
+        ],
+        "length": 80.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "LINE",
+      "handle": "9D",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          0.0
+        ],
+        "end": [
+          150.0,
+          0.0
+        ],
+        "length": 150.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9E",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 150.0,
+        "text": "150mm EYE TO EYE SPAN",
+        "position": [
+          0.0,
+          -50.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            150.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "AD",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 60.0,
+        "text": "60mm OUTER PROFILE",
+        "position": [
+          -50.0,
+          -30.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "MTEXT",
+      "handle": "BD",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "30mm POCKET WIDTH",
+        "position": [
+          90.0,
+          60.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "Aero_LW06_ObroundLink.dxf",
+      "entity_type": "MTEXT",
+      "handle": "BF",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "2X \u00d824mm PIN BORE",
+        "position": [
+          -30.0,
+          -60.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 24.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 19,
+        "kept_entities": 19,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 19,
+        "kept_entities": 19,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 19,
+        "kept_entities": 19,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 19,
+        "kept_entities": 19,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 19,
+        "kept_entities": 19,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

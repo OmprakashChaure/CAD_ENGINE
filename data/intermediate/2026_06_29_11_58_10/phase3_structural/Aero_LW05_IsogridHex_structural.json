@@ -1,0 +1,164 @@
+{
+  "contours": {
+    "contours": [],
+    "isolated_entities": [
+      "ent_00001",
+      "ent_00002",
+      "ent_00003",
+      "ent_00004",
+      "ent_00005",
+      "ent_00006",
+      "ent_00008"
+    ],
+    "statistics": {
+      "total_contours": 0,
+      "closed_contours": 0,
+      "open_contours": 0,
+      "isolated_entities": 7
+    }
+  },
+  "loops": {
+    "loops": [],
+    "open_chains": [],
+    "statistics": {
+      "total_loops": 0,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 0
+    }
+  },
+  "concentric_groups": {
+    "concentric_groups": [],
+    "ungrouped_circles": [],
+    "statistics": {
+      "total_groups": 0,
+      "total_circle_arc_entities": 0,
+      "grouped_entities": 0,
+      "ungrouped_entities": 0
+    }
+  },
+  "regions": {
+    "regions": [
+      {
+        "region_id": "reg_00001",
+        "entity_ids": [
+          "ent_00001"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00002",
+        "entity_ids": [
+          "ent_00002"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00003",
+        "entity_ids": [
+          "ent_00003"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00004",
+        "entity_ids": [
+          "ent_00004"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00005",
+        "entity_ids": [
+          "ent_00005"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00006",
+        "entity_ids": [
+          "ent_00006"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00007",
+        "entity_ids": [
+          "ent_00008"
+        ],
+        "size": 1,
+        "is_singleton": true
+      }
+    ],
+    "statistics": {
+      "total_regions": 7,
+      "multi_entity_regions": 0,
+      "singleton_regions": 7,
+      "max_region_size": 1,
+      "min_region_size": 1,
+      "total_entities": 7
+    }
+  },
+  "contour_hierarchy": {
+    "hierarchy": [
+      {
+        "entity_id": "ent_00001",
+        "contour_role": "outer",
+        "parent_id": null,
+        "children_ids": [
+          "ent_00002"
+        ],
+        "nesting_depth": 0
+      },
+      {
+        "entity_id": "ent_00002",
+        "contour_role": "inner",
+        "parent_id": "ent_00001",
+        "children_ids": [],
+        "nesting_depth": 1
+      }
+    ],
+    "statistics": {
+      "total_contours": 2,
+      "outer": 1,
+      "inner": 1
+    }
+  },
+  "statistics": {
+    "contours": {
+      "total_contours": 0,
+      "closed_contours": 0,
+      "open_contours": 0,
+      "isolated_entities": 7
+    },
+    "loops": {
+      "total_loops": 0,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 0
+    },
+    "concentric": {
+      "total_groups": 0,
+      "total_circle_arc_entities": 0,
+      "grouped_entities": 0,
+      "ungrouped_entities": 0
+    },
+    "regions": {
+      "total_regions": 7,
+      "multi_entity_regions": 0,
+      "singleton_regions": 7,
+      "max_region_size": 1,
+      "min_region_size": 1,
+      "total_entities": 7
+    },
+    "hierarchy": {
+      "total_contours": 2,
+      "outer": 1,
+      "inner": 1
+    }
+  }
+}

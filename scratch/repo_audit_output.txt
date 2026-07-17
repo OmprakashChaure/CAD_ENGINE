@@ -1,0 +1,145 @@
+# REPOSITORY AUDIT
+| File | Category | Imported By | Imports | Purpose |
+| --- | --- | --- | --- | --- |
+| aerospace_turbomachinery_generator.py | Utility/Generator | None | None | No docstring |
+| circular_flange_generator.py | Utility/Generator | None | None | No docstring |
+| cnc_routing_generator.py | Utility/Generator | None | None | No docstring |
+| core/__init__.py | Production | None | None | No docstring |
+| core/classifiers/__init__.py | Production | None | core.classifiers.role_classifier | No docstring |
+| core/classifiers/geometry_normalizer.py | Production | core/reader/entity_iterator.py | None | No docstring |
+| core/classifiers/role_classifier.py | Production | core/classifiers/__init__.py | utils.logger | Role Classifier — assigns engineering roles to entities. |
+| core/compression/__init__.py | Production | None | core.compression.schema_formatter | No docstring |
+| core/compression/schema_formatter.py | Production | core/compression/__init__.py | utils.logger | Schema Formatter — converts enriched entities into frozen output schema. |
+| core/exporters/__init__.py | Production | None | core.exporters.json_exporter | No docstring |
+| core/exporters/json_exporter.py | Production | core/exporters/__init__.py | utils.logger | JSON Exporter — writes final dataset to disk. |
+| core/features/__init__.py | Production | None | core.features.feature_inferrer | No docstring |
+| core/features/candidate_confidence_analyzer.py | Production | pipeline/refinement_pipeline.py | utils.logger | Candidate Confidence Analyzer — deterministic structural confidence levels. |
+| core/features/candidate_conflict_resolver.py | Production | pipeline/refinement_pipeline.py | utils.logger | Candidate Conflict Resolver — detect overlapping or conflicting candidates. |
+| core/features/candidate_relationship_builder.py | Production | pipeline/context_pipeline.py | utils.logger | Candidate Relationship Builder — deterministic structural candidate relationships. |
+| core/features/context_cluster_analyzer.py | Production | pipeline/context_pipeline.py | utils.logger | Context Cluster Analyzer — group structurally related candidate systems. |
+| core/features/contextual_ambiguity_propagator.py | Production | pipeline/context_pipeline.py | utils.logger | Contextual Ambiguity Propagator — preserve ambiguity across relationship systems. |
+| core/features/feature_hierarchy_builder.py | Production | pipeline/refinement_pipeline.py | utils.logger | Feature Hierarchy Builder — deterministic structural candidate hierarchies. |
+| core/features/feature_inferrer.py | Production | core/features/__init__.py | utils.logger | Feature Inferrer — detects engineering features from geometry. |
+| core/features/feature_region_grouper.py | Production | pipeline/feature_pipeline.py | utils.logger | Feature Region Grouper — group structurally related feature candidates. |
+| core/features/hole_candidate_detector.py | Production | pipeline/feature_pipeline.py | utils.logger | Hole Candidate Detector — deterministic concentric circular system detection. |
+| core/features/radial_pattern_detector.py | Production | pipeline/feature_pipeline.py | utils.logger | Radial Pattern Detector — detect repeated radial geometry organization. |
+| core/features/relationship_confidence_manager.py | Production | pipeline/context_pipeline.py | utils.logger | Relationship Confidence Manager — organize deterministic relationship confidence. |
+| core/features/repeated_pattern_consolidator.py | Production | pipeline/refinement_pipeline.py | utils.logger | Repeated Pattern Consolidator — consolidate repeated structural systems. |
+| core/features/slot_candidate_detector.py | Production | pipeline/feature_pipeline.py | utils.logger | Slot Candidate Detector — deterministic elongated contour structure detection. |
+| core/features/structural_ambiguity_tracker.py | Production | pipeline/refinement_pipeline.py | utils.logger | Structural Ambiguity Tracker — explicitly preserve engineering uncertainty. |
+| core/features/structural_dependency_mapper.py | Production | pipeline/context_pipeline.py | utils.logger | Structural Dependency Mapper — map deterministic structural dependencies. |
+| core/features/symmetry_analyzer.py | Production | pipeline/feature_pipeline.py | utils.logger | Symmetry Analyzer — detect deterministic structural symmetry. |
+| core/filters/__init__.py | Production | None | core.filters.degenerate_filter, core.filters.duplicate_filter, core.filters.layer_filter | No docstring |
+| core/filters/border_filter.py | Production | pipeline/extraction_pipeline.py | schemas.geometry_schema, utils.logger | No docstring |
+| core/filters/degenerate_filter.py | Production | core/filters/__init__.py, pipeline/extraction_pipeline.py | schemas.geometry_schema, utils.logger | No docstring |
+| core/filters/duplicate_filter.py | Production | core/filters/__init__.py, pipeline/extraction_pipeline.py | schemas.geometry_schema, utils.logger | No docstring |
+| core/filters/layer_filter.py | Production | core/filters/__init__.py, pipeline/extraction_pipeline.py | schemas.geometry_schema, utils.logger | No docstring |
+| core/filters/text_filter.py | Production | pipeline/extraction_pipeline.py | schemas.geometry_schema, utils.logger | No docstring |
+| core/grouping/__init__.py | Production | None | core.grouping.bolt_detector, core.grouping.relationship_builder, core.grouping.spacing_detector | No docstring |
+| core/grouping/adjacency_builder.py | Production | pipeline/topology_pipeline.py | utils.logger | Adjacency Builder — deterministic engineering connectivity. |
+| core/grouping/bolt_detector.py | Production | core/grouping/__init__.py | utils.logger | Bolt Circle Detector — identifies bolt hole patterns. |
+| core/grouping/concentric_grouping.py | Production | pipeline/structural_pipeline.py | utils.logger | Concentric Grouping — detect deterministic concentric geometry systems. |
+| core/grouping/contour_extractor.py | Production | pipeline/structural_pipeline.py | utils.logger | Contour Extractor — deterministic engineering contour chain detection. |
+| core/grouping/contour_hierarchy.py | Production | pipeline/structural_pipeline.py | utils.logger | Contour Hierarchy — deterministic geometric containment analysis. |
+| core/grouping/loop_detector.py | Production | pipeline/structural_pipeline.py | utils.logger | Loop Detector — detect closed engineering topology loops. |
+| core/grouping/region_analyzer.py | Production | pipeline/structural_pipeline.py | utils.logger | Region Analyzer — analyze structural topology regions. |
+| core/grouping/relationship_builder.py | Production | core/grouping/__init__.py | utils.logger | Relationship Builder — engineering-meaningful relationships only. |
+| core/grouping/spacing_detector.py | Production | core/grouping/__init__.py | utils.logger | Equal Spacing Detector — identifies evenly-spaced patterns. |
+| core/grouping/vertex_indexer.py | Production | pipeline/topology_pipeline.py | utils.logger | Vertex Indexer — creates stable shared geometric vertices. |
+| core/reader/__init__.py | Production | None | core.reader.dxf_reader | No docstring |
+| core/reader/dxf_loader.py | Production | pipeline/extraction_pipeline.py | utils.logger | No docstring |
+| core/reader/dxf_reader.py | Production | core/reader/__init__.py | utils.logger | DXF Entity Reader — Stage 1 of the extraction pipeline. |
+| core/reader/entity_iterator.py | Production | pipeline/extraction_pipeline.py | core.classifiers.geometry_normalizer, utils.dxf_utils, utils.logger | No docstring |
+| core/semantics/__init__.py | Production | None | core.semantics.semantic_enricher | No docstring |
+| core/semantics/semantic_enricher.py | Production | core/semantics/__init__.py | utils.logger | Semantic Enricher — merges features/manufacturing into entities. |
+| core/supervision/__init__.py | Production | None | core.supervision.supervision_mapper | No docstring |
+| core/supervision/context_packager.py | Production | pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py | utils.logger | Context Packager — deterministic engineering reasoning context for each entity. |
+| core/supervision/inference_conditioner.py | Production | pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py | utils.logger | Inference Conditioner — create masked training samples for dimension inference. |
+| core/supervision/sample_assembler.py | Production | pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py | utils.logger | Sample Assembler — finalize training samples into export-ready format. |
+| core/supervision/supervision_mapper.py | Production | core/supervision/__init__.py, pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py | utils.logger | Supervision Mapper — deterministic geometry ↔ dimension mapping. |
+| core/supervision/target_constructor.py | Production | pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py | utils.logger | Target Constructor — build explicit supervised prediction targets. |
+| core/validation/__init__.py | Production | None | core.validation.schema_validator | No docstring |
+| core/validation/schema_validator.py | Production | core/validation/__init__.py | utils.logger | Schema Validator — enforces frozen schema compliance. |
+| cross_section_generator.py | Utility/Generator | None | None | No docstring |
+| electrical_busbar_generator.py | Utility/Generator | None | None | No docstring |
+| flexible_elements_generator.py | Utility/Generator | None | None | No docstring |
+| fluid_fittings_generator.py | Utility/Generator | None | None | No docstring |
+| gasket_seals_generator.py | Utility/Generator | None | None | No docstring |
+| gear_spline_generator.py | Utility/Generator | None | None | No docstring |
+| hardware_fastener_generator.py | Utility/Generator | None | None | No docstring |
+| kinematic_extended_generator.py | Utility/Generator | None | None | No docstring |
+| kinematic_linkage_generator.py | Utility/Generator | None | None | No docstring |
+| main.py | Production | tests/test_task_3_10.py | pipeline.context_pipeline, pipeline.dataset_pipeline, pipeline.extraction_pipeline, pipeline.feature_pipeline, pipeline.refinement_pipeline, pipeline.structural_pipeline, pipeline.topology_pipeline, utils.logger | No docstring |
+| motor_bracket_generator.py | Utility/Generator | None | None | No docstring |
+| optomechanics_generator.py | Utility/Generator | None | None | No docstring |
+| pdf_exercises_batch1_generator.py | Utility/Generator | None | None | No docstring |
+| pipeline/__init__.py | Production | None | None | No docstring |
+| pipeline/context_pipeline.py | Production | main.py | core.features.candidate_relationship_builder, core.features.context_cluster_analyzer, core.features.contextual_ambiguity_propagator, core.features.relationship_confidence_manager, core.features.structural_dependency_mapper, utils.logger | Context Pipeline — orchestrate engineering context organization. |
+| pipeline/dataset_pipeline.py | Production | main.py | core.supervision.context_packager, core.supervision.inference_conditioner, core.supervision.sample_assembler, core.supervision.supervision_mapper, core.supervision.target_constructor, pipeline.semantic_pipeline, utils.logger | Dataset Pipeline — Phase-7 supervised dataset generation and batch split exporting. |
+| pipeline/dataset_pipeline_backup_before_llm_refactor.py | Backup | None | core.supervision.context_packager, core.supervision.inference_conditioner, core.supervision.sample_assembler, core.supervision.supervision_mapper, core.supervision.target_constructor, pipeline.semantic_pipeline, utils.logger | Dataset Pipeline — Phase-7 supervised dataset generation and batch split exporting. |
+| pipeline/extraction_pipeline.py | Production | main.py | core.filters.border_filter, core.filters.degenerate_filter, core.filters.duplicate_filter, core.filters.layer_filter, core.filters.text_filter, core.reader.dxf_loader, core.reader.entity_iterator, utils.logger | No docstring |
+| pipeline/feature_pipeline.py | Production | main.py | core.features.feature_region_grouper, core.features.hole_candidate_detector, core.features.radial_pattern_detector, core.features.slot_candidate_detector, core.features.symmetry_analyzer, utils.logger | Feature Pipeline — orchestrate engineering feature candidate detection. |
+| pipeline/full_pipeline.py | Production | None | utils.logger | Full Pipeline — end-to-end DXF → dataset orchestrator. |
+| pipeline/refinement_pipeline.py | Production | main.py | core.features.candidate_confidence_analyzer, core.features.candidate_conflict_resolver, core.features.feature_hierarchy_builder, core.features.repeated_pattern_consolidator, core.features.structural_ambiguity_tracker, utils.logger | Refinement Pipeline — orchestrate feature candidate refinement. |
+| pipeline/semantic_pipeline.py | Production | pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py | utils.logger | Semantic Pipeline — features → enriched entity-centric output. |
+| pipeline/structural_pipeline.py | Production | main.py | core.grouping.concentric_grouping, core.grouping.contour_extractor, core.grouping.contour_hierarchy, core.grouping.loop_detector, core.grouping.region_analyzer, utils.logger | Structural Pipeline — orchestrate structural engineering recognition. |
+| pipeline/topology_pipeline.py | Production | main.py | core.grouping.adjacency_builder, core.grouping.vertex_indexer, utils.logger | Topology Pipeline — geometry → deterministic engineering topology. |
+| plastic_molding_generator.py | Utility/Generator | None | None | No docstring |
+| schemas/__init__.py | Production | None | schemas.dataset_schema, schemas.feature_schema, schemas.geometry_schema, schemas.semantic_schema | No docstring |
+| schemas/dataset_schema.py | Production | schemas/__init__.py | schemas.semantic_schema | Pydantic schema for the complete dataset output document. |
+| schemas/feature_schema.py | Production | schemas/__init__.py | None | Pydantic schema for engineering features detected from geometry. |
+| schemas/geometry_schema.py | Production | core/filters/border_filter.py, core/filters/degenerate_filter.py, core/filters/duplicate_filter.py, core/filters/layer_filter.py, core/filters/text_filter.py, schemas/__init__.py | None | No docstring |
+| schemas/graph_schema.py | Production | None | None | Canonical topology graph schema. |
+| schemas/semantic_schema.py | Production | schemas/__init__.py, schemas/dataset_schema.py | None | Pydantic schema for the final frozen entity-centric output. |
+| scratch/analyze_repo.py | Utility/Scratch | None | None | No docstring |
+| scratch/apply_exporter_refactor.py | Utility/Scratch | None | None | No docstring |
+| scratch/apply_exporter_refactor_final.py | Utility/Scratch | None | None | No docstring |
+| scratch/audit_details.py | Utility/Scratch | None | None | No docstring |
+| scratch/audit_pre_redesign.py | Utility/Scratch | None | None | No docstring |
+| scratch/compare_exporters.py | Utility/Scratch | None | None | No docstring |
+| scratch/format_empty.py | Utility/Scratch | None | None | No docstring |
+| scratch/generate_baseline_stats.py | Utility/Scratch | None | None | No docstring |
+| sheet_metal_extended_generator.py | Utility/Generator | None | None | No docstring |
+| sheet_metal_generator.py | Utility/Generator | None | None | No docstring |
+| structural_profile_generator.py | Utility/Generator | None | None | No docstring |
+| tests/__init__.py | Test | None | None | No docstring |
+| tests/test_features.py | Test | None | None | Tests for core.features.FeatureInferrer. |
+| tests/test_filters.py | Test | None | None | Tests for core.filters (LayerFilter, DegenerateFilter, DuplicateFilter). |
+| tests/test_phase7_bug_condition.py | Test | None | core.exporters.dataset_exporter | Bug Condition Exploration Test for Phase-7 Arithmetic Leakage |
+| tests/test_phase7_preservation.py | Test | None | core.exporters.dataset_exporter | Preservation Property Tests for Phase-7 Dataset Exporter |
+| tests/test_pipeline.py | Test | None | None | Tests for pipeline.full_pipeline.FullPipeline. |
+| tests/test_reader.py | Test | None | None | Tests for core.reader.DXFReader. |
+| tests/test_task_3_10.py | Test | None | main | Test for Task 3.10: Verify context_result is properly passed through main.py pipeline. |
+| thermal_heatsink_generator.py | Utility/Generator | None | None | No docstring |
+| tooling_gauge_generator.py | Utility/Generator | None | None | No docstring |
+| tools/regenerate_dxf.py | Utility/Tool | None | None | Regenerate malformed synthetic DXF files using ezdxf entity APIs only. |
+| turned_shaft_generator.py | Utility/Generator | None | None | No docstring |
+| utils/__init__.py | Production | None | None | No docstring |
+| utils/dxf_utils.py | Production | core/reader/entity_iterator.py | None | No docstring |
+| utils/geometry_utils.py | Production | None | None | Shared geometry utility functions. |
+| utils/graph_utils.py | Production | None | None | Graph utility functions for topology analysis. |
+| utils/logger.py | Production | core/classifiers/role_classifier.py, core/compression/schema_formatter.py, core/exporters/json_exporter.py, core/features/candidate_confidence_analyzer.py, core/features/candidate_conflict_resolver.py, core/features/candidate_relationship_builder.py, core/features/context_cluster_analyzer.py, core/features/contextual_ambiguity_propagator.py, core/features/feature_hierarchy_builder.py, core/features/feature_inferrer.py, core/features/feature_region_grouper.py, core/features/hole_candidate_detector.py, core/features/radial_pattern_detector.py, core/features/relationship_confidence_manager.py, core/features/repeated_pattern_consolidator.py, core/features/slot_candidate_detector.py, core/features/structural_ambiguity_tracker.py, core/features/structural_dependency_mapper.py, core/features/symmetry_analyzer.py, core/filters/border_filter.py, core/filters/degenerate_filter.py, core/filters/duplicate_filter.py, core/filters/layer_filter.py, core/filters/text_filter.py, core/grouping/adjacency_builder.py, core/grouping/bolt_detector.py, core/grouping/concentric_grouping.py, core/grouping/contour_extractor.py, core/grouping/contour_hierarchy.py, core/grouping/loop_detector.py, core/grouping/region_analyzer.py, core/grouping/relationship_builder.py, core/grouping/spacing_detector.py, core/grouping/vertex_indexer.py, core/reader/dxf_loader.py, core/reader/dxf_reader.py, core/reader/entity_iterator.py, core/semantics/semantic_enricher.py, core/supervision/context_packager.py, core/supervision/inference_conditioner.py, core/supervision/sample_assembler.py, core/supervision/supervision_mapper.py, core/supervision/target_constructor.py, core/validation/schema_validator.py, main.py, pipeline/context_pipeline.py, pipeline/dataset_pipeline.py, pipeline/dataset_pipeline_backup_before_llm_refactor.py, pipeline/extraction_pipeline.py, pipeline/feature_pipeline.py, pipeline/full_pipeline.py, pipeline/refinement_pipeline.py, pipeline/semantic_pipeline.py, pipeline/structural_pipeline.py, pipeline/topology_pipeline.py | None | No docstring |
+| utils/visualization.py | Production | None | None | Visualization utilities for debugging pipeline output. |
+| weldment_fabrication_generator.py | Utility/Generator | None | None | No docstring |
+
+# DUPLICATE DETECTION
+
+Original: gear_spline_generator.py
+Duplicate: kinematic_linkage_generator.py
+Similarity: 100.00%
+
+Original: core/__init__.py
+Duplicate: pipeline/__init__.py
+Similarity: 100.00%
+
+Original: core/__init__.py
+Duplicate: tests/__init__.py
+Similarity: 100.00%
+
+Original: core/__init__.py
+Duplicate: utils/__init__.py
+Similarity: 100.00%
+
+Original: core/compression/__init__.py
+Duplicate: core/validation/__init__.py
+Similarity: 72.43%

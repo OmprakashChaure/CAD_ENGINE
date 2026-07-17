@@ -1,0 +1,396 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            10.0,
+            0.0
+          ],
+          [
+            190.0,
+            0.0
+          ],
+          [
+            190.0,
+            10.0
+          ],
+          [
+            200.0,
+            10.0
+          ],
+          [
+            200.0,
+            190.0
+          ],
+          [
+            190.0,
+            190.0
+          ],
+          [
+            190.0,
+            200.0
+          ],
+          [
+            10.0,
+            200.0
+          ],
+          [
+            10.0,
+            190.0
+          ],
+          [
+            0.0,
+            190.0
+          ],
+          [
+            0.0,
+            10.0
+          ],
+          [
+            10.0,
+            10.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          10.0
+        ],
+        "end": [
+          190.0,
+          10.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          190.0,
+          10.0
+        ],
+        "end": [
+          190.0,
+          190.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LINE",
+      "handle": "93",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          190.0,
+          190.0
+        ],
+        "end": [
+          10.0,
+          190.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          190.0
+        ],
+        "end": [
+          10.0,
+          10.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          10.0
+        ],
+        "end": [
+          190.0,
+          190.0
+        ],
+        "length": 254.55844122715712
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          190.0
+        ],
+        "end": [
+          190.0,
+          10.0
+        ],
+        "length": 254.55844122715712
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "97",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 180.0,
+        "text": "180mm CENTRAL WEB",
+        "position": [
+          10.0,
+          -35.0
+        ],
+        "target_points": [
+          [
+            10.0,
+            0.0
+          ],
+          [
+            190.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A6",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 180.0,
+        "text": "180mm CENTRAL WEB",
+        "position": [
+          235.0,
+          10.0
+        ],
+        "target_points": [
+          [
+            200.0,
+            10.0
+          ],
+          [
+            200.0,
+            190.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B5",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 10.0,
+        "text": "10mm FLANGE",
+        "position": [
+          -35.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "SheetMetal_SM08_CrossBreak.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C5",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "CROSS-BREAK DIAGONALS\n FORM UP 5\u00b0 FOR RIGIDITY",
+        "position": [
+          130.0,
+          230.0
+        ],
+        "height": null,
+        "text_role": "angle_value",
+        "numeric_value": 5.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

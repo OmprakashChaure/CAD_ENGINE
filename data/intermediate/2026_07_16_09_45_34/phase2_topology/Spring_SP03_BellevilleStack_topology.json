@@ -1,0 +1,140 @@
+{
+  "shared_vertices": {
+    "vtx_00001": {
+      "vertex_id": "vtx_00001",
+      "x": 35.0,
+      "y": 22.0,
+      "connected_entities": [
+        "ent_00002",
+        "ent_00006"
+      ]
+    },
+    "vtx_00002": {
+      "vertex_id": "vtx_00002",
+      "x": 65.0,
+      "y": 22.0,
+      "connected_entities": [
+        "ent_00004",
+        "ent_00008"
+      ]
+    },
+    "vtx_00003": {
+      "vertex_id": "vtx_00003",
+      "x": 15.0,
+      "y": 34.0,
+      "connected_entities": [
+        "ent_00006",
+        "ent_00010"
+      ]
+    },
+    "vtx_00004": {
+      "vertex_id": "vtx_00004",
+      "x": 85.0,
+      "y": 34.0,
+      "connected_entities": [
+        "ent_00008",
+        "ent_00012"
+      ]
+    },
+    "vtx_00005": {
+      "vertex_id": "vtx_00005",
+      "x": 35.0,
+      "y": 46.0,
+      "connected_entities": [
+        "ent_00010",
+        "ent_00014"
+      ]
+    },
+    "vtx_00006": {
+      "vertex_id": "vtx_00006",
+      "x": 65.0,
+      "y": 46.0,
+      "connected_entities": [
+        "ent_00012",
+        "ent_00016"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "source_entity_id": "ent_00002",
+      "target_entity_id": "ent_00006",
+      "shared_vertex_id": "vtx_00001"
+    },
+    {
+      "source_entity_id": "ent_00004",
+      "target_entity_id": "ent_00008",
+      "shared_vertex_id": "vtx_00002"
+    },
+    {
+      "source_entity_id": "ent_00006",
+      "target_entity_id": "ent_00010",
+      "shared_vertex_id": "vtx_00003"
+    },
+    {
+      "source_entity_id": "ent_00008",
+      "target_entity_id": "ent_00012",
+      "shared_vertex_id": "vtx_00004"
+    },
+    {
+      "source_entity_id": "ent_00010",
+      "target_entity_id": "ent_00014",
+      "shared_vertex_id": "vtx_00005"
+    },
+    {
+      "source_entity_id": "ent_00012",
+      "target_entity_id": "ent_00016",
+      "shared_vertex_id": "vtx_00006"
+    }
+  ],
+  "adjacency_list": {
+    "ent_00002": [
+      "ent_00006"
+    ],
+    "ent_00006": [
+      "ent_00002",
+      "ent_00010"
+    ],
+    "ent_00004": [
+      "ent_00008"
+    ],
+    "ent_00008": [
+      "ent_00004",
+      "ent_00012"
+    ],
+    "ent_00010": [
+      "ent_00006",
+      "ent_00014"
+    ],
+    "ent_00012": [
+      "ent_00008",
+      "ent_00016"
+    ],
+    "ent_00014": [
+      "ent_00010"
+    ],
+    "ent_00016": [
+      "ent_00012"
+    ]
+  },
+  "orphan_entities": [
+    "ent_00017",
+    "ent_00018",
+    "ent_00019",
+    "ent_00020",
+    "ent_00022"
+  ],
+  "statistics": {
+    "total_vertices": 28,
+    "shared_vertices": 6,
+    "orphan_vertices": 22,
+    "entities_processed": 13,
+    "near_match_merges": 0,
+    "total_edges": 6,
+    "connected_entities": 8,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 5,
+    "total_input_entities": 13
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "total_drawings": 2,
+  "total_features": 8,
+  "total_relationships": 2,
+  "feature_class_distribution": {
+    "fillet_group": 1,
+    "pocket": 4,
+    "slot_array": 1,
+    "dimension_annotations": 1,
+    "unknown_facts": 1
+  },
+  "relationship_type_distribution": {
+    "mirror_symmetry": 2
+  }
+}

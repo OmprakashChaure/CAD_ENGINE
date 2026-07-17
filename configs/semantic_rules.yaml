@@ -1,0 +1,28 @@
+# Semantic Classification Rules
+# Defines how geometry patterns map to engineering meaning
+
+# Feature detection patterns (to be implemented)
+feature_patterns:
+  drilled_hole:
+    entity_type: circle
+    role: visible_edge
+  counterbore:
+    pattern: concentric_circles
+    min_count: 2
+  threaded_hole:
+    entity_type: circle
+    nearby_text: "^M\\d+"
+  slot:
+    entity_type: lwpolyline
+    min_aspect_ratio: 2.0
+  fillet:
+    entity_type: arc
+    max_sweep_angle: 120
+
+# Engineering role hierarchy
+role_hierarchy:
+  - outer_boundary
+  - internal_cutout
+  - mounting_feature
+  - alignment_feature
+  - reference_geometry

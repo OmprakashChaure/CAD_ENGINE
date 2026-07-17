@@ -1,0 +1,1424 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00028",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "AD",
+      "layer": "TITLE_BLOCK",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            270.0,
+            10.0
+          ],
+          [
+            410.0,
+            10.0
+          ],
+          [
+            410.0,
+            50.0
+          ],
+          [
+            270.0,
+            50.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00029",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "AE",
+      "layer": "TITLE_BLOCK",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          270.0,
+          30.0
+        ],
+        "end": [
+          410.0,
+          30.0
+        ],
+        "length": 140.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00030",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "AF",
+      "layer": "TITLE_BLOCK",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          340.0,
+          10.0
+        ],
+        "end": [
+          340.0,
+          30.0
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00032",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "MTEXT",
+      "handle": "B1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "DWG NO: PLAS-PL03",
+        "position": [
+          275.0,
+          23.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 3.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00033",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "MTEXT",
+      "handle": "B2",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "SCALE: 1:1",
+        "position": [
+          345.0,
+          23.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 1.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00034",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "B3",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          160.0,
+          168.5
+        ],
+        "end": [
+          160.0,
+          133.5
+        ],
+        "length": 35.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00035",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "ARC",
+      "handle": "B4",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          165.0,
+          133.5
+        ],
+        "radius": 5.0,
+        "start_angle": 180.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00036",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "B5",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          165.0,
+          128.5
+        ],
+        "end": [
+          255.0,
+          128.5
+        ],
+        "length": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00037",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "ARC",
+      "handle": "B6",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          255.0,
+          133.5
+        ],
+        "radius": 5.0,
+        "start_angle": 270.0,
+        "end_angle": 360.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00038",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "B7",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          260.0,
+          133.5
+        ],
+        "end": [
+          260.0,
+          168.5
+        ],
+        "length": 35.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00039",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "B8",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          260.0,
+          168.5
+        ],
+        "end": [
+          257.0,
+          168.5
+        ],
+        "length": 3.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00040",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "B9",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          257.0,
+          168.5
+        ],
+        "end": [
+          257.0,
+          133.5
+        ],
+        "length": 35.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00041",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "ARC",
+      "handle": "BA",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          255.0,
+          133.5
+        ],
+        "radius": 2.0,
+        "start_angle": 270.0,
+        "end_angle": 360.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00042",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "BB",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          255.0,
+          131.5
+        ],
+        "end": [
+          165.0,
+          131.5
+        ],
+        "length": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00043",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "ARC",
+      "handle": "BC",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          165.0,
+          133.5
+        ],
+        "radius": 2.0,
+        "start_angle": 180.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00044",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "BD",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          163.0,
+          133.5
+        ],
+        "end": [
+          163.0,
+          168.5
+        ],
+        "length": 35.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00045",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "BE",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          163.0,
+          168.5
+        ],
+        "end": [
+          160.0,
+          168.5
+        ],
+        "length": 3.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00046",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "BF",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          160.0,
+          148.5
+        ],
+        "end": [
+          260.0,
+          148.5
+        ],
+        "length": 100.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00047",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "LINE",
+      "handle": "C0",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          210.0,
+          98.5
+        ],
+        "end": [
+          210.0,
+          198.5
+        ],
+        "length": 100.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00048",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "C1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100mm ENCLOSURE W",
+        "position": [
+          160.0,
+          93.5
+        ],
+        "target_points": [
+          [
+            160.0,
+            128.5
+          ],
+          [
+            260.0,
+            128.5
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00049",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "D0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 40.0,
+        "text": "40mm ENCLOSURE H",
+        "position": [
+          120.0,
+          128.5
+        ],
+        "target_points": [
+          [
+            160.0,
+            128.5
+          ],
+          [
+            160.0,
+            168.5
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00050",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "DF",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 3.0,
+        "text": "3.0mm %%P0.1 WALL",
+        "position": [
+          210.0,
+          128.5
+        ],
+        "target_points": [
+          [
+            165.0,
+            128.5
+          ],
+          [
+            165.0,
+            131.5
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00052",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "MTEXT",
+      "handle": "F1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "R5mm OUTER RADIUS",
+        "position": [
+          180.0,
+          73.5
+        ],
+        "height": null,
+        "text_role": "radius_value",
+        "numeric_value": 5.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00054",
+      "source_file": "Blueprint_PL03_ShelledBox.dxf",
+      "entity_type": "MTEXT",
+      "handle": "F3",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "R2mm INNER RADIUS",
+        "position": [
+          180.0,
+          143.5
+        ],
+        "height": null,
+        "text_role": "radius_value",
+        "numeric_value": 2.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [
+    {
+      "entity": {
+        "entity_id": "ent_00019",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "A4",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "C",
+          "position": [
+            7.0,
+            56.166666666666664
+          ],
+          "height": null,
+          "text_role": "annotation",
+          "numeric_value": null
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "non_supervision_text:annotation",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00022",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "A7",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "B",
+          "position": [
+            7.0,
+            148.5
+          ],
+          "height": null,
+          "text_role": "annotation",
+          "numeric_value": null
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "non_supervision_text:annotation",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00025",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "AA",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "A",
+          "position": [
+            7.0,
+            240.83333333333331
+          ],
+          "height": null,
+          "text_role": "annotation",
+          "numeric_value": null
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "non_supervision_text:annotation",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00031",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "B0",
+        "layer": "DIMENSIONS",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "TITLE: SHELLED ENCLOSURE",
+          "position": [
+            275.0,
+            45.0
+          ],
+          "height": null,
+          "text_role": "annotation",
+          "numeric_value": null
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "non_supervision_text:annotation",
+      "confidence": 0.5
+    }
+  ],
+  "removed_entities": [
+    {
+      "entity": {
+        "entity_id": "ent_00001",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LWPOLYLINE",
+        "handle": "92",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "points": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              420.0,
+              0.0
+            ],
+            [
+              420.0,
+              297.0
+            ],
+            [
+              0.0,
+              297.0
+            ]
+          ],
+          "closed": true,
+          "has_arcs": false
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00002",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LWPOLYLINE",
+        "handle": "93",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "points": [
+            [
+              10.0,
+              10.0
+            ],
+            [
+              410.0,
+              10.0
+            ],
+            [
+              410.0,
+              287.0
+            ],
+            [
+              10.0,
+              287.0
+            ]
+          ],
+          "closed": true,
+          "has_arcs": false
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00003",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "94",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            10.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00004",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "95",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            10.0,
+            297.0
+          ],
+          "end": [
+            10.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00005",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "96",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "1",
+          "position": [
+            60.0,
+            8.0
+          ],
+          "height": null,
+          "text_role": "dimension_value",
+          "numeric_value": 1.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00006",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "97",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            110.0,
+            0.0
+          ],
+          "end": [
+            110.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00007",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "98",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            110.0,
+            297.0
+          ],
+          "end": [
+            110.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00008",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "99",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "2",
+          "position": [
+            160.0,
+            8.0
+          ],
+          "height": null,
+          "text_role": "dimension_value",
+          "numeric_value": 2.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00009",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "9A",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            210.0,
+            0.0
+          ],
+          "end": [
+            210.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00010",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "9B",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            210.0,
+            297.0
+          ],
+          "end": [
+            210.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00011",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "9C",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "3",
+          "position": [
+            260.0,
+            8.0
+          ],
+          "height": null,
+          "text_role": "dimension_value",
+          "numeric_value": 3.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00012",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "9D",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            310.0,
+            0.0
+          ],
+          "end": [
+            310.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00013",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "9E",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            310.0,
+            297.0
+          ],
+          "end": [
+            310.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00014",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "MTEXT",
+        "handle": "9F",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "text": "4",
+          "position": [
+            360.0,
+            8.0
+          ],
+          "height": null,
+          "text_role": "dimension_value",
+          "numeric_value": 4.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00015",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A0",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            410.0,
+            0.0
+          ],
+          "end": [
+            410.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00016",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A1",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            410.0,
+            297.0
+          ],
+          "end": [
+            410.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00017",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A2",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            0.0,
+            10.0
+          ],
+          "end": [
+            10.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00018",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A3",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            420.0,
+            10.0
+          ],
+          "end": [
+            410.0,
+            10.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00020",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A5",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            0.0,
+            102.33333333333333
+          ],
+          "end": [
+            10.0,
+            102.33333333333333
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00021",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A6",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            420.0,
+            102.33333333333333
+          ],
+          "end": [
+            410.0,
+            102.33333333333333
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00023",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A8",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            0.0,
+            194.66666666666666
+          ],
+          "end": [
+            10.0,
+            194.66666666666666
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00024",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "A9",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            420.0,
+            194.66666666666666
+          ],
+          "end": [
+            410.0,
+            194.66666666666666
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00026",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "AB",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            0.0,
+            287.0
+          ],
+          "end": [
+            10.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00027",
+        "source_file": "Blueprint_PL03_ShelledBox.dxf",
+        "entity_type": "LINE",
+        "handle": "AC",
+        "layer": "BORDER",
+        "linetype": "BYLAYER",
+        "color": 256,
+        "geometry": {
+          "start": [
+            420.0,
+            287.0
+          ],
+          "end": [
+            410.0,
+            287.0
+          ],
+          "length": 10.0
+        },
+        "supported": true,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "ignored_layer",
+      "confidence": 0.5
+    }
+  ],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 52,
+        "kept_entities": 48,
+        "quarantined_entities": 4,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 48,
+        "kept_entities": 48,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 48,
+        "kept_entities": 48,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 48,
+        "kept_entities": 24,
+        "quarantined_entities": 0,
+        "removed_entities": 24
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 24,
+        "kept_entities": 24,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

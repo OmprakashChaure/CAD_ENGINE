@@ -1,0 +1,59 @@
+{
+  "shared_vertices": {
+    "vtx_00001": {
+      "vertex_id": "vtx_00001",
+      "x": 4.0,
+      "y": 4.0,
+      "connected_entities": [
+        "ent_00001",
+        "ent_00002"
+      ]
+    },
+    "vtx_00002": {
+      "vertex_id": "vtx_00002",
+      "x": 4.0,
+      "y": -4.0,
+      "connected_entities": [
+        "ent_00001",
+        "ent_00002"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "source_entity_id": "ent_00001",
+      "target_entity_id": "ent_00002",
+      "shared_vertex_id": "vtx_00001"
+    }
+  ],
+  "adjacency_list": {
+    "ent_00001": [
+      "ent_00002"
+    ],
+    "ent_00002": [
+      "ent_00001"
+    ]
+  },
+  "orphan_entities": [
+    "ent_00003",
+    "ent_00004",
+    "ent_00005",
+    "ent_00006",
+    "ent_00007",
+    "ent_00009",
+    "ent_00011"
+  ],
+  "statistics": {
+    "total_vertices": 14,
+    "shared_vertices": 2,
+    "orphan_vertices": 12,
+    "entities_processed": 9,
+    "near_match_merges": 0,
+    "total_edges": 1,
+    "connected_entities": 2,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 7,
+    "total_input_entities": 9
+  }
+}

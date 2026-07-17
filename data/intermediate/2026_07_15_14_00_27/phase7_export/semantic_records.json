@@ -1,0 +1,222 @@
+[
+  {
+    "drawing_id": "Aero_LW01_MilledPocket",
+    "part_type": "mechanical_component",
+    "overall_dimensions": {
+      "width": 200.0,
+      "height": 100.0
+    },
+    "features": [
+      {
+        "feature_id": "corner_fillets",
+        "feature_class": "fillet_group",
+        "parameters": {
+          "radius": 10.0,
+          "count": 4,
+          "positions": [
+            [
+              180.0,
+              20.0
+            ],
+            [
+              180.0,
+              80.0
+            ],
+            [
+              20.0,
+              80.0
+            ],
+            [
+              20.0,
+              20.0
+            ]
+          ]
+        }
+      },
+      {
+        "feature_id": "pocket_1",
+        "feature_class": "pocket",
+        "parameters": {
+          "pocket_width": 80.0,
+          "pocket_length": 180.0,
+          "perimeter_wall": 10.0
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "mirror_symmetry_vertical",
+        "relationship_type": "mirror_symmetry",
+        "feature_ids": [],
+        "parameters": {
+          "axis": "vertical",
+          "axis_position": 100.0,
+          "pair_count": 3
+        }
+      },
+      {
+        "relationship_id": "mirror_symmetry_horizontal",
+        "relationship_type": "mirror_symmetry",
+        "feature_ids": [],
+        "parameters": {
+          "axis": "horizontal",
+          "axis_position": 50.0,
+          "pair_count": 3
+        }
+      }
+    ],
+    "metadata": {
+      "feature_count": 2,
+      "relationship_count": 2,
+      "has_hierarchy": false
+    }
+  },
+  {
+    "drawing_id": "Aero_LW03_SparWeb",
+    "part_type": "mechanical_component",
+    "overall_dimensions": {
+      "width": 300.0,
+      "height": 50.0
+    },
+    "features": [
+      {
+        "feature_id": "slot_array_1",
+        "feature_class": "slot_array",
+        "parameters": {
+          "count": 3,
+          "width": 30.0,
+          "length": 80.0,
+          "orientation": "horizontal",
+          "positions": [
+            {
+              "center": [
+                50.0,
+                25.0
+              ]
+            },
+            {
+              "center": [
+                150.0,
+                25.0
+              ]
+            },
+            {
+              "center": [
+                250.0,
+                25.0
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "feature_id": "pocket_1",
+        "feature_class": "pocket",
+        "parameters": {
+          "pocket_width": 30.0,
+          "pocket_length": 80.0,
+          "perimeter_wall": 80.0
+        }
+      },
+      {
+        "feature_id": "pocket_2",
+        "feature_class": "pocket",
+        "parameters": {
+          "pocket_width": 30.0,
+          "pocket_length": 80.0,
+          "perimeter_wall": 80.0
+        }
+      },
+      {
+        "feature_id": "pocket_3",
+        "feature_class": "pocket",
+        "parameters": {
+          "pocket_width": 30.0,
+          "pocket_length": 80.0,
+          "perimeter_wall": 80.0
+        }
+      },
+      {
+        "feature_id": "dimension_annotations",
+        "feature_class": "dimension_annotations",
+        "parameters": {
+          "dimensions": [
+            {
+              "text": "300MM SPAR LENGTH",
+              "value": 300.0,
+              "numbers": [
+                300.0
+              ],
+              "orientation": "horizontal",
+              "span": 300.0,
+              "center": [
+                150.0,
+                0.0
+              ],
+              "handle": "94"
+            },
+            {
+              "text": "50MM SPAR HEIGHT",
+              "value": 50.0,
+              "numbers": [
+                50.0
+              ],
+              "orientation": "vertical",
+              "span": 50.0,
+              "center": [
+                0.0,
+                25.0
+              ],
+              "handle": "A3"
+            },
+            {
+              "text": "20MM INTERNAL WEB",
+              "value": 20.0,
+              "numbers": [
+                20.0
+              ],
+              "orientation": "horizontal",
+              "span": 20.0,
+              "center": [
+                100.0,
+                50.0
+              ],
+              "handle": "B2"
+            }
+          ],
+          "pattern_dimensions": []
+        }
+      },
+      {
+        "feature_id": "unknown_facts_container",
+        "feature_class": "unknown_facts",
+        "parameters": {
+          "unknown_dimensions": [
+            {
+              "text": "300MM SPAR LENGTH",
+              "value": 300.0,
+              "handle": "94"
+            },
+            {
+              "text": "50MM SPAR HEIGHT",
+              "value": 50.0,
+              "handle": "A3"
+            },
+            {
+              "text": "20MM INTERNAL WEB",
+              "value": 20.0,
+              "handle": "B2"
+            }
+          ],
+          "unknown_annotations": []
+        }
+      }
+    ],
+    "relationships": [],
+    "metadata": {
+      "feature_count": 6,
+      "relationship_count": 0,
+      "has_hierarchy": false
+    }
+  }
+]

@@ -1,0 +1,472 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            160.0,
+            0.0
+          ],
+          [
+            160.0,
+            160.0
+          ],
+          [
+            0.0,
+            160.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            15.0,
+            10.0
+          ],
+          [
+            70.0,
+            10.0
+          ],
+          [
+            75.0,
+            15.0
+          ],
+          [
+            75.0,
+            70.0
+          ],
+          [
+            70.0,
+            75.0
+          ],
+          [
+            15.0,
+            75.0
+          ],
+          [
+            10.0,
+            70.0
+          ],
+          [
+            10.0,
+            15.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            90.0,
+            10.0
+          ],
+          [
+            145.0,
+            10.0
+          ],
+          [
+            150.0,
+            15.0
+          ],
+          [
+            150.0,
+            70.0
+          ],
+          [
+            145.0,
+            75.0
+          ],
+          [
+            90.0,
+            75.0
+          ],
+          [
+            85.0,
+            70.0
+          ],
+          [
+            85.0,
+            15.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "92",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            15.0,
+            85.0
+          ],
+          [
+            70.0,
+            85.0
+          ],
+          [
+            75.0,
+            90.0
+          ],
+          [
+            75.0,
+            145.0
+          ],
+          [
+            70.0,
+            150.0
+          ],
+          [
+            15.0,
+            150.0
+          ],
+          [
+            10.0,
+            145.0
+          ],
+          [
+            10.0,
+            90.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            90.0,
+            85.0
+          ],
+          [
+            145.0,
+            85.0
+          ],
+          [
+            150.0,
+            90.0
+          ],
+          [
+            150.0,
+            145.0
+          ],
+          [
+            145.0,
+            150.0
+          ],
+          [
+            90.0,
+            150.0
+          ],
+          [
+            85.0,
+            145.0
+          ],
+          [
+            85.0,
+            90.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -20.0,
+          80.0
+        ],
+        "end": [
+          180.0,
+          80.0
+        ],
+        "length": 200.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          80.0,
+          -20.0
+        ],
+        "end": [
+          80.0,
+          180.0
+        ],
+        "length": 200.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "96",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 160.0,
+        "text": "160mm SQUARE PLATE",
+        "position": [
+          0.0,
+          -35.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            160.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A5",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 160.0,
+        "text": "160mm SQUARE PLATE",
+        "position": [
+          -35.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            160.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B4",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 10.0,
+        "text": "10mm CENTER WEB",
+        "position": [
+          75.0,
+          180.0
+        ],
+        "target_points": [
+          [
+            75.0,
+            160.0
+          ],
+          [
+            85.0,
+            160.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Aero_LW10_Orthogrid.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C4",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "16X 5x5mm CORNER CHAMFER",
+        "position": [
+          200.0,
+          180.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 5.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 11,
+        "kept_entities": 11,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

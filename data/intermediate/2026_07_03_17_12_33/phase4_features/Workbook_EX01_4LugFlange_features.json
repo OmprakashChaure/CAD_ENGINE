@@ -1,0 +1,247 @@
+{
+  "hole_candidates": {
+    "hole_candidates": [
+      {
+        "candidate_id": "hc_00001",
+        "candidate_type": "multi_radius",
+        "center": [
+          150.0,
+          150.0
+        ],
+        "radii": [
+          27.5,
+          45.0
+        ],
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002"
+        ],
+        "radius_count": 2
+      },
+      {
+        "candidate_id": "hc_00002",
+        "candidate_type": "multi_radius",
+        "center": [
+          192.4264,
+          192.4264
+        ],
+        "radii": [
+          10.0,
+          18.0
+        ],
+        "entity_ids": [
+          "ent_00003",
+          "ent_00004"
+        ],
+        "radius_count": 2
+      },
+      {
+        "candidate_id": "hc_00003",
+        "candidate_type": "multi_radius",
+        "center": [
+          107.5736,
+          192.4264
+        ],
+        "radii": [
+          10.0,
+          18.0
+        ],
+        "entity_ids": [
+          "ent_00007",
+          "ent_00008"
+        ],
+        "radius_count": 2
+      },
+      {
+        "candidate_id": "hc_00004",
+        "candidate_type": "multi_radius",
+        "center": [
+          107.5736,
+          107.5736
+        ],
+        "radii": [
+          10.0,
+          18.0
+        ],
+        "entity_ids": [
+          "ent_00011",
+          "ent_00012"
+        ],
+        "radius_count": 2
+      },
+      {
+        "candidate_id": "hc_00005",
+        "candidate_type": "multi_radius",
+        "center": [
+          192.4264,
+          107.5736
+        ],
+        "radii": [
+          10.0,
+          18.0
+        ],
+        "entity_ids": [
+          "ent_00015",
+          "ent_00016"
+        ],
+        "radius_count": 2
+      }
+    ],
+    "statistics": {
+      "total_candidates": 5,
+      "single_radius_candidates": 0,
+      "multi_radius_candidates": 5
+    }
+  },
+  "slot_candidates": {
+    "slot_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "polylines_analyzed": 0,
+      "contours_analyzed": 0
+    }
+  },
+  "radial_patterns": {
+    "radial_patterns": [],
+    "statistics": {
+      "total_patterns": 0,
+      "candidates_analyzed": 0
+    }
+  },
+  "symmetry": {
+    "symmetry_groups": [
+      {
+        "group_id": "sym_00001",
+        "axis": "vertical",
+        "axis_position": 150.0,
+        "member_pairs": [
+          [
+            "ent_00003",
+            "ent_00007"
+          ],
+          [
+            "ent_00004",
+            "ent_00008"
+          ],
+          [
+            "ent_00005",
+            "ent_00009"
+          ],
+          [
+            "ent_00006",
+            "ent_00010"
+          ],
+          [
+            "ent_00011",
+            "ent_00015"
+          ],
+          [
+            "ent_00012",
+            "ent_00016"
+          ],
+          [
+            "ent_00013",
+            "ent_00017"
+          ],
+          [
+            "ent_00014",
+            "ent_00018"
+          ]
+        ],
+        "pair_count": 8
+      },
+      {
+        "group_id": "sym_00002",
+        "axis": "horizontal",
+        "axis_position": 150.0,
+        "member_pairs": [
+          [
+            "ent_00003",
+            "ent_00015"
+          ],
+          [
+            "ent_00004",
+            "ent_00016"
+          ],
+          [
+            "ent_00005",
+            "ent_00017"
+          ],
+          [
+            "ent_00006",
+            "ent_00018"
+          ],
+          [
+            "ent_00007",
+            "ent_00011"
+          ],
+          [
+            "ent_00008",
+            "ent_00012"
+          ],
+          [
+            "ent_00009",
+            "ent_00013"
+          ],
+          [
+            "ent_00010",
+            "ent_00014"
+          ]
+        ],
+        "pair_count": 8
+      }
+    ],
+    "statistics": {
+      "total_groups": 2,
+      "vertical_pairs": 8,
+      "horizontal_pairs": 8,
+      "entities_analyzed": 22
+    }
+  },
+  "feature_regions": {
+    "feature_regions": [],
+    "unassigned_candidates": {
+      "holes": [
+        "hc_00001",
+        "hc_00002",
+        "hc_00003",
+        "hc_00004",
+        "hc_00005"
+      ],
+      "slots": [],
+      "patterns": []
+    },
+    "statistics": {
+      "total_feature_regions": 0,
+      "total_assigned_candidates": 0,
+      "total_unassigned_candidates": 5
+    }
+  },
+  "statistics": {
+    "holes": {
+      "total_candidates": 5,
+      "single_radius_candidates": 0,
+      "multi_radius_candidates": 5
+    },
+    "slots": {
+      "total_candidates": 0,
+      "polylines_analyzed": 0,
+      "contours_analyzed": 0
+    },
+    "radial_patterns": {
+      "total_patterns": 0,
+      "candidates_analyzed": 0
+    },
+    "symmetry": {
+      "total_groups": 2,
+      "vertical_pairs": 8,
+      "horizontal_pairs": 8,
+      "entities_analyzed": 22
+    },
+    "feature_regions": {
+      "total_feature_regions": 0,
+      "total_assigned_candidates": 0,
+      "total_unassigned_candidates": 5
+    }
+  }
+}

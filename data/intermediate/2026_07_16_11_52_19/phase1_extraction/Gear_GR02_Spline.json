@@ -1,0 +1,517 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 70.0,
+        "diameter": 140.0,
+        "area": 15393.804002589986
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            125.0,
+            100.0
+          ],
+          [
+            124.69220851487844,
+            103.91086162600577
+          ],
+          [
+            131.30072322348178,
+            106.6531741061683
+          ],
+          [
+            130.43380852144492,
+            109.88854381999832
+          ],
+          [
+            123.33951066243004,
+            108.95919873863251
+          ],
+          [
+            121.65063509461098,
+            112.5
+          ],
+          [
+            119.42864903642428,
+            115.73300977624594
+          ],
+          [
+            123.78063441527662,
+            121.41217940348346
+          ],
+          [
+            121.41217940348346,
+            123.78063441527661
+          ],
+          [
+            115.73300977624594,
+            119.42864903642428
+          ],
+          [
+            112.5,
+            121.65063509461096
+          ],
+          [
+            108.95919873863251,
+            123.33951066243004
+          ],
+          [
+            109.88854381999832,
+            130.43380852144492
+          ],
+          [
+            106.65317410616831,
+            131.30072322348178
+          ],
+          [
+            103.91086162600577,
+            124.69220851487844
+          ],
+          [
+            100.0,
+            125.0
+          ],
+          [
+            96.08913837399423,
+            124.69220851487844
+          ],
+          [
+            93.3468258938317,
+            131.30072322348178
+          ],
+          [
+            90.11145618000168,
+            130.43380852144492
+          ],
+          [
+            91.0408012613675,
+            123.33951066243004
+          ],
+          [
+            87.5,
+            121.65063509461098
+          ],
+          [
+            84.26699022375406,
+            119.42864903642428
+          ],
+          [
+            78.58782059651655,
+            123.78063441527662
+          ],
+          [
+            76.21936558472339,
+            121.41217940348346
+          ],
+          [
+            80.57135096357572,
+            115.73300977624595
+          ],
+          [
+            78.34936490538904,
+            112.50000000000001
+          ],
+          [
+            76.66048933756996,
+            108.95919873863252
+          ],
+          [
+            69.56619147855508,
+            109.88854381999833
+          ],
+          [
+            68.69927677651822,
+            106.65317410616831
+          ],
+          [
+            75.30779148512156,
+            103.91086162600578
+          ],
+          [
+            75.0,
+            100.0
+          ],
+          [
+            75.30779148512156,
+            96.08913837399423
+          ],
+          [
+            68.69927677651822,
+            93.3468258938317
+          ],
+          [
+            69.56619147855508,
+            90.11145618000168
+          ],
+          [
+            76.66048933756996,
+            91.0408012613675
+          ],
+          [
+            78.34936490538902,
+            87.5
+          ],
+          [
+            80.57135096357572,
+            84.26699022375406
+          ],
+          [
+            76.21936558472338,
+            78.58782059651655
+          ],
+          [
+            78.58782059651654,
+            76.21936558472339
+          ],
+          [
+            84.26699022375405,
+            80.57135096357574
+          ],
+          [
+            87.49999999999999,
+            78.34936490538904
+          ],
+          [
+            91.04080126136748,
+            76.66048933756996
+          ],
+          [
+            90.11145618000168,
+            69.56619147855508
+          ],
+          [
+            93.34682589383169,
+            68.69927677651822
+          ],
+          [
+            96.08913837399422,
+            75.30779148512156
+          ],
+          [
+            100.0,
+            75.0
+          ],
+          [
+            103.91086162600577,
+            75.30779148512156
+          ],
+          [
+            106.65317410616831,
+            68.69927677651822
+          ],
+          [
+            109.88854381999832,
+            69.56619147855508
+          ],
+          [
+            108.95919873863251,
+            76.66048933756996
+          ],
+          [
+            112.49999999999999,
+            78.34936490538902
+          ],
+          [
+            115.73300977624592,
+            80.57135096357572
+          ],
+          [
+            121.41217940348345,
+            76.21936558472338
+          ],
+          [
+            123.7806344152766,
+            78.58782059651652
+          ],
+          [
+            119.42864903642426,
+            84.26699022375405
+          ],
+          [
+            121.65063509461096,
+            87.49999999999999
+          ],
+          [
+            123.33951066243003,
+            91.04080126136748
+          ],
+          [
+            130.43380852144492,
+            90.11145618000168
+          ],
+          [
+            131.30072322348178,
+            93.34682589383168
+          ],
+          [
+            124.69220851487844,
+            96.08913837399422
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "LINE",
+      "handle": "90",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          15.0,
+          100.0
+        ],
+        "end": [
+          185.0,
+          100.0
+        ],
+        "length": 170.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          15.0
+        ],
+        "end": [
+          100.0,
+          185.0
+        ],
+        "length": 170.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "92",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 140.0,
+        "text": "%%C140mm OVERALL HUB",
+        "position": [
+          30.0,
+          200.0
+        ],
+        "target_points": [
+          [
+            30.0,
+            100.0
+          ],
+          [
+            170.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 50.0,
+        "text": "%%C50mm MINOR DIA",
+        "position": [
+          -20.0,
+          75.0
+        ],
+        "target_points": [
+          [
+            100.0,
+            75.0
+          ],
+          [
+            100.0,
+            125.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 64.0,
+        "text": "%%C64mm MAJOR DIA",
+        "position": [
+          220.0,
+          68.0
+        ],
+        "target_points": [
+          [
+            100.0,
+            68.0
+          ],
+          [
+            100.0,
+            132.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Gear_GR02_Spline.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "12-TOOTH INTERNAL SPLINE\n TO ISO 14",
+        "position": [
+          160.0,
+          40.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 12.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

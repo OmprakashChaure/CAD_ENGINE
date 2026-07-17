@@ -1,0 +1,149 @@
+{
+  "hole_candidates": {
+    "hole_candidates": [
+      {
+        "candidate_id": "hc_00001",
+        "candidate_type": "single_radius",
+        "center": [
+          20.0,
+          50.0
+        ],
+        "radii": [
+          6.0
+        ],
+        "entity_ids": [
+          "ent_00004"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00002",
+        "candidate_type": "single_radius",
+        "center": [
+          130.0,
+          50.0
+        ],
+        "radii": [
+          6.0
+        ],
+        "entity_ids": [
+          "ent_00007"
+        ],
+        "radius_count": 1
+      }
+    ],
+    "statistics": {
+      "total_candidates": 2,
+      "single_radius_candidates": 2,
+      "multi_radius_candidates": 0
+    }
+  },
+  "slot_candidates": {
+    "slot_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "polylines_analyzed": 1,
+      "contours_analyzed": 0
+    }
+  },
+  "radial_patterns": {
+    "radial_patterns": [],
+    "statistics": {
+      "total_patterns": 0,
+      "candidates_analyzed": 2
+    }
+  },
+  "symmetry": {
+    "symmetry_groups": [
+      {
+        "group_id": "sym_00001",
+        "axis": "vertical",
+        "axis_position": 75.0,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00003"
+          ],
+          [
+            "ent_00004",
+            "ent_00007"
+          ],
+          [
+            "ent_00005",
+            "ent_00008"
+          ],
+          [
+            "ent_00006",
+            "ent_00009"
+          ]
+        ],
+        "pair_count": 4
+      }
+    ],
+    "statistics": {
+      "total_groups": 1,
+      "vertical_pairs": 4,
+      "horizontal_pairs": 0,
+      "entities_analyzed": 9
+    }
+  },
+  "feature_regions": {
+    "feature_regions": [
+      {
+        "region_id": "reg_00004",
+        "hole_candidate_ids": [
+          "hc_00001"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00007",
+        "hole_candidate_ids": [
+          "hc_00002"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      }
+    ],
+    "unassigned_candidates": {
+      "holes": [],
+      "slots": [],
+      "patterns": []
+    },
+    "statistics": {
+      "total_feature_regions": 2,
+      "total_assigned_candidates": 2,
+      "total_unassigned_candidates": 0
+    }
+  },
+  "statistics": {
+    "holes": {
+      "total_candidates": 2,
+      "single_radius_candidates": 2,
+      "multi_radius_candidates": 0
+    },
+    "slots": {
+      "total_candidates": 0,
+      "polylines_analyzed": 1,
+      "contours_analyzed": 0
+    },
+    "radial_patterns": {
+      "total_patterns": 0,
+      "candidates_analyzed": 2
+    },
+    "symmetry": {
+      "total_groups": 1,
+      "vertical_pairs": 4,
+      "horizontal_pairs": 0,
+      "entities_analyzed": 9
+    },
+    "feature_regions": {
+      "total_feature_regions": 2,
+      "total_assigned_candidates": 2,
+      "total_unassigned_candidates": 0
+    }
+  }
+}

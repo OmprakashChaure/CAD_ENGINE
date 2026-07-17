@@ -1,0 +1,940 @@
+{
+  "final_dataset": {
+    "drawing_id": "Kinematic_LK08_FollowerArm",
+    "final_samples": [
+      {
+        "sample_id": "smp_00001",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00004"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 120.2664
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 120.2664
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "sc_00001",
+            "candidate_type": "slot",
+            "aspect_ratio": 3.5455
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              12.0,
+              22.0
+            ],
+            "count": 2
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 22.0
+        },
+        "meta": {
+          "entity_id": "ent_00001",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00002",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00004"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 120.2664
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 120.2664
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "sc_00001",
+            "candidate_type": "slot",
+            "aspect_ratio": 3.5455
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00002",
+            "radii": [
+              6.0,
+              14.0
+            ],
+            "count": 2
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 14.0
+        },
+        "meta": {
+          "entity_id": "ent_00002",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00003",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00002"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 22.0
+            },
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 14.0
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "sc_00001",
+            "candidate_type": "slot",
+            "aspect_ratio": 3.5455
+          },
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 120.2664
+        },
+        "meta": {
+          "entity_id": "ent_00003",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 2,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00004",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00002"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 22.0
+            },
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 14.0
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "sc_00001",
+            "candidate_type": "slot",
+            "aspect_ratio": 3.5455
+          },
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 120.2664
+        },
+        "meta": {
+          "entity_id": "ent_00004",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 2,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00005",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 2
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              12.0,
+              22.0
+            ],
+            "count": 2
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [
+            {
+              "dimension_type": "diameter",
+              "value": 24.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 12.0
+        },
+        "meta": {
+          "entity_id": "ent_00005",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 2,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00006",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 2
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              12.0,
+              22.0
+            ],
+            "count": 2
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [
+            {
+              "dimension_type": "radius",
+              "value": 12.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "diameter",
+          "value": 24.0
+        },
+        "meta": {
+          "entity_id": "ent_00005",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 2,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00007",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00002",
+            "candidate_type": "multi_radius",
+            "radius_count": 2
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00002",
+            "radii": [
+              6.0,
+              14.0
+            ],
+            "count": 2
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [
+            {
+              "dimension_type": "diameter",
+              "value": 12.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 6.0
+        },
+        "meta": {
+          "entity_id": "ent_00006",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 2,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00008",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00002",
+            "candidate_type": "multi_radius",
+            "radius_count": 2
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00002",
+            "radii": [
+              6.0,
+              14.0
+            ],
+            "count": 2
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [
+            {
+              "dimension_type": "radius",
+              "value": 6.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "diameter",
+          "value": 12.0
+        },
+        "meta": {
+          "entity_id": "ent_00006",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 2,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00009",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 70.0
+        },
+        "meta": {
+          "entity_id": "ent_00007",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      },
+      {
+        "sample_id": "smp_00010",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 70.0
+        },
+        "meta": {
+          "entity_id": "ent_00008",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      },
+      {
+        "sample_id": "smp_00011",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 50.0
+        },
+        "meta": {
+          "entity_id": "ent_00009",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      },
+      {
+        "sample_id": "smp_00012",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 50.0
+        },
+        "meta": {
+          "entity_id": "ent_00010",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      },
+      {
+        "sample_id": "smp_00013",
+        "drawing_id": "Kinematic_LK08_FollowerArm",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 180.0
+        },
+        "meta": {
+          "entity_id": "ent_00011",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      }
+    ],
+    "statistics": {
+      "total_samples": 13,
+      "leakage_free": 13,
+      "with_topology_evidence": 4,
+      "with_repetition_evidence": 0,
+      "with_concentric_evidence": 6,
+      "with_feature_evidence": 8,
+      "with_hierarchy_evidence": 0,
+      "signal_distribution": {
+        "3": 2,
+        "2": 6,
+        "0": 5
+      },
+      "signal_strength": {
+        "strong": 2,
+        "medium": 6,
+        "weak": 5
+      }
+    }
+  },
+  "supervision": {
+    "supervision_entities": [
+      {
+        "entity_id": "ent_00012",
+        "entity_type": "DIMENSION",
+        "value": 120.0,
+        "dimension_type": "linear",
+        "text": "120mm FOLLOWER PITCH"
+      },
+      {
+        "entity_id": "ent_00014",
+        "entity_type": "MTEXT",
+        "value": 12.0,
+        "dimension_type": "diameter_value",
+        "text": "FOLLOWER ROLLER HUB\n \u00d812mm ID PIN BORE"
+      }
+    ],
+    "geometry_entities_count": 11,
+    "computable_dimensions": [
+      {
+        "entity_id": "ent_00001",
+        "dimension_type": "radius",
+        "value": 22.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00002",
+        "dimension_type": "radius",
+        "value": 14.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00003",
+        "dimension_type": "length",
+        "value": 120.2664,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00004",
+        "dimension_type": "length",
+        "value": 120.2664,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00005",
+        "dimension_type": "radius",
+        "value": 12.0,
+        "derivation": "circle_radius"
+      },
+      {
+        "entity_id": "ent_00005",
+        "dimension_type": "diameter",
+        "value": 24.0,
+        "derivation": "circle_diameter"
+      },
+      {
+        "entity_id": "ent_00006",
+        "dimension_type": "radius",
+        "value": 6.0,
+        "derivation": "circle_radius"
+      },
+      {
+        "entity_id": "ent_00006",
+        "dimension_type": "diameter",
+        "value": 12.0,
+        "derivation": "circle_diameter"
+      },
+      {
+        "entity_id": "ent_00007",
+        "dimension_type": "length",
+        "value": 70.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00008",
+        "dimension_type": "length",
+        "value": 70.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00009",
+        "dimension_type": "length",
+        "value": 50.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00010",
+        "dimension_type": "length",
+        "value": 50.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00011",
+        "dimension_type": "length",
+        "value": 180.0,
+        "derivation": "line_endpoint_distance"
+      }
+    ],
+    "supervision_mappings": [
+      {
+        "supervision_entity_id": "ent_00012",
+        "geometry_entity_id": "ent_00001",
+        "supervision_value": 120.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00014",
+        "geometry_entity_id": "ent_00005",
+        "supervision_value": 12.0,
+        "mapping_method": "geometric_association"
+      }
+    ],
+    "unmapped_supervision": [],
+    "statistics": {
+      "total_supervision_entities": 2,
+      "total_geometry_entities": 11,
+      "total_computable_dimensions": 13,
+      "total_mapped": 2,
+      "total_unmapped": 0
+    }
+  },
+  "targets": {
+    "targets": [
+      {
+        "target_id": "tgt_00001",
+        "entity_id": "ent_00001",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 22.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00002",
+        "entity_id": "ent_00002",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 14.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00003",
+        "entity_id": "ent_00003",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 120.2664,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00004",
+        "entity_id": "ent_00004",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 120.2664,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00005",
+        "entity_id": "ent_00005",
+        "entity_type": "CIRCLE",
+        "dimension_type": "radius",
+        "target_value": 12.0,
+        "derivation": "circle_radius_attribute",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00006",
+        "entity_id": "ent_00005",
+        "entity_type": "CIRCLE",
+        "dimension_type": "diameter",
+        "target_value": 24.0,
+        "derivation": "circle_diameter_computed",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00007",
+        "entity_id": "ent_00006",
+        "entity_type": "CIRCLE",
+        "dimension_type": "radius",
+        "target_value": 6.0,
+        "derivation": "circle_radius_attribute",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00008",
+        "entity_id": "ent_00006",
+        "entity_type": "CIRCLE",
+        "dimension_type": "diameter",
+        "target_value": 12.0,
+        "derivation": "circle_diameter_computed",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00009",
+        "entity_id": "ent_00007",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 70.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00010",
+        "entity_id": "ent_00008",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 70.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00011",
+        "entity_id": "ent_00009",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 50.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00012",
+        "entity_id": "ent_00010",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 50.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00013",
+        "entity_id": "ent_00011",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 180.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      }
+    ],
+    "statistics": {
+      "total_targets": 13,
+      "eligible_targets": 13,
+      "ineligible_targets": 0,
+      "by_type": {
+        "radius": 4,
+        "length": 7,
+        "diameter": 2
+      },
+      "by_entity_type": {
+        "ARC": 2,
+        "LINE": 7,
+        "CIRCLE": 4
+      }
+    }
+  },
+  "training_context": {
+    "geometry_count": 11,
+    "topology_edges": 4,
+    "feature_count": 3,
+    "repetition_count": 0,
+    "concentric_groups": 2,
+    "hole_candidates": 2,
+    "slot_candidates": 1,
+    "radial_patterns": 0
+  },
+  "statistics": {
+    "supervision": {
+      "total_supervision_entities": 2,
+      "total_geometry_entities": 11,
+      "total_computable_dimensions": 13,
+      "total_mapped": 2,
+      "total_unmapped": 0
+    },
+    "targets": {
+      "total_targets": 13,
+      "eligible_targets": 13,
+      "ineligible_targets": 0,
+      "by_type": {
+        "radius": 4,
+        "length": 7,
+        "diameter": 2
+      },
+      "by_entity_type": {
+        "ARC": 2,
+        "LINE": 7,
+        "CIRCLE": 4
+      }
+    },
+    "conditioning": {
+      "total_samples": 13,
+      "leakage_issues": 0,
+      "leakage_free": 13
+    },
+    "final_dataset": {
+      "total_samples": 13,
+      "leakage_free": 13,
+      "with_topology_evidence": 4,
+      "with_repetition_evidence": 0,
+      "with_concentric_evidence": 6,
+      "with_feature_evidence": 8,
+      "with_hierarchy_evidence": 0,
+      "signal_distribution": {
+        "3": 2,
+        "2": 6,
+        "0": 5
+      },
+      "signal_strength": {
+        "strong": 2,
+        "medium": 6,
+        "weak": 5
+      }
+    },
+    "context": {
+      "geometry_entities": 11,
+      "topology_edges": 4,
+      "feature_candidates": 3,
+      "repetition_groups": 0,
+      "context_packages": 11
+    }
+  }
+}

@@ -1,0 +1,922 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            80.0,
+            0.0
+          ],
+          [
+            80.0,
+            80.0
+          ],
+          [
+            0.0,
+            80.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "91",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          15.0,
+          15.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "92",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          15.0,
+          25.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "93",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          15.0,
+          35.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "94",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          15.0,
+          45.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "95",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          15.0,
+          55.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "96",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          15.0,
+          65.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "97",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          15.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "98",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          25.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "99",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          35.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9A",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          45.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9B",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          55.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9C",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          65.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9D",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          35.0,
+          15.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9E",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          35.0,
+          25.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9F",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          35.0,
+          45.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A0",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          35.0,
+          55.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A1",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          35.0,
+          65.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A2",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          15.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00020",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A3",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          25.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A4",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          35.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00022",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A5",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          45.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00023",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A6",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          55.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00024",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A7",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          45.0,
+          65.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00025",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A8",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          55.0,
+          15.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00026",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A9",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          55.0,
+          25.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00027",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AA",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          55.0,
+          35.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00028",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AB",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          55.0,
+          45.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00029",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AC",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          55.0,
+          55.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00030",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AD",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          55.0,
+          65.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00031",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AE",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          65.0,
+          15.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00032",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AF",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          65.0,
+          25.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00033",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "B0",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          65.0,
+          35.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00034",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "B1",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          65.0,
+          45.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00035",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "B2",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          65.0,
+          55.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00036",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "B3",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          65.0,
+          65.0
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00037",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B4",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 50.0,
+        "text": "50mm MATRIX ARRAY",
+        "position": [
+          15.0,
+          -15.0
+        ],
+        "target_points": [
+          [
+            15.0,
+            0.0
+          ],
+          [
+            65.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00038",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "C3",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 10.0,
+        "text": "10mm BUMP PITCH",
+        "position": [
+          -15.0,
+          15.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            15.0
+          ],
+          [
+            0.0,
+            25.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00040",
+      "source_file": "PCB_PC02_BGAGrid.dxf",
+      "entity_type": "MTEXT",
+      "handle": "D3",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "CENTRAL VOID\n FOR VIA ROUTING",
+        "position": [
+          50.0,
+          60.0
+        ],
+        "height": null,
+        "text_role": "general_note",
+        "numeric_value": null
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 39,
+        "kept_entities": 39,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 39,
+        "kept_entities": 39,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 39,
+        "kept_entities": 39,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 39,
+        "kept_entities": 39,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 39,
+        "kept_entities": 39,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

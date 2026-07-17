@@ -1,0 +1,356 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            -15.0,
+            10.0
+          ],
+          [
+            -8.0,
+            10.0
+          ],
+          [
+            -8.0,
+            -40.0
+          ],
+          [
+            -9.903688828678352,
+            -40.0
+          ],
+          [
+            -12.0,
+            0.0
+          ],
+          [
+            -15.0,
+            0.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            15.0,
+            10.0
+          ],
+          [
+            8.0,
+            10.0
+          ],
+          [
+            8.0,
+            -40.0
+          ],
+          [
+            9.903688828678352,
+            -40.0
+          ],
+          [
+            12.0,
+            0.0
+          ],
+          [
+            15.0,
+            0.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          20.0
+        ],
+        "end": [
+          0.0,
+          -50.0
+        ],
+        "length": 70.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "95",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 40.0,
+        "text": "40mm TAPER LENGTH",
+        "position": [
+          30.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            12.0,
+            0.0
+          ],
+          [
+            9.903688828678352,
+            -40.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A4",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 10.0,
+        "text": "10mm HEX HEIGHT",
+        "position": [
+          -35.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            -15.0,
+            0.0
+          ],
+          [
+            -15.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B3",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 16.0,
+        "text": "%%C16mm THRU BORE",
+        "position": [
+          -25.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            -8.0,
+            0.0
+          ],
+          [
+            8.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C5",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "1/2\" NPT TAPERED THREAD",
+        "position": [
+          50.0,
+          -10.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 0.5
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Fluid_PF02_HexBushing.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C7",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "30mm ACROSS FLATS",
+        "position": [
+          -60.0,
+          25.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [
+    {
+      "entity": {
+        "entity_id": "ent_00001",
+        "source_file": "Fluid_PF02_HexBushing.dxf",
+        "entity_type": "HATCH",
+        "handle": "90",
+        "layer": "HATCH",
+        "linetype": "BYLAYER",
+        "color": 7,
+        "geometry": null,
+        "supported": false,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "unsupported_geometry_type:HATCH",
+      "confidence": 0.5
+    },
+    {
+      "entity": {
+        "entity_id": "ent_00003",
+        "source_file": "Fluid_PF02_HexBushing.dxf",
+        "entity_type": "HATCH",
+        "handle": "92",
+        "layer": "HATCH",
+        "linetype": "BYLAYER",
+        "color": 7,
+        "geometry": null,
+        "supported": false,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "unsupported_geometry_type:HATCH",
+      "confidence": 0.5
+    }
+  ],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 10,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 8,
+        "quarantined_entities": 2,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

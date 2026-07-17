@@ -1,0 +1,933 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            300.0,
+            0.0
+          ],
+          [
+            300.0,
+            50.0
+          ],
+          [
+            0.0,
+            50.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          25.0,
+          25.0
+        ],
+        "radius": 6.5,
+        "diameter": 13.0,
+        "area": 132.73228961416876
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          25.0
+        ],
+        "end": [
+          40.0,
+          25.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "93",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          25.0,
+          10.0
+        ],
+        "end": [
+          25.0,
+          40.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "94",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          275.0,
+          25.0
+        ],
+        "radius": 6.5,
+        "diameter": 13.0,
+        "area": 132.73228961416876
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          260.0,
+          25.0
+        ],
+        "end": [
+          290.0,
+          25.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          275.0,
+          10.0
+        ],
+        "end": [
+          275.0,
+          40.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "97",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          15.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "ARC",
+      "handle": "98",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          15.0
+        ],
+        "radius": 4.0,
+        "start_angle": 0.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "99",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          92.0,
+          15.0
+        ],
+        "end": [
+          108.0,
+          15.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "9A",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          7.0
+        ],
+        "end": [
+          100.0,
+          23.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9B",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          140.0,
+          15.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "ARC",
+      "handle": "9C",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          140.0,
+          15.0
+        ],
+        "radius": 4.0,
+        "start_angle": 0.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "9D",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          132.0,
+          15.0
+        ],
+        "end": [
+          148.0,
+          15.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "9E",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          140.0,
+          7.0
+        ],
+        "end": [
+          140.0,
+          23.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          180.0,
+          15.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "ARC",
+      "handle": "A0",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          180.0,
+          15.0
+        ],
+        "radius": 4.0,
+        "start_angle": 0.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "A1",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          172.0,
+          15.0
+        ],
+        "end": [
+          188.0,
+          15.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "A2",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          180.0,
+          7.0
+        ],
+        "end": [
+          180.0,
+          23.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00020",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A3",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          35.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "ARC",
+      "handle": "A4",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          35.0
+        ],
+        "radius": 4.0,
+        "start_angle": 0.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00022",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "A5",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          92.0,
+          35.0
+        ],
+        "end": [
+          108.0,
+          35.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00023",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "A6",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          27.0
+        ],
+        "end": [
+          100.0,
+          43.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00024",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "A7",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          140.0,
+          35.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00025",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "ARC",
+      "handle": "A8",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          140.0,
+          35.0
+        ],
+        "radius": 4.0,
+        "start_angle": 0.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00026",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "A9",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          132.0,
+          35.0
+        ],
+        "end": [
+          148.0,
+          35.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00027",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "AA",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          140.0,
+          27.0
+        ],
+        "end": [
+          140.0,
+          43.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00028",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "AB",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          180.0,
+          35.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00029",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "ARC",
+      "handle": "AC",
+      "layer": "DETAILS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          180.0,
+          35.0
+        ],
+        "radius": 4.0,
+        "start_angle": 0.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00030",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "AD",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          172.0,
+          35.0
+        ],
+        "end": [
+          188.0,
+          35.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00031",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "AE",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          180.0,
+          27.0
+        ],
+        "end": [
+          180.0,
+          43.0
+        ],
+        "length": 16.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00032",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "LINE",
+      "handle": "AF",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -20.0,
+          25.0
+        ],
+        "end": [
+          320.0,
+          25.0
+        ],
+        "length": 340.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00033",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 300.0,
+        "text": "300mm OVERALL LENGTH",
+        "position": [
+          0.0,
+          -40.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            300.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00034",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "BF",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 250.0,
+        "text": "250mm MOUNTING SPAN",
+        "position": [
+          25.0,
+          -65.0
+        ],
+        "target_points": [
+          [
+            25.0,
+            25.0
+          ],
+          [
+            275.0,
+            25.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00035",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "CE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 50.0,
+        "text": "50mm BAR WIDTH",
+        "position": [
+          -40.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00037",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "MTEXT",
+      "handle": "DE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "6X M8x1.25 TERMINAL BORE",
+        "position": [
+          120.0,
+          90.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 8.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00039",
+      "source_file": "Electrical_BB01_PhaseBusbar.dxf",
+      "entity_type": "MTEXT",
+      "handle": "E0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "2X \u00d813mm ISOLATOR MOUNT",
+        "position": [
+          -30.0,
+          80.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 13.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 37,
+        "kept_entities": 37,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 37,
+        "kept_entities": 37,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 37,
+        "kept_entities": 37,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 37,
+        "kept_entities": 37,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 37,
+        "kept_entities": 37,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+# Numerical Thresholds — Single Source of Truth
+# All geometry processing tolerances are defined here.
+# Code loads these at startup and falls back to module constants if this file is absent.
+
+geometry:
+  degenerate_line_length: 0.0001
+  concentric_tolerance: 0.001
+
+  # Vertex indexer — Pass 1: exact-match snapping
+  # Number of decimal places to round endpoint coordinates to (4 = 0.0001 mm precision).
+  vertex_exact_match_decimals: 4
+
+  # Vertex indexer — Pass 2: near-match gap bridging
+  # Maximum gap (mm) between two orphan endpoints to merge them into a shared vertex.
+  # Only applied when EXACTLY ONE candidate exists within range (ambiguous = skipped).
+  vertex_near_match_tolerance: 0.001
+
+  tangent_tolerance_ratio: 0.02
+
+relationships:
+  # Maximum number of entities sharing a single vertex before it is treated as a
+  # noise hub (e.g. origin point) and skipped during adjacency building.
+  max_hub_connections: 8
+  proximity_ratio: 0.15
+
+features:
+  bolt_min_count: 3
+  bolt_radius_tolerance: 0.01
+  bolt_pcd_spread_max: 0.05
+  slot_aspect_ratio: 2.0
+  fillet_max_sweep: 120
+
+angles:
+  parallel_tolerance_deg: 0.5
+  perpendicular_tolerance_deg: 0.5

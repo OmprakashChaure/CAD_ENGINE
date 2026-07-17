@@ -1,0 +1,100 @@
+{
+  "hole_candidates": {
+    "hole_candidates": [
+      {
+        "candidate_id": "hc_00001",
+        "candidate_type": "single_radius",
+        "center": [
+          150.0,
+          148.0
+        ],
+        "radii": [
+          16.0
+        ],
+        "entity_ids": [
+          "ent_00002"
+        ],
+        "radius_count": 1
+      }
+    ],
+    "statistics": {
+      "total_candidates": 1,
+      "single_radius_candidates": 1,
+      "multi_radius_candidates": 0
+    }
+  },
+  "slot_candidates": {
+    "slot_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "polylines_analyzed": 1,
+      "contours_analyzed": 0
+    }
+  },
+  "radial_patterns": {
+    "radial_patterns": [],
+    "statistics": {
+      "total_patterns": 0,
+      "candidates_analyzed": 1
+    }
+  },
+  "symmetry": {
+    "symmetry_groups": [],
+    "statistics": {
+      "total_groups": 0,
+      "vertical_pairs": 0,
+      "horizontal_pairs": 0,
+      "entities_analyzed": 4
+    }
+  },
+  "feature_regions": {
+    "feature_regions": [
+      {
+        "region_id": "reg_00002",
+        "hole_candidate_ids": [
+          "hc_00001"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      }
+    ],
+    "unassigned_candidates": {
+      "holes": [],
+      "slots": [],
+      "patterns": []
+    },
+    "statistics": {
+      "total_feature_regions": 1,
+      "total_assigned_candidates": 1,
+      "total_unassigned_candidates": 0
+    }
+  },
+  "statistics": {
+    "holes": {
+      "total_candidates": 1,
+      "single_radius_candidates": 1,
+      "multi_radius_candidates": 0
+    },
+    "slots": {
+      "total_candidates": 0,
+      "polylines_analyzed": 1,
+      "contours_analyzed": 0
+    },
+    "radial_patterns": {
+      "total_patterns": 0,
+      "candidates_analyzed": 1
+    },
+    "symmetry": {
+      "total_groups": 0,
+      "vertical_pairs": 0,
+      "horizontal_pairs": 0,
+      "entities_analyzed": 4
+    },
+    "feature_regions": {
+      "total_feature_regions": 1,
+      "total_assigned_candidates": 1,
+      "total_unassigned_candidates": 0
+    }
+  }
+}

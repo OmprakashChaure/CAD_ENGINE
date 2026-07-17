@@ -1,0 +1,105 @@
+{
+  "shared_vertices": {
+    "vtx_00001": {
+      "vertex_id": "vtx_00001",
+      "x": 55.0,
+      "y": 35.0,
+      "connected_entities": [
+        "ent_00004",
+        "ent_00006"
+      ]
+    },
+    "vtx_00002": {
+      "vertex_id": "vtx_00002",
+      "x": 55.0,
+      "y": 25.0,
+      "connected_entities": [
+        "ent_00004",
+        "ent_00007"
+      ]
+    },
+    "vtx_00003": {
+      "vertex_id": "vtx_00003",
+      "x": 65.0,
+      "y": 25.0,
+      "connected_entities": [
+        "ent_00005",
+        "ent_00007"
+      ]
+    },
+    "vtx_00004": {
+      "vertex_id": "vtx_00004",
+      "x": 65.0,
+      "y": 35.0,
+      "connected_entities": [
+        "ent_00005",
+        "ent_00006"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "source_entity_id": "ent_00004",
+      "target_entity_id": "ent_00006",
+      "shared_vertex_id": "vtx_00001"
+    },
+    {
+      "source_entity_id": "ent_00004",
+      "target_entity_id": "ent_00007",
+      "shared_vertex_id": "vtx_00002"
+    },
+    {
+      "source_entity_id": "ent_00005",
+      "target_entity_id": "ent_00007",
+      "shared_vertex_id": "vtx_00003"
+    },
+    {
+      "source_entity_id": "ent_00005",
+      "target_entity_id": "ent_00006",
+      "shared_vertex_id": "vtx_00004"
+    }
+  ],
+  "adjacency_list": {
+    "ent_00004": [
+      "ent_00006",
+      "ent_00007"
+    ],
+    "ent_00006": [
+      "ent_00004",
+      "ent_00005"
+    ],
+    "ent_00007": [
+      "ent_00004",
+      "ent_00005"
+    ],
+    "ent_00005": [
+      "ent_00006",
+      "ent_00007"
+    ]
+  },
+  "orphan_entities": [
+    "ent_00001",
+    "ent_00002",
+    "ent_00003",
+    "ent_00008",
+    "ent_00009",
+    "ent_00010",
+    "ent_00011",
+    "ent_00012",
+    "ent_00014",
+    "ent_00016",
+    "ent_00018"
+  ],
+  "statistics": {
+    "total_vertices": 36,
+    "shared_vertices": 4,
+    "orphan_vertices": 32,
+    "entities_processed": 15,
+    "total_edges": 4,
+    "connected_entities": 4,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 11,
+    "total_input_entities": 15
+  }
+}

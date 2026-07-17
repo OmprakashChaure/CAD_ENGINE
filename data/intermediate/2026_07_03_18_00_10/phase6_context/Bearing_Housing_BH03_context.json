@@ -1,0 +1,141 @@
+{
+  "relationships": {
+    "relationships": [
+      {
+        "source_candidate_id": "hc_00002",
+        "target_candidate_id": "hc_00003",
+        "relationship_type": "repetition_sibling",
+        "context": "rep_00001"
+      }
+    ],
+    "adjacency": {
+      "hc_00002": [
+        "hc_00003"
+      ],
+      "hc_00003": [
+        "hc_00002"
+      ]
+    },
+    "statistics": {
+      "total_relationships": 1,
+      "connected_candidates": 2,
+      "by_type": {
+        "repetition_sibling": 1
+      }
+    }
+  },
+  "clusters": {
+    "clusters": [
+      {
+        "cluster_id": "ctx_00001",
+        "candidate_ids": [
+          "hc_00001"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "cluster_id": "ctx_00002",
+        "candidate_ids": [
+          "hc_00002",
+          "hc_00003"
+        ],
+        "size": 2,
+        "is_singleton": false
+      }
+    ],
+    "statistics": {
+      "total_clusters": 2,
+      "multi_candidate_clusters": 1,
+      "singleton_clusters": 1,
+      "max_cluster_size": 2,
+      "total_candidates": 3
+    }
+  },
+  "relationship_confidence": {
+    "scored_relationships": [
+      {
+        "source_candidate_id": "hc_00002",
+        "target_candidate_id": "hc_00003",
+        "relationship_type": "repetition_sibling",
+        "relationship_confidence": 0.52
+      }
+    ],
+    "statistics": {
+      "total_scored": 1,
+      "average_confidence": 0.52,
+      "high_confidence_relationships": 0,
+      "low_confidence_relationships": 0
+    }
+  },
+  "dependencies": {
+    "dependencies": [],
+    "dependency_graph": {},
+    "root_candidates": [],
+    "leaf_candidates": [],
+    "statistics": {
+      "total_dependencies": 0,
+      "root_count": 0,
+      "leaf_count": 0,
+      "total_involved_candidates": 0
+    }
+  },
+  "ambiguity_propagation": {
+    "ambiguous_relationships": [
+      {
+        "source_candidate_id": "hc_00002",
+        "target_candidate_id": "hc_00003",
+        "ambiguity_source": "both_candidates_ambiguous"
+      }
+    ],
+    "ambiguous_clusters": [
+      {
+        "cluster_id": "ctx_00002",
+        "ambiguous_member_count": 2,
+        "cluster_ambiguity_ratio": 1.0
+      }
+    ],
+    "statistics": {
+      "total_ambiguous_relationships": 1,
+      "total_relationships": 1,
+      "ambiguous_relationship_ratio": 1.0,
+      "total_ambiguous_clusters": 1,
+      "total_clusters": 2
+    }
+  },
+  "statistics": {
+    "relationships": {
+      "total_relationships": 1,
+      "connected_candidates": 2,
+      "by_type": {
+        "repetition_sibling": 1
+      }
+    },
+    "clusters": {
+      "total_clusters": 2,
+      "multi_candidate_clusters": 1,
+      "singleton_clusters": 1,
+      "max_cluster_size": 2,
+      "total_candidates": 3
+    },
+    "relationship_confidence": {
+      "total_scored": 1,
+      "average_confidence": 0.52,
+      "high_confidence_relationships": 0,
+      "low_confidence_relationships": 0
+    },
+    "dependencies": {
+      "total_dependencies": 0,
+      "root_count": 0,
+      "leaf_count": 0,
+      "total_involved_candidates": 0
+    },
+    "ambiguity_propagation": {
+      "total_ambiguous_relationships": 1,
+      "total_relationships": 1,
+      "ambiguous_relationship_ratio": 1.0,
+      "total_ambiguous_clusters": 1,
+      "total_clusters": 2
+    }
+  }
+}

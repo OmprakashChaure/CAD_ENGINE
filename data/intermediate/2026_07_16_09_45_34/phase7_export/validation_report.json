@@ -1,0 +1,24 @@
+[
+  {
+    "drawing_id": "Thermal_HS02_RadialHeatsink",
+    "task_name": "infer_hole_count",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '16' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-16T09:45:51.515884"
+  },
+  {
+    "drawing_id": "Thermal_HS02_RadialHeatsink",
+    "task_name": "infer_bore_diameter",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '16.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-16T09:45:51.911651"
+  }
+]

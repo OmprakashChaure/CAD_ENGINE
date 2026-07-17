@@ -1,0 +1,287 @@
+{
+  "contours": {
+    "contours": [
+      {
+        "contour_id": "ctr_00001",
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002",
+          "ent_00003",
+          "ent_00004",
+          "ent_00005",
+          "ent_00006",
+          "ent_00007",
+          "ent_00008"
+        ],
+        "is_closed": true,
+        "length": 8
+      }
+    ],
+    "isolated_entities": [
+      "ent_00009",
+      "ent_00010",
+      "ent_00011",
+      "ent_00012",
+      "ent_00013",
+      "ent_00014",
+      "ent_00015",
+      "ent_00016",
+      "ent_00017",
+      "ent_00018",
+      "ent_00019",
+      "ent_00020",
+      "ent_00021",
+      "ent_00022",
+      "ent_00023"
+    ],
+    "statistics": {
+      "total_contours": 1,
+      "closed_contours": 1,
+      "open_contours": 0,
+      "isolated_entities": 15
+    }
+  },
+  "loops": {
+    "loops": [
+      {
+        "loop_id": "loop_00001",
+        "contour_id": "ctr_00001",
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002",
+          "ent_00003",
+          "ent_00004",
+          "ent_00005",
+          "ent_00006",
+          "ent_00007",
+          "ent_00008"
+        ],
+        "length": 8,
+        "min_degree": 2
+      }
+    ],
+    "open_chains": [],
+    "statistics": {
+      "total_loops": 1,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 1
+    }
+  },
+  "concentric_groups": {
+    "concentric_groups": [
+      {
+        "group_id": "conc_00001",
+        "center": [
+          100.0,
+          100.0
+        ],
+        "entity_ids": [
+          "ent_00009",
+          "ent_00008"
+        ],
+        "radii": [
+          25.0,
+          50.0
+        ],
+        "count": 2
+      }
+    ],
+    "ungrouped_circles": [
+      "ent_00014",
+      "ent_00015"
+    ],
+    "statistics": {
+      "total_groups": 1,
+      "total_circle_arc_entities": 4,
+      "grouped_entities": 2,
+      "ungrouped_entities": 2
+    }
+  },
+  "regions": {
+    "regions": [
+      {
+        "region_id": "reg_00001",
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002",
+          "ent_00003",
+          "ent_00004",
+          "ent_00005",
+          "ent_00006",
+          "ent_00007",
+          "ent_00008"
+        ],
+        "size": 8,
+        "is_singleton": false
+      },
+      {
+        "region_id": "reg_00002",
+        "entity_ids": [
+          "ent_00009"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00003",
+        "entity_ids": [
+          "ent_00010"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00004",
+        "entity_ids": [
+          "ent_00011"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00005",
+        "entity_ids": [
+          "ent_00012"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00006",
+        "entity_ids": [
+          "ent_00013"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00007",
+        "entity_ids": [
+          "ent_00014"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00008",
+        "entity_ids": [
+          "ent_00015"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00009",
+        "entity_ids": [
+          "ent_00016"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00010",
+        "entity_ids": [
+          "ent_00017"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00011",
+        "entity_ids": [
+          "ent_00018"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00012",
+        "entity_ids": [
+          "ent_00019"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00013",
+        "entity_ids": [
+          "ent_00020"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00014",
+        "entity_ids": [
+          "ent_00021"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00015",
+        "entity_ids": [
+          "ent_00022"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00016",
+        "entity_ids": [
+          "ent_00023"
+        ],
+        "size": 1,
+        "is_singleton": true
+      }
+    ],
+    "statistics": {
+      "total_regions": 16,
+      "multi_entity_regions": 1,
+      "singleton_regions": 15,
+      "max_region_size": 8,
+      "min_region_size": 1,
+      "total_entities": 23
+    }
+  },
+  "contour_hierarchy": {
+    "hierarchy": [],
+    "statistics": {
+      "total_contours": 0,
+      "outer": 0,
+      "inner": 0
+    }
+  },
+  "statistics": {
+    "contours": {
+      "total_contours": 1,
+      "closed_contours": 1,
+      "open_contours": 0,
+      "isolated_entities": 15
+    },
+    "loops": {
+      "total_loops": 1,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 1
+    },
+    "concentric": {
+      "total_groups": 1,
+      "total_circle_arc_entities": 4,
+      "grouped_entities": 2,
+      "ungrouped_entities": 2
+    },
+    "regions": {
+      "total_regions": 16,
+      "multi_entity_regions": 1,
+      "singleton_regions": 15,
+      "max_region_size": 8,
+      "min_region_size": 1,
+      "total_entities": 23
+    },
+    "hierarchy": {
+      "total_contours": 0,
+      "outer": 0,
+      "inner": 0
+    }
+  }
+}

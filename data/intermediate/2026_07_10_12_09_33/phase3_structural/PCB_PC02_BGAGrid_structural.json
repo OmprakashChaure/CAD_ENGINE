@@ -1,0 +1,474 @@
+{
+  "contours": {
+    "contours": [],
+    "isolated_entities": [
+      "ent_00001",
+      "ent_00002",
+      "ent_00003",
+      "ent_00004",
+      "ent_00005",
+      "ent_00006",
+      "ent_00007",
+      "ent_00008",
+      "ent_00009",
+      "ent_00010",
+      "ent_00011",
+      "ent_00012",
+      "ent_00013",
+      "ent_00014",
+      "ent_00015",
+      "ent_00016",
+      "ent_00017",
+      "ent_00018",
+      "ent_00019",
+      "ent_00020",
+      "ent_00021",
+      "ent_00022",
+      "ent_00023",
+      "ent_00024",
+      "ent_00025",
+      "ent_00026",
+      "ent_00027",
+      "ent_00028",
+      "ent_00029",
+      "ent_00030",
+      "ent_00031",
+      "ent_00032",
+      "ent_00033",
+      "ent_00034",
+      "ent_00035",
+      "ent_00036",
+      "ent_00037",
+      "ent_00038"
+    ],
+    "statistics": {
+      "total_contours": 0,
+      "closed_contours": 0,
+      "open_contours": 0,
+      "isolated_entities": 38
+    }
+  },
+  "loops": {
+    "loops": [],
+    "open_chains": [],
+    "statistics": {
+      "total_loops": 0,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 0
+    }
+  },
+  "concentric_groups": {
+    "concentric_groups": [],
+    "ungrouped_circles": [
+      "ent_00002",
+      "ent_00003",
+      "ent_00004",
+      "ent_00005",
+      "ent_00006",
+      "ent_00007",
+      "ent_00008",
+      "ent_00009",
+      "ent_00010",
+      "ent_00011",
+      "ent_00012",
+      "ent_00013",
+      "ent_00014",
+      "ent_00015",
+      "ent_00016",
+      "ent_00017",
+      "ent_00018",
+      "ent_00019",
+      "ent_00020",
+      "ent_00021",
+      "ent_00022",
+      "ent_00023",
+      "ent_00024",
+      "ent_00025",
+      "ent_00026",
+      "ent_00027",
+      "ent_00028",
+      "ent_00029",
+      "ent_00030",
+      "ent_00031",
+      "ent_00032",
+      "ent_00033",
+      "ent_00034",
+      "ent_00035",
+      "ent_00036"
+    ],
+    "statistics": {
+      "total_groups": 0,
+      "total_circle_arc_entities": 35,
+      "grouped_entities": 0,
+      "ungrouped_entities": 35
+    }
+  },
+  "regions": {
+    "regions": [
+      {
+        "region_id": "reg_00001",
+        "entity_ids": [
+          "ent_00001"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00002",
+        "entity_ids": [
+          "ent_00002"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00003",
+        "entity_ids": [
+          "ent_00003"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00004",
+        "entity_ids": [
+          "ent_00004"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00005",
+        "entity_ids": [
+          "ent_00005"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00006",
+        "entity_ids": [
+          "ent_00006"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00007",
+        "entity_ids": [
+          "ent_00007"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00008",
+        "entity_ids": [
+          "ent_00008"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00009",
+        "entity_ids": [
+          "ent_00009"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00010",
+        "entity_ids": [
+          "ent_00010"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00011",
+        "entity_ids": [
+          "ent_00011"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00012",
+        "entity_ids": [
+          "ent_00012"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00013",
+        "entity_ids": [
+          "ent_00013"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00014",
+        "entity_ids": [
+          "ent_00014"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00015",
+        "entity_ids": [
+          "ent_00015"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00016",
+        "entity_ids": [
+          "ent_00016"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00017",
+        "entity_ids": [
+          "ent_00017"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00018",
+        "entity_ids": [
+          "ent_00018"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00019",
+        "entity_ids": [
+          "ent_00019"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00020",
+        "entity_ids": [
+          "ent_00020"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00021",
+        "entity_ids": [
+          "ent_00021"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00022",
+        "entity_ids": [
+          "ent_00022"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00023",
+        "entity_ids": [
+          "ent_00023"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00024",
+        "entity_ids": [
+          "ent_00024"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00025",
+        "entity_ids": [
+          "ent_00025"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00026",
+        "entity_ids": [
+          "ent_00026"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00027",
+        "entity_ids": [
+          "ent_00027"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00028",
+        "entity_ids": [
+          "ent_00028"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00029",
+        "entity_ids": [
+          "ent_00029"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00030",
+        "entity_ids": [
+          "ent_00030"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00031",
+        "entity_ids": [
+          "ent_00031"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00032",
+        "entity_ids": [
+          "ent_00032"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00033",
+        "entity_ids": [
+          "ent_00033"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00034",
+        "entity_ids": [
+          "ent_00034"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00035",
+        "entity_ids": [
+          "ent_00035"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00036",
+        "entity_ids": [
+          "ent_00036"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00037",
+        "entity_ids": [
+          "ent_00037"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00038",
+        "entity_ids": [
+          "ent_00038"
+        ],
+        "size": 1,
+        "is_singleton": true
+      }
+    ],
+    "statistics": {
+      "total_regions": 38,
+      "multi_entity_regions": 0,
+      "singleton_regions": 38,
+      "max_region_size": 1,
+      "min_region_size": 1,
+      "total_entities": 38
+    }
+  },
+  "contour_hierarchy": {
+    "hierarchy": [
+      {
+        "entity_id": "ent_00001",
+        "contour_role": "outer",
+        "parent_id": null,
+        "children_ids": [],
+        "nesting_depth": 0
+      }
+    ],
+    "statistics": {
+      "total_contours": 1,
+      "outer": 1,
+      "inner": 0,
+      "bbox_candidates": 0,
+      "centroid_rejections": 0
+    }
+  },
+  "statistics": {
+    "contours": {
+      "total_contours": 0,
+      "closed_contours": 0,
+      "open_contours": 0,
+      "isolated_entities": 38
+    },
+    "loops": {
+      "total_loops": 0,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 0
+    },
+    "concentric": {
+      "total_groups": 0,
+      "total_circle_arc_entities": 35,
+      "grouped_entities": 0,
+      "ungrouped_entities": 35
+    },
+    "regions": {
+      "total_regions": 38,
+      "multi_entity_regions": 0,
+      "singleton_regions": 38,
+      "max_region_size": 1,
+      "min_region_size": 1,
+      "total_entities": 38
+    },
+    "hierarchy": {
+      "total_contours": 1,
+      "outer": 1,
+      "inner": 0,
+      "bbox_candidates": 0,
+      "centroid_rejections": 0
+    }
+  }
+}

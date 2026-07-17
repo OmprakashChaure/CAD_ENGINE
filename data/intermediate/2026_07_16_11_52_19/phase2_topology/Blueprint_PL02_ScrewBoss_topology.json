@@ -1,0 +1,33 @@
+{
+  "shared_vertices": {},
+  "edges": [],
+  "adjacency_list": {},
+  "orphan_entities": [
+    "ent_00028",
+    "ent_00029",
+    "ent_00030",
+    "ent_00032",
+    "ent_00033",
+    "ent_00035",
+    "ent_00037",
+    "ent_00038",
+    "ent_00039",
+    "ent_00040",
+    "ent_00041",
+    "ent_00042",
+    "ent_00044"
+  ],
+  "statistics": {
+    "total_vertices": 26,
+    "shared_vertices": 0,
+    "orphan_vertices": 26,
+    "entities_processed": 13,
+    "near_match_merges": 0,
+    "total_edges": 0,
+    "connected_entities": 0,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 13,
+    "total_input_entities": 13
+  }
+}

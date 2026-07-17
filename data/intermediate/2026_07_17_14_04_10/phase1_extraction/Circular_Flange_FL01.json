@@ -1,0 +1,586 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 75.0,
+        "diameter": 150.0,
+        "area": 17671.458676442588
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 25.0,
+        "diameter": 50.0,
+        "area": 1963.4954084936207
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "90",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 55.0,
+        "diameter": 110.0,
+        "area": 9503.317777109125
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          138.89087296526012,
+          138.89087296526012
+        ],
+        "radius": 6.0,
+        "diameter": 12.0,
+        "area": 113.09733552923255
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          128.89087296526012,
+          138.89087296526012
+        ],
+        "end": [
+          148.89087296526012,
+          138.89087296526012
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "93",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          138.89087296526012,
+          128.89087296526012
+        ],
+        "end": [
+          138.89087296526012,
+          148.89087296526012
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "94",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          61.10912703473989,
+          138.89087296526012
+        ],
+        "radius": 6.0,
+        "diameter": 12.0,
+        "area": 113.09733552923255
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          51.10912703473989,
+          138.89087296526012
+        ],
+        "end": [
+          71.10912703473988,
+          138.89087296526012
+        ],
+        "length": 19.999999999999993
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          61.10912703473989,
+          128.89087296526012
+        ],
+        "end": [
+          61.10912703473989,
+          148.89087296526012
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "97",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          61.10912703473988,
+          61.10912703473989
+        ],
+        "radius": 6.0,
+        "diameter": 12.0,
+        "area": 113.09733552923255
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "98",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          51.10912703473988,
+          61.10912703473989
+        ],
+        "end": [
+          71.10912703473988,
+          61.10912703473989
+        ],
+        "length": 20.000000000000007
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "99",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          61.10912703473988,
+          51.10912703473989
+        ],
+        "end": [
+          61.10912703473988,
+          71.10912703473988
+        ],
+        "length": 19.999999999999993
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9A",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          138.8908729652601,
+          61.10912703473988
+        ],
+        "radius": 6.0,
+        "diameter": 12.0,
+        "area": 113.09733552923255
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "9B",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          128.8908729652601,
+          61.10912703473988
+        ],
+        "end": [
+          148.8908729652601,
+          61.10912703473988
+        ],
+        "length": 20.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "9C",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          138.8908729652601,
+          51.10912703473988
+        ],
+        "end": [
+          138.8908729652601,
+          71.10912703473988
+        ],
+        "length": 20.000000000000007
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "9D",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          100.0
+        ],
+        "end": [
+          190.0,
+          100.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "LINE",
+      "handle": "9E",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          10.0
+        ],
+        "end": [
+          100.0,
+          190.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9F",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 150.0,
+        "text": "%%C150mm OVERALL",
+        "position": [
+          25.0,
+          220.0
+        ],
+        "target_points": [
+          [
+            25.0,
+            100.0
+          ],
+          [
+            175.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "AE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 110.0,
+        "text": "%%C110mm PCD",
+        "position": [
+          45.0,
+          190.0
+        ],
+        "target_points": [
+          [
+            45.0,
+            100.0
+          ],
+          [
+            155.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00020",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "BD",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 50.0,
+        "text": "%%C50mm H7 BORE",
+        "position": [
+          75.0,
+          135.0
+        ],
+        "target_points": [
+          [
+            75.0,
+            100.0
+          ],
+          [
+            125.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "Circular_Flange_FL01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "CC",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 12.0,
+        "text": "4X %%C12mm THRU ON PCD",
+        "position": [
+          -40.0,
+          45.0
+        ],
+        "target_points": [
+          [
+            100.0,
+            45.0
+          ],
+          [
+            100.0,
+            155.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

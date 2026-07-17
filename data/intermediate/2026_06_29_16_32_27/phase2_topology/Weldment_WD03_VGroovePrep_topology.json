@@ -1,0 +1,24 @@
+{
+  "shared_vertices": {},
+  "edges": [],
+  "adjacency_list": {},
+  "orphan_entities": [
+    "ent_00002",
+    "ent_00003",
+    "ent_00004",
+    "ent_00005",
+    "ent_00007"
+  ],
+  "statistics": {
+    "total_vertices": 5,
+    "shared_vertices": 0,
+    "orphan_vertices": 5,
+    "entities_processed": 5,
+    "total_edges": 0,
+    "connected_entities": 0,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 5,
+    "total_input_entities": 5
+  }
+}

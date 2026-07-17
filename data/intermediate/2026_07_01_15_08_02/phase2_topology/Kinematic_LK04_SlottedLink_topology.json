@@ -1,0 +1,194 @@
+{
+  "shared_vertices": {
+    "vtx_00001": {
+      "vertex_id": "vtx_00001",
+      "x": 100.0,
+      "y": 120.0,
+      "connected_entities": [
+        "ent_00001",
+        "ent_00003"
+      ]
+    },
+    "vtx_00002": {
+      "vertex_id": "vtx_00002",
+      "x": 100.0,
+      "y": 80.0,
+      "connected_entities": [
+        "ent_00001",
+        "ent_00004"
+      ]
+    },
+    "vtx_00003": {
+      "vertex_id": "vtx_00003",
+      "x": 260.0,
+      "y": 80.0,
+      "connected_entities": [
+        "ent_00002",
+        "ent_00004"
+      ]
+    },
+    "vtx_00004": {
+      "vertex_id": "vtx_00004",
+      "x": 260.0,
+      "y": 120.0,
+      "connected_entities": [
+        "ent_00002",
+        "ent_00003"
+      ]
+    },
+    "vtx_00005": {
+      "vertex_id": "vtx_00005",
+      "x": 140.0,
+      "y": 106.0,
+      "connected_entities": [
+        "ent_00005",
+        "ent_00007"
+      ]
+    },
+    "vtx_00006": {
+      "vertex_id": "vtx_00006",
+      "x": 140.0,
+      "y": 94.0,
+      "connected_entities": [
+        "ent_00005",
+        "ent_00008"
+      ]
+    },
+    "vtx_00007": {
+      "vertex_id": "vtx_00007",
+      "x": 240.0,
+      "y": 94.0,
+      "connected_entities": [
+        "ent_00006",
+        "ent_00008"
+      ]
+    },
+    "vtx_00008": {
+      "vertex_id": "vtx_00008",
+      "x": 240.0,
+      "y": 106.0,
+      "connected_entities": [
+        "ent_00006",
+        "ent_00007"
+      ]
+    },
+    "vtx_00009": {
+      "vertex_id": "vtx_00009",
+      "x": 70.0,
+      "y": 100.0,
+      "connected_entities": [
+        "ent_00010",
+        "ent_00014"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "source_entity_id": "ent_00001",
+      "target_entity_id": "ent_00003",
+      "shared_vertex_id": "vtx_00001"
+    },
+    {
+      "source_entity_id": "ent_00001",
+      "target_entity_id": "ent_00004",
+      "shared_vertex_id": "vtx_00002"
+    },
+    {
+      "source_entity_id": "ent_00002",
+      "target_entity_id": "ent_00004",
+      "shared_vertex_id": "vtx_00003"
+    },
+    {
+      "source_entity_id": "ent_00002",
+      "target_entity_id": "ent_00003",
+      "shared_vertex_id": "vtx_00004"
+    },
+    {
+      "source_entity_id": "ent_00005",
+      "target_entity_id": "ent_00007",
+      "shared_vertex_id": "vtx_00005"
+    },
+    {
+      "source_entity_id": "ent_00005",
+      "target_entity_id": "ent_00008",
+      "shared_vertex_id": "vtx_00006"
+    },
+    {
+      "source_entity_id": "ent_00006",
+      "target_entity_id": "ent_00008",
+      "shared_vertex_id": "vtx_00007"
+    },
+    {
+      "source_entity_id": "ent_00006",
+      "target_entity_id": "ent_00007",
+      "shared_vertex_id": "vtx_00008"
+    },
+    {
+      "source_entity_id": "ent_00010",
+      "target_entity_id": "ent_00014",
+      "shared_vertex_id": "vtx_00009"
+    }
+  ],
+  "adjacency_list": {
+    "ent_00001": [
+      "ent_00003",
+      "ent_00004"
+    ],
+    "ent_00003": [
+      "ent_00001",
+      "ent_00002"
+    ],
+    "ent_00004": [
+      "ent_00001",
+      "ent_00002"
+    ],
+    "ent_00002": [
+      "ent_00003",
+      "ent_00004"
+    ],
+    "ent_00005": [
+      "ent_00007",
+      "ent_00008"
+    ],
+    "ent_00007": [
+      "ent_00005",
+      "ent_00006"
+    ],
+    "ent_00008": [
+      "ent_00005",
+      "ent_00006"
+    ],
+    "ent_00006": [
+      "ent_00007",
+      "ent_00008"
+    ],
+    "ent_00010": [
+      "ent_00014"
+    ],
+    "ent_00014": [
+      "ent_00010"
+    ]
+  },
+  "orphan_entities": [
+    "ent_00009",
+    "ent_00011",
+    "ent_00012",
+    "ent_00013",
+    "ent_00015",
+    "ent_00016",
+    "ent_00018",
+    "ent_00020"
+  ],
+  "statistics": {
+    "total_vertices": 17,
+    "shared_vertices": 9,
+    "orphan_vertices": 8,
+    "entities_processed": 18,
+    "total_edges": 9,
+    "connected_entities": 10,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 8,
+    "total_input_entities": 18
+  }
+}

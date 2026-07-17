@@ -1,0 +1,287 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "ARC",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 40.0,
+        "start_angle": 30.0,
+        "end_angle": 150.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "ARC",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          100.0,
+          100.0
+        ],
+        "radius": 110.0,
+        "start_angle": 30.0,
+        "end_angle": 150.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          134.64101615137756,
+          120.0
+        ],
+        "end": [
+          195.26279441628827,
+          155.0
+        ],
+        "length": 70.00000000000001
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "LINE",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          65.35898384862244,
+          120.0
+        ],
+        "end": [
+          4.7372055837117415,
+          155.0
+        ],
+        "length": 70.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          80.0,
+          100.0
+        ],
+        "end": [
+          120.0,
+          100.0
+        ],
+        "length": 40.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          80.0
+        ],
+        "end": [
+          100.0,
+          120.0
+        ],
+        "length": 40.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "96",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 40.0,
+        "text": "40mm INNER RADIUS",
+        "position": [
+          100.0,
+          100.0
+        ],
+        "target_points": [
+          [
+            100.0,
+            100.0
+          ],
+          [
+            100.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A5",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 110.0,
+        "text": "110mm OUTER RADIUS",
+        "position": [
+          70.0,
+          100.0
+        ],
+        "target_points": [
+          [
+            100.0,
+            100.0
+          ],
+          [
+            100.0,
+            210.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "SheetMetal_SM05_ConicalFrustum.dxf",
+      "entity_type": "MTEXT",
+      "handle": "B5",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "120\u00b0 SWEEP ANGLE\n CONICAL FLAT PATTERN",
+        "position": [
+          160.0,
+          230.0
+        ],
+        "height": null,
+        "text_role": "angle_value",
+        "numeric_value": 120.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 9,
+        "kept_entities": 9,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 9,
+        "kept_entities": 9,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 9,
+        "kept_entities": 9,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 9,
+        "kept_entities": 9,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 9,
+        "kept_entities": 9,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

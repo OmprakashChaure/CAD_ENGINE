@@ -1,0 +1,969 @@
+ANALYSIS RESULTS:
+---
+File: aerospace_turbomachinery_generator.py
+Module: aerospace_turbomachinery_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'AerospaceTurbomachineryGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_AM01_airfoil', 'build_AM02_fir_tree_root', 'build_AM03_impeller_vane', 'build_AM04_venturi_nozzle', 'build_AM05_labyrinth_seal']
+LOC: 265
+---
+File: circular_flange_generator.py
+Module: circular_flange_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'CircularFlangeGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_center_mark', 'validate_and_save', 'build_FL01_standard_flange', 'build_FL02_threaded_cap', 'build_FL03_oring_flange', 'build_FL04_hd_flange', 'build_FL05_sensor_flange']
+LOC: 251
+---
+File: cnc_routing_generator.py
+Module: cnc_routing_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'PCBGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_PC01_soic8', 'build_PC02_bga_grid', 'build_PC03_diff_pair', 'build_PC04_thermal_relief', 'build_PC05_gold_fingers', 'build_PC06_serpentine_trace', 'build_PC07_dip14', 'build_PC08_castellated', 'build_PC09_fiducial', 'build_PC10_rigid_flex']
+LOC: 396
+---
+File: core/__init__.py
+Module: core.__init__
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 0
+---
+File: core/classifiers/__init__.py
+Module: core.classifiers.__init__
+Imports: ['core.classifiers.role_classifier']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/classifiers/geometry_normalizer.py
+Module: core.classifiers.geometry_normalizer
+Imports: ['re', 'math']
+Imported By: ['core/reader/entity_iterator.py']
+Classes: ['GeometryNormalizer']
+Functions: ['parse_fractional_value', 'normalize', '_normalize_line', '_normalize_circle', '_normalize_arc', '_normalize_lwpolyline', '_normalize_polyline', '_normalize_dimension', '_normalize_text', '_distance']
+LOC: 358
+---
+File: core/classifiers/role_classifier.py
+Module: core.classifiers.role_classifier
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/classifiers/__init__.py']
+Classes: ['RoleClassifier']
+Functions: ['__init__', 'classify']
+LOC: 27
+---
+File: core/compression/__init__.py
+Module: core.compression.__init__
+Imports: ['core.compression.schema_formatter']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/compression/schema_formatter.py
+Module: core.compression.schema_formatter
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/compression/__init__.py']
+Classes: ['SchemaFormatter']
+Functions: ['format']
+LOC: 28
+---
+File: core/exporters/__init__.py
+Module: core.exporters.__init__
+Imports: ['core.exporters.json_exporter']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/exporters/json_exporter.py
+Module: core.exporters.json_exporter
+Imports: ['json', 'typing', 'pathlib', 'utils.logger', '__future__']
+Imported By: ['core/exporters/__init__.py']
+Classes: ['JSONExporter']
+Functions: ['export']
+LOC: 29
+---
+File: core/features/__init__.py
+Module: core.features.__init__
+Imports: ['core.features.feature_inferrer']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/features/candidate_confidence_analyzer.py
+Module: core.features.candidate_confidence_analyzer
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/refinement_pipeline.py']
+Classes: ['CandidateConfidenceAnalyzer']
+Functions: ['analyze', '_score_hole_candidate', '_score_slot_candidate', '_score_radial_pattern']
+LOC: 194
+---
+File: core/features/candidate_conflict_resolver.py
+Module: core.features.candidate_conflict_resolver
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/refinement_pipeline.py']
+Classes: ['CandidateConflictResolver']
+Functions: ['detect', '_classify_severity']
+LOC: 146
+---
+File: core/features/candidate_relationship_builder.py
+Module: core.features.candidate_relationship_builder
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/context_pipeline.py']
+Classes: ['CandidateRelationshipBuilder']
+Functions: ['build', 'add_rel']
+LOC: 155
+---
+File: core/features/context_cluster_analyzer.py
+Module: core.features.context_cluster_analyzer
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/context_pipeline.py']
+Classes: ['ContextClusterAnalyzer']
+Functions: ['analyze']
+LOC: 112
+---
+File: core/features/contextual_ambiguity_propagator.py
+Module: core.features.contextual_ambiguity_propagator
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/context_pipeline.py']
+Classes: ['ContextualAmbiguityPropagator']
+Functions: ['propagate']
+LOC: 142
+---
+File: core/features/feature_hierarchy_builder.py
+Module: core.features.feature_hierarchy_builder
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/refinement_pipeline.py']
+Classes: ['FeatureHierarchyBuilder']
+Functions: ['build']
+LOC: 141
+---
+File: core/features/feature_inferrer.py
+Module: core.features.feature_inferrer
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/features/__init__.py']
+Classes: ['FeatureInferrer']
+Functions: ['__init__', 'infer']
+LOC: 27
+---
+File: core/features/feature_region_grouper.py
+Module: core.features.feature_region_grouper
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/feature_pipeline.py']
+Classes: ['FeatureRegionGrouper']
+Functions: ['group', '_resolve_region']
+LOC: 198
+---
+File: core/features/hole_candidate_detector.py
+Module: core.features.hole_candidate_detector
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/feature_pipeline.py']
+Classes: ['HoleCandidateDetector']
+Functions: ['detect']
+LOC: 130
+---
+File: core/features/radial_pattern_detector.py
+Module: core.features.radial_pattern_detector
+Imports: ['utils.logger', 'typing', 'math']
+Imported By: ['pipeline/feature_pipeline.py']
+Classes: ['RadialPatternDetector']
+Functions: ['__init__', 'detect', '_group_by_radius', '_detect_circular_arrangement']
+LOC: 218
+---
+File: core/features/relationship_confidence_manager.py
+Module: core.features.relationship_confidence_manager
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/context_pipeline.py']
+Classes: ['RelationshipConfidenceManager']
+Functions: ['evaluate']
+LOC: 128
+---
+File: core/features/repeated_pattern_consolidator.py
+Module: core.features.repeated_pattern_consolidator
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/refinement_pipeline.py']
+Classes: ['RepeatedPatternConsolidator']
+Functions: ['__init__', 'consolidate', '_hole_signature', '_slot_signature']
+LOC: 154
+---
+File: core/features/slot_candidate_detector.py
+Module: core.features.slot_candidate_detector
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/feature_pipeline.py']
+Classes: ['SlotCandidateDetector']
+Functions: ['__init__', 'detect']
+LOC: 288
+---
+File: core/features/structural_ambiguity_tracker.py
+Module: core.features.structural_ambiguity_tracker
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/refinement_pipeline.py']
+Classes: ['StructuralAmbiguityTracker']
+Functions: ['__init__', 'track']
+LOC: 144
+---
+File: core/features/structural_dependency_mapper.py
+Module: core.features.structural_dependency_mapper
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/context_pipeline.py']
+Classes: ['StructuralDependencyMapper']
+Functions: ['map']
+LOC: 141
+---
+File: core/features/symmetry_analyzer.py
+Module: core.features.symmetry_analyzer
+Imports: ['utils.logger', 'typing', 'math']
+Imported By: ['pipeline/feature_pipeline.py']
+Classes: ['SymmetryAnalyzer']
+Functions: ['__init__', 'analyze', '_extract_centered_entities', '_find_mirror_pairs']
+LOC: 237
+---
+File: core/filters/__init__.py
+Module: core.filters.__init__
+Imports: ['core.filters.degenerate_filter', 'core.filters.duplicate_filter', 'core.filters.layer_filter']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 5
+---
+File: core/filters/border_filter.py
+Module: core.filters.border_filter
+Imports: ['utils.logger', 'typing', 'schemas.geometry_schema', 're']
+Imported By: ['pipeline/extraction_pipeline.py']
+Classes: ['BorderFilter']
+Functions: ['filter', '_compute_drawing_bbox', '_polyline_bbox', '_area_ratio', '_is_dimensioned']
+LOC: 224
+---
+File: core/filters/degenerate_filter.py
+Module: core.filters.degenerate_filter
+Imports: ['collections', 'typing', 'schemas.geometry_schema', 'utils.logger']
+Imported By: ['pipeline/extraction_pipeline.py', 'core/filters/__init__.py']
+Classes: ['DegenerateFilter']
+Functions: ['filter']
+LOC: 232
+---
+File: core/filters/duplicate_filter.py
+Module: core.filters.duplicate_filter
+Imports: ['utils.logger', 'typing', 'schemas.geometry_schema']
+Imported By: ['pipeline/extraction_pipeline.py', 'core/filters/__init__.py']
+Classes: ['DuplicateFilter']
+Functions: ['__init__', '_build_signature', 'filter']
+LOC: 163
+---
+File: core/filters/layer_filter.py
+Module: core.filters.layer_filter
+Imports: ['utils.logger', 'typing', 'yaml', 'schemas.geometry_schema']
+Imported By: ['pipeline/extraction_pipeline.py', 'core/filters/__init__.py']
+Classes: ['LayerFilter']
+Functions: ['__init__', 'filter']
+LOC: 74
+---
+File: core/filters/text_filter.py
+Module: core.filters.text_filter
+Imports: ['utils.logger', 'typing', 'schemas.geometry_schema']
+Imported By: ['pipeline/extraction_pipeline.py']
+Classes: ['TextFilter']
+Functions: ['filter']
+LOC: 92
+---
+File: core/grouping/__init__.py
+Module: core.grouping.__init__
+Imports: ['core.grouping.spacing_detector', 'core.grouping.bolt_detector', 'core.grouping.relationship_builder']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 5
+---
+File: core/grouping/adjacency_builder.py
+Module: core.grouping.adjacency_builder
+Imports: ['typing', 'collections', 'utils.logger']
+Imported By: ['pipeline/topology_pipeline.py']
+Classes: ['AdjacencyBuilder']
+Functions: ['__init__', 'build']
+LOC: 115
+---
+File: core/grouping/bolt_detector.py
+Module: core.grouping.bolt_detector
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/grouping/__init__.py']
+Classes: ['BoltCircleDetector']
+Functions: ['__init__', 'detect']
+LOC: 22
+---
+File: core/grouping/concentric_grouping.py
+Module: core.grouping.concentric_grouping
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/structural_pipeline.py']
+Classes: ['ConcentricGrouping']
+Functions: ['__init__', 'detect', '_extract_center_entities']
+LOC: 182
+---
+File: core/grouping/contour_extractor.py
+Module: core.grouping.contour_extractor
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/structural_pipeline.py']
+Classes: ['ContourExtractor']
+Functions: ['extract', '_build_vertex_entity_map', '_traverse_contours', '_detect_closure']
+LOC: 201
+---
+File: core/grouping/contour_hierarchy.py
+Module: core.grouping.contour_hierarchy
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/structural_pipeline.py']
+Classes: ['ContourHierarchy']
+Functions: ['analyze']
+LOC: 154
+---
+File: core/grouping/loop_detector.py
+Module: core.grouping.loop_detector
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/structural_pipeline.py']
+Classes: ['LoopDetector']
+Functions: ['detect', '_verify_loop', '_find_leaves']
+LOC: 187
+---
+File: core/grouping/region_analyzer.py
+Module: core.grouping.region_analyzer
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/structural_pipeline.py']
+Classes: ['RegionAnalyzer']
+Functions: ['analyze', '_find_connected_components']
+LOC: 140
+---
+File: core/grouping/relationship_builder.py
+Module: core.grouping.relationship_builder
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/grouping/__init__.py']
+Classes: ['RelationshipBuilder']
+Functions: ['__init__', 'build']
+LOC: 30
+---
+File: core/grouping/spacing_detector.py
+Module: core.grouping.spacing_detector
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/grouping/__init__.py']
+Classes: ['EqualSpacingDetector']
+Functions: ['detect']
+LOC: 18
+---
+File: core/grouping/vertex_indexer.py
+Module: core.grouping.vertex_indexer
+Imports: ['typing', 'collections', 'math', 'utils.logger']
+Imported By: ['pipeline/topology_pipeline.py']
+Classes: ['VertexIndexer']
+Functions: ['__init__', '_snap_vertex', '_get_vertex_id', '_extract_endpoints', 'build']
+LOC: 168
+---
+File: core/reader/__init__.py
+Module: core.reader.__init__
+Imports: ['core.reader.dxf_reader']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/reader/dxf_loader.py
+Module: core.reader.dxf_loader
+Imports: ['typing', 'pathlib', 'utils.logger', 'ezdxf.document', 'ezdxf']
+Imported By: ['pipeline/extraction_pipeline.py']
+Classes: ['DXFLoader']
+Functions: ['__init__', 'validate', 'load']
+LOC: 65
+---
+File: core/reader/dxf_reader.py
+Module: core.reader.dxf_reader
+Imports: ['__future__', 'pathlib', 'typing', 'utils.logger']
+Imported By: ['core/reader/__init__.py']
+Classes: ['DXFReader']
+Functions: ['__init__', 'read']
+LOC: 51
+---
+File: core/reader/entity_iterator.py
+Module: core.reader.entity_iterator
+Imports: ['utils.logger', 'typing', 'core.classifiers.geometry_normalizer', 'utils.dxf_utils']
+Imported By: ['pipeline/extraction_pipeline.py']
+Classes: ['EntityIterator']
+Functions: ['__init__', 'iterate']
+LOC: 111
+---
+File: core/semantics/__init__.py
+Module: core.semantics.__init__
+Imports: ['core.semantics.semantic_enricher']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/semantics/semantic_enricher.py
+Module: core.semantics.semantic_enricher
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/semantics/__init__.py']
+Classes: ['SemanticEnricher']
+Functions: ['enrich']
+LOC: 24
+---
+File: core/supervision/__init__.py
+Module: core.supervision.__init__
+Imports: ['core.supervision.supervision_mapper']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/supervision/context_packager.py
+Module: core.supervision.context_packager
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/dataset_pipeline.py']
+Classes: ['ContextPackager']
+Functions: ['package', '_index_dimensions', '_index_feature_membership', '_index_repetition_membership', '_index_concentric_membership', '_index_region_sizes', '_index_hierarchy']
+LOC: 285
+---
+File: core/supervision/inference_conditioner.py
+Module: core.supervision.inference_conditioner
+Imports: ['utils.logger', 'typing', 'copy']
+Imported By: ['pipeline/dataset_pipeline.py']
+Classes: ['InferenceConditioner']
+Functions: ['condition', '_build_masked_context']
+LOC: 203
+---
+File: core/supervision/sample_assembler.py
+Module: core.supervision.sample_assembler
+Imports: ['collections', 'typing', 'utils.logger']
+Imported By: ['pipeline/dataset_pipeline.py']
+Classes: ['SampleAssembler']
+Functions: ['assemble']
+LOC: 184
+---
+File: core/supervision/supervision_mapper.py
+Module: core.supervision.supervision_mapper
+Imports: ['utils.logger', 'typing', 'math']
+Imported By: ['pipeline/dataset_pipeline.py', 'core/supervision/__init__.py']
+Classes: ['SupervisionMapper']
+Functions: ['__init__', 'map', '_compute_dimensions', '_build_mappings', '_match_by_target_points', '_match_by_value', '_get_reference_points', '_summarize_supervision']
+LOC: 336
+---
+File: core/supervision/target_constructor.py
+Module: core.supervision.target_constructor
+Imports: ['utils.logger', 'typing']
+Imported By: ['pipeline/dataset_pipeline.py']
+Classes: ['TargetConstructor']
+Functions: ['__init__', 'construct', '_evaluate_eligibility', '_get_derivation', '_count_by_type', '_count_by_entity_type']
+LOC: 216
+---
+File: core/validation/__init__.py
+Module: core.validation.__init__
+Imports: ['core.validation.schema_validator']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 3
+---
+File: core/validation/schema_validator.py
+Module: core.validation.schema_validator
+Imports: ['__future__', 'utils.logger']
+Imported By: ['core/validation/__init__.py']
+Classes: ['SchemaValidator']
+Functions: ['validate']
+LOC: 34
+---
+File: cross_section_generator.py
+Module: cross_section_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'CrossSectionGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_axis', 'add_hatch', 'validate_and_save', 'build_CS01_v_pulley', 'build_CS02_bearing_hub', 'build_CS03_blind_cap']
+LOC: 193
+---
+File: electrical_busbar_generator.py
+Module: electrical_busbar_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'ElectricalBusbarGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_BB01_phase_busbar', 'build_BB02_transformer_link', 'build_BB03_stepped_isolator', 'build_BB04_flexible_shunt', 'build_BB05_ushape_bus']
+LOC: 283
+---
+File: flexible_elements_generator.py
+Module: flexible_elements_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'FlexibleElementsGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_SP01_die_spring', 'build_SP02_expansion_bellows', 'build_SP03_belleville_stack', 'build_SP04_leaf_spring', 'build_SP05_garter_spring']
+LOC: 257
+---
+File: fluid_fittings_generator.py
+Module: fluid_fittings_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'FluidFittingsGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_PF01_sweep_elbow', 'build_PF02_npt_bushing', 'build_PF03_t_manifold', 'build_PF04_weld_neck', 'build_PF05_hose_barb']
+LOC: 268
+---
+File: gasket_seals_generator.py
+Module: gasket_seals_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'GasketSealsGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_GS01_cylinder_gasket', 'build_GS02_flange_tab_gasket', 'build_GS03_dovetail_groove', 'build_GS04_spiral_wound', 'build_GS05_gearbox_gasket']
+LOC: 321
+---
+File: hardware_fastener_generator.py
+Module: hardware_fastener_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'FastenerGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_axis', 'add_center_mark', 'validate_and_save', 'build_HW01_hex_bolt', 'build_HW02_shcs', 'build_HW03_countersunk_screw', 'build_HW04_shoulder_screw', 'build_HW05_hex_nut']
+LOC: 263
+---
+File: kinematic_extended_generator.py
+Module: kinematic_extended_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'KinematicGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_LK01_eccentric_cam', 'build_LK02_connecting_rod', 'build_LK03_curved_track', 'build_LK04_slotted_link', 'build_LK05_geneva_wheel', 'build_LK06_scotch_yoke', 'build_LK07_bell_crank', 'build_LK08_follower_arm', 'build_LK09_quick_return_crank', 'build_LK10_crosshead_guide', 'build_LK11_coupler_plate', 'build_LK12_scissor_link', 'build_LK13_watts_link']
+LOC: 495
+---
+File: kinematic_linkage_generator.py
+Module: kinematic_linkage_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'KinematicGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_LK01_eccentric_cam', 'build_LK02_connecting_rod', 'build_LK03_curved_track']
+LOC: 250
+---
+File: main.py
+Module: main
+Imports: ['json', 'pipeline.topology_pipeline', 'datetime', 'pipeline.extraction_pipeline', 'pathlib', 'utils.logger', 'pipeline.context_pipeline', 'pipeline.dataset_pipeline', 'pipeline.refinement_pipeline', 'pipeline.structural_pipeline', 'pipeline.feature_pipeline']
+Imported By: ['tests/test_task_3_10.py']
+Classes: []
+Functions: ['main']
+LOC: 277
+---
+File: motor_bracket_generator.py
+Module: motor_bracket_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'MotorBracketGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'build_MB01_slotted_mount', 'build_MB02_keyed_bore', 'build_MB03_counterbored_mounts', 'build_MB04_ribbed_support', 'build_MB05_lightweight_pocket', 'validate_and_save']
+LOC: 250
+---
+File: optomechanics_generator.py
+Module: optomechanics_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'OptomechanicsGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_OM01_monolithic_flexure', 'build_OM02_spanner_ring', 'build_OM03_kinematic_plate', 'build_OM04_chopper_wheel', 'build_OM05_dovetail_rail']
+LOC: 283
+---
+File: pdf_exercises_batch1_generator.py
+Module: pdf_exercises_batch1_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'WorkbookBatch1Generator']
+Functions: ['validate_closed_contours', 'validate_clean_export', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_EX01_4_lug_flange', 'build_EX02_slotted_escutcheon', 'build_EX03_bearing_flange', 'build_EX04_pivoting_plate', 'build_EX05_slotted_bracket']
+LOC: 304
+---
+File: pipeline/__init__.py
+Module: pipeline.__init__
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 0
+---
+File: pipeline/context_pipeline.py
+Module: pipeline.context_pipeline
+Imports: ['typing', 'utils.logger', 'core.features.relationship_confidence_manager', 'core.features.candidate_relationship_builder', 'core.features.structural_dependency_mapper', 'core.features.contextual_ambiguity_propagator', 'core.features.context_cluster_analyzer']
+Imported By: ['main.py']
+Classes: ['ContextPipeline']
+Functions: ['__init__', 'run', '_collect_all_candidate_ids']
+LOC: 147
+---
+File: pipeline/dataset_pipeline.py
+Module: pipeline.dataset_pipeline
+Imports: ['core.supervision.context_packager', 'json', 'typing', 'core.supervision.target_constructor', 'core.supervision.sample_assembler', 'numpy', 'pathlib', 'utils.logger', 'collections', 'hashlib', 'pipeline.semantic_pipeline', 'core.supervision.inference_conditioner', '__future__', 're', 'math', 'core.supervision.supervision_mapper']
+Imported By: ['main.py', 'tests/archive/archive_test_phase7_bug_condition.py']
+Classes: ['DatasetPipeline', 'DatasetExporter']
+Functions: ['__init__', 'run', '_assemble_context', '__init__', 'export', '_sanitize_graph_identifiers', '_build_tasks_from_semantic', '_get_candidate_center', '_analyze_repetition_pattern', '_get_engineering_relationships_for_candidate', '_find_candidate_id_for_feature', '_extract_rich_context', '_make_generic_property_name', '_map_to_v21_family', '_mask_context_leakage', '_balance_tasks', '_split_deterministic', '_write_jsonl', '_write_empty', '_generate_metadata', '_compute_feature_distribution', '_compute_relationship_distribution', '_generate_semantic_coverage_audit', '_clean_empty_and_nulls', '_normalize_thread_size', 'add_semantic_property_task', 'get_base_drawing_id', 'extract_family_prefix', '_stats']
+LOC: 2022
+---
+File: pipeline/extraction_pipeline.py
+Module: pipeline.extraction_pipeline
+Imports: ['typing', 'core.reader.entity_iterator', 'core.filters.text_filter', 'pathlib', 'utils.logger', 'core.filters.duplicate_filter', 'core.filters.border_filter', 'core.filters.degenerate_filter', 'core.reader.dxf_loader', 'core.filters.layer_filter']
+Imported By: ['main.py']
+Classes: ['ExtractionPipeline']
+Functions: ['__init__', 'run']
+LOC: 105
+---
+File: pipeline/feature_pipeline.py
+Module: pipeline.feature_pipeline
+Imports: ['typing', 'utils.logger', 'core.features.symmetry_analyzer', 'core.features.hole_candidate_detector', 'core.features.slot_candidate_detector', 'core.features.radial_pattern_detector', 'core.features.feature_region_grouper']
+Imported By: ['main.py']
+Classes: ['FeaturePipeline']
+Functions: ['__init__', 'run']
+LOC: 128
+---
+File: pipeline/full_pipeline.py
+Module: pipeline.full_pipeline
+Imports: ['__future__', 'pathlib', 'typing', 'utils.logger']
+Imported By: []
+Classes: ['FullPipeline']
+Functions: ['__init__', 'process', 'process_batch']
+LOC: 34
+---
+File: pipeline/refinement_pipeline.py
+Module: pipeline.refinement_pipeline
+Imports: ['typing', 'core.features.repeated_pattern_consolidator', 'utils.logger', 'core.features.structural_ambiguity_tracker', 'core.features.candidate_confidence_analyzer', 'core.features.candidate_conflict_resolver', 'core.features.feature_hierarchy_builder']
+Imported By: ['main.py']
+Classes: ['RefinementPipeline']
+Functions: ['__init__', 'run']
+LOC: 113
+---
+File: pipeline/semantic_pipeline.py
+Module: pipeline.semantic_pipeline
+Imports: ['typing', 'dataclasses', 'utils.logger', '__future__', 'enum', 're', 'math']
+Imported By: ['pipeline/dataset_pipeline.py']
+Classes: ['FeatureClass', 'RelationshipType', 'FeatureInstance', 'Relationship', 'SemanticRecord', 'EngineeringConcept', 'SemanticPipeline']
+Functions: ['_match_keyword', '_clean_text', 'parse_fractional_value', 'strip_count_prefix', '_first_number', '_numbers', '_orientation', '_center_from_points', '_span_from_points', '_physical_bbox', 'resolve_engineering_value', 'extract_dimension_facts', 'reconstruct_dimensions', '_infer_center_from_positions', '_get_entity_bbox', 'is_entity_mapped', 'map_features', 'map_relationships', 'determine_part_type', 'to_dict', 'to_dict', 'to_dict', '__init__', 'matches_text', 'calculate_confidence', '__init__', 'run', '_validate']
+LOC: 2090
+---
+File: pipeline/structural_pipeline.py
+Module: pipeline.structural_pipeline
+Imports: ['typing', 'utils.logger', 'core.grouping.contour_extractor', 'core.grouping.loop_detector', 'core.grouping.concentric_grouping', 'core.grouping.region_analyzer', 'core.grouping.contour_hierarchy']
+Imported By: ['main.py']
+Classes: ['StructuralPipeline']
+Functions: ['__init__', 'run']
+LOC: 116
+---
+File: pipeline/topology_pipeline.py
+Module: pipeline.topology_pipeline
+Imports: ['core.grouping.adjacency_builder', 'typing', 'core.grouping.vertex_indexer', 'utils.logger']
+Imported By: ['main.py']
+Classes: ['TopologyPipeline']
+Functions: ['__init__', 'run', '_detect_orphans']
+LOC: 105
+---
+File: plastic_molding_generator.py
+Module: plastic_molding_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'PlasticInjectionGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_PL01_snap_fit', 'build_PL02_screw_boss', 'build_PL03_shelled_box', 'build_PL04_living_hinge', 'build_PL05_crush_ribs']
+LOC: 298
+---
+File: schemas/__init__.py
+Module: schemas.__init__
+Imports: ['schemas.feature_schema', 'schemas.semantic_schema', 'schemas.geometry_schema', 'schemas.dataset_schema']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 14
+---
+File: schemas/dataset_schema.py
+Module: schemas.dataset_schema
+Imports: ['__future__', 'schemas.semantic_schema', 'typing', 'pydantic']
+Imported By: ['schemas/__init__.py']
+Classes: ['FeatureGroup', 'DatasetRecord']
+Functions: []
+LOC: 30
+---
+File: schemas/feature_schema.py
+Module: schemas.feature_schema
+Imports: ['__future__', 'typing', 'pydantic']
+Imported By: ['schemas/__init__.py']
+Classes: ['EngineeringFeature']
+Functions: []
+LOC: 17
+---
+File: schemas/geometry_schema.py
+Module: schemas.geometry_schema
+Imports: ['typing', 'pydantic']
+Imported By: ['core/filters/text_filter.py', 'schemas/__init__.py', 'core/filters/layer_filter.py', 'core/filters/duplicate_filter.py', 'core/filters/border_filter.py', 'core/filters/degenerate_filter.py']
+Classes: ['BaseEntity', 'LineEntity', 'CircleEntity', 'ArcEntity', 'PolylineEntity', 'RawDXFEntity', 'FilteredEntity', 'EntityConfidence', 'FilterStatistics', 'FilterResult']
+Functions: []
+LOC: 79
+---
+File: schemas/graph_schema.py
+Module: schemas.graph_schema
+Imports: ['typing', 'pydantic']
+Imported By: []
+Classes: ['TopologyVertex', 'TopologyEdge', 'TopologyGraph']
+Functions: []
+LOC: 69
+---
+File: schemas/semantic_schema.py
+Module: schemas.semantic_schema
+Imports: ['__future__', 'typing', 'pydantic']
+Imported By: ['schemas/dataset_schema.py', 'schemas/__init__.py']
+Classes: ['Relationship', 'SemanticEntity']
+Functions: []
+LOC: 28
+---
+File: scratch/analyze_repo.py
+Module: scratch.analyze_repo
+Imports: ['json', 'pathlib', 'collections', 'hashlib', 'difflib', 're', 'ast']
+Imported By: []
+Classes: []
+Functions: ['extract_imports_and_docstring', 'main']
+LOC: 148
+---
+File: scratch/analyze_repo_details.py
+Module: scratch.analyze_repo_details
+Imports: ['pathlib', 'ast']
+Imported By: []
+Classes: []
+Functions: ['get_imports_and_classes_funcs', 'main']
+LOC: 73
+---
+File: scratch/apply_exporter_refactor.py
+Module: scratch.apply_exporter_refactor
+Imports: ['pathlib', 're']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 1058
+---
+File: scratch/apply_exporter_refactor_final.py
+Module: scratch.apply_exporter_refactor_final
+Imports: ['pathlib']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 35
+---
+File: scratch/audit_details.py
+Module: scratch.audit_details
+Imports: ['json', 'collections', 'random']
+Imported By: []
+Classes: []
+Functions: ['get_sample_detail']
+LOC: 186
+---
+File: scratch/audit_pre_redesign.py
+Module: scratch.audit_pre_redesign
+Imports: ['json', 'collections']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 200
+---
+File: scratch/compare_exporters.py
+Module: scratch.compare_exporters
+Imports: ['pathlib', 'json', 're']
+Imported By: []
+Classes: []
+Functions: ['get_latest_run_dir', 'get_stats', 'main']
+LOC: 191
+---
+File: scratch/execute_cleanup.py
+Module: scratch.execute_cleanup
+Imports: ['stat', 'time', 'pathlib', 'os', 'shutil']
+Imported By: []
+Classes: []
+Functions: ['remove_readonly', 'safe_rmtree', 'main']
+LOC: 61
+---
+File: scratch/find_dup_logic.py
+Module: scratch.find_dup_logic
+Imports: ['pathlib', 'collections', 'hashlib', 'difflib', 'ast']
+Imported By: []
+Classes: []
+Functions: ['get_functions_and_classes', 'main', 'clean_source']
+LOC: 149
+---
+File: scratch/format_empty.py
+Module: scratch.format_empty
+Imports: ['json']
+Imported By: []
+Classes: []
+Functions: []
+LOC: 17
+---
+File: scratch/generate_baseline_stats.py
+Module: scratch.generate_baseline_stats
+Imports: ['pathlib', 'json', 're']
+Imported By: []
+Classes: []
+Functions: ['main']
+LOC: 113
+---
+File: sheet_metal_extended_generator.py
+Module: sheet_metal_extended_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'SheetMetalExtendedGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_SM04_puzzle_lock', 'build_SM05_conical_frustum', 'build_SM06_louver_panel', 'build_SM07_hemmed_edge', 'build_SM08_cross_break']
+LOC: 279
+---
+File: sheet_metal_generator.py
+Module: sheet_metal_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'SheetMetalGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_SM01_u_bracket', 'build_SM02_z_clip', 'build_SM03_enclosure_base']
+LOC: 234
+---
+File: structural_profile_generator.py
+Module: structural_profile_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'AdvancedStructuralGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_ST09_hat_channel', 'build_ST10_crane_rail', 'build_ST11_tslot_extrusion', 'build_ST12_cruciform', 'build_ST13_corrugated_deck', 'build_ST14_bulb_flat', 'build_ST15_dtube_handrail']
+LOC: 289
+---
+File: tests/__init__.py
+Module: tests.__init__
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 0
+---
+File: tests/archive/archive_test_phase7_bug_condition.py
+Module: tests.archive.archive_test_phase7_bug_condition
+Imports: ['math', 'pipeline.dataset_pipeline', 'pytest']
+Imported By: []
+Classes: ['TestPhase7ArithmeticLeakage']
+Functions: ['test_radial_pattern_arithmetic_leakage', 'test_slot_aspect_ratio_arithmetic_leakage', 'test_concentric_missing_relationships', 'test_repetition_complete_positions_arithmetic_leakage', '_create_radial_pattern_output', '_create_slot_output', '_create_concentric_output', '_create_repetition_output']
+LOC: 509
+---
+File: tests/archive/archive_test_phase7_preservation.py
+Module: tests.archive.archive_test_phase7_preservation
+Imports: ['json', 'typing', 'pathlib', 'hashlib', 'tempfile', 'core.exporters.dataset_exporter', 'math', 'hypothesis', 'pytest']
+Imported By: []
+Classes: ['TestPhase7Preservation']
+Functions: ['test_deterministic_splitting_property', 'test_jsonl_format_property', 'test_metadata_format_property', 'test_entity_lookup_construction_property', 'test_empty_input_handling_property', 'test_distance_calculation_property', 'test_radius_diameter_conversion_property', 'test_aspect_ratio_calculation_property', 'test_file_writing_logic_property']
+LOC: 474
+---
+File: tests/test_features.py
+Module: tests.test_features
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 1
+---
+File: tests/test_filters.py
+Module: tests.test_filters
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 1
+---
+File: tests/test_pipeline.py
+Module: tests.test_pipeline
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 1
+---
+File: tests/test_reader.py
+Module: tests.test_reader
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 1
+---
+File: tests/test_task_3_10.py
+Module: tests.test_task_3_10
+Imports: ['json', 'pathlib', 'unittest.mock', 'main', 'pytest']
+Imported By: []
+Classes: []
+Functions: ['test_context_result_passed_to_dataset_pipeline', 'test_context_statistics_logged', 'test_context_result_in_all_dataset_results']
+LOC: 330
+---
+File: thermal_heatsink_generator.py
+Module: thermal_heatsink_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'AerospacePocketingGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_LW01_milled_pocket', 'build_LW02_circular_lightening', 'build_LW03_spar_web', 'build_LW04_corner_gusset', 'build_LW05_isogrid_hex']
+LOC: 261
+---
+File: tooling_gauge_generator.py
+Module: tooling_gauge_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'ToolingGaugeGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'validate_and_save', 'build_TL01_sine_bar', 'build_TL02_snap_gauge', 'build_TL03_v_block', 'build_TL04_grid_plate', 'build_TL05_step_block']
+LOC: 252
+---
+File: tools/regenerate_dxf.py
+Module: tools.regenerate_dxf
+Imports: ['math', 'random', 'os', 'ezdxf']
+Imported By: []
+Classes: []
+Functions: ['is_malformed', 'regenerate_industrial_part', 'regenerate_synthetic_part', 'main']
+LOC: 177
+---
+File: turned_shaft_generator.py
+Module: turned_shaft_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'TurnedShaftGenerator']
+Functions: ['validate_closed_contours', '__init__', '_reset_document', 'add_dim', 'add_axis', 'build_TS01_basic_stepped', 'build_TS02_tapered_spindle', 'build_TS03_grooved_shaft', 'build_TS04_chamfered_pin', 'build_TS05_flanged_stub']
+LOC: 200
+---
+File: utils/__init__.py
+Module: utils.__init__
+Imports: []
+Imported By: []
+Classes: []
+Functions: []
+LOC: 0
+---
+File: utils/dxf_utils.py
+Module: utils.dxf_utils
+Imports: ['typing']
+Imported By: ['core/reader/entity_iterator.py']
+Classes: []
+Functions: ['safe_point', 'normalize_layer', 'normalize_entity_type']
+LOC: 28
+---
+File: utils/geometry_utils.py
+Module: utils.geometry_utils
+Imports: ['__future__', 'math']
+Imported By: []
+Classes: []
+Functions: ['distance_2d', 'midpoint_2d', 'angle_between', 'points_equal']
+LOC: 26
+---
+File: utils/graph_utils.py
+Module: utils.graph_utils
+Imports: ['__future__']
+Imported By: []
+Classes: []
+Functions: ['build_adjacency', 'find_connected_components']
+LOC: 36
+---
+File: utils/logger.py
+Module: utils.logger
+Imports: ['pathlib', 'sys', 'loguru']
+Imported By: ['core/grouping/spacing_detector.py', 'core/features/relationship_confidence_manager.py', 'core/features/candidate_confidence_analyzer.py', 'core/exporters/json_exporter.py', 'core/reader/dxf_reader.py', 'core/validation/schema_validator.py', 'core/supervision/context_packager.py', 'core/grouping/bolt_detector.py', 'core/grouping/vertex_indexer.py', 'core/supervision/inference_conditioner.py', 'pipeline/refinement_pipeline.py', 'core/grouping/region_analyzer.py', 'core/grouping/concentric_grouping.py', 'core/features/candidate_relationship_builder.py', 'pipeline/extraction_pipeline.py', 'pipeline/context_pipeline.py', 'core/features/feature_hierarchy_builder.py', 'core/reader/entity_iterator.py', 'core/compression/schema_formatter.py', 'pipeline/topology_pipeline.py', 'core/reader/dxf_loader.py', 'core/features/feature_inferrer.py', 'core/filters/duplicate_filter.py', 'core/filters/degenerate_filter.py', 'pipeline/feature_pipeline.py', 'core/supervision/target_constructor.py', 'core/filters/text_filter.py', 'core/features/radial_pattern_detector.py', 'core/features/slot_candidate_detector.py', 'core/supervision/sample_assembler.py', 'core/features/candidate_conflict_resolver.py', 'pipeline/dataset_pipeline.py', 'core/features/structural_dependency_mapper.py', 'pipeline/structural_pipeline.py', 'core/grouping/contour_hierarchy.py', 'core/grouping/adjacency_builder.py', 'core/filters/layer_filter.py', 'core/features/feature_region_grouper.py', 'core/features/context_cluster_analyzer.py', 'core/semantics/semantic_enricher.py', 'core/supervision/supervision_mapper.py', 'main.py', 'core/grouping/loop_detector.py', 'pipeline/semantic_pipeline.py', 'pipeline/full_pipeline.py', 'core/features/repeated_pattern_consolidator.py', 'core/grouping/contour_extractor.py', 'core/features/hole_candidate_detector.py', 'core/features/contextual_ambiguity_propagator.py', 'core/classifiers/role_classifier.py', 'core/features/symmetry_analyzer.py', 'core/grouping/relationship_builder.py', 'core/features/structural_ambiguity_tracker.py', 'core/filters/border_filter.py']
+Classes: []
+Functions: ['get_logger', 'log_quarantine']
+LOC: 46
+---
+File: utils/visualization.py
+Module: utils.visualization
+Imports: ['__future__']
+Imported By: []
+Classes: []
+Functions: ['export_debug_svg']
+LOC: 10
+---
+File: weldment_fabrication_generator.py
+Module: weldment_fabrication_generator
+Imports: ['collections', 'math', 'ezdxf']
+Imported By: []
+Classes: ['DXFValidationException', 'CADValidator', 'WeldmentFabricationGenerator']
+Functions: ['validate_closed_contours', 'validate_clean_export', 'validate_reasoning_supervision', '__init__', '_reset_document', 'add_dim', 'add_leader', 'add_center_mark', 'add_hatch', 'validate_and_save', 'build_WD01_coped_tube', 'build_WD02_tabbed_gusset', 'build_WD03_v_groove_prep', 'build_WD04_miter_node', 'build_WD05_scalloped_web']
+LOC: 253

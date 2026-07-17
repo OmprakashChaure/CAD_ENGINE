@@ -1,0 +1,421 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            16.0,
+            0.0
+          ],
+          [
+            16.0,
+            6.0
+          ],
+          [
+            12.0,
+            6.0
+          ],
+          [
+            12.0,
+            10.0
+          ],
+          [
+            28.0,
+            10.0
+          ],
+          [
+            28.0,
+            6.0
+          ],
+          [
+            24.0,
+            6.0
+          ],
+          [
+            24.0,
+            0.0
+          ],
+          [
+            40.0,
+            0.0
+          ],
+          [
+            40.0,
+            16.0
+          ],
+          [
+            34.0,
+            16.0
+          ],
+          [
+            34.0,
+            12.0
+          ],
+          [
+            30.0,
+            12.0
+          ],
+          [
+            30.0,
+            28.0
+          ],
+          [
+            34.0,
+            28.0
+          ],
+          [
+            34.0,
+            24.0
+          ],
+          [
+            40.0,
+            24.0
+          ],
+          [
+            40.0,
+            40.0
+          ],
+          [
+            24.0,
+            40.0
+          ],
+          [
+            24.0,
+            34.0
+          ],
+          [
+            28.0,
+            34.0
+          ],
+          [
+            28.0,
+            30.0
+          ],
+          [
+            12.0,
+            30.0
+          ],
+          [
+            12.0,
+            34.0
+          ],
+          [
+            16.0,
+            34.0
+          ],
+          [
+            16.0,
+            40.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            24.0
+          ],
+          [
+            6.0,
+            24.0
+          ],
+          [
+            6.0,
+            28.0
+          ],
+          [
+            10.0,
+            28.0
+          ],
+          [
+            10.0,
+            12.0
+          ],
+          [
+            6.0,
+            12.0
+          ],
+          [
+            6.0,
+            16.0
+          ],
+          [
+            0.0,
+            16.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          20.0,
+          20.0
+        ],
+        "radius": 3.4,
+        "diameter": 6.8,
+        "area": 36.31681107549801
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "LINE",
+      "handle": "90",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -10.0,
+          20.0
+        ],
+        "end": [
+          50.0,
+          20.0
+        ],
+        "length": 60.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          20.0,
+          -10.0
+        ],
+        "end": [
+          20.0,
+          50.0
+        ],
+        "length": 60.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "92",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 40.0,
+        "text": "40mm SQUARE PROFILE",
+        "position": [
+          0.0,
+          -50.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            40.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 8.0,
+        "text": "8mm %%P0.2 OPENING",
+        "position": [
+          16.0,
+          90.0
+        ],
+        "target_points": [
+          [
+            16.0,
+            40.0
+          ],
+          [
+            24.0,
+            40.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 16.0,
+        "text": "16mm T-WIDTH",
+        "position": [
+          12.0,
+          75.0
+        ],
+        "target_points": [
+          [
+            12.0,
+            30.0
+          ],
+          [
+            28.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Structural_ST11_TSlot.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "\u00d86.8mm CORE BORE",
+        "position": [
+          70.0,
+          70.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 6.8
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 8,
+        "kept_entities": 8,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

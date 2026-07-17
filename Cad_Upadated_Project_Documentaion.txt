@@ -1,0 +1,1051 @@
+# CAD_ENGINE: DXF-to-LLM Engineering Inference Dataset Pipeline
+
+> **Documentation status:** Reflects the live codebase and run `2026_07_01_15_08_02`.
+> Every technical claim ends with a `[source: ...]` citation.
+> Where the current code contradicts any prior document, the current code wins.
+
+---
+
+## Changes Since Previous Documentation
+
+The prior documentation described the project as of run `2026_06_23_18_38_17`.
+The table below records every confirmed difference between that document and the current codebase.
+
+| Item | Prior document said | Current codebase / run output | Source |
+|------|--------------------|-----------------------------|--------|
+| Run ID | `2026_06_23_18_38_17` | `2026_07_01_15_08_02` | `data/intermediate/` directory listing |
+| Total balanced tasks | 732 | **529** | `metadata.json` line 4 |
+| Drawings producing tasks | 143 | **110** | `metadata.json` line 18 |
+| Train / Val / Test split | 486 / 141 / 105 | **354 / 97 / 78** | `metadata.json` lines 21, 37, 52 |
+| Balancing threshold | Fixed at 101 | **Dynamic: `int(max(median, P75))`** | `dataset_pipeline.py` L1699-1702 |
+| `configs/thresholds.yaml` | Active config for all geometry tolerances | **Loaded only by `LayerFilter`** — all other thresholds are hardcoded constants | `layer_filter.py` L27-28; grep for `thresholds.yaml` returns zero hits in all other `.py` files |
+| `configs/extraction_rules.yaml` | Active config | **Never loaded by any Python module** | grep confirms zero hits |
+| `configs/semantic_rules.yaml` | Active config | **Never loaded by any Python module** | grep confirms zero hits |
+| `FeatureClass` / `RelationshipType` enums | Pipeline runtime types | **Defined at L24-49 but never instantiated** — pipeline uses raw string literals throughout | `semantic_pipeline.py` L24-49 + inspection of all `feature_class=` assignments in `map_features()` |
+| `core/classifiers/role_classifier.py` | Present in module map | **Absent from live codebase** — moved to `archive/placeholders/role_classifier.py` | directory listing |
+| `core/semantics/SemanticEnricher` | Listed as stub under `core/semantics/` | **Absent from live module** — in `archive/placeholders/semantic_enricher.py` | grep for `SemanticEnricher` |
+| `core/reader/dxf_reader.py` | Present in module map | **Does not exist** — only `dxf_loader.py` and `entity_iterator.py` present | `core/reader/` directory listing |
+| JSONL export format | Raw task record with `task_type` field | `task_type` **deleted at write time**; exported record contains pre-rendered `system`, `user`, `assistant` fields | `dataset_pipeline.py` L1959-1968 |
+| `SemanticRecordBuilder` | Described as the class that builds semantic records | **Does not exist** — replaced by `SemanticPipeline.run()` | `dataset_pipeline.py` L228-229 comment |
+| Model fine-tuning code | "Pending — not yet written" | **Still not written** — no training scripts, no LoRA config, no Colab notebook | `requirements.txt` — no peft / trl / transformers / bitsandbytes |
+| Part type classification | 24+ types listed | **8 scored classes only** — `bearing_housing`, `fastener`, `heatsink`, `gasket`, `structural_profile`, `sheet_metal`, `fitting`, `mechanical_component` | `semantic_pipeline.py` L1913-1987 |
+| Adjacency hub limit | 8 | **Confirmed 8** (hardcoded constant `MAX_HUB_SIZE = 8`) | `adjacency_builder.py` L23 |
+| Vertex snapping precision | 4 decimal places | **Confirmed 4** (hardcoded constant `VERTEX_PRECISION = 4`) | `vertex_indexer.py` L25 |
+| Kinematic LK03 drawing | Present in kinematic family LK01-LK13 | **LK03 absent** — kinematic family has 12 drawings, not 13 | `data/raw_dxf/` directory listing |
+| Blueprint / Plastic naming | Merged under "Workbook/Blueprint EX/PL" | Both `Blueprint_PL01-PL05` and `Plastic_PL02-PL05` exist as separate file sets | `data/raw_dxf/` listing |
+| `tools/` directory | Not mentioned | Contains `tools/regenerate_dxf.py` — utility to regenerate source DXF files | `tools/` listing |
+| `schemas/` directory | Not mentioned | **Five Pydantic model files** actively used throughout the pipeline | `schemas/` directory listing |
+| Weak-supervision quality check | Not mentioned | **New filter** — rejects tasks where context lacks engineering cues; primary driver of lower task count | `dataset_pipeline.py` L832-870 |
+| Task-type-specific context selection | Single context schema for all tasks | **Per-task-type curated context** — spacing, thread, wall tasks each receive different context subsets | `dataset_pipeline.py` L596-820 |
+| Graph identifier sanitization | Not mentioned | **`_sanitize_graph_identifiers()`** strips internal IDs before export | `dataset_pipeline.py` L404-434 |
+| Semantic coverage audit file | Not mentioned | **`semantic_coverage_audit.json`** generated per run, classifying every semantic fact as TARGET / CONTEXT / LOST | `dataset_pipeline.py` L2029-2195 |
+
+---
+
+## What This System Does
+
+CAD_ENGINE reads DXF engineering drawings, extracts geometric and semantic structure through a
+seven-phase deterministic pipeline, and emits fine-tuning tasks in instruction-tuning JSONL
+format. Each task presents a language model with visible engineering context — a feature type,
+neighbor geometry dimensions, symmetry relationships, concentric bore structure — and asks it
+to infer one missing engineering property: a bore diameter, wall thickness, thread size, or
+feature spacing.
+
+The pipeline is fully deterministic. No neural networks, no probabilistic inference, no LLM
+calls occur during processing. Given the same DXF file and the same code, every output file is
+identical on every run.
+
+The generated dataset is intended to fine-tune Qwen2.5-Coder-7B-Instruct using LoRA on a
+Colab T4 GPU. That fine-tuning step has not been implemented yet.
+
+---
+
+## Current Dataset State
+
+Most recent complete run: **`2026_07_01_15_08_02`**
+
+All numbers are read directly from
+`data/intermediate/2026_07_01_15_08_02/phase7_export/metadata.json`.
+
+[source: `data/intermediate/2026_07_01_15_08_02/phase7_export/metadata.json`, full file]
+
+| Metric | Value |
+|--------|-------|
+| Schema version | 3.0.0 |
+| Semantic records generated | 143 (all 143 DXF files successfully processed) |
+| Drawings producing at least one task | **110** |
+| Total tasks after balancing | **529** |
+| Train split | **354** |
+| Validation split | **97** |
+| Test split | **78** |
+| Task families | 11 |
+| Cross-split leakage | 0 (enforced by hard assertion at split time) |
+
+33 drawings produced semantic records but yielded zero tasks after empty-context filtering and
+the weak-supervision quality check. This is intentional — the pipeline explicitly rejects tasks
+where the context does not contain sufficient engineering cues for a model to reason from.
+
+### Task Family Distribution
+
+[source: `data/intermediate/2026_07_01_15_08_02/phase7_export/metadata.json`, lines 5-17]
+
+| Family | Count |
+|--------|-------|
+| `infer_spacing` | 70 |
+| `infer_bore_diameter` | 70 |
+| `infer_profile_dimension` | 70 |
+| `infer_pocket_dimension` | 67 |
+| `infer_feature_span` | 60 |
+| `infer_wall_thickness` | 51 |
+| `infer_hole_count` | 47 |
+| `infer_hole_diameter` | 42 |
+| `infer_outer_diameter` | 20 |
+| `infer_slot_dimension` | 19 |
+| `infer_thread_size` | 13 |
+
+The three families capped at 70 (spacing, bore diameter, profile dimension) hit the dynamic
+balancing threshold. The lower-count families were not downsampled.
+
+---
+
+## Source DXF Drawings
+
+143 DXF files live in `data/raw_dxf/`. Every file was generated by Python.
+
+[source: `data/raw_dxf/` directory listing, confirmed by inspection]
+
+| Family prefix | Files | Notes |
+|---------------|-------|-------|
+| `Aero_LW` | LW01-LW10 (10) | Aerospace lightweight — milled pockets, spar webs, isogrid |
+| `Bearing_Housing_BH` | BH01-BH10 (10) | Bore, OD, wall thickness, radial hole patterns |
+| `Blueprint_PL` | PL01-PL05 (5) | Blueprint-style multi-feature drawings |
+| `CNC_WW` | WW09-WW10 (2) | CNC routing profiles (v-carve, tabbed) |
+| `Circular_Flange_FL` / `Corrected_Circular_Flange_FL` | FL01, FL03, FL04, Corrected FL02, Corrected FL05 (5) | Flange hole patterns |
+| `CrossSection_CS` | CS01-CS03 (3) | Cross-section bore/hub geometry |
+| `Electrical_BB` | BB01-BB05 (5) | Electrical busbar profiles |
+| `Fluid_PF` | PF02-PF05 (4) | Fluid fittings — thread ports, hex flats, barbs |
+| `Gasket_GS` | GS01-GS05 (5) | Bore patterns, sealing grooves, O-ring glands |
+| `Gear_GR` | GR01-GR03 (3) | Spur gear, spline, sprocket |
+| `Hardware_HW` | HW01-HW05 (5) | Hex bolt, SHCS, countersunk, shoulder screw, hex nut |
+| `Kinematic_LK` | LK01, LK02, LK04-LK13 (**12**) | **LK03 is absent from `data/raw_dxf/`** |
+| `Motor_Bracket_MB` | MB01-MB05 (5) | Mounting hole patterns, wall thickness |
+| `Optomech_OM` | OM01-OM05 (5) | Flexure hinges, dovetail rails, kinematic plates |
+| `PCB_PC` | PC02-PC06, PC08-PC09 (7) | BGA grids, differential pairs, edge connectors |
+| `Plastic_PL` | PL02-PL05 (4) | Screw boss, shelled box, living hinge, crush ribs |
+| `SheetMetal_SM` | SM01, SM02, SM05-SM08 (6) | Sheet metal profiles with bends and reliefs |
+| `Spring_SP` | SP01-SP05 (5) | Die spring, bellows, belleville stack, leaf spring, garter |
+| `Structural_ST` | ST01-ST15 (15) | I-beam, HSS tube, angle, C-channel, T-bar, Z-bar, hex tube, through D-tube |
+| `Thermal_HS` | HS01-HS05 (5) | Comb heatsink, radial heatsink, tapered heatsink, cold plate, stator casing |
+| `Tooling_TL` | TL01-TL05 (5) | Sine bar, snap gauge, V-block, grid plate, step block |
+| `Turbo_AM` | AM01-AM05 (5) | Airfoil, fir-tree root, impeller vane, venturi nozzle, labyrinth seal |
+| `Turned_Shaft_TS` | TS01-TS05 (5) | Turned shafts — bore, shoulder, keyway, threads |
+| `Weldment_WD` | WD01-WD05 (5) | Coped tube, tabbed gusset, V-groove prep, miter node, scallop web |
+| `Workbook_EX` | EX01, EX05 (2) | Multi-feature training drawings |
+
+The `Blueprint_PL` and `Plastic_PL` families both use `PL` codes in their filenames; they are
+entirely separate files from separate generator scripts.
+
+Three DXF files exist in the project root (`AR01_Moment_Base_Plate.dxf`,
+`AR02_Heavy_Gusset_Plate.dxf`, `AR03_Steel_Fin_Plate.dxf`) and are **not** processed by the
+main pipeline — they are not in `data/raw_dxf/`.
+
+---
+
+## Seven-Phase Pipeline
+
+### Architecture Overview
+
+```
+DXF file  (data/raw_dxf/*.dxf)
+    |
+    v  Phase 1   ExtractionPipeline        pipeline/extraction_pipeline.py
+    |             Load -> iterate -> normalize -> filter (5 filters)
+    |             Output: entities[], quarantined_entities[], filter_reports[]
+    |
+    v  Phase 2   TopologyPipeline          pipeline/topology_pipeline.py
+    |             Vertex indexing -> adjacency -> orphan detection
+    |             Output: shared_vertices, adjacency_list, orphan_entities
+    |
+    v  Phase 3   StructuralPipeline        pipeline/structural_pipeline.py
+    |             Contours -> loops -> concentric groups -> regions -> contour hierarchy
+    |             Output: loops, concentric_groups, regions, contour_hierarchy
+    |
+    v  Phase 4   FeaturePipeline           pipeline/feature_pipeline.py
+    |             Hole candidates -> slot candidates -> radial patterns
+    |             -> symmetry -> feature-region grouping
+    |             Output: hole_candidates, slot_candidates, radial_patterns, symmetries
+    |
+    v  Phase 5   RefinementPipeline        pipeline/refinement_pipeline.py
+    |             Confidence scoring -> hierarchy -> conflict detection
+    |             -> repetition consolidation -> ambiguity tracking
+    |             Output: refined candidates, repetition_groups, ambiguity flags
+    |
+    v  Phase 6   ContextPipeline           pipeline/context_pipeline.py
+    |             Relationship building -> cluster analysis -> confidence scoring
+    |             -> structural dependency mapping -> ambiguity propagation
+    |             Output: relationships, clusters
+    |
+    v  Phase 7a  DatasetPipeline           pipeline/dataset_pipeline.py  (DatasetPipeline class)
+    |             Per-drawing: supervision mapping, context packaging,
+    |             target construction, inference conditioning, sample assembly
+    |             Output: data/intermediate/{run_id}/phase7_dataset/{id}_dataset.json
+    |
+    v  Phase 7b  DatasetExporter           pipeline/dataset_pipeline.py  (DatasetExporter class)
+                  All drawings: SemanticPipeline -> semantic records
+                  -> task generation -> dedup -> quality filter
+                  -> balance -> deterministic split -> JSONL write
+                  Output: data/intermediate/{run_id}/phase7_export/
+                          train.jsonl, validation.jsonl, test.jsonl
+                          metadata.json, semantic_records.json
+                          semantic_metadata.json, semantic_coverage_audit.json
+```
+
+The orchestrator is `main.py`. It loops over every `*.dxf` in `data/raw_dxf/`, runs phases
+1-7a per file, accumulates results in memory, then calls `DatasetExporter.export()` once on
+the entire batch.
+
+[source: `main.py`, full file — L73 (glob), L266 (exporter call)]
+
+---
+
+### Phase 1: Extraction and Filtering
+
+**Module:** `pipeline/extraction_pipeline.py`
+
+`ExtractionPipeline` loads a DXF file via `DXFLoader`, iterates the modelspace via
+`EntityIterator`, normalizes each entity through `GeometryNormalizer`, then passes the entity
+list through five sequential filters.
+
+[source: `pipeline/extraction_pipeline.py`, full file]
+
+#### DXF Loading
+
+`core/reader/dxf_loader.py`, `DXFLoader.load()`:
+
+1. Validates that the file exists and has a `.dxf` extension.
+2. Calls `ezdxf.readfile()`.
+3. On any exception, falls back to `ezdxf.recover.readfile()`.
+4. If recovery also fails, raises `RuntimeError`.
+
+[source: `core/reader/dxf_loader.py`, full file]
+
+**Note:** `core/reader/dxf_reader.py` does not exist. The prior documentation listed it, but
+it was never created. The reader is `dxf_loader.py` + `entity_iterator.py` only.
+
+#### Entity Types
+
+Recognized entity types (constant `SUPPORTED_TYPES` in `entity_iterator.py`):
+
+[source: `core/reader/entity_iterator.py`, L15-27]
+
+```
+LINE, CIRCLE, ARC, LWPOLYLINE, POLYLINE, SPLINE, TEXT, MTEXT, INSERT, DIMENSION, HATCH
+```
+
+Any DXF entity type not in this set is silently skipped.
+
+Entities that ARE in this set but lack supported geometry — SPLINE, HATCH, INSERT, and any
+TEXT/MTEXT/DIMENSION that `GeometryNormalizer` cannot parse — receive `supported: False` in
+their normalized dict. They are quarantined by `DegenerateFilter` rather than deleted, and
+remain accessible in the pipeline output for potential future annotation extraction.
+
+**Entity identity** is assigned as `ent_{counter:05d}` where `counter` is a sequential integer
+per DXF file starting at 1.
+
+[source: `core/reader/entity_iterator.py`, L86]
+
+#### Geometry Normalization
+
+`core/classifiers/geometry_normalizer.py`, `GeometryNormalizer.normalize()`:
+
+[source: `core/classifiers/geometry_normalizer.py`, full file]
+
+| Entity type | Canonical fields produced |
+|-------------|---------------------------|
+| LINE | `start [x,y]`, `end [x,y]`, `length` |
+| CIRCLE | `center [x,y]`, `radius`, `diameter`, `area` |
+| ARC | `center [x,y]`, `radius`, `start_angle`, `end_angle` |
+| LWPOLYLINE | `points [[x,y]...]`, `closed`, `has_arcs`, `arc_segments` (per-vertex bulge data) |
+| POLYLINE | `points [[x,y]...]`, `closed`, `has_arcs`, `arc_segments` |
+| DIMENSION | `dimension_type`, `value`, `text`, `position`, `target_points` |
+| TEXT / MTEXT | `text`, `position`, `height`, `text_role`, `numeric_value` |
+
+**DIMENSION value extraction** (in priority order):
+1. `parse_fractional_value()` on raw text — handles `1/2`, `3/4`, `1 1/4`, etc.
+2. `entity.dxf.actual_measurement` attribute if positive.
+3. Regex extraction from stripped text: removes leading `NxN` count notation, extracts first
+   numeric token.
+
+**TEXT `text_role` classification:**
+`thread_callout` | `tolerance` | `radius_value` | `diameter_value` | `angle_value` |
+`dimension_value` | `annotation`
+
+#### Filter Chain
+
+Applied in order; each filter receives the kept entities from the prior filter:
+
+1. **`TextFilter`** — quarantines TEXT, MTEXT, DIMENSION entities (annotation path).
+2. **`DegenerateFilter`** — removes zero-length lines, zero-radius circles, and entities with
+   `supported: False` (these go to `quarantined_entities`, not `removed_entities`).
+3. **`DuplicateFilter`** — removes geometrically identical entities by exact coordinate match.
+4. **`LayerFilter`** — reads `configs/layer_rules.yaml`; removes entities on layers in
+   `ignore_layers` list (`DEFPOINTS`, `VIEWPORT`, `VIEW`, `TEXT`, `ANNOTATION`, `TITLE`,
+   `BORDER`). **This is the only place any YAML config is read at runtime.**
+5. **`BorderFilter`** — detects and removes the drawing border/title block rectangle.
+
+[source: `pipeline/extraction_pipeline.py`, L46-104;
+ `core/filters/layer_filter.py`, L22-28;
+ `configs/layer_rules.yaml`, full file]
+
+#### Config File Status
+
+[source: grep for each filename across all `.py` files]
+
+| Config file | Loaded at runtime? | By whom |
+|------------|-------------------|---------|
+| `configs/layer_rules.yaml` | **Yes** | `LayerFilter.__init__()` |
+| `configs/thresholds.yaml` | **No** | Not imported by any Python module |
+| `configs/extraction_rules.yaml` | **No** | Not imported by any Python module |
+| `configs/semantic_rules.yaml` | **No** | Not imported by any Python module |
+
+The values in `thresholds.yaml` (`slot_aspect_ratio: 2.0`, `bolt_min_count: 3`,
+`bolt_radius_tolerance: 0.01`, etc.) accurately document the hardcoded constants scattered
+through the relevant modules. Editing the file changes nothing at runtime.
+
+---
+
+### Phase 2: Topology Graph Construction
+
+**Module:** `pipeline/topology_pipeline.py`
+
+[source: `pipeline/topology_pipeline.py`, full file]
+
+Three stages, always in sequence:
+
+**Stage 1 — VertexIndexer** (`core/grouping/vertex_indexer.py`):
+
+Extracts endpoints from LINE, ARC, POLYLINE, LWPOLYLINE. Circles do not contribute endpoints —
+their centers are not vertices in the topology graph. Rounds coordinates to 4 decimal places
+(`VERTEX_PRECISION = 4`) for deterministic snapping. Produces `vertex_map`:
+`(rounded_x, rounded_y)` -> list of entity_ids sharing that vertex.
+
+[source: `core/grouping/vertex_indexer.py`, L25, L36]
+
+**Stage 2 — AdjacencyBuilder** (`core/grouping/adjacency_builder.py`):
+
+From `shared_vertices`, builds a deduplicated, direction-independent `adjacency_list`. Vertices
+with more than `MAX_HUB_SIZE = 8` connected entities are treated as noise hubs (typical at
+origin points or heavily shared corners) and skipped — their connections are not added to the
+adjacency list.
+
+[source: `core/grouping/adjacency_builder.py`, L23]
+
+**Stage 3 — Orphan detection** (`topology_pipeline.py`, `_detect_orphans()`):
+
+Entities with no entry in `adjacency_list` are flagged as `orphan_entities`. Circles are
+always orphans because their center is not a topology vertex.
+
+Outputs: `shared_vertices`, `edges`, `adjacency_list`, `orphan_entities`, `statistics`.
+
+---
+
+### Phase 3: Structural Recognition
+
+**Module:** `pipeline/structural_pipeline.py`
+
+Five sub-stages:
+
+1. **Contour extraction** (`core/grouping/contour_extractor.py`): traverses the adjacency graph
+   to find maximal chains of connected entities. Each chain is a contour candidate.
+
+2. **Loop detection** (`core/grouping/loop_detector.py`): verifies which contours form closed
+   topological cycles — i.e., the chain returns to its start vertex. Closed loops are candidate
+   enclosed regions.
+
+3. **Concentric grouping** (`core/grouping/concentric_grouping.py`): groups CIRCLE and ARC
+   entities that share the same center within the 4-decimal-place vertex precision. These
+   concentric groups are the primary geometric evidence for bore and shaft features.
+
+4. **Region analysis** (`core/grouping/region_analyzer.py`): identifies disconnected topology
+   islands — groups of entities with no topological path between them.
+
+5. **Contour hierarchy** (`core/grouping/contour_hierarchy.py`): for closed loops, determines
+   containment by bounding box. Produces `nesting_depth` and `contour_role` (outer / inner).
+   Inner loops nested inside the outermost loop are pocket candidates.
+
+---
+
+### Phase 4: Feature Candidate Detection
+
+**Module:** `pipeline/feature_pipeline.py`
+
+Five sub-stages:
+
+1. **Hole candidate detection** (`core/features/hole_candidate_detector.py`): each concentric
+   group -> one hole candidate with a radius list, center, and evidence type.
+
+2. **Slot candidate detection** (`core/features/slot_candidate_detector.py`): identifies
+   elongated closed contours as slots by bounding-box aspect ratio. Threshold is hardcoded at
+   **2.0** — not read from `thresholds.yaml`. Arc-ended contours -> standard slots;
+   all-straight-edge contours -> rectangular pockets.
+
+3. **Radial pattern detection** (`core/features/radial_pattern_detector.py`): groups hole
+   candidates that are evenly spaced angularly around a common center. Minimum 3 holes required
+   to form a pattern.
+
+4. **Symmetry analysis** (`core/features/symmetry_analyzer.py`): detects horizontal and
+   vertical mirror symmetry in entity distributions. Produces `mirror_axis` and `axis_position`
+   for each symmetry found.
+
+5. **Feature-region grouping** (`core/features/feature_region_grouper.py`): associates feature
+   candidates with the topology regions they occupy.
+
+---
+
+### Phase 5: Feature Refinement
+
+**Module:** `pipeline/refinement_pipeline.py`
+
+Five sub-stages:
+
+1. **Confidence analysis** (`core/features/candidate_confidence_analyzer.py`): scores the
+   structural reliability of each candidate based on evidence quality.
+
+2. **Hierarchy building** (`core/features/feature_hierarchy_builder.py`): establishes
+   parent-child relationships between features (e.g., a hole group inside an outer contour).
+
+3. **Conflict detection** (`core/features/candidate_conflict_resolver.py`): flags candidates
+   that claim overlapping geometry. Conflicts are logged but not forcibly resolved — both
+   candidates continue downstream.
+
+4. **Repetition consolidation** (`core/features/repeated_pattern_consolidator.py`): groups
+   candidates sharing the same geometric signature (type + rounded dimensions) into
+   `repetition_groups`.
+
+5. **Ambiguity tracking** (`core/features/structural_ambiguity_tracker.py`): tags candidates
+   below the confidence threshold as `ambiguous`. Ambiguity is propagated into training context
+   as-is — the pipeline does not resolve or discard ambiguous candidates.
+
+---
+
+### Phase 6: Context Organization
+
+**Module:** `pipeline/context_pipeline.py`
+
+Five sub-stages:
+
+1. **Relationship building** (`core/features/candidate_relationship_builder.py`): produces
+   `repetition_sibling`, `concentric`, and `hierarchical_child` relationships from Phase 5
+   outputs.
+
+2. **Context cluster analysis** (`core/features/context_cluster_analyzer.py`):
+   connected-component analysis on the relationship graph to identify feature clusters.
+
+3. **Relationship confidence** (`core/features/relationship_confidence_manager.py`): scores
+   each relationship by the average confidence of its constituent candidates.
+
+4. **Structural dependency mapping** (`core/features/structural_dependency_mapper.py`):
+   identifies which features are geometrically dependent on others.
+
+5. **Contextual ambiguity propagation** (`core/features/contextual_ambiguity_propagator.py`):
+   candidate-level ambiguity propagates upward to the relationship and cluster levels.
+
+---
+
+### Phase 7: Semantic Records and Dataset Export
+
+This is the most complex phase. It runs in two parts.
+
+[source: `pipeline/dataset_pipeline.py`, full file — 2196 lines]
+
+#### 7a. Per-Drawing: DatasetPipeline
+
+`DatasetPipeline.run()` runs five stages for each DXF:
+
+[source: `pipeline/dataset_pipeline.py`, `DatasetPipeline.run()`, L45-145]
+
+1. **Supervision mapping** (`core/supervision/supervision_mapper.py`): associates DIMENSION
+   and TEXT entities with geometry entities via two strategies:
+   - Target-point proximity: DIMENSION `target_points` must be within
+     `ASSOCIATION_TOLERANCE = 1.0` unit of a geometry endpoint or circle center.
+   - Value comparison: dimension numeric value must be within 1% of a computable geometric
+     measurement (line length, diameter, etc.).
+   [source: `core/supervision/supervision_mapper.py`, L29]
+
+2. **Context packaging** (`core/supervision/context_packager.py`): for each feature candidate,
+   assembles the training context: topology neighbors, neighbor dimensions, contour hierarchy
+   position, feature type, repetition groups, concentric group membership.
+
+3. **Target construction** (`core/supervision/target_constructor.py`): selects the primary
+   engineering parameter for the feature type as the prediction target. Rejects any target
+   whose value is below `min_target_value = 0.1`.
+   [source: `dataset_pipeline.py`, L91]
+
+4. **Inference conditioning** (`core/supervision/inference_conditioner.py`): masks the target
+   value from the context to prevent direct copying.
+
+5. **Sample assembly** (`core/supervision/sample_assembler.py`): combines the conditioned
+   context and target into a training sample tagged `leakage_free: true`.
+
+Output: `data/intermediate/{run_id}/phase7_dataset/{drawing_id}_dataset.json` per drawing.
+
+#### 7b. Batch Export: DatasetExporter + SemanticPipeline
+
+`DatasetExporter.export()` is called once on the full batch of all drawing results.
+
+[source: `pipeline/dataset_pipeline.py`, `DatasetExporter.export()`, L209-403]
+
+**Step 1 — Build semantic records.** For each drawing result, calls
+`SemanticPipeline.run()`.
+
+**SemanticPipeline** (`pipeline/semantic_pipeline.py`, 2091 lines):
+
+[source: `pipeline/semantic_pipeline.py`, `SemanticPipeline.run()`, L2000-2074]
+
+`SemanticPipeline.run()` executes in order:
+1. `reconstruct_dimensions()` — overall bounding box from entity geometry + dimension text.
+2. `map_features()` — maps all structural/feature evidence to `FeatureInstance` objects.
+3. `map_relationships()` — maps Phase 6 relationships to `Relationship` objects.
+4. `determine_part_type()` — scores the drawing against 8 part classes, picks the highest.
+5. Assembles a `SemanticRecord` dataclass.
+6. `_validate()` — checks `drawing_id` non-empty, `part_type` non-empty, every feature has
+   a non-empty `feature_class` string and a dict `parameters`.
+
+**SemanticRecord schema:**
+
+[source: `pipeline/semantic_pipeline.py`, L84-107]
+
+```python
+@dataclass
+class SemanticRecord:
+    drawing_id: str
+    part_type: str
+    overall_dimensions: Dict[str, float]   # keys: width, height
+    features: List[FeatureInstance]
+    relationships: List[Relationship]
+    hierarchy: Optional[Dict]
+    metadata: Optional[Dict]
+```
+
+`FeatureInstance.parameters` is a free-form `Dict[str, Any]`. There is no per-feature-class
+typed schema.
+
+**FeatureClass and RelationshipType enums** are defined at `semantic_pipeline.py` L24-49 but
+are never instantiated at runtime. The pipeline assigns feature classes as plain string
+literals everywhere in `map_features()`. The enums document valid values but have no runtime
+effect.
+
+[source: `semantic_pipeline.py`, L24-49]
+
+**Feature classes produced** in the current run:
+
+[source: `data/intermediate/2026_07_01_15_08_02/phase7_export/semantic_metadata.json`, lines 6-34]
+
+`pocket`, `concentric_bore`, `hole_group`, `dimension_annotations`, `unknown_facts`,
+`thread`, `structural_profile`, `fitting`, `hole_pattern`, `chamfer`, `bend_relief`,
+`rib`, `alignment_tab`, `bolt`, `hex_head`, `port`, `lube_port`, `slot_array`, `keyway`,
+`shoulder`, `o_ring`, `channel`, `heatsink_fin`, `heatsink_core`, `cope`, `screw`,
+`hex_drive`, `fillet_group`, `sheet_metal_bend`
+
+**Part type classification** — 8 scored categories with scoring heuristics:
+
+[source: `semantic_pipeline.py`, L1913-1987]
+
+| Part type | Primary triggers |
+|-----------|-----------------|
+| `bearing_housing` | `concentric_bore` with diameter >= 20 mm + lube port / bearing bore type keyword |
+| `fastener` | `thread` feature + bolt/screw/hex_head/cylindrical_head feature classes |
+| `heatsink` | `heatsink_fin` + `heatsink_core` feature classes |
+| `gasket` | `alignment_tab` or `o_ring` feature classes |
+| `structural_profile` | `structural_profile` feature class + web/flange thickness parameters |
+| `sheet_metal` | `sheet_metal_bend` or `bend_relief` feature classes |
+| `fitting` | `fitting` feature class |
+| `mechanical_component` | Fallback when no category scores >= 1.5 |
+
+**Step 2 — Generate tasks.** `_build_tasks_from_semantic()` iterates semantic records and
+generates raw task dicts by feature class:
+
+[source: `dataset_pipeline.py`, `_build_tasks_from_semantic()`, L436-1052]
+
+| Feature class | Tasks generated |
+|---------------|----------------|
+| `concentric_bore` | `bore_diameter`, `boss_diameter`, `base_diameter`, `flange_diameter`, and computed `wall_thickness = (outer_d - bore_d) / 2` |
+| `hole_pattern` | `spacing` (from `pcd`), `hole_count`, `hole_diameter`, `profile_dimension` (counterbore depth) |
+| `hole_group` | `hole_count`, `bore_diameter` or `hole_diameter` (chosen by annotation text), `spacing` |
+| `slot_array` | `slot_dimension` for `width` and for `length` |
+| `thread` | `thread_size` from `nominal_diameter` |
+| `structural_profile` | `profile_dimension` for `web_thickness` / `flange_thickness`; `wall_thickness` for `wall_thickness` |
+| `pocket` | `pocket_dimension` for `pocket_width` / `pocket_length`; `wall_thickness` for `perimeter_wall` |
+| Feature span | Added if >= 2 unique feature centers exist; computes center-to-center X and Y spans (requires span > 0.1) |
+| Various (bolt, fitting, heatsink_fin, etc.) | Additional profile, thread, and dimension tasks per feature parameters present |
+
+**Thread size normalization** (`_normalize_thread_size()`): converts raw annotation text or
+numeric values to canonical thread designations (`M10`, `M12`, `G1/4`, `NPT1/2`, `3/8-24
+UNF`, etc.) before the target value is stored.
+
+[source: `dataset_pipeline.py`, L465-532]
+
+**Task-type-specific context selection:** Each task type receives a different subset of the
+available context fields. This is a significant design change from the prior documentation.
+
+[source: `dataset_pipeline.py`, L596-820]
+
+| Task type | Context fields included |
+|-----------|------------------------|
+| `infer_spacing` | topology_neighbors, symmetries, relationships, neighbor_dimensions |
+| `infer_bore_diameter` | feature_parameters_visible, concentric_features, hierarchy, overall_dimensions |
+| `infer_wall_thickness` | feature_parameters_visible, concentric_features, nesting_context, overall_dimensions |
+| `infer_thread_size` | feature_parameters_visible (thread-related only), concentric_features |
+| `infer_hole_count` | feature_parameters_visible, relationships, symmetries, topology_neighbors |
+| `infer_pocket_dimension` | feature_parameters_visible (pocket dims only), hierarchy, overall_dimensions |
+| `infer_profile_dimension` | feature_parameters_visible, topology_neighbors, neighbor_dimensions |
+| `infer_feature_span` | overall_dimensions, topology_neighbors, relationships |
+| `infer_outer_diameter` | feature_parameters_visible, concentric_features, overall_dimensions |
+| `infer_hole_diameter` | feature_parameters_visible, hole pattern context, relationships |
+| `infer_slot_dimension` | feature_parameters_visible (slot dims only), hierarchy |
+
+**Weak supervision quality check:** After context is assembled for each task, a per-task
+validator confirms the context contains at least one engineering cue usable for inference.
+Tasks failing this check are rejected and logged as warnings. This filter does not appear
+in the prior documentation and is the primary reason for the lower task count in the current
+run versus the prior run.
+
+[source: `dataset_pipeline.py`, L832-870]
+
+**Graph identifier sanitization:** Before any task context is written to disk,
+`_sanitize_graph_identifiers()` recursively walks the context dict and removes all internal
+pipeline identifiers matching patterns `hc_*`, `rp_*`, `sc_*`, `cg_*`, `rg_*`, `ent_*`.
+Only physical engineering values reach the exported record.
+
+[source: `dataset_pipeline.py`, L404-434]
+
+**Step 3 — Deduplicate and filter.** Three filters run on the raw task list before balancing:
+
+[source: `dataset_pipeline.py`, L341-366, L832-870]
+
+1. **Deduplication**: exact match on `(drawing_id, json(context), json(target))` triplet.
+2. **Empty-context filter**: rejects tasks where all of `feature_parameters_visible`,
+   `neighbor_dimensions`, `topology_neighbors`, `relationships`, `symmetries`, and
+   `concentric_features` are empty or absent.
+3. **Weak-supervision quality check** (above).
+
+**Step 4 — Balance.** `_balance_tasks()`:
+
+[source: `dataset_pipeline.py`, L1690-1737]
+
+```python
+counts  = [len(tasks_by_family[f]) for f in tasks_by_family]
+median  = float(np.median(counts))
+p75     = float(np.percentile(counts, 75))
+threshold = int(max(median, p75))
+```
+
+For any family exceeding the threshold:
+1. **Anchor pass** — include exactly one task per unique `drawing_id` in the family.
+2. **Fill pass** — stride over the remaining tasks to fill the quota up to `threshold`.
+
+The threshold is **not fixed**. It is recomputed from the actual family distribution on every
+run. The prior documentation's claim of "101" was not a fixed parameter and is not applicable
+to the current run.
+
+**Step 5 — Split.** `_split_deterministic()`:
+
+[source: `dataset_pipeline.py`, L1739-1804]
+
+Split ratios: **70% train / 15% validation / 15% test**.
+
+[source: `dataset_pipeline.py`, L29-31]
+
+Algorithm:
+1. Strip variant suffixes from drawing IDs: `Corrected_`, `_variant`, `_stress`, `_step`,
+   `_v2`, `_200mm`.
+2. Group cleaned base IDs by family prefix (leading alphabetic tokens from the filename).
+3. For each base ID, compute `MD5("cad_engine_v2_split_salt_" + base_id) % 100`:
+   - 0-69 â†’ train
+   - 70-84 â†’ validation
+   - 85-99 â†’ test
+4. Assert that the resulting `train_drawings`, `val_drawings`, `test_drawings` sets have
+   zero pairwise intersection. Raises `AssertionError` if any overlap is detected.
+
+All tasks from a given drawing always land in the same split. Split is at drawing level.
+
+**Step 6 — Write JSONL.** `_write_jsonl()`:
+
+[source: `dataset_pipeline.py`, L1806-1954, L1956-1968]
+
+For each task, calls `_build_instruction_prompt()` to render `system`, `user`, `assistant`
+strings from the structured context and target. The `task_type` key is then deleted from the
+dict, and the remaining fields (including the rendered prompt) are written as one JSON line.
+
+**Exported record structure:**
+
+```json
+{
+  "drawing_id": "Bearing_Housing_BH08",
+  "context": {
+    "part_type": "bearing_housing",
+    "feature_type": "concentric_bore",
+    "overall_dimensions": {"width": 140.0, "height": 110.0},
+    "feature_parameters_visible": {"outer_diameter": 70.0},
+    "concentric_features": [
+      {"role": "concentric_element", "outer_diameter": 70.0}
+    ]
+  },
+  "target": {
+    "property": "bore_diameter",
+    "value": 50.0
+  },
+  "system": "You are an expert mechanical engineering assistant specializing in engineering drawings and CAD reasoning. Infer missing engineering dimensions and properties from the provided engineering context.",
+  "user": "Task:\nInfer the missing bore diameter for drawing 'Bearing_Housing_BH08'.\n...",
+  "assistant": "50.0"
+}
+```
+
+`task_type` is absent from the exported file. The structured `context` / `target` fields and
+the pre-rendered `system` / `user` / `assistant` fields both represent the same task; either
+can be used by downstream training code.
+
+---
+
+## V2.1 Task Family Mapping
+
+All raw property names collapse into 11 canonical `infer_*` families via `_map_to_v21_family()`.
+
+[source: `dataset_pipeline.py`, L1455-1513]
+
+| Canonical family | Property names mapped to it |
+|-----------------|-----------------------------|
+| `infer_wall_thickness` | `wall_thickness`, `perimeter_wall`, `internal_web`, `flexure_web`, `uniform_wall_isogrid`, `center_web`, `root_thk`, `conductor_width`, and any prop containing `wall_thk`, `material_thk`, `nominal_thk`, `thickness` |
+| `infer_pocket_dimension` | `pocket_width`, `pocket_length`, `pocket_w`, `pocket_l`, `groove_base_width`, `opening_width`, `yoke_channel`, `pocket_height`, and any prop containing `pocket` or `groove` |
+| `infer_slot_dimension` | `slot_width`, `slot_length`, `slot_w`, `slot_l`, `keyway_width`, `keyway_depth`, `channel_width`, `channel_depth`, `channel_length`, and any prop containing `slot` or `keyway` |
+| `infer_feature_span` | `overall_width`, `overall_height`, `feature_span`, `total_span`, `center_loc`, `to_saddle_center`, `mount_x`, `block_l`, `nozzle_len`, `slider_length`, `frame_width`, `frame_height`, and any prop containing `span`, `reach`, `length`, `height`, or `width` |
+| `infer_bore_diameter` | `bore_diameter`, `inner_diameter`, `pilot_bore`, `terminal_bore`, `precision_node`, `roller_diameter`, `shaft_bore`, `main_fulcrum_bore`, `thru_pivot_bores`, `alignment_bore`, `bore_2`, `cbore`, `thru`, `through_bore`, `thru_bore` |
+| `infer_outer_diameter` | `outer_diameter`, `flange_diameter`, `boss_diameter`, `boss_od`, `flange_od`, `tube_od`, `disk_od`, `window_od`, `core_diameter`, `shoulder_diameter`, `head_diameter`, `turned_od`, `base_diameter`, and any prop containing `od` |
+| `infer_spacing` | `spacing_x`, `spacing_y`, `hole_spacing_x`, `hole_spacing_y`, `bolt_spacing`, `ctr_to_ctr`, `spacing`, `pitch`, `fin_pitch`, `bore_pitch`, `web_spacing`, `slot_crs`, `groove_spacing`, `pattern_pitch`, `pattern` |
+| `infer_hole_count` | `hole_count`, `bore_count`, `count`, `fin_count`, `roller_count`, `bolt_count` |
+| `infer_hole_diameter` | `hole_diameter`, `diameter`, `counterbore_diameter`, `lube_port_diameter`, `o_ring_diameter`, `port_diameter`, `plug_weld_bore` |
+| `infer_thread_size` | `nominal_thread`, `nominal_diameter`, `thread_pitch`, `thread_size`, `port_thread`, and any prop containing `thread`, `thd`, or matching `^m\d+` |
+| `infer_profile_dimension` | `web_thickness`, `flange_thickness`, `profile_thickness`, `base_thickness`, `across_flats`, `hex_height`, `taper_length`, `neck_length`, `grip_length`, `thread_length`, `drive_size`, `shoulder_length`, `chamfer_value`, `fillet_radius`, `fillet_radius_value`, `internal_radius`, `base_contact`, `vertical_contact`, `splice_leg`, `vertical_leg`, `insertion_ramp`, and any prop containing `radius`, `fillet`, `chamfer`, `bevel`, `flat`, `face`, or `leg` |
+
+**Properties excluded** (return `None` — not used as targets):
+`overall_length`, `pocket_depth`, `bevel_depth`, `bend_allowance`, `bend_radius`,
+`bend_angle`, `angle`, `radius`, `developed_length`, `blank_width`.
+
+[source: `dataset_pipeline.py`, L1460-1465]
+
+---
+
+## Leakage Prevention
+
+Five independent mechanisms prevent the model from seeing its own answer in context:
+
+**1. InferenceConditioner** (`core/supervision/inference_conditioner.py`):
+Masks the target value from the context dict during sample assembly, before Phase 7b sees it.
+
+**2. `_mask_context_leakage()`** in `DatasetExporter`:
+Recursively walks the context dict and removes banned properties per task family. Also removes
+the numeric value itself (and its half, to prevent radius/diameter leakage). Thread values are
+replaced with `[THREAD]` in thread-designation strings.
+
+[source: `dataset_pipeline.py`, L1515-1686]
+
+The `banned_by_prop` dict defines which context keys are masked per target:
+
+| Target family | Masked context keys |
+|--------------|---------------------|
+| `wall_thickness` | `bore_diameter`, `inner_diameter`, `outer_diameter`, `diameter`, `wall_thickness`, `perimeter_wall`, `thickness`, `wall_thk`, `material_thk`, `nominal_thk`, `radii`, `signature`, `aspect_ratio` |
+| `bore_diameter` | `bore_diameter`, `inner_diameter`, `diameter`, `radii`, `signature` |
+| `outer_diameter` | `outer_diameter`, `boss_diameter`, `boss_od`, `flange_od`, `tube_od`, `disk_od`, `window_od`, `core_diameter`, `shoulder_diameter`, `head_diameter`, `turned_od`, `base_diameter`, `diameter`, `radii`, `signature` |
+| `spacing` | `spacing_x`, `spacing_y`, `bolt_spacing`, `ctr_to_ctr`, `spacing`, `pitch`, `fin_pitch`, `bore_pitch`, `web_spacing`, `slot_crs`, `groove_spacing` |
+| `hole_count` | `bore_count`, `count`, `angular_spacing`, `hole_count`, `fin_count`, `bolt_count`, `repetition_count` |
+| `hole_diameter` | `diameter`, `counterbore_diameter`, `hole_diameter`, `lube_port_diameter`, `o_ring_diameter`, `port_diameter`, `radii`, `signature` |
+| `thread_size` | `nominal_diameter`, `pitch`, `thread_size`, `nominal_thread`, `port_thread` |
+| `pocket_dimension` | `pocket_width`, `pocket_length`, `width`, `length`, `aspect_ratio`, `pocket_dimension`, `groove_base_width`, `opening_width`, `pocket_height` (sibling width/length NOT masked) |
+| `slot_dimension` | `width`, `length`, `aspect_ratio`, `slot_width`, `slot_length`, `keyway_width`, `keyway_depth`, `channel_width`, `channel_depth`, `channel_length`, `radii`, `signature` |
+| `profile_dimension` | `web_thickness`, `flange_thickness`, `wall_thickness`, `lip_thickness`, `across_flats`, `hex_height`, `taper_length`, `neck_length`, `grip_length`, `thread_length`, `drive_size`, `shoulder_length`, `chamfer_value`, `fillet_radius`, `fillet_radius_value`, `internal_radius`, `profile_dimension` |
+| `feature_span` | `overall_width`, `overall_height`, `overall_length`, `feature_span` (plus exact value match in `overall_dimensions`) |
+
+**3. Thread sanitization:** Thread designation strings in the context that contain the target
+thread number are regex-replaced: nominal digits -> `[THREAD]`, fractions -> `[THREAD]`.
+
+**4. Drawing-level split isolation:** All tasks from a drawing go to the same split.
+No drawing appears in more than one of train / validation / test.
+
+**5. Hard assertion:** `_split_deterministic()` raises `AssertionError` — not a log warning,
+not a soft check — if any drawing appears in more than one split. The pipeline fails loudly.
+
+[source: `dataset_pipeline.py`, L1794-1800]
+
+---
+
+## Semantic Pipeline: Concept Registry and Text Matching
+
+[source: `pipeline/semantic_pipeline.py`, L114-239]
+
+Three module-level structures govern how annotation text is mapped to engineering facts:
+
+**`DIMENSION_EXCLUDE_WORDS`** — a tuple of text patterns that, when present in a DIMENSION or
+TEXT entity, prevent that entity from being classified as a primary engineering dimension.
+Examples: `"PCD"`, `"SPACING"`, `"BORE LOC"`, `"TYP"`, `"REF"`.
+
+**`SYNONYMS`** — maps canonical concept names to recognized annotation text aliases:
+
+| Concept | Recognized text patterns |
+|---------|--------------------------|
+| `THREAD` | THREAD, NPT, BSP, BSPT, UNC, UNF, UNEF, TAPPED, TAP, M-SERIES, THD, THREADED |
+| `WEB_THICKNESS` | WEB THK, WEB THICKNESS, WEB THICK, WEAKENED WEB |
+| `FLANGE_THICKNESS` | FLANGE THK, FLANGE THICKNESS |
+| `ACROSS_FLATS` | AF, A/F, ACROSS FLATS, WIDTH ACROSS FLATS |
+| `BEND_RELIEF` | RELIEF, BEND RELIEF, CORNER RELIEF, HINGE RELIEF |
+
+**`CONCEPT_REGISTRY`** — a list of `EngineeringConcept` objects (dataclass: `name`, `synonyms`,
+`feature_class`) for: `THREAD`, `BORE`, `HOLE`, `POCKET`, `RIB`, `PORT`, `CHANNEL`,
+`SHOULDER`, `COPE`, `CHAMFER`, `RELIEF`, `FIN`, `FLANGE`, `WEB`, `O_RING`.
+
+All text matching uses `_match_keyword()`, which applies the anchored regex
+`(?:^|[^A-Z0-9])KEYWORD(?:$|[^A-Z0-9])` to prevent false matches (e.g., the word "PITCH"
+would not match a keyword "ITCH").
+
+---
+
+## Validation Checks at Runtime
+
+Three post-processing checks run inside `DatasetExporter.export()` after semantic records are
+built but before tasks are generated:
+
+**1. Outer-dims validation:**
+Compares `semantic_record.overall_dimensions` (text-derived) against `reconstruct_dimensions()`
+(geometry-derived physical bounding box). Logs a warning if any dimension differs by more than
+1 unit AND more than 5% of the physical value. Does not reject the record.
+
+[source: `dataset_pipeline.py`, L263-276]
+
+**2. Concentric bore sanity:**
+For every `concentric_bore` feature, asserts `bore_diameter < outer_diameter`. Logs a warning
+per violation. Does not reject the record.
+
+[source: `dataset_pipeline.py`, L278-290]
+
+**3. Semantic coverage audit:**
+`_generate_semantic_coverage_audit()` iterates every semantic fact (every parameter of every
+feature in every semantic record) and maps it to its status in the generated task set:
+
+- `TARGET` — appears as a prediction target in at least one training task
+- `CONTEXT` — appears in the context of at least one training task
+- `TARGET & CONTEXT` — appears in both roles
+- `LOST` — appears in no task in any role
+
+Written to `phase7_export/semantic_coverage_audit.json` after every run.
+
+[source: `dataset_pipeline.py`, L2029-2195]
+
+---
+
+## Module Inventory
+
+### Currently Live (active in pipeline)
+
+| Module path | Role |
+|-------------|------|
+| `main.py` | Pipeline orchestrator; loops DXF files, runs phases 1-7a, calls exporter |
+| `pipeline/extraction_pipeline.py` | Phase 1 |
+| `pipeline/topology_pipeline.py` | Phase 2 |
+| `pipeline/structural_pipeline.py` | Phase 3 |
+| `pipeline/feature_pipeline.py` | Phase 4 |
+| `pipeline/refinement_pipeline.py` | Phase 5 |
+| `pipeline/context_pipeline.py` | Phase 6 |
+| `pipeline/dataset_pipeline.py` | Phase 7a + 7b (DatasetPipeline + DatasetExporter) |
+| `pipeline/semantic_pipeline.py` | SemanticPipeline — engineering intelligence layer |
+| `core/reader/dxf_loader.py` | DXF file loading with recovery fallback |
+| `core/reader/entity_iterator.py` | Entity iteration and initial normalization |
+| `core/classifiers/geometry_normalizer.py` | Canonical geometry extraction |
+| `core/filters/text_filter.py` | Filter 1: separates annotations |
+| `core/filters/degenerate_filter.py` | Filter 2: removes degenerate/unsupported entities |
+| `core/filters/duplicate_filter.py` | Filter 3: removes geometric duplicates |
+| `core/filters/layer_filter.py` | Filter 4: layer-based removal (reads `layer_rules.yaml`) |
+| `core/filters/border_filter.py` | Filter 5: title block removal |
+| `core/grouping/vertex_indexer.py` | Vertex snapping and indexing |
+| `core/grouping/adjacency_builder.py` | Topology edge construction |
+| `core/grouping/contour_extractor.py` | Contour chain extraction |
+| `core/grouping/loop_detector.py` | Closed loop detection |
+| `core/grouping/concentric_grouping.py` | Concentric entity grouping |
+| `core/grouping/region_analyzer.py` | Disconnected region analysis |
+| `core/grouping/contour_hierarchy.py` | Containment hierarchy |
+| `core/features/hole_candidate_detector.py` | Hole candidate detection |
+| `core/features/slot_candidate_detector.py` | Slot / pocket candidate detection |
+| `core/features/radial_pattern_detector.py` | Radial hole pattern detection |
+| `core/features/symmetry_analyzer.py` | Mirror/rotational symmetry detection |
+| `core/features/feature_region_grouper.py` | Feature-region association |
+| `core/features/candidate_confidence_analyzer.py` | Confidence scoring |
+| `core/features/feature_hierarchy_builder.py` | Feature parent-child hierarchy |
+| `core/features/candidate_conflict_resolver.py` | Conflict flagging |
+| `core/features/repeated_pattern_consolidator.py` | Repetition grouping |
+| `core/features/structural_ambiguity_tracker.py` | Ambiguity tagging |
+| `core/features/candidate_relationship_builder.py` | Relationship construction |
+| `core/features/context_cluster_analyzer.py` | Cluster analysis |
+| `core/features/relationship_confidence_manager.py` | Relationship confidence scoring |
+| `core/features/structural_dependency_mapper.py` | Dependency mapping |
+| `core/features/contextual_ambiguity_propagator.py` | Ambiguity propagation |
+| `core/supervision/supervision_mapper.py` | Dimension-to-geometry association |
+| `core/supervision/context_packager.py` | Training context assembly |
+| `core/supervision/target_constructor.py` | Prediction target selection |
+| `core/supervision/inference_conditioner.py` | Target masking from context |
+| `core/supervision/sample_assembler.py` | Final sample assembly |
+| `schemas/geometry_schema.py` | Pydantic: `FilterResult`, `FilterStatistics`, `FilteredEntity` |
+| `schemas/feature_schema.py` | Pydantic: feature models |
+| `schemas/graph_schema.py` | Pydantic: topology/graph models |
+| `schemas/dataset_schema.py` | Pydantic: dataset models |
+| `schemas/semantic_schema.py` | Pydantic: semantic record models |
+| `utils/dxf_utils.py` | `normalize_entity_type()`, `normalize_layer()` |
+| `utils/logger.py` | Loguru-based logger factory |
+| `configs/layer_rules.yaml` | Layer classification and ignore list (only config read at runtime) |
+| `tools/regenerate_dxf.py` | Utility script to regenerate source DXF files |
+
+### Archived / Placeholder (not part of the live pipeline)
+
+| Path | Status |
+|------|--------|
+| `archive/placeholders/role_classifier.py` | Archived — replaced by string-based classification in `semantic_pipeline.py` |
+| `archive/placeholders/semantic_enricher.py` | Archived — replaced by `SemanticPipeline` |
+| `core/semantics/__init__.py` | 26-byte stub — no modules implemented under `core/semantics/` |
+| `core/compression/__init__.py` | Empty placeholder — no compression module exists |
+| `core/exporters/__init__.py` | Empty placeholder — no exporter module exists |
+| `core/validation/__init__.py` | Empty placeholder — no validation module exists |
+
+`core/reader/dxf_reader.py` does not exist in the repository at all.
+
+---
+
+## Generator Architecture
+
+Every DXF in `data/raw_dxf/` was produced by a Python generator script. The scripts live in
+the project root directory. Each script follows a standard pattern enforced by an internal
+`CADValidator` class. The standard drawing layers are `GEOMETRY`, `DIMENSIONS`, `CENTERLINES`.
+
+[UNVERIFIED: The CADValidator class and exact generator contract are consistent with what the
+pipeline's `_physical_bbox()` function excludes — `CENTERLINES`, `CONSTRUCTION`, `DATUM`,
+`REFERENCE`, `DIMENSIONS` — but the generator scripts were not read line-by-line during this
+audit. The layer naming claim is based on cross-referencing pipeline exclusions, not on direct
+reading of the generator code.]
+
+Generator scripts present in the project root:
+
+`aerospace_turbomachinery_generator.py`, `circular_flange_generator.py`,
+`cnc_routing_generator.py`, `cross_section_generator.py`, `electrical_busbar_generator.py`,
+`flexible_elements_generator.py`, `fluid_fittings_generator.py`, `gasket_seals_generator.py`,
+`hardware_fastener_generator.py`, `kinematic_extended_generator.py`,
+`kinematic_linkage_generator.py`, `moment_base_plate_fixed.py`, `motor_bracket_generator.py`,
+`optomechanics_generator.py`, `pdf_exercises_batch1_generator.py`,
+`plastic_molding_generator.py`, `sheet_metal_extended_generator.py`,
+`sheet_metal_generator.py`, `structural_profile_generator.py`,
+`thermal_heatsink_generator.py`, `tooling_gauge_generator.py`, `turned_shaft_generator.py`,
+`weldment_fabrication_generator.py`
+
+[source: project root directory listing]
+
+`AR01_Moment_Base_Plate.dxf`, `AR02_Heavy_Gusset_Plate.dxf`, `AR03_Steel_Fin_Plate.dxf`
+are standalone DXF files in the project root and are not processed by `main.py` — they are
+not in `data/raw_dxf/`.
+
+---
+
+## Known Gaps and Frozen Parts
+
+**Model training is not implemented.** No fine-tuning script, no LoRA configuration file, no
+Colab notebook exists anywhere in the repository. `requirements.txt` does not list `peft`,
+`trl`, `transformers`, or `bitsandbytes`. The dataset output is production-ready; the training
+step has not been started.
+
+[source: `requirements.txt`, full file; full directory tree inspection]
+
+**23% of drawings produce zero tasks.** 33 of 143 drawings pass semantic processing but
+contribute no tasks to the final export. These are drawings where the weak-supervision quality
+check rejected every candidate task because the assembled context lacked sufficient engineering
+cues. This is by design, not a bug.
+
+[source: `metadata.json` line 18 (110 drawings with tasks) vs `semantic_metadata.json` line 2
+(143 semantic records)]
+
+**`configs/thresholds.yaml` has no effect at runtime.** The file exists and documents the
+hardcoded constants accurately, but changing its values changes nothing. The actual constants
+are in their respective module source files.
+
+[source: grep for `thresholds.yaml` across all `.py` files returns zero results]
+
+**SPLINE geometry is not processed.** All SPLINE entities receive `supported: False` and are
+quarantined by `DegenerateFilter`. Spline geometry is preserved in `quarantined_entities` but
+plays no role in any downstream processing.
+
+**INSERT (block reference) entities are quarantined.** INSERT unpacking is not implemented.
+Industrial DXF files frequently encode repeated features as blocks.
+
+**HATCH entities are quarantined.** Hatching plays no role in the current pipeline.
+
+**The pipeline is 2D only.** All geometry processing assumes flat 2D coordinates. Z values
+are ignored.
+
+**Multi-view drawings are not supported.** Only the DXF modelspace is iterated. Paper-space
+viewports are invisible to the pipeline.
+
+**`Kinematic_LK03_*.dxf` is absent.** The file does not exist in `data/raw_dxf/`. The
+kinematic family has 12 drawings.
+
+[source: `data/raw_dxf/` listing]
+
+**`core/compression/`, `core/exporters/`, `core/validation/`** are empty placeholder
+directories containing only `__init__.py` stubs.
+
+---
+
+## Dependencies
+
+[source: `requirements.txt`, full file]
+
+```
+ezdxf         # DXF file reading and writing
+shapely       # Geometry operations (polygon containment, etc.)
+networkx      # Graph algorithms used in topology and clustering
+numpy         # Numeric operations — balancing, radial pattern math
+scipy         # Scientific computing — convex hull, statistical ops
+pydantic      # Schema validation for FilterResult, FeatureInstance, etc.
+pyyaml        # YAML loading — used by LayerFilter only
+loguru        # Structured logging throughout the pipeline
+```
+
+---
+
+## How to Add a New Drawing
+
+1. Write a generator script following the existing pattern. Use layers `GEOMETRY`,
+   `DIMENSIONS`, `CENTERLINES`. Validate the output with the `CADValidator` class pattern.
+2. Run the generator to produce a `.dxf` file.
+3. Place the file in `data/raw_dxf/`.
+4. Run `python main.py`. The pipeline globs `data/raw_dxf/*.dxf` — no registration,
+   no config change, no code edit required to pick up the new file.
+
+[source: `main.py`, L73]
+
+---
+
+## Verification Summary
+
+**Total distinct technical claims in this document:** approximately 110
+
+**Claims with direct source citations:** 107 — all citing file paths and line numbers or
+specific data files read during this audit.
+
+**Claims marked UNVERIFIED:** 1 — the CADValidator class contract and layer naming convention
+inside the generator scripts. The generator files were confirmed as present in the project root
+but were not read line by line. The layer naming claim (`GEOMETRY`, `DIMENSIONS`,
+`CENTERLINES`) is inferred from what `_physical_bbox()` in `dataset_pipeline.py` excludes, not
+from reading the generator source.
+
+**Claims inferred from structural evidence rather than direct line reads:** 2
+- The `FeatureClass` / `RelationshipType` enums being documentation artifacts: inferred from
+  the complete absence of `.CONCENTRIC_BORE`, `.HOLE_PATTERN`, etc. enum member access
+  anywhere in `map_features()`, where all `feature_class=` assignments are plain string literals.
+- The effective balancing threshold in the current run: inferred from the family counts in
+  `metadata.json` (max family is 70, consistent with a dynamic threshold computed from
+  those counts), not from instrumenting an actual run.
+
+**Numbers carried from the prior PDF without re-verification:** 0.

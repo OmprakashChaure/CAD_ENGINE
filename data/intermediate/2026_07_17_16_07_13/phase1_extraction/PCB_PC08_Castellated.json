@@ -1,0 +1,367 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "PCB_PC08_Castellated.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            100.0,
+            40.0
+          ],
+          [
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            10.0
+          ],
+          [
+            -3.6739403974420594e-16,
+            10.0
+          ],
+          [
+            -0.5176380902050413,
+            10.068148347421863
+          ],
+          [
+            -1.0000000000000009,
+            10.267949192431123
+          ],
+          [
+            -1.4142135623730954,
+            10.585786437626904
+          ],
+          [
+            -1.7320508075688772,
+            11.0
+          ],
+          [
+            -1.9318516525781366,
+            11.482361909794959
+          ],
+          [
+            -2.0,
+            12.0
+          ],
+          [
+            -1.9318516525781364,
+            12.517638090205041
+          ],
+          [
+            -1.7320508075688774,
+            13.0
+          ],
+          [
+            -1.414213562373095,
+            13.414213562373096
+          ],
+          [
+            -0.9999999999999996,
+            13.732050807568877
+          ],
+          [
+            -0.5176380902050417,
+            13.931851652578137
+          ],
+          [
+            1.2246467991473532e-16,
+            14.0
+          ],
+          [
+            0.0,
+            14.0
+          ],
+          [
+            0.0,
+            18.0
+          ],
+          [
+            -3.6739403974420594e-16,
+            18.0
+          ],
+          [
+            -0.5176380902050413,
+            18.068148347421864
+          ],
+          [
+            -1.0000000000000009,
+            18.26794919243112
+          ],
+          [
+            -1.4142135623730954,
+            18.585786437626904
+          ],
+          [
+            -1.7320508075688772,
+            19.0
+          ],
+          [
+            -1.9318516525781366,
+            19.482361909794957
+          ],
+          [
+            -2.0,
+            20.0
+          ],
+          [
+            -1.9318516525781364,
+            20.517638090205043
+          ],
+          [
+            -1.7320508075688774,
+            21.0
+          ],
+          [
+            -1.414213562373095,
+            21.414213562373096
+          ],
+          [
+            -0.9999999999999996,
+            21.73205080756888
+          ],
+          [
+            -0.5176380902050417,
+            21.931851652578136
+          ],
+          [
+            1.2246467991473532e-16,
+            22.0
+          ],
+          [
+            0.0,
+            22.0
+          ],
+          [
+            0.0,
+            26.0
+          ],
+          [
+            -3.6739403974420594e-16,
+            26.0
+          ],
+          [
+            -0.5176380902050413,
+            26.068148347421864
+          ],
+          [
+            -1.0000000000000009,
+            26.26794919243112
+          ],
+          [
+            -1.4142135623730954,
+            26.585786437626904
+          ],
+          [
+            -1.7320508075688772,
+            27.0
+          ],
+          [
+            -1.9318516525781366,
+            27.482361909794957
+          ],
+          [
+            -2.0,
+            28.0
+          ],
+          [
+            -1.9318516525781364,
+            28.517638090205043
+          ],
+          [
+            -1.7320508075688774,
+            29.0
+          ],
+          [
+            -1.414213562373095,
+            29.414213562373096
+          ],
+          [
+            -0.9999999999999996,
+            29.73205080756888
+          ],
+          [
+            -0.5176380902050417,
+            29.931851652578136
+          ],
+          [
+            1.2246467991473532e-16,
+            30.0
+          ],
+          [
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            40.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "PCB_PC08_Castellated.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "91",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100mm MODULE WIDTH",
+        "position": [
+          0.0,
+          -15.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "PCB_PC08_Castellated.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 8.0,
+        "text": "8.0mm VIA PITCH",
+        "position": [
+          -15.0,
+          12.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            12.0
+          ],
+          [
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "PCB_PC08_Castellated.dxf",
+      "entity_type": "MTEXT",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "CASTELLATED HALF-VIA\n FOR EDGE SOLDERING",
+        "position": [
+          25.0,
+          20.0
+        ],
+        "height": null,
+        "text_role": "general_note",
+        "numeric_value": null
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 4,
+        "kept_entities": 4,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 4,
+        "kept_entities": 4,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 4,
+        "kept_entities": 4,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 4,
+        "kept_entities": 4,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 4,
+        "kept_entities": 4,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

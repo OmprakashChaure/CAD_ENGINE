@@ -1,0 +1,200 @@
+{
+  "confidence": {
+    "confidence_scores": [
+      {
+        "candidate_id": "hc_00001",
+        "candidate_type": "hole",
+        "structural_confidence": 0.7,
+        "confidence_factors": {
+          "multi_radius": true
+        }
+      },
+      {
+        "candidate_id": "hc_00002",
+        "candidate_type": "hole",
+        "structural_confidence": 0.7,
+        "confidence_factors": {
+          "multi_radius": true
+        }
+      },
+      {
+        "candidate_id": "sc_00001",
+        "candidate_type": "slot",
+        "structural_confidence": 0.6,
+        "confidence_factors": {
+          "moderate_aspect": true,
+          "closed_contour": true
+        }
+      },
+      {
+        "candidate_id": "sc_00002",
+        "candidate_type": "slot",
+        "structural_confidence": 0.7,
+        "confidence_factors": {
+          "high_aspect": true,
+          "closed_contour": true
+        }
+      }
+    ],
+    "statistics": {
+      "total_scored": 4,
+      "average_confidence": 0.675,
+      "high_confidence": 3,
+      "medium_confidence": 1,
+      "low_confidence": 0
+    }
+  },
+  "hierarchy": {
+    "hierarchy_nodes": [
+      {
+        "candidate_id": "hc_00001",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "multi_radius_system"
+      },
+      {
+        "candidate_id": "hc_00002",
+        "parent_id": null,
+        "children_ids": [],
+        "depth": 0,
+        "hierarchy_type": "multi_radius_system"
+      }
+    ],
+    "root_candidates": [
+      "hc_00001",
+      "hc_00002"
+    ],
+    "statistics": {
+      "total_nodes": 2,
+      "root_count": 2,
+      "max_depth": 0,
+      "pattern_children": 0
+    }
+  },
+  "conflicts": {
+    "conflicts": [
+      {
+        "entity_id": "ent_00001",
+        "claiming_candidates": [
+          "hc_00001",
+          "sc_00001"
+        ],
+        "claim_count": 2,
+        "severity": "low"
+      },
+      {
+        "entity_id": "ent_00002",
+        "claiming_candidates": [
+          "sc_00001",
+          "hc_00002"
+        ],
+        "claim_count": 2,
+        "severity": "low"
+      }
+    ],
+    "conflict_free_entities": 8,
+    "statistics": {
+      "total_conflicts": 2,
+      "high_severity": 0,
+      "medium_severity": 0,
+      "low_severity": 2,
+      "conflict_free_entities": 8,
+      "total_claimed_entities": 10
+    }
+  },
+  "repetitions": {
+    "repetition_groups": [
+      {
+        "group_id": "rep_00001",
+        "signature": "hole:(12.0, 30.0)",
+        "candidate_ids": [
+          "hc_00001",
+          "hc_00002"
+        ],
+        "repetition_count": 2,
+        "candidate_type": "hole"
+      }
+    ],
+    "unique_candidates": [
+      "sc_00001",
+      "sc_00002"
+    ],
+    "statistics": {
+      "total_repetition_groups": 1,
+      "total_repeated_candidates": 2,
+      "total_unique_candidates": 2,
+      "max_repetition": 2
+    }
+  },
+  "ambiguity": {
+    "ambiguous_candidates": [
+      {
+        "candidate_id": "hc_00001",
+        "ambiguity_reason": "entity_conflict",
+        "structural_confidence": 0.7,
+        "conflict_count": 1
+      },
+      {
+        "candidate_id": "sc_00001",
+        "ambiguity_reason": "entity_conflict",
+        "structural_confidence": 0.6,
+        "conflict_count": 2
+      },
+      {
+        "candidate_id": "hc_00002",
+        "ambiguity_reason": "entity_conflict",
+        "structural_confidence": 0.7,
+        "conflict_count": 1
+      }
+    ],
+    "ambiguity_summary": {
+      "total_ambiguous": 3,
+      "by_reason": {
+        "entity_conflict": 3
+      },
+      "ambiguity_ratio": 0.75
+    },
+    "statistics": {
+      "total_ambiguous": 3,
+      "total_candidates_analyzed": 4,
+      "ambiguity_threshold": 0.5,
+      "ambiguity_ratio": 0.75
+    }
+  },
+  "statistics": {
+    "confidence": {
+      "total_scored": 4,
+      "average_confidence": 0.675,
+      "high_confidence": 3,
+      "medium_confidence": 1,
+      "low_confidence": 0
+    },
+    "hierarchy": {
+      "total_nodes": 2,
+      "root_count": 2,
+      "max_depth": 0,
+      "pattern_children": 0
+    },
+    "conflicts": {
+      "total_conflicts": 2,
+      "high_severity": 0,
+      "medium_severity": 0,
+      "low_severity": 2,
+      "conflict_free_entities": 8,
+      "total_claimed_entities": 10
+    },
+    "repetitions": {
+      "total_repetition_groups": 1,
+      "total_repeated_candidates": 2,
+      "total_unique_candidates": 2,
+      "max_repetition": 2
+    },
+    "ambiguity": {
+      "total_ambiguous": 3,
+      "total_candidates_analyzed": 4,
+      "ambiguity_threshold": 0.5,
+      "ambiguity_ratio": 0.75
+    }
+  }
+}

@@ -1,0 +1,8 @@
+ezdxf
+shapely
+networkx
+numpy
+scipy
+pydantic
+pyyaml
+loguru

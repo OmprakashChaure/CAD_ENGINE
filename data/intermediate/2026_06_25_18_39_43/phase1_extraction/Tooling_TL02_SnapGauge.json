@@ -1,0 +1,267 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Tooling_TL02_SnapGauge.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ],
+          [
+            100.0,
+            20.1
+          ],
+          [
+            60.0,
+            20.1
+          ],
+          [
+            60.0,
+            20.0
+          ],
+          [
+            30.0,
+            20.0
+          ],
+          [
+            30.0,
+            50.0
+          ],
+          [
+            100.0,
+            50.0
+          ],
+          [
+            100.0,
+            70.0
+          ],
+          [
+            0.0,
+            70.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Tooling_TL02_SnapGauge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "8F",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100mm GAUGE LENGTH",
+        "position": [
+          0.0,
+          -35.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Tooling_TL02_SnapGauge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9E",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 70.0,
+        "text": "70mm BODY H",
+        "position": [
+          -35.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Tooling_TL02_SnapGauge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "AD",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 30.0,
+        "text": "30.000mm +0.005/-0.000 GO",
+        "position": [
+          135.0,
+          20.0
+        ],
+        "target_points": [
+          [
+            30.0,
+            20.0
+          ],
+          [
+            30.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Tooling_TL02_SnapGauge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "BC",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 29.9,
+        "text": "29.900mm +0.005/-0.000 NO-GO",
+        "position": [
+          180.0,
+          20.1
+        ],
+        "target_points": [
+          [
+            60.0,
+            20.1
+          ],
+          [
+            60.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 5,
+        "kept_entities": 5,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 5,
+        "kept_entities": 5,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 5,
+        "kept_entities": 5,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 5,
+        "kept_entities": 5,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 5,
+        "kept_entities": 5,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

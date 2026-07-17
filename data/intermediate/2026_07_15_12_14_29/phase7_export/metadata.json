@@ -1,0 +1,57 @@
+{
+  "validation_version": "1.0.0",
+  "dataset_contract_version": "3.0.0",
+  "schema_version": "2.1.0",
+  "prompt_renderer_version": "2.7.3",
+  "pipeline_version": "2.7.4",
+  "total_processed": 17,
+  "accepted_count": 17,
+  "rejected_count": 0,
+  "rejection_breakdown": {},
+  "average_prompt_length": 3116.82,
+  "average_context_length": 3352.0,
+  "processing_duration": 0.1503,
+  "peak_memory": 0.0,
+  "timestamp": "2026-07-15T12:21:26.178140",
+  "version": "3.0.0",
+  "format": "semantic_engineering_supervision",
+  "total_tasks": 17,
+  "task_types": {
+    "infer_bore_diameter": 1,
+    "infer_wall_thickness": 1,
+    "infer_hole_count": 2,
+    "infer_hole_diameter": 2,
+    "infer_spacing": 3,
+    "infer_pocket_dimension": 2,
+    "infer_profile_dimension": 3,
+    "infer_feature_span": 3
+  },
+  "drawings": 1,
+  "splits": {
+    "train": {
+      "count": 17,
+      "task_types": {
+        "infer_bore_diameter": 1,
+        "infer_wall_thickness": 1,
+        "infer_hole_count": 2,
+        "infer_hole_diameter": 2,
+        "infer_spacing": 3,
+        "infer_pocket_dimension": 2,
+        "infer_profile_dimension": 3,
+        "infer_feature_span": 3
+      }
+    },
+    "validation": {
+      "count": 0
+    },
+    "test": {
+      "count": 0
+    }
+  },
+  "schema": {
+    "task_type": "engineering inference task category",
+    "context": "visible engineering structure",
+    "target": "hidden engineering property to infer"
+  },
+  "total_semantic_records": 1
+}

@@ -1,0 +1,422 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8E",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            10.0
+          ],
+          [
+            30.0,
+            10.0
+          ],
+          [
+            30.0,
+            15.0
+          ],
+          [
+            80.0,
+            15.0
+          ],
+          [
+            80.0,
+            10.0
+          ],
+          [
+            120.0,
+            10.0
+          ],
+          [
+            120.0,
+            -10.0
+          ],
+          [
+            80.0,
+            -10.0
+          ],
+          [
+            80.0,
+            -15.0
+          ],
+          [
+            30.0,
+            -15.0
+          ],
+          [
+            30.0,
+            -10.0
+          ],
+          [
+            0.0,
+            -10.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "LINE",
+      "handle": "8F",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -10.0,
+          0.0
+        ],
+        "end": [
+          130.0,
+          0.0
+        ],
+        "length": 140.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "LINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          8.5
+        ],
+        "end": [
+          30.0,
+          8.5
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          -8.5
+        ],
+        "end": [
+          30.0,
+          -8.5
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "92",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 30.0,
+        "text": "30mm THREAD LENGTH",
+        "position": [
+          0.0,
+          -40.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            -10.0
+          ],
+          [
+            30.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 50.0,
+        "text": "50mm JOURNAL LENGTH",
+        "position": [
+          30.0,
+          -40.0
+        ],
+        "target_points": [
+          [
+            30.0,
+            -15.0
+          ],
+          [
+            80.0,
+            -15.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 120.0,
+        "text": "120mm OVERALL LENGTH",
+        "position": [
+          0.0,
+          -60.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            120.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "BF",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 20.0,
+        "text": "M20x1.5 - 6g THREAD",
+        "position": [
+          -35.0,
+          -10.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "CE",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 30.0,
+        "text": "%%C30mm k6 PRESS FIT",
+        "position": [
+          55.0,
+          -15.0
+        ],
+        "target_points": [
+          [
+            55.0,
+            -15.0
+          ],
+          [
+            55.0,
+            15.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Turned_Shaft_TS01.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "DD",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 20.0,
+        "text": "%%C20mm OUTPUT",
+        "position": [
+          155.0,
+          -10.0
+        ],
+        "target_points": [
+          [
+            120.0,
+            -10.0
+          ],
+          [
+            120.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 10,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 10,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 10,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 10,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 10,
+        "kept_entities": 10,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

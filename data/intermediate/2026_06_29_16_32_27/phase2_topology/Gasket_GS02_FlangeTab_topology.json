@@ -1,0 +1,127 @@
+{
+  "shared_vertices": {
+    "vtx_00001": {
+      "vertex_id": "vtx_00001",
+      "x": 90.0,
+      "y": 148.9898,
+      "connected_entities": [
+        "ent_00001",
+        "ent_00004"
+      ]
+    },
+    "vtx_00002": {
+      "vertex_id": "vtx_00002",
+      "x": 110.0,
+      "y": 148.9898,
+      "connected_entities": [
+        "ent_00001",
+        "ent_00002"
+      ]
+    },
+    "vtx_00003": {
+      "vertex_id": "vtx_00003",
+      "x": 110.0,
+      "y": 165.0,
+      "connected_entities": [
+        "ent_00002",
+        "ent_00003"
+      ]
+    },
+    "vtx_00004": {
+      "vertex_id": "vtx_00004",
+      "x": 90.0,
+      "y": 165.0,
+      "connected_entities": [
+        "ent_00003",
+        "ent_00004"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "source_entity_id": "ent_00001",
+      "target_entity_id": "ent_00004",
+      "shared_vertex_id": "vtx_00001"
+    },
+    {
+      "source_entity_id": "ent_00001",
+      "target_entity_id": "ent_00002",
+      "shared_vertex_id": "vtx_00002"
+    },
+    {
+      "source_entity_id": "ent_00002",
+      "target_entity_id": "ent_00003",
+      "shared_vertex_id": "vtx_00003"
+    },
+    {
+      "source_entity_id": "ent_00003",
+      "target_entity_id": "ent_00004",
+      "shared_vertex_id": "vtx_00004"
+    }
+  ],
+  "adjacency_list": {
+    "ent_00001": [
+      "ent_00002",
+      "ent_00004"
+    ],
+    "ent_00004": [
+      "ent_00001",
+      "ent_00003"
+    ],
+    "ent_00002": [
+      "ent_00001",
+      "ent_00003"
+    ],
+    "ent_00003": [
+      "ent_00002",
+      "ent_00004"
+    ]
+  },
+  "orphan_entities": [
+    "ent_00005",
+    "ent_00006",
+    "ent_00007",
+    "ent_00008",
+    "ent_00009",
+    "ent_00010",
+    "ent_00011",
+    "ent_00012",
+    "ent_00013",
+    "ent_00014",
+    "ent_00015",
+    "ent_00016",
+    "ent_00017",
+    "ent_00018",
+    "ent_00019",
+    "ent_00020",
+    "ent_00021",
+    "ent_00022",
+    "ent_00023",
+    "ent_00024",
+    "ent_00025",
+    "ent_00026",
+    "ent_00027",
+    "ent_00028",
+    "ent_00029",
+    "ent_00030",
+    "ent_00031",
+    "ent_00032",
+    "ent_00033",
+    "ent_00034",
+    "ent_00035",
+    "ent_00037",
+    "ent_00039"
+  ],
+  "statistics": {
+    "total_vertices": 40,
+    "shared_vertices": 4,
+    "orphan_vertices": 36,
+    "entities_processed": 37,
+    "total_edges": 4,
+    "connected_entities": 4,
+    "skipped_hub_vertices": 0,
+    "max_hub_size_threshold": 8,
+    "orphan_entities": 33,
+    "total_input_entities": 37
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "8F",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            200.0,
+            0.0
+          ],
+          [
+            200.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          20.0,
+          10.0
+        ],
+        "end": [
+          180.0,
+          10.0
+        ],
+        "length": 160.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "ARC",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          180.0,
+          20.0
+        ],
+        "radius": 10.0,
+        "start_angle": 270.0,
+        "end_angle": 360.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          190.0,
+          20.0
+        ],
+        "end": [
+          190.0,
+          80.0
+        ],
+        "length": 60.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "ARC",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          180.0,
+          80.0
+        ],
+        "radius": 10.0,
+        "start_angle": 0.0,
+        "end_angle": 90.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          180.0,
+          90.0
+        ],
+        "end": [
+          20.0,
+          90.0
+        ],
+        "length": 160.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "ARC",
+      "handle": "95",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          20.0,
+          80.0
+        ],
+        "radius": 10.0,
+        "start_angle": 90.0,
+        "end_angle": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          80.0
+        ],
+        "end": [
+          10.0,
+          20.0
+        ],
+        "length": 60.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "ARC",
+      "handle": "97",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          20.0,
+          20.0
+        ],
+        "radius": 10.0,
+        "start_angle": 180.0,
+        "end_angle": 270.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LINE",
+      "handle": "98",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -20.0,
+          50.0
+        ],
+        "end": [
+          220.0,
+          50.0
+        ],
+        "length": 240.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "LINE",
+      "handle": "99",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          100.0,
+          -70.0
+        ],
+        "end": [
+          100.0,
+          170.0
+        ],
+        "length": 240.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9A",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 200.0,
+        "text": "200mm OVERALL LENGTH",
+        "position": [
+          0.0,
+          -40.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            200.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A9",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100mm OVERALL WIDTH",
+        "position": [
+          -40.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B8",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 10.0,
+        "text": "10mm PERIMETER WALL",
+        "position": [
+          190.0,
+          50.0
+        ],
+        "target_points": [
+          [
+            190.0,
+            0.0
+          ],
+          [
+            200.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Aero_LW01_MilledPocket.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C8",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "4X R10mm INTERNAL RAD",
+        "position": [
+          230.0,
+          120.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

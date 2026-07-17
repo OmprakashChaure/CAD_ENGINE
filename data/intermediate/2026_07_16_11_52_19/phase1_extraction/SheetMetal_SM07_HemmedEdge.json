@@ -1,0 +1,287 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            200.0,
+            0.0
+          ],
+          [
+            200.0,
+            100.0
+          ],
+          [
+            190.0,
+            100.0
+          ],
+          [
+            190.0,
+            115.0
+          ],
+          [
+            10.0,
+            115.0
+          ],
+          [
+            10.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "LINE",
+      "handle": "91",
+      "layer": "BEND_LINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          10.0,
+          100.0
+        ],
+        "end": [
+          190.0,
+          100.0
+        ],
+        "length": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "92",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 200.0,
+        "text": "200mm OVERALL LENGTH",
+        "position": [
+          0.0,
+          -35.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            200.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100mm BASE W",
+        "position": [
+          -35.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 15.0,
+        "text": "15mm HEM ALLOWANCE",
+        "position": [
+          230.0,
+          100.0
+        ],
+        "target_points": [
+          [
+            190.0,
+            100.0
+          ],
+          [
+            190.0,
+            115.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "10x15mm TEAR RELIEF",
+        "position": [
+          -30.0,
+          140.0
+        ],
+        "height": null,
+        "text_role": "dimension_value",
+        "numeric_value": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "SheetMetal_SM07_HemmedEdge.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C2",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "FOLD FLAT 180\u00b0\n SAFETY HEM",
+        "position": [
+          100.0,
+          140.0
+        ],
+        "height": null,
+        "text_role": "angle_value",
+        "numeric_value": 180.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 7,
+        "kept_entities": 7,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Entity Extraction Rules
+# Controls which DXF entities are extracted and processing behavior
+
+supported_entity_types:
+  - LINE
+  - CIRCLE
+  - ARC
+  - ELLIPSE
+  - LWPOLYLINE
+  - POLYLINE
+  - TEXT
+  - MTEXT
+  - DIMENSION
+  - INSERT
+  - LEADER
+  - POINT
+  - SPLINE
+
+# Layers to skip (non-engineering content)
+skip_layers:
+  - DEFPOINTS
+  - VIEWPORT
+  - BORDER
+  - TITLEBLOCK
+
+# Block handling
+blocks:
+  explode_inserts: true
+  max_nesting_depth: 5
+  skip_blocks:
+    - "*Paper_Space"
+    - "*Model_Space"

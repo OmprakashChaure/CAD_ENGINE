@@ -1,0 +1,1071 @@
+{
+  "hole_candidates": {
+    "hole_candidates": [
+      {
+        "candidate_id": "hc_00001",
+        "candidate_type": "single_radius",
+        "center": [
+          15.0,
+          15.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00002"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00002",
+        "candidate_type": "single_radius",
+        "center": [
+          15.0,
+          25.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00003"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00003",
+        "candidate_type": "single_radius",
+        "center": [
+          15.0,
+          35.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00004"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00004",
+        "candidate_type": "single_radius",
+        "center": [
+          15.0,
+          45.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00005"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00005",
+        "candidate_type": "single_radius",
+        "center": [
+          15.0,
+          55.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00006"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00006",
+        "candidate_type": "single_radius",
+        "center": [
+          15.0,
+          65.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00007"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00007",
+        "candidate_type": "single_radius",
+        "center": [
+          25.0,
+          15.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00008"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00008",
+        "candidate_type": "single_radius",
+        "center": [
+          25.0,
+          25.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00009"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00009",
+        "candidate_type": "single_radius",
+        "center": [
+          25.0,
+          35.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00010"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00010",
+        "candidate_type": "single_radius",
+        "center": [
+          25.0,
+          45.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00011"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00011",
+        "candidate_type": "single_radius",
+        "center": [
+          25.0,
+          55.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00012"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00012",
+        "candidate_type": "single_radius",
+        "center": [
+          25.0,
+          65.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00013"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00013",
+        "candidate_type": "single_radius",
+        "center": [
+          35.0,
+          15.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00014"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00014",
+        "candidate_type": "single_radius",
+        "center": [
+          35.0,
+          25.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00015"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00015",
+        "candidate_type": "single_radius",
+        "center": [
+          35.0,
+          45.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00016"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00016",
+        "candidate_type": "single_radius",
+        "center": [
+          35.0,
+          55.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00017"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00017",
+        "candidate_type": "single_radius",
+        "center": [
+          35.0,
+          65.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00018"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00018",
+        "candidate_type": "single_radius",
+        "center": [
+          45.0,
+          15.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00019"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00019",
+        "candidate_type": "single_radius",
+        "center": [
+          45.0,
+          25.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00020"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00020",
+        "candidate_type": "single_radius",
+        "center": [
+          45.0,
+          35.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00021"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00021",
+        "candidate_type": "single_radius",
+        "center": [
+          45.0,
+          45.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00022"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00022",
+        "candidate_type": "single_radius",
+        "center": [
+          45.0,
+          55.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00023"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00023",
+        "candidate_type": "single_radius",
+        "center": [
+          45.0,
+          65.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00024"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00024",
+        "candidate_type": "single_radius",
+        "center": [
+          55.0,
+          15.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00025"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00025",
+        "candidate_type": "single_radius",
+        "center": [
+          55.0,
+          25.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00026"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00026",
+        "candidate_type": "single_radius",
+        "center": [
+          55.0,
+          35.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00027"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00027",
+        "candidate_type": "single_radius",
+        "center": [
+          55.0,
+          45.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00028"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00028",
+        "candidate_type": "single_radius",
+        "center": [
+          55.0,
+          55.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00029"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00029",
+        "candidate_type": "single_radius",
+        "center": [
+          55.0,
+          65.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00030"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00030",
+        "candidate_type": "single_radius",
+        "center": [
+          65.0,
+          15.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00031"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00031",
+        "candidate_type": "single_radius",
+        "center": [
+          65.0,
+          25.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00032"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00032",
+        "candidate_type": "single_radius",
+        "center": [
+          65.0,
+          35.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00033"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00033",
+        "candidate_type": "single_radius",
+        "center": [
+          65.0,
+          45.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00034"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00034",
+        "candidate_type": "single_radius",
+        "center": [
+          65.0,
+          55.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00035"
+        ],
+        "radius_count": 1
+      },
+      {
+        "candidate_id": "hc_00035",
+        "candidate_type": "single_radius",
+        "center": [
+          65.0,
+          65.0
+        ],
+        "radii": [
+          2.0
+        ],
+        "entity_ids": [
+          "ent_00036"
+        ],
+        "radius_count": 1
+      }
+    ],
+    "statistics": {
+      "total_candidates": 35,
+      "single_radius_candidates": 35,
+      "multi_radius_candidates": 0
+    }
+  },
+  "slot_candidates": {
+    "slot_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "polylines_analyzed": 1,
+      "contours_analyzed": 0
+    }
+  },
+  "radial_patterns": {
+    "radial_patterns": [],
+    "statistics": {
+      "total_patterns": 0,
+      "candidates_analyzed": 35,
+      "radius_groups_found": 1
+    }
+  },
+  "symmetry": {
+    "symmetry_groups": [
+      {
+        "group_id": "sym_00001",
+        "axis": "vertical",
+        "axis_position": 40.0,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00031"
+          ],
+          [
+            "ent_00003",
+            "ent_00032"
+          ],
+          [
+            "ent_00004",
+            "ent_00033"
+          ],
+          [
+            "ent_00005",
+            "ent_00034"
+          ],
+          [
+            "ent_00006",
+            "ent_00035"
+          ],
+          [
+            "ent_00007",
+            "ent_00036"
+          ],
+          [
+            "ent_00008",
+            "ent_00025"
+          ],
+          [
+            "ent_00009",
+            "ent_00026"
+          ],
+          [
+            "ent_00010",
+            "ent_00027"
+          ],
+          [
+            "ent_00011",
+            "ent_00028"
+          ],
+          [
+            "ent_00012",
+            "ent_00029"
+          ],
+          [
+            "ent_00013",
+            "ent_00030"
+          ],
+          [
+            "ent_00014",
+            "ent_00019"
+          ],
+          [
+            "ent_00015",
+            "ent_00020"
+          ],
+          [
+            "ent_00016",
+            "ent_00022"
+          ],
+          [
+            "ent_00017",
+            "ent_00023"
+          ],
+          [
+            "ent_00018",
+            "ent_00024"
+          ]
+        ],
+        "pair_count": 17
+      },
+      {
+        "group_id": "sym_00002",
+        "axis": "horizontal",
+        "axis_position": 40.0,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00007"
+          ],
+          [
+            "ent_00003",
+            "ent_00006"
+          ],
+          [
+            "ent_00004",
+            "ent_00005"
+          ],
+          [
+            "ent_00008",
+            "ent_00013"
+          ],
+          [
+            "ent_00009",
+            "ent_00012"
+          ],
+          [
+            "ent_00010",
+            "ent_00011"
+          ],
+          [
+            "ent_00014",
+            "ent_00018"
+          ],
+          [
+            "ent_00015",
+            "ent_00017"
+          ],
+          [
+            "ent_00019",
+            "ent_00024"
+          ],
+          [
+            "ent_00020",
+            "ent_00023"
+          ],
+          [
+            "ent_00021",
+            "ent_00022"
+          ],
+          [
+            "ent_00025",
+            "ent_00030"
+          ],
+          [
+            "ent_00026",
+            "ent_00029"
+          ],
+          [
+            "ent_00027",
+            "ent_00028"
+          ],
+          [
+            "ent_00031",
+            "ent_00036"
+          ],
+          [
+            "ent_00032",
+            "ent_00035"
+          ],
+          [
+            "ent_00033",
+            "ent_00034"
+          ]
+        ],
+        "pair_count": 17
+      }
+    ],
+    "statistics": {
+      "total_groups": 2,
+      "vertical_pairs": 17,
+      "horizontal_pairs": 17,
+      "entities_analyzed": 36
+    }
+  },
+  "feature_regions": {
+    "feature_regions": [
+      {
+        "region_id": "reg_00002",
+        "hole_candidate_ids": [
+          "hc_00001"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00003",
+        "hole_candidate_ids": [
+          "hc_00002"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00004",
+        "hole_candidate_ids": [
+          "hc_00003"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00005",
+        "hole_candidate_ids": [
+          "hc_00004"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00006",
+        "hole_candidate_ids": [
+          "hc_00005"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00007",
+        "hole_candidate_ids": [
+          "hc_00006"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00008",
+        "hole_candidate_ids": [
+          "hc_00007"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00009",
+        "hole_candidate_ids": [
+          "hc_00008"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00010",
+        "hole_candidate_ids": [
+          "hc_00009"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00011",
+        "hole_candidate_ids": [
+          "hc_00010"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00012",
+        "hole_candidate_ids": [
+          "hc_00011"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00013",
+        "hole_candidate_ids": [
+          "hc_00012"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00014",
+        "hole_candidate_ids": [
+          "hc_00013"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00015",
+        "hole_candidate_ids": [
+          "hc_00014"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00016",
+        "hole_candidate_ids": [
+          "hc_00015"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00017",
+        "hole_candidate_ids": [
+          "hc_00016"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00018",
+        "hole_candidate_ids": [
+          "hc_00017"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00019",
+        "hole_candidate_ids": [
+          "hc_00018"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00020",
+        "hole_candidate_ids": [
+          "hc_00019"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00021",
+        "hole_candidate_ids": [
+          "hc_00020"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00022",
+        "hole_candidate_ids": [
+          "hc_00021"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00023",
+        "hole_candidate_ids": [
+          "hc_00022"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00024",
+        "hole_candidate_ids": [
+          "hc_00023"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00025",
+        "hole_candidate_ids": [
+          "hc_00024"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00026",
+        "hole_candidate_ids": [
+          "hc_00025"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00027",
+        "hole_candidate_ids": [
+          "hc_00026"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00028",
+        "hole_candidate_ids": [
+          "hc_00027"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00029",
+        "hole_candidate_ids": [
+          "hc_00028"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00030",
+        "hole_candidate_ids": [
+          "hc_00029"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00031",
+        "hole_candidate_ids": [
+          "hc_00030"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00032",
+        "hole_candidate_ids": [
+          "hc_00031"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00033",
+        "hole_candidate_ids": [
+          "hc_00032"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00034",
+        "hole_candidate_ids": [
+          "hc_00033"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00035",
+        "hole_candidate_ids": [
+          "hc_00034"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      },
+      {
+        "region_id": "reg_00036",
+        "hole_candidate_ids": [
+          "hc_00035"
+        ],
+        "slot_candidate_ids": [],
+        "radial_pattern_ids": [],
+        "total_candidates": 1
+      }
+    ],
+    "unassigned_candidates": {
+      "holes": [],
+      "slots": [],
+      "patterns": []
+    },
+    "statistics": {
+      "total_feature_regions": 35,
+      "total_assigned_candidates": 35,
+      "total_unassigned_candidates": 0
+    }
+  },
+  "statistics": {
+    "holes": {
+      "total_candidates": 35,
+      "single_radius_candidates": 35,
+      "multi_radius_candidates": 0
+    },
+    "slots": {
+      "total_candidates": 0,
+      "polylines_analyzed": 1,
+      "contours_analyzed": 0
+    },
+    "radial_patterns": {
+      "total_patterns": 0,
+      "candidates_analyzed": 35,
+      "radius_groups_found": 1
+    },
+    "symmetry": {
+      "total_groups": 2,
+      "vertical_pairs": 17,
+      "horizontal_pairs": 17,
+      "entities_analyzed": 36
+    },
+    "feature_regions": {
+      "total_feature_regions": 35,
+      "total_assigned_candidates": 35,
+      "total_unassigned_candidates": 0
+    }
+  }
+}

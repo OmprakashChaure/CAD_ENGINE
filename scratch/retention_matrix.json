@@ -1,0 +1,942 @@
+[
+  {
+    "field": "alignment_tab.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 1,
+    "retention": 20.0,
+    "status": "B",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 1; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 2"
+  },
+  {
+    "field": "alignment_tab.value",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 2,
+    "retention": 50.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 1; Val Target: 0, Val Ctx: 0; Test Target: 2, Test Ctx: 2"
+  },
+  {
+    "field": "bend_relief.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 7,
+    "train_count": 5,
+    "retention": 71.4,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 5; Val Target: 0, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "bend_relief.value",
+    "importance": "OPTIONAL",
+    "semantic_count": 7,
+    "train_count": 10,
+    "retention": 142.9,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 5, Train Ctx: 5; Val Target: 2, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "bolt.across_flats",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 6,
+    "retention": 150.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 3; Val Target: 0, Val Ctx: 0; Test Target: 1, Test Ctx: 1"
+  },
+  {
+    "field": "bolt.grip_length",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 6,
+    "retention": 600.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 3; Val Target: 0, Val Ctx: 0; Test Target: 1, Test Ctx: 1"
+  },
+  {
+    "field": "bolt.nominal_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 6,
+    "retention": 150.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 3; Val Target: 0, Val Ctx: 0; Test Target: 1, Test Ctx: 1"
+  },
+  {
+    "field": "bolt.thread_length",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 6,
+    "retention": 600.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 3; Val Target: 0, Val Ctx: 0; Test Target: 1, Test Ctx: 1"
+  },
+  {
+    "field": "chamfer.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 7,
+    "train_count": 2,
+    "retention": 28.6,
+    "status": "B",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 2; Val Target: 0, Val Ctx: 3; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "chamfer.value",
+    "importance": "OPTIONAL",
+    "semantic_count": 7,
+    "train_count": 4,
+    "retention": 57.1,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 2, Train Ctx: 2; Val Target: 3, Val Ctx: 3; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "channel.channel_width",
+    "importance": "OPTIONAL",
+    "semantic_count": 2,
+    "train_count": 1,
+    "retention": 50.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 1, Test Ctx: 0"
+  },
+  {
+    "field": "concentric_bore.base_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 2,
+    "train_count": 4,
+    "retention": 200.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 4; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "concentric_bore.bore_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 67,
+    "train_count": 55,
+    "retention": 82.1,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 44, Train Ctx: 11; Val Target: 12, Val Ctx: 1; Test Target: 11, Test Ctx: 3"
+  },
+  {
+    "field": "concentric_bore.bore_type",
+    "importance": "OPTIONAL",
+    "semantic_count": 67,
+    "train_count": 90,
+    "retention": 134.3,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 90; Val Target: 0, Val Ctx: 24; Test Target: 0, Test Ctx: 23"
+  },
+  {
+    "field": "concentric_bore.boss_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 10,
+    "train_count": 14,
+    "retention": 140.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 14; Val Target: 0, Val Ctx: 2; Test Target: 0, Test Ctx: 4"
+  },
+  {
+    "field": "concentric_bore.diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 9,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "concentric_bore.flange_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 4,
+    "retention": 133.3,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 4; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 2"
+  },
+  {
+    "field": "concentric_bore.inner_diameter",
+    "importance": "CRITICAL",
+    "semantic_count": 56,
+    "train_count": 11,
+    "retention": 19.6,
+    "status": "B",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 11; Val Target: 0, Val Ctx: 1; Test Target: 0, Test Ctx: 3"
+  },
+  {
+    "field": "concentric_bore.outer_diameter",
+    "importance": "CRITICAL",
+    "semantic_count": 56,
+    "train_count": 46,
+    "retention": 82.1,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 11, Train Ctx: 35; Val Target: 1, Val Ctx: 11; Test Target: 3, Test Ctx: 10"
+  },
+  {
+    "field": "concentric_bore.pcd_reference_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 7,
+    "train_count": 15,
+    "retention": 214.3,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 15; Val Target: 0, Val Ctx: 2; Test Target: 0, Test Ctx: 3"
+  },
+  {
+    "field": "containment.concentric",
+    "importance": "IMPORTANT",
+    "semantic_count": 62,
+    "train_count": 486,
+    "retention": 783.9,
+    "status": "D",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 486; Val Target: 0, Val Ctx: 141; Test Target: 0, Test Ctx: 105"
+  },
+  {
+    "field": "containment.parent_child",
+    "importance": "IMPORTANT",
+    "semantic_count": 47,
+    "train_count": 486,
+    "retention": 1034.0,
+    "status": "D",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 486; Val Target: 0, Val Ctx: 141; Test Target: 0, Test Ctx: 105"
+  },
+  {
+    "field": "cope.cope_radius",
+    "importance": "OPTIONAL",
+    "semantic_count": 2,
+    "train_count": 2,
+    "retention": 100.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 1; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fillet_group.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fillet_group.radius",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fitting.across_flats",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 1,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fitting.flange_thickness",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 1,
+    "retention": 20.0,
+    "status": "A",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fitting.hex_height",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 1,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fitting.neck_length",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 1,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "fitting.taper_length",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 1,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "heatsink_core.diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 3,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "heatsink_fin.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 6,
+    "retention": 200.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 3; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "heatsink_fin.pitch",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 6,
+    "retention": 200.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 3; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "heatsink_fin.thickness",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 6,
+    "retention": 200.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 6; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "hex_drive.size",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "C",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 1, Val Ctx: 1; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "hex_head.across_flats",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 1,
+    "retention": 20.0,
+    "status": "A",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "hierarchy.node",
+    "importance": "IRRELEVANT",
+    "semantic_count": 252,
+    "train_count": 486,
+    "retention": 192.9,
+    "status": "D",
+    "verdict": "N/A",
+    "evidence": "Train Target: 0, Train Ctx: 486; Val Target: 0, Val Ctx: 141; Test Target: 0, Test Ctx: 105"
+  },
+  {
+    "field": "hole_group.count",
+    "importance": "IMPORTANT",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 21, Train Ctx: 65; Val Target: 9, Val Ctx: 27; Test Target: 4, Test Ctx: 12"
+  },
+  {
+    "field": "hole_group.counterbore_depth",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 7,
+    "retention": 700.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 6; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "hole_group.counterbore_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 23,
+    "retention": 2300.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 18, Train Ctx: 5; Val Target: 7, Val Ctx: 0; Test Target: 4, Test Ctx: 0"
+  },
+  {
+    "field": "hole_group.diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 22, Train Ctx: 64; Val Target: 9, Val Ctx: 27; Test Target: 4, Test Ctx: 12"
+  },
+  {
+    "field": "hole_group.group_type",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 86; Val Target: 0, Val Ctx: 36; Test Target: 0, Test Ctx: 16"
+  },
+  {
+    "field": "hole_group.offset_x",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 86; Val Target: 0, Val Ctx: 36; Test Target: 0, Test Ctx: 16"
+  },
+  {
+    "field": "hole_group.offset_y",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 86; Val Target: 0, Val Ctx: 36; Test Target: 0, Test Ctx: 16"
+  },
+  {
+    "field": "hole_group.pattern_type",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 86; Val Target: 0, Val Ctx: 36; Test Target: 0, Test Ctx: 16"
+  },
+  {
+    "field": "hole_group.spacing_x",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 42, Train Ctx: 44; Val Target: 18, Val Ctx: 18; Test Target: 8, Test Ctx: 8"
+  },
+  {
+    "field": "hole_group.spacing_y",
+    "importance": "OPTIONAL",
+    "semantic_count": 34,
+    "train_count": 86,
+    "retention": 252.9,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 42, Train Ctx: 44; Val Target: 18, Val Ctx: 18; Test Target: 8, Test Ctx: 8"
+  },
+  {
+    "field": "hole_pattern.angular_spacing",
+    "importance": "OPTIONAL",
+    "semantic_count": 10,
+    "train_count": 15,
+    "retention": 150.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 15; Val Target: 0, Val Ctx: 2; Test Target: 0, Test Ctx: 4"
+  },
+  {
+    "field": "hole_pattern.counterbore_depth",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 4,
+    "retention": 400.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 4; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "hole_pattern.counterbore_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 10,
+    "retention": 1000.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 8, Train Ctx: 2; Val Target: 1, Val Ctx: 0; Test Target: 2, Test Ctx: 0"
+  },
+  {
+    "field": "hole_pattern.hole_count",
+    "importance": "IMPORTANT",
+    "semantic_count": 10,
+    "train_count": 22,
+    "retention": 220.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 7, Train Ctx: 15; Val Target: 1, Val Ctx: 2; Test Target: 2, Test Ctx: 4"
+  },
+  {
+    "field": "hole_pattern.hole_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 10,
+    "train_count": 22,
+    "retention": 220.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 8, Train Ctx: 14; Val Target: 1, Val Ctx: 2; Test Target: 2, Test Ctx: 4"
+  },
+  {
+    "field": "hole_pattern.pattern_type",
+    "importance": "OPTIONAL",
+    "semantic_count": 10,
+    "train_count": 22,
+    "retention": 220.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 22; Val Target: 0, Val Ctx: 3; Test Target: 0, Test Ctx: 6"
+  },
+  {
+    "field": "hole_pattern.pcd",
+    "importance": "IMPORTANT",
+    "semantic_count": 10,
+    "train_count": 29,
+    "retention": 290.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 7, Train Ctx: 22; Val Target: 1, Val Ctx: 3; Test Target: 2, Test Ctx: 6"
+  },
+  {
+    "field": "keyway.depth",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 8,
+    "retention": 266.7,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 4, Train Ctx: 4; Val Target: 0, Val Ctx: 0; Test Target: 2, Test Ctx: 2"
+  },
+  {
+    "field": "keyway.width",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 4,
+    "retention": 133.3,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 4, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 2, Test Ctx: 0"
+  },
+  {
+    "field": "lube_port.diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 1,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "o_ring.o_ring_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 1,
+    "retention": 100.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "overall_dimensions.height",
+    "importance": "CRITICAL",
+    "semantic_count": 143,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "overall_dimensions.width",
+    "importance": "CRITICAL",
+    "semantic_count": 143,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "pocket.perimeter_wall",
+    "importance": "OPTIONAL",
+    "semantic_count": 15,
+    "train_count": 74,
+    "retention": 493.3,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 11, Train Ctx: 63; Val Target: 1, Val Ctx: 18; Test Target: 3, Test Ctx: 13"
+  },
+  {
+    "field": "pocket.pocket_length",
+    "importance": "CRITICAL",
+    "semantic_count": 72,
+    "train_count": 74,
+    "retention": 102.8,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 63, Train Ctx: 11; Val Target: 18, Val Ctx: 1; Test Target: 13, Test Ctx: 3"
+  },
+  {
+    "field": "pocket.pocket_width",
+    "importance": "CRITICAL",
+    "semantic_count": 72,
+    "train_count": 74,
+    "retention": 102.8,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 63, Train Ctx: 11; Val Target: 18, Val Ctx: 1; Test Target: 13, Test Ctx: 3"
+  },
+  {
+    "field": "port.port_depth",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 4,
+    "retention": 400.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 4; Val Target: 0, Val Ctx: 1; Test Target: 1, Test Ctx: 1"
+  },
+  {
+    "field": "port.port_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 4,
+    "retention": 100.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 3, Train Ctx: 1; Val Target: 1, Val Ctx: 0; Test Target: 0, Test Ctx: 1"
+  },
+  {
+    "field": "port.port_thread",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 4,
+    "retention": 400.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 3; Val Target: 0, Val Ctx: 1; Test Target: 0, Test Ctx: 1"
+  },
+  {
+    "field": "relationships.concentric",
+    "importance": "OPTIONAL",
+    "semantic_count": 62,
+    "train_count": 486,
+    "retention": 783.9,
+    "status": "D",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 486; Val Target: 0, Val Ctx: 141; Test Target: 0, Test Ctx: 105"
+  },
+  {
+    "field": "relationships.mirror_symmetry",
+    "importance": "OPTIONAL",
+    "semantic_count": 85,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "rib.value",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 4,
+    "retention": 80.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 2, Train Ctx: 2; Val Target: 2, Val Ctx: 2; Test Target: 1, Test Ctx: 1"
+  },
+  {
+    "field": "screw.drive_size",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "C",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 1, Val Ctx: 1; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "screw.head_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "C",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 1, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "screw.length",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "C",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 1, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "screw.nominal_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "C",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 1, Val Ctx: 1; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "sheet_metal_bend.angle",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "sheet_metal_bend.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "sheet_metal_bend.radius",
+    "importance": "OPTIONAL",
+    "semantic_count": 3,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "shoulder.shoulder_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 2,
+    "retention": 200.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 1; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "shoulder.shoulder_length",
+    "importance": "OPTIONAL",
+    "semantic_count": 2,
+    "train_count": 2,
+    "retention": 100.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 1, Train Ctx: 1; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "slot_array.count",
+    "importance": "OPTIONAL",
+    "semantic_count": 6,
+    "train_count": 8,
+    "retention": 133.3,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 8; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 4"
+  },
+  {
+    "field": "slot_array.length",
+    "importance": "OPTIONAL",
+    "semantic_count": 6,
+    "train_count": 8,
+    "retention": 133.3,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 8, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 4, Test Ctx: 0"
+  },
+  {
+    "field": "slot_array.orientation",
+    "importance": "OPTIONAL",
+    "semantic_count": 6,
+    "train_count": 8,
+    "retention": 133.3,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 8; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 4"
+  },
+  {
+    "field": "slot_array.width",
+    "importance": "OPTIONAL",
+    "semantic_count": 6,
+    "train_count": 8,
+    "retention": 133.3,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 8, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 4, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.fillet_radius",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 16,
+    "retention": 320.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 13, Train Ctx: 3; Val Target: 2, Val Ctx: 1; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.flange_thickness",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 13,
+    "retention": 260.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 10, Train Ctx: 3; Val Target: 1, Val Ctx: 1; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.inner_radius",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 26,
+    "retention": 2600.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 13, Train Ctx: 13; Val Target: 2, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.outer_radius",
+    "importance": "OPTIONAL",
+    "semantic_count": 1,
+    "train_count": 26,
+    "retention": 2600.0,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 13, Train Ctx: 13; Val Target: 2, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.profile_type",
+    "importance": "OPTIONAL",
+    "semantic_count": 15,
+    "train_count": 13,
+    "retention": 86.7,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 13; Val Target: 0, Val Ctx: 2; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.wall_thickness",
+    "importance": "OPTIONAL",
+    "semantic_count": 4,
+    "train_count": 13,
+    "retention": 325.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 13, Train Ctx: 0; Val Target: 2, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "structural_profile.web_thickness",
+    "importance": "OPTIONAL",
+    "semantic_count": 8,
+    "train_count": 13,
+    "retention": 162.5,
+    "status": "C",
+    "verdict": "PASS",
+    "evidence": "Train Target: 10, Train Ctx: 3; Val Target: 1, Val Ctx: 1; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "symmetry.mirror_symmetry",
+    "importance": "IMPORTANT",
+    "semantic_count": 85,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "thread.nominal_diameter",
+    "importance": "OPTIONAL",
+    "semantic_count": 14,
+    "train_count": 7,
+    "retention": 50.0,
+    "status": "A",
+    "verdict": "PASS",
+    "evidence": "Train Target: 7, Train Ctx: 0; Val Target: 4, Val Ctx: 0; Test Target: 3, Test Ctx: 0"
+  },
+  {
+    "field": "thread.pitch",
+    "importance": "OPTIONAL",
+    "semantic_count": 10,
+    "train_count": 0,
+    "retention": 0.0,
+    "status": "E",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 0; Val Target: 0, Val Ctx: 0; Test Target: 0, Test Ctx: 0"
+  },
+  {
+    "field": "thread.thread_designation",
+    "importance": "OPTIONAL",
+    "semantic_count": 15,
+    "train_count": 7,
+    "retention": 46.7,
+    "status": "B",
+    "verdict": "FAIL",
+    "evidence": "Train Target: 0, Train Ctx: 7; Val Target: 0, Val Ctx: 4; Test Target: 0, Test Ctx: 3"
+  },
+  {
+    "field": "thread.thread_length",
+    "importance": "OPTIONAL",
+    "semantic_count": 5,
+    "train_count": 7,
+    "retention": 140.0,
+    "status": "B",
+    "verdict": "PASS",
+    "evidence": "Train Target: 0, Train Ctx: 7; Val Target: 0, Val Ctx: 4; Test Target: 0, Test Ctx: 3"
+  }
+]

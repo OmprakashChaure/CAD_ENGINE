@@ -1,0 +1,552 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "radius": 30.0,
+        "diameter": 60.0,
+        "area": 2827.4333882308138
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "radius": 20.0,
+        "diameter": 40.0,
+        "area": 1256.6370614359173
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          0.0,
+          0.0
+        ],
+        "radius": 25.0,
+        "diameter": 50.0,
+        "area": 1963.4954084936207
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "93",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          17.67766952966369,
+          17.67766952966369
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "94",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          12.677669529663689,
+          17.67766952966369
+        ],
+        "end": [
+          22.67766952966369,
+          17.67766952966369
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "95",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          17.67766952966369,
+          12.677669529663689
+        ],
+        "end": [
+          17.67766952966369,
+          22.67766952966369
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "96",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          -17.677669529663685,
+          17.67766952966369
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "97",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -22.677669529663685,
+          17.67766952966369
+        ],
+        "end": [
+          -12.677669529663685,
+          17.67766952966369
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00009",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "98",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -17.677669529663685,
+          12.677669529663689
+        ],
+        "end": [
+          -17.677669529663685,
+          22.67766952966369
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "99",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          -17.677669529663692,
+          -17.677669529663685
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "9A",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -22.677669529663692,
+          -17.677669529663685
+        ],
+        "end": [
+          -12.677669529663692,
+          -17.677669529663685
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "9B",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -17.677669529663692,
+          -22.677669529663685
+        ],
+        "end": [
+          -17.677669529663692,
+          -12.677669529663685
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "9C",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          17.677669529663685,
+          -17.677669529663692
+        ],
+        "radius": 2.0,
+        "diameter": 4.0,
+        "area": 12.566370614359172
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "9D",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          12.677669529663685,
+          -17.677669529663692
+        ],
+        "end": [
+          22.677669529663685,
+          -17.677669529663692
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00015",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "9E",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          17.677669529663685,
+          -22.677669529663692
+        ],
+        "end": [
+          17.677669529663685,
+          -12.677669529663692
+        ],
+        "length": 10.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "9F",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -40.0,
+          0.0
+        ],
+        "end": [
+          40.0,
+          0.0
+        ],
+        "length": 80.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00017",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "LINE",
+      "handle": "A0",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          0.0,
+          -40.0
+        ],
+        "end": [
+          0.0,
+          40.0
+        ],
+        "length": 80.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00018",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "A1",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 60.0,
+        "text": "%%C60mm SM02 THREAD OD",
+        "position": [
+          -30.0,
+          -60.0
+        ],
+        "target_points": [
+          [
+            -30.0,
+            0.0
+          ],
+          [
+            30.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00019",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 50.0,
+        "text": "%%C50mm PITCH CIRCLE",
+        "position": [
+          -25.0,
+          60.0
+        ],
+        "target_points": [
+          [
+            -25.0,
+            0.0
+          ],
+          [
+            25.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00021",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C0",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "\u00d840mm CLEARANCE BORE",
+        "position": [
+          40.0,
+          40.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 40.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00023",
+      "source_file": "Optomech_OM02_SpannerRing.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C2",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "4X \u00d84mm SPANNER HOLE",
+        "position": [
+          60.0,
+          10.0
+        ],
+        "height": null,
+        "text_role": "diameter_value",
+        "numeric_value": 4.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 21,
+        "kept_entities": 21,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}

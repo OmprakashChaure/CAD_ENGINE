@@ -1,0 +1,42 @@
+# Layer Classification Rules
+# Maps DXF layer/linetype conventions to engineering roles
+
+linetype_roles:
+  HIDDEN: hidden_line
+  HIDDEN2: hidden_line
+  DASHED: hidden_line
+  CENTER: centerline
+  CENTER2: centerline
+  PHANTOM: construction_line
+  CONTINUOUS: visible_edge
+
+layer_name_patterns:
+  centerline:
+    - CENTER
+    - CL
+    - AXIS
+  hidden:
+    - HIDDEN
+    - DASHED
+    - HID
+  construction:
+    - PHANTOM
+    - CONSTRUCT
+    - REF
+  dimension:
+    - DIM
+    - DIMENSION
+  annotation:
+    - TEXT
+    - NOTE
+    - ANNOT
+
+
+ignore_layers:
+  - DEFPOINTS
+  - VIEWPORT
+  - VIEW
+  - TEXT
+  - ANNOTATION
+  - TITLE
+  - BORDER

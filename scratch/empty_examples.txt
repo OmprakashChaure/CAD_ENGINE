@@ -1,0 +1,300 @@
+### Example 1:
+* **Drawing ID:** Circular_Flange_FL03
+* **Task Type:** infer_pocket_dimension
+* **Target:** {"property": "pocket_dimension", "value": 90.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": {"candidate_id": "hc_00001", "candidate_type": "multi_radius", "radius_count": 4}, "repetition_context": null, "concentric_context": {"group_id": "conc_00001", "radii": [30.0, 45.0, 50.0, 80.0], "count": 4}, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 2:
+* **Drawing ID:** CrossSection_CS01_Pulley
+* **Task Type:** infer_pocket_dimension
+* **Target:** {"property": "pocket_dimension", "value": 10.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 3:
+* **Drawing ID:** CrossSection_CS02_BearingHub
+* **Task Type:** infer_pocket_dimension
+* **Target:** {"property": "pocket_dimension", "value": 3.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 4:
+* **Drawing ID:** Gasket_GS03_DovetailGroove
+* **Task Type:** infer_pocket_dimension
+* **Target:** {"property": "pocket_dimension", "value": 10.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 5:
+* **Drawing ID:** Aero_LW05_IsogridHex
+* **Task Type:** infer_wall_thickness
+* **Target:** {"property": "wall_thickness", "value": 15.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 1, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 6:
+* **Drawing ID:** Blueprint_PL02_ScrewBoss
+* **Task Type:** infer_wall_thickness
+* **Target:** {"property": "wall_thickness", "value": 4.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 7:
+* **Drawing ID:** Spring_SP02_BellowsJoint
+* **Task Type:** infer_wall_thickness
+* **Target:** {"property": "wall_thickness", "value": 3.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 8:
+* **Drawing ID:** Structural_ST06_ZBar
+* **Task Type:** infer_wall_thickness
+* **Target:** {"property": "wall_thickness", "value": 5.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 9:
+* **Drawing ID:** Structural_ST13_TrapezoidalDeck
+* **Task Type:** infer_wall_thickness
+* **Target:** {"property": "wall_thickness", "value": 2.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 10:
+* **Drawing ID:** Weldment_WD03_VGroovePrep
+* **Task Type:** infer_wall_thickness
+* **Target:** {"property": "wall_thickness", "value": 20.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 11:
+* **Drawing ID:** CrossSection_CS01_Pulley
+* **Task Type:** infer_bore_diameter
+* **Target:** {"property": "bore_diameter", "value": 20.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 12:
+* **Drawing ID:** Kinematic_LK09_QuickReturnCrank
+* **Task Type:** infer_bore_diameter
+* **Target:** {"property": "bore_diameter", "value": 16.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": {"candidate_id": "hc_00001", "candidate_type": "single_radius", "radius_count": 1}, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 13:
+* **Drawing ID:** Blueprint_PL02_ScrewBoss
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 4.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 14:
+* **Drawing ID:** CrossSection_CS01_Pulley
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 15:
+* **Drawing ID:** Fluid_PF04_WeldNeck
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 16:
+* **Drawing ID:** Gasket_GS04_SpiralWound
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 140.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 17:
+* **Drawing ID:** Gear_GR01_Spur
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 120.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 18:
+* **Drawing ID:** Optomech_OM04_ChopperWheel
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": {"candidate_id": "hc_00001", "candidate_type": "multi_radius", "radius_count": 2}, "repetition_context": null, "concentric_context": {"group_id": "conc_00001", "count": 2}, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 19:
+* **Drawing ID:** Spring_SP01_DieSpring
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 60.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 20:
+* **Drawing ID:** Spring_SP02_BellowsJoint
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 60.0}
+* **Context:** {"feature_type": "heatsink_core", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "heatsink_core_1", "feature_parameters_visible": {}}
+
+### Example 21:
+* **Drawing ID:** Spring_SP02_BellowsJoint
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 90.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 22:
+* **Drawing ID:** Structural_ST11_TSlot
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 6.8}
+* **Context:** {"feature_type": "heatsink_core", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": {"candidate_id": "hc_00001", "candidate_type": "single_radius", "radius_count": 1}, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "heatsink_core_1", "feature_parameters_visible": {}}
+
+### Example 23:
+* **Drawing ID:** Thermal_HS02_RadialHeatsink
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 30.0}
+* **Context:** {"feature_type": "heatsink_core", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "heatsink_core_1", "feature_parameters_visible": {}}
+
+### Example 24:
+* **Drawing ID:** Thermal_HS02_RadialHeatsink
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 90.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 25:
+* **Drawing ID:** Thermal_HS05_StatorCasing
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": {"candidate_id": "hc_00001", "candidate_type": "single_radius", "radius_count": 1}, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 26:
+* **Drawing ID:** Tooling_TL02_SnapGauge
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 70.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 27:
+* **Drawing ID:** Turbo_AM04_VenturiNozzle
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 80.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 28:
+* **Drawing ID:** Turbo_AM05_LabyrinthSeal
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 40.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 29:
+* **Drawing ID:** Turbo_AM05_LabyrinthSeal
+* **Task Type:** infer_outer_diameter
+* **Target:** {"property": "outer_diameter", "value": 80.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 30:
+* **Drawing ID:** Electrical_BB02_TransformerLink
+* **Task Type:** infer_slot_dimension
+* **Target:** {"property": "slot_dimension", "value": 12.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 31:
+* **Drawing ID:** Blueprint_PL04_LivingHinge
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 40.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 32:
+* **Drawing ID:** CrossSection_CS02_BearingHub
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 50.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 33:
+* **Drawing ID:** Electrical_BB02_TransformerLink
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 120.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 34:
+* **Drawing ID:** Gasket_GS03_DovetailGroove
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 40.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 35:
+* **Drawing ID:** Kinematic_LK02_ConnectingRod
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 200.0}
+* **Context:** {"feature_type": "span_dimension", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": null, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "direction": "horizontal", "feature_centers": [[100.0, 100.0], [300.0, 100.0]]}
+
+### Example 36:
+* **Drawing ID:** Kinematic_LK05_GenevaWheel
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 20.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 37:
+* **Drawing ID:** Kinematic_LK10_CrossheadGuide
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 60.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 38:
+* **Drawing ID:** Motor_Bracket_MB04
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 40.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 39:
+* **Drawing ID:** PCB_PC08_Castellated
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 40:
+* **Drawing ID:** SheetMetal_SM02_PrecisionZClip
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 40.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 41:
+* **Drawing ID:** Spring_SP01_DieSpring
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 42:
+* **Drawing ID:** Structural_ST06_ZBar
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 50.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 43:
+* **Drawing ID:** Structural_ST10_CraneRail
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 120.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 44:
+* **Drawing ID:** Structural_ST11_TSlot
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 16.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 45:
+* **Drawing ID:** Structural_ST13_TrapezoidalDeck
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 330.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 46:
+* **Drawing ID:** Structural_ST14_BulbFlat
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 35.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 47:
+* **Drawing ID:** Tooling_TL02_SnapGauge
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 48:
+* **Drawing ID:** Turbo_AM03_ImpellerVane
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 142.1267}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 49:
+* **Drawing ID:** Weldment_WD03_VGroovePrep
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 100.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+
+### Example 50:
+* **Drawing ID:** Structural_ST13_TrapezoidalDeck
+* **Task Type:** infer_feature_span
+* **Target:** {"property": "feature_span", "value": 50.0}
+* **Context:** {"feature_type": "dimension_annotations", "topology_neighbors": [], "neighbor_dimensions": [], "hierarchy": {"contour_role": "outer", "nesting_depth": 0, "child_count": 0, "has_parent": false}, "feature_context": null, "repetition_context": null, "concentric_context": null, "relationships": [], "feature_id": "dimension_annotations", "feature_parameters_visible": {}}
+

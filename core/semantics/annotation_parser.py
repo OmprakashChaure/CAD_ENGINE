@@ -311,11 +311,17 @@ class AnnotationParser:
                 quantity=quantity,
             )
 
-        # 9. Match Fits (e.g. 50H7, 20G6)
-        fit_match = re.match(r"^(\d+(?:\.\d+)?)\s*(H7|G6)$", core_text)
+        # 9. Match Fits (e.g. 50H7, 20G6, Ø50mm h7 CLEARANCE)
+        fit_text = core_text.lstrip("Ø").strip()
+        fit_match = re.match(r"^(\d+(?:\.\d+)?)\s*(?:MM)?\s*(H7|G6)(?:\s+.*)?$", fit_text)
         if fit_match:
             diameter = float(fit_match.group(1))
             f_class = fit_match.group(2)
+            
+            # Check original case in raw input text parameter to distinguish hole vs shaft fit
+            if f_class.lower() in text:
+                f_class = f_class.lower()
+                
             dev = self.lookup.get_fit_deviation(f_class, diameter)
             validation = "unvalidated"
             l_dev, u_dev = None, None

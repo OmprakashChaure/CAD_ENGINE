@@ -83,10 +83,12 @@ class StandardsLookup:
             return None
 
         table_name = None
-        fit_upper = fit_type.upper().strip()
-        if fit_upper == "H7":
+        fit_strip = fit_type.strip()
+        if fit_strip == "H7":
             table_name = "iso_286_h7_holes"
-        elif fit_upper == "G6":
+        elif fit_strip == "h7":
+            table_name = "iso_286_h7_shafts"
+        elif fit_strip in ("g6", "G6"):
             table_name = "iso_286_g6_shafts"
 
         if not table_name or table_name not in self.fits:

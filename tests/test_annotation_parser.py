@@ -127,6 +127,24 @@ class TestAnnotationParser(unittest.TestCase):
         self.assertEqual(parsed.upper_deviation, 0.025)
         self.assertEqual(parsed.validation_status, "validated")
 
+        # 50mm h7 CLEARANCE
+        parsed_h7 = self.parser.parse("%%C50mm h7 CLEARANCE")
+        self.assertEqual(parsed_h7.annotation_type, "fit")
+        self.assertEqual(parsed_h7.fit_class, "h7")
+        self.assertEqual(parsed_h7.nominal_diameter, 50.0)
+        self.assertEqual(parsed_h7.lower_deviation, -0.025)
+        self.assertEqual(parsed_h7.upper_deviation, 0.0)
+        self.assertEqual(parsed_h7.validation_status, "validated")
+
+        # 50mm H7 BORE
+        parsed_H7_bore = self.parser.parse("%%C50mm H7 BORE")
+        self.assertEqual(parsed_H7_bore.annotation_type, "fit")
+        self.assertEqual(parsed_H7_bore.fit_class, "H7")
+        self.assertEqual(parsed_H7_bore.nominal_diameter, 50.0)
+        self.assertEqual(parsed_H7_bore.lower_deviation, 0.0)
+        self.assertEqual(parsed_H7_bore.upper_deviation, 0.025)
+        self.assertEqual(parsed_H7_bore.validation_status, "validated")
+
     def test_chamfer_bevel_validation(self):
         # Chamfer with quantity and angle
         parsed = self.parser.parse("2X CHAMFER 2MM X 45 DEG")

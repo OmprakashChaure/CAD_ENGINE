@@ -1,0 +1,553 @@
+﻿
+======================================================================
+MECHANICAL ENGINEER AUDIT - data\intermediate\2026_07_21_15_06_52\phase7_export\train.jsonl
+======================================================================
+
+Total issues: 338
+   97  missing_constraints
+   77  semantic_noise
+   37  unlinked_symmetry
+   36  dangling_relationship
+   30  nesting_zero
+   28  no_real_features
+   21  redundant_field
+    5  wrong_mfg_type
+    3  pocket_wall_equals_dimension
+    1  null_dimension
+    1  misclassified_pattern
+    1  pcd_equals_diameter
+    1  tight_hole_clearance
+
+----------------------------------------------------------------------
+
+[Aero_LW01_MilledPocket]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Aero_LW04_CornerGusset]
+  [ERROR] pocket_wall_equals_dimension: Feature 'pocket_1': perimeter_wall=69.0 == pocket_length or pocket_width ΓÇö wall thickness is nonsensical
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Aero_LW05_IsogridHex]
+  [ERROR] pocket_wall_equals_dimension: Feature 'pocket_1': perimeter_wall=90.0 == pocket_length or pocket_width ΓÇö wall thickness is nonsensical
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Aero_LW06_ObroundLink]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'radial_pattern_2'
+  [ERROR] pocket_wall_equals_dimension: Feature 'pocket_1': perimeter_wall=30.0 == pocket_length or pocket_width ΓÇö wall thickness is nonsensical
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[Aero_LW07_SectorBulkhead]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Bearing_Housing_BH01]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Bearing_Housing_BH02]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Bearing_Housing_BH04]
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Bearing_Housing_BH05]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Bearing_Housing_BH08]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'radial_pattern_2'
+  [ERROR] dangling_relationship: Relationship 'concentric_3' references missing feature 'radial_pattern_3'
+  [ERROR] dangling_relationship: Relationship 'concentric_4' references missing feature 'radial_pattern_4'
+  [ERROR] dangling_relationship: Relationship 'concentric_5' references missing feature 'radial_pattern_5'
+  [ERROR] dangling_relationship: Relationship 'concentric_6' references missing feature 'radial_pattern_6'
+  [ERROR] dangling_relationship: Relationship 'concentric_7' references missing feature 'radial_pattern_7'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] null_dimension: Dimension handle 'E7' text='CONCENTRIC DATUM' has value=null ΓÇö numeric extraction failed
+  [WARN] misclassified_pattern: Feature 'hole_group_d10': group_type='rectangular_pattern' but positions lie on a circle (rΓëê70.0mm) ΓÇö should be radial_pattern
+
+[Bearing_Housing_BH10]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Blueprint_PL01_SnapFit]
+  [ERROR] wrong_mfg_type: manufacturing_type='machined' but part name 'Blueprint_PL01_SnapFit' is a plastic/injection-moulded feature ΓÇö should be 'injection_moulded'
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Blueprint_PL02_ScrewBoss]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Blueprint_PL03_ShelledBox]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'concentric_bore_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'concentric_bore_2'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'radial_pattern_2'
+  [ERROR] wrong_mfg_type: manufacturing_type='machined' but part name 'Blueprint_PL03_ShelledBox' is a plastic/injection-moulded feature ΓÇö should be 'injection_moulded'
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Blueprint_PL04_LivingHinge]
+  [ERROR] wrong_mfg_type: manufacturing_type='machined' but part name 'Blueprint_PL04_LivingHinge' is a plastic/injection-moulded feature ΓÇö should be 'injection_moulded'
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Circular_Flange_FL01]
+  [ERROR] pcd_equals_diameter: Feature 'radial_pattern_1': pcd=12.0 == hole_diameter=12.0 ΓÇö PCD is clearly wrong
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] tight_hole_clearance: Feature 'radial_pattern_1': edge-edge clearance=-3.5mm < 1├ùD=12.0mm (tight for machining)
+
+[Circular_Flange_FL03]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Circular_Flange_FL04]
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[CrossSection_CS01_Pulley]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[CrossSection_CS02_BearingHub]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[CrossSection_CS03_BlindCap]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Electrical_BB01_PhaseBusbar]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'radial_pattern_2'
+  [ERROR] dangling_relationship: Relationship 'concentric_3' references missing feature 'radial_pattern_3'
+  [ERROR] dangling_relationship: Relationship 'concentric_4' references missing feature 'radial_pattern_4'
+  [ERROR] dangling_relationship: Relationship 'concentric_5' references missing feature 'radial_pattern_5'
+  [ERROR] dangling_relationship: Relationship 'concentric_6' references missing feature 'radial_pattern_6'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Electrical_BB02_TransformerLink]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Electrical_BB03_SteppedIsolator]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Electrical_BB04_FlexibleShunt]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Electrical_BB05_UShapeBus]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Fluid_PF02_HexBushing]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Fluid_PF04_WeldNeck]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Fluid_PF05_HoseBarb]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Gasket_GS01_CylinderHead]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Gasket_GS02_FlangeTab]
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[Gasket_GS03_DovetailGroove]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Gasket_GS04_SpiralWound]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Gear_GR01_Spur]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Gear_GR03_Sprocket]
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Hardware_HW01_HexBolt]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_horizontal' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Hardware_HW04_ShoulderScrew]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Hardware_HW05_HexNut]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[Kinematic_LK02_ConnectingRod]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'radial_pattern_2'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[Kinematic_LK04_SlottedLink]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Kinematic_LK05_GenevaWheel]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Kinematic_LK08_FollowerArm]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_2' references missing feature 'radial_pattern_2'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[Kinematic_LK09_QuickReturnCrank]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Kinematic_LK10_CrossheadGuide]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Kinematic_LK11_CouplerPlate]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Kinematic_LK13_WattsLink]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_horizontal' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Motor_Bracket_MB01]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Motor_Bracket_MB02]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[Motor_Bracket_MB04]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Motor_Bracket_MB05]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+
+[Optomech_OM03_KinematicPlate]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Optomech_OM04_ChopperWheel]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Optomech_OM05_DovetailRail]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[PCB_PC03_DiffPair]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[PCB_PC04_ThermalRelief]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[PCB_PC05_EdgeConnector]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[PCB_PC06_Serpentine]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[PCB_PC08_Castellated]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Plastic_PL04_LivingHinge]
+  [ERROR] wrong_mfg_type: manufacturing_type='machined' but part name 'Plastic_PL04_LivingHinge' is a plastic/injection-moulded feature ΓÇö should be 'injection_moulded'
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Plastic_PL05_CrushRibs]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [ERROR] wrong_mfg_type: manufacturing_type='machined' but part name 'Plastic_PL05_CrushRibs' is a plastic/injection-moulded feature ΓÇö should be 'injection_moulded'
+  [INFO] redundant_field: Feature 'concentric_bore_1': bore_diameter == inner_diameter (same value duplicated)
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_horizontal' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+
+[SheetMetal_SM01_UBracket]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[SheetMetal_SM02_PrecisionZClip]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[SheetMetal_SM07_HemmedEdge]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[SheetMetal_SM08_CrossBreak]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Spring_SP01_DieSpring]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Spring_SP02_BellowsJoint]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Spring_SP03_BellevilleStack]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Structural_ST01_IBeam]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST02_HSSTube]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Structural_ST03_UnequalAngle]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST04_CChannel]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_horizontal' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST05_TBar]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST06_ZBar]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Structural_ST07_HexTube]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+
+[Structural_ST10_CraneRail]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST11_TSlot]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST13_TrapezoidalDeck]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Structural_ST14_BulbFlat]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Structural_ST15_DTube]
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'concentric_bore_1'
+  [ERROR] dangling_relationship: Relationship 'concentric_1' references missing feature 'radial_pattern_1'
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Thermal_HS01_CombHeatsink]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Thermal_HS02_RadialHeatsink]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Thermal_HS03_TaperedHeatsink]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Thermal_HS04_ColdPlate]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Thermal_HS05_StatorCasing]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] nesting_zero: Has concentric_bore but topology.nesting=0 ΓÇö inner loop not counted as nested
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Tooling_TL01_SineBar]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+
+[Tooling_TL02_SnapGauge]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Tooling_TL03_VBlock]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Turbo_AM01_Airfoil]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Turbo_AM03_ImpellerVane]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Turbo_AM04_VenturiNozzle]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Turbo_AM05_LabyrinthSeal]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Turned_Shaft_TS02]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Turned_Shaft_TS03]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Turned_Shaft_TS05]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+
+[Weldment_WD01_CopedTube]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Weldment_WD03_VGroovePrep]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features
+  [WARN] no_real_features: No real engineering features detected ΓÇö only annotation/dimension artefacts remain
+
+[Workbook_EX05_SlottedBracket]
+  [WARN] missing_constraints: engineering_constraints=[] ΓÇö no material, tolerance, or surface finish captured
+  [WARN] unlinked_symmetry: Relationship 'mirror_symmetry_vertical' has feature_ids=[] ΓÇö symmetry not linked to features
+  [WARN] semantic_noise: Catch-all features pollute feature list: ['dimension_annotations', 'unknown_facts_container'] ΓÇö these are annotation artefacts, not engineering features

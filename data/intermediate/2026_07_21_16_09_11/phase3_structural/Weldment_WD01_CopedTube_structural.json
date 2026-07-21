@@ -1,0 +1,188 @@
+{
+  "contours": {
+    "contours": [
+      {
+        "contour_id": "ctr_00001",
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002",
+          "ent_00004",
+          "ent_00003"
+        ],
+        "is_closed": true,
+        "length": 4
+      }
+    ],
+    "isolated_entities": [
+      "ent_00005",
+      "ent_00006",
+      "ent_00007",
+      "ent_00008",
+      "ent_00009",
+      "ent_00011"
+    ],
+    "statistics": {
+      "total_contours": 1,
+      "closed_contours": 1,
+      "open_contours": 0,
+      "isolated_entities": 6
+    }
+  },
+  "loops": {
+    "loops": [
+      {
+        "loop_id": "loop_00001",
+        "contour_id": "ctr_00001",
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002",
+          "ent_00004",
+          "ent_00003"
+        ],
+        "length": 4,
+        "min_degree": 2
+      }
+    ],
+    "open_chains": [],
+    "statistics": {
+      "total_loops": 1,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 1
+    }
+  },
+  "concentric_groups": {
+    "concentric_groups": [],
+    "ungrouped_circles": [
+      "ent_00004"
+    ],
+    "statistics": {
+      "total_groups": 0,
+      "total_circle_arc_entities": 1,
+      "grouped_entities": 0,
+      "ungrouped_entities": 1
+    }
+  },
+  "regions": {
+    "regions": [
+      {
+        "region_id": "reg_00001",
+        "entity_ids": [
+          "ent_00001",
+          "ent_00002",
+          "ent_00004",
+          "ent_00003"
+        ],
+        "size": 4,
+        "is_singleton": false
+      },
+      {
+        "region_id": "reg_00002",
+        "entity_ids": [
+          "ent_00005"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00003",
+        "entity_ids": [
+          "ent_00006"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00004",
+        "entity_ids": [
+          "ent_00007"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00005",
+        "entity_ids": [
+          "ent_00008"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00006",
+        "entity_ids": [
+          "ent_00009"
+        ],
+        "size": 1,
+        "is_singleton": true
+      },
+      {
+        "region_id": "reg_00007",
+        "entity_ids": [
+          "ent_00011"
+        ],
+        "size": 1,
+        "is_singleton": true
+      }
+    ],
+    "statistics": {
+      "total_regions": 7,
+      "multi_entity_regions": 1,
+      "singleton_regions": 6,
+      "max_region_size": 4,
+      "min_region_size": 1,
+      "total_entities": 10
+    }
+  },
+  "contour_hierarchy": {
+    "hierarchy": [
+      {
+        "entity_id": "loop_00001",
+        "contour_role": "outer",
+        "parent_id": null,
+        "children_ids": [],
+        "nesting_depth": 0
+      }
+    ],
+    "statistics": {
+      "total_contours": 1,
+      "outer": 1,
+      "inner": 0,
+      "bbox_candidates": 0,
+      "centroid_rejections": 0
+    }
+  },
+  "statistics": {
+    "contours": {
+      "total_contours": 1,
+      "closed_contours": 1,
+      "open_contours": 0,
+      "isolated_entities": 6
+    },
+    "loops": {
+      "total_loops": 1,
+      "total_open_chains": 0,
+      "total_contours_analyzed": 1
+    },
+    "concentric": {
+      "total_groups": 0,
+      "total_circle_arc_entities": 1,
+      "grouped_entities": 0,
+      "ungrouped_entities": 1
+    },
+    "regions": {
+      "total_regions": 7,
+      "multi_entity_regions": 1,
+      "singleton_regions": 6,
+      "max_region_size": 4,
+      "min_region_size": 1,
+      "total_entities": 10
+    },
+    "hierarchy": {
+      "total_contours": 1,
+      "outer": 1,
+      "inner": 0,
+      "bbox_candidates": 0,
+      "centroid_rejections": 0
+    }
+  }
+}

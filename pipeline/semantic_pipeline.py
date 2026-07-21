@@ -474,10 +474,11 @@ def extract_dimension_facts(phase1_entities: List[Dict[str, Any]]) -> Dict[str, 
         parsed_ann = parser.parse(text)
 
         if "PCD" in text or "PITCH CIRCLE" in text:
-            pcd_nums = [n for n in nums if n not in (4.0, 6.0, 8.0, 10.0, 12.0, 16.0)]
-            pcd_value = parsed_ann.nominal_diameter or (max(pcd_nums) if pcd_nums else (value if isinstance(value, (int, float)) else None))
-            if pcd_value:
-                facts["pcd"] = round(float(pcd_value), 4)
+            if not any(kw in text for kw in ("THRU", "HOLES", "BOLTS", "DRILLED", "TAP", "TAPPED", "X Ø")):
+                pcd_nums = [n for n in nums if n not in (4.0, 6.0, 8.0, 10.0, 12.0, 16.0)]
+                pcd_value = parsed_ann.nominal_diameter or (max(pcd_nums) if pcd_nums else (value if isinstance(value, (int, float)) else None))
+                if pcd_value:
+                    facts["pcd"] = round(float(pcd_value), 4)
 
         if "BORE" in text and "CBORE" not in text and "PCBORE" not in text and "PORT" not in text:
             if "BOSS" not in text and "COVER BOLTS" not in text:
@@ -682,9 +683,10 @@ def map_features(
     phase3_result: Dict[str, Any],
     phase4_result: Dict[str, Any],
     phase5_result: Dict[str, Any]
-) -> List[FeatureInstance]:
+) -> Tuple[List[FeatureInstance], Dict[str, str]]:
     parser = AnnotationParser()
     features = []
+    entity_to_feature_id = {}
     dimension_facts = extract_dimension_facts(phase1_entities)
     
     dims = reconstruct_dimensions(phase1_entities)
@@ -863,6 +865,8 @@ def map_features(
         for cid in member_ids:
             hc = hole_by_id.get(cid)
             if hc:
+                for eid in hc.get("entity_ids", []):
+                    entity_to_feature_id[eid] = f"radial_pattern_{idx + 1}"
                 represented_entity_ids.update(hc.get("entity_ids", []))
                 center = hc.get("center")
                 radii = hc.get("radii", [])
@@ -900,6 +904,8 @@ def map_features(
             used_concentric_centers.append((round(center[0], 4), round(center[1], 4)))
             
         # Track represented entities and keys
+        for eid in cg.get("entity_ids", []):
+            entity_to_feature_id[eid] = f"concentric_bore_{idx + 1}"
         represented_entity_ids.update(cg.get("entity_ids", []))
         for r in radii:
             if center and len(center) >= 2:
@@ -990,6 +996,8 @@ def map_features(
                     }
                 ))
                 # Track represented entities and keys
+                for eid in h.get("entity_ids", []):
+                    entity_to_feature_id[eid] = f"bore_d{int(diameter)}"
                 represented_entity_ids.update(h.get("entity_ids", []))
                 for r in h.get("radii", []):
                     if center and len(center) >= 2:
@@ -1041,6 +1049,8 @@ def map_features(
         
         # Track represented entities and keys
         for h in holes:
+            for eid in h.get("entity_ids", []):
+                entity_to_feature_id[eid] = f"hole_group_d{int(diameter)}"
             represented_entity_ids.update(h.get("entity_ids", []))
             center = h.get("center")
             for r in h.get("radii", []):
@@ -1142,8 +1152,11 @@ def map_features(
                             continue
                     entity_id_field = sc.get("entity_id")
                     if isinstance(entity_id_field, list):
+                        for eid in entity_id_field:
+                            entity_to_feature_id[eid] = "slot_array_1"
                         represented_entity_ids.update(entity_id_field)
                     elif isinstance(entity_id_field, str):
+                        entity_to_feature_id[entity_id_field] = "slot_array_1"
                         represented_entity_ids.add(entity_id_field)
     
     # MAP 5: Corner ARCs → fillet_group
@@ -1185,6 +1198,7 @@ def map_features(
                     radius = geom.get("radius")
                     center = geom.get("center")
                     if radius and 10 <= radius <= 20 and center:
+                        entity_to_feature_id[ent.get("entity_id")] = "corner_fillets"
                         represented_entity_ids.add(ent.get("entity_id"))
                         represented_concentric_keys.add((round(center[0], 4), round(center[1], 4), round(radius, 4)))
     
@@ -1330,7 +1344,10 @@ def map_features(
             })
             matched = True
             
-        elif _match_keyword(text, "POCKET") or _match_keyword(text, "PERIMETER WALL") or _match_keyword(text, "OPENING"):
+        elif (_match_keyword(text, "PERIMETER WALL") or
+              _match_keyword(text, "UNIFORM WALL") or
+              _match_keyword(text, "STRUCTURAL WALL") or
+              (_match_keyword(text, "POCKET") and any(w in text for w in ("WALL", "THK", "THICK")))):
             pocket_value = val
             matched = True
             
@@ -1885,6 +1902,7 @@ def map_features(
                     "bore_type": bore_type
                 }
             ))
+            entity_to_feature_id[ent_id] = f"concentric_bore_fallback_{ent_id}"
             if center_key:
                 used_concentric_centers.append(center_key)
 
@@ -1902,14 +1920,16 @@ def map_features(
                 }
             ))
 
-    return features
+    return features, entity_to_feature_id
 
 
 def map_relationships(
     phase3_result: Dict[str, Any],
     phase4_result: Dict[str, Any],
     phase5_result: Dict[str, Any],
-    phase6_result: Dict[str, Any]
+    phase6_result: Dict[str, Any],
+    features: List[FeatureInstance],
+    entity_to_feature_id: Dict[str, str]
 ) -> List[Relationship]:
     relationships = []
     
@@ -1923,16 +1943,36 @@ def map_relationships(
         inner_diameter = round(min(radii) * 2, 4)
         outer_diameter = round(max(radii) * 2, 4)
         
-        relationships.append(Relationship(
-            relationship_id=f"concentric_{idx + 1}",
-            relationship_type="concentric",
-            feature_ids=[f"concentric_bore_{idx + 1}", f"radial_pattern_{idx + 1}"],
-            parameters={
-                "center": cg.get("center"),
-                "inner_diameter": inner_diameter,
-                "outer_diameter": outer_diameter
-            }
-        ))
+        # Dynamically resolve concentric feature IDs
+        fids = []
+        cg_center = cg.get("center")
+        if cg_center:
+            for f in features:
+                if f.feature_class in ("dimension_annotations", "unknown_facts"):
+                    continue
+                f_center = f.parameters.get("center")
+                if not f_center and f.feature_class == "hole_group":
+                    positions = f.parameters.get("positions", [])
+                    if positions:
+                        f_center = [
+                            sum(p[0] for p in positions) / len(positions),
+                            sum(p[1] for p in positions) / len(positions)
+                        ]
+                if f_center and math.dist(f_center, cg_center) < 1.0:
+                    fids.append(f.feature_id)
+                    
+        # Only add concentric relationship if at least 2 concentric features exist
+        if len(fids) >= 2:
+            relationships.append(Relationship(
+                relationship_id=f"concentric_{idx + 1}",
+                relationship_type="concentric",
+                feature_ids=fids,
+                parameters={
+                    "center": cg.get("center"),
+                    "inner_diameter": inner_diameter,
+                    "outer_diameter": outer_diameter
+                }
+            ))
     
     # MAP 2: Symmetry Groups
     symmetry_groups = phase4_result.get("symmetry", {}).get("symmetry_groups", [])
@@ -1969,24 +2009,32 @@ def map_relationships(
         fids = []
         for pair in member_pairs:
             if isinstance(pair, (list, tuple)) and len(pair) >= 2:
-                fids.extend([pair[0], pair[1]])
+                fid_a = entity_to_feature_id.get(pair[0])
+                fid_b = entity_to_feature_id.get(pair[1])
+                if fid_a:
+                    fids.append(fid_a)
+                if fid_b:
+                    fids.append(fid_b)
             elif isinstance(pair, str):
-                fids.append(pair)
+                fid = entity_to_feature_id.get(pair)
+                if fid:
+                    fids.append(fid)
         unique_fids = []
         for fid in fids:
             if fid not in unique_fids:
                 unique_fids.append(fid)
 
-        relationships.append(Relationship(
-            relationship_id=f"mirror_symmetry_{axis}",
-            relationship_type="mirror_symmetry",
-            feature_ids=unique_fids,
-            parameters={
-                "axis": axis,
-                "axis_position": axis_position,
-                "pair_count": len(member_pairs)
-            }
-        ))
+        if unique_fids:
+            relationships.append(Relationship(
+                relationship_id=f"mirror_symmetry_{axis}",
+                relationship_type="mirror_symmetry",
+                feature_ids=unique_fids,
+                parameters={
+                    "axis": axis,
+                    "axis_position": axis_position,
+                    "pair_count": len(member_pairs)
+                }
+            ))
     
     # MAP 3: Feature Hierarchy
     hierarchy_nodes = phase5_result.get("hierarchy", {}).get("hierarchy_nodes", [])
@@ -2139,7 +2187,8 @@ class SemanticPipeline:
         )
 
         # Step 2: Map Features
-        features = map_features(
+        # Step 2: Map Features
+        features, entity_to_feature_id = map_features(
             entities,
             phase3_result,
             phase4_result,
@@ -2152,7 +2201,9 @@ class SemanticPipeline:
             phase3_result,
             phase4_result,
             phase5_result,
-            phase6_result
+            phase6_result,
+            features,
+            entity_to_feature_id
         )
         logger.debug(f"{drawing_id}: Mapped {len(relationships)} relationships")
 

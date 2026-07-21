@@ -1,0 +1,29 @@
+{
+  "validation_version": "3.0.0",
+  "dataset_contract_version": "3.0.0",
+  "schema_version": "3.0.0",
+  "pipeline_version": "3.0.0",
+  "total_processed": 143,
+  "accepted_count": 143,
+  "rejected_count": 0,
+  "rejection_breakdown": {},
+  "processing_duration": 0.0613,
+  "peak_memory": 0.0,
+  "timestamp": "2026-07-21T15:40:51.978376",
+  "version": "3.0.0",
+  "format": "canonical_engineering_representation",
+  "total_records": 143,
+  "drawings": 143,
+  "splits": {
+    "train": {
+      "count": 97
+    },
+    "validation": {
+      "count": 28
+    },
+    "test": {
+      "count": 18
+    }
+  },
+  "total_semantic_records": 143
+}

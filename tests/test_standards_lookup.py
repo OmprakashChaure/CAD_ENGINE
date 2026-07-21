@@ -56,6 +56,12 @@ class TestStandardsLookup(unittest.TestCase):
         self.assertAlmostEqual(dev_50_h7[0], 0.0, places=6)
         self.assertAlmostEqual(dev_50_h7[1], 0.025, places=6)
 
+        # 50 h7 -> upper = 0 mm, lower = -25 microns (-0.025 mm)
+        dev_50_h7_shaft = self.lookup.get_fit_deviation("h7", 50.0)
+        self.assertIsNotNone(dev_50_h7_shaft)
+        self.assertAlmostEqual(dev_50_h7_shaft[0], -0.025, places=6)
+        self.assertAlmostEqual(dev_50_h7_shaft[1], 0.0, places=6)
+
         # 50 G6 -> upper = -9 microns (-0.009 mm), lower = -25 microns (-0.025 mm)
         dev_50_g6 = self.lookup.get_fit_deviation("G6", 50.0)
         self.assertIsNotNone(dev_50_g6)

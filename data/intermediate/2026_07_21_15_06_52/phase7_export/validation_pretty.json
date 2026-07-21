@@ -1,0 +1,4391 @@
+[
+    {
+        "drawing_id": "Aero_LW08_TaperedRib",
+        "part_family": "Aero",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 200.0,
+            "height": 100.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 60.0,
+                    "pocket_length": 60.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_2",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 40.0,
+                    "pocket_length": 80.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "rib_1",
+                "feature_class": "rib",
+                "parameters": {
+                    "value": 200.0
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "100MM ROOT DEPTH",
+                            "value": 100.0,
+                            "numbers": [
+                                100.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 100.0,
+                            "center": [
+                                0.0,
+                                0.0
+                            ],
+                            "handle": "A2"
+                        },
+                        {
+                            "text": "20MM SOLID CENTRAL WEB",
+                            "value": 20.0,
+                            "numbers": [
+                                20.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "C1"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "100MM ROOT DEPTH",
+                            "value": 100.0,
+                            "handle": "A2"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "20MM SOLID CENTRAL WEB",
+                            "value": 20.0,
+                            "handle": "C1"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "C1",
+                "text": "20mm SOLID CENTRAL WEB",
+                "position": [
+                    90.0,
+                    80.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "93",
+                "text": "200mm RIB LENGTH",
+                "value": 200.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A2",
+                "text": "100mm ROOT DEPTH",
+                "value": 100.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B1",
+                "text": "60mm TIP DEPTH",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 5,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Aero_LW09_Wishbone",
+        "part_family": "Aero",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 160.0,
+            "height": 160.0
+        },
+        "topology": {
+            "contours": 1,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 55.0,
+                    "pocket_length": 130.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_2",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 55.0,
+                    "pocket_length": 130.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "120MM BASE STRUT MOUNT SPAN",
+                            "value": 120.0,
+                            "numbers": [
+                                120.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 120.0,
+                            "center": [
+                                0.0,
+                                -20.0
+                            ],
+                            "handle": "98"
+                        },
+                        {
+                            "text": "160MM APEX HEIGHT",
+                            "value": 160.0,
+                            "numbers": [
+                                160.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 160.0,
+                            "center": [
+                                0.0,
+                                60.0
+                            ],
+                            "handle": "A7"
+                        },
+                        {
+                            "text": "15MM UNIFORM TRUSS WEB",
+                            "value": 15.0,
+                            "numbers": [
+                                15.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "B7"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "120MM BASE STRUT MOUNT SPAN",
+                            "value": 120.0,
+                            "handle": "98"
+                        },
+                        {
+                            "text": "160MM APEX HEIGHT",
+                            "value": 160.0,
+                            "handle": "A7"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "15MM UNIFORM TRUSS WEB",
+                            "value": 15.0,
+                            "handle": "B7"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 0.0,
+                    "pair_count": 3
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "B7",
+                "text": "15mm UNIFORM TRUSS WEB",
+                "position": [
+                    120.0,
+                    120.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "98",
+                "text": "120mm BASE STRUT MOUNT SPAN",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A7",
+                "text": "160mm APEX HEIGHT",
+                "value": 160.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 4,
+            "relationship_count": 1,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Aero_LW10_Orthogrid",
+        "part_family": "Aero",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 160.0,
+            "height": 160.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "chamfer_1",
+                "feature_class": "chamfer",
+                "parameters": {
+                    "text": "16X 5X5MM CORNER CHAMFER",
+                    "value": 5.0,
+                    "count": 16
+                }
+            },
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 65.0,
+                    "pocket_length": 65.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_2",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 65.0,
+                    "pocket_length": 65.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_3",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 65.0,
+                    "pocket_length": 65.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_4",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 65.0,
+                    "pocket_length": 65.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "160MM SQUARE PLATE",
+                            "value": 160.0,
+                            "numbers": [
+                                160.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 160.0,
+                            "center": [
+                                80.0,
+                                0.0
+                            ],
+                            "handle": "96"
+                        },
+                        {
+                            "text": "160MM SQUARE PLATE",
+                            "value": 160.0,
+                            "numbers": [
+                                160.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 160.0,
+                            "center": [
+                                0.0,
+                                80.0
+                            ],
+                            "handle": "A5"
+                        },
+                        {
+                            "text": "10MM CENTER WEB",
+                            "value": 10.0,
+                            "numbers": [
+                                10.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 10.0,
+                            "center": [
+                                80.0,
+                                160.0
+                            ],
+                            "handle": "B4"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "160MM SQUARE PLATE",
+                            "value": 160.0,
+                            "handle": "96"
+                        },
+                        {
+                            "text": "160MM SQUARE PLATE",
+                            "value": 160.0,
+                            "handle": "A5"
+                        },
+                        {
+                            "text": "10MM CENTER WEB",
+                            "value": 10.0,
+                            "handle": "B4"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 80.0,
+                    "pair_count": 2
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 80.0,
+                    "pair_count": 2
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "C4",
+                "text": "16X 5x5mm CORNER CHAMFER",
+                "position": [
+                    200.0,
+                    180.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "96",
+                "text": "160mm SQUARE PLATE",
+                "value": 160.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A5",
+                "text": "160mm SQUARE PLATE",
+                "value": 160.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B4",
+                "text": "10mm CENTER WEB",
+                "value": 10.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 7,
+            "relationship_count": 2,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Bearing_Housing_BH09",
+        "part_family": "Bearing",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 230.0,
+            "height": 140.0
+        },
+        "topology": {
+            "contours": 6,
+            "nesting": 0,
+            "holes": 5,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "bore_d60",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "bore_diameter": 60.0,
+                    "diameter": 60.0,
+                    "center": [
+                        80.0,
+                        80.0
+                    ],
+                    "bore_type": "shaft"
+                }
+            },
+            {
+                "feature_id": "hole_group_d6",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 4,
+                    "diameter": 6.0,
+                    "positions": [
+                        [
+                            150.0,
+                            50.0
+                        ],
+                        [
+                            210.0,
+                            50.0
+                        ],
+                        [
+                            210.0,
+                            110.0
+                        ],
+                        [
+                            150.0,
+                            110.0
+                        ]
+                    ],
+                    "spacing_x": 60.0,
+                    "spacing_y": 60.0,
+                    "offset_x": 150.0,
+                    "offset_y": 50.0,
+                    "text": "4X \u00d86MM COVER BOLTS"
+                }
+            },
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 80.0,
+                    "pocket_length": 80.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_2",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 60.0,
+                    "pocket_length": 60.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "70MM BORE LOC X",
+                            "value": 70.0,
+                            "numbers": [
+                                70.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 70.0,
+                            "center": [
+                                45.0,
+                                10.0
+                            ],
+                            "handle": "118"
+                        },
+                        {
+                            "text": "170MM COVER LOC X",
+                            "value": 170.0,
+                            "numbers": [
+                                170.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 170.0,
+                            "center": [
+                                95.0,
+                                10.0
+                            ],
+                            "handle": "127"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "70MM BORE LOC X",
+                            "value": 70.0,
+                            "handle": "118"
+                        },
+                        {
+                            "text": "170MM COVER LOC X",
+                            "value": 170.0,
+                            "handle": "127"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 80.0,
+                    "pair_count": 6
+                }
+            }
+        ],
+        "annotations": [],
+        "dimension_entities": [
+            {
+                "handle": "A0",
+                "text": "230mm OVERALL",
+                "value": 230.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AF",
+                "text": "140mm OVERALL",
+                "value": 140.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BE",
+                "text": "%%C60mm BORE",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "CD",
+                "text": "80mm COVER",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "DC",
+                "text": "80mm COVER",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "EB",
+                "text": "60mm PATTERN",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "FA",
+                "text": "60mm PATTERN",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "109",
+                "text": "4X %%C6mm COVER BOLTS",
+                "value": 6.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "118",
+                "text": "70mm BORE LOC X",
+                "value": 70.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "127",
+                "text": "170mm COVER LOC X",
+                "value": 170.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 6,
+            "relationship_count": 1,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Blueprint_PL05_CrushRibs",
+        "part_family": "Blueprint",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 210.0,
+            "height": 148.5
+        },
+        "topology": {
+            "contours": 1,
+            "nesting": 0,
+            "holes": 1,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "concentric_bore_1",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 12.0,
+                    "outer_diameter": 20.0,
+                    "bore_diameter": 12.0,
+                    "center": [
+                        210.0,
+                        148.5
+                    ],
+                    "bore_type": "bushing",
+                    "boss_diameter": 20.0
+                }
+            },
+            {
+                "feature_id": "rib_1",
+                "feature_class": "rib",
+                "parameters": {
+                    "value": 10.0
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [],
+                    "unknown_annotations": [
+                        {
+                            "text": "DWG NO: PLAS-PL05",
+                            "value": 5.0,
+                            "handle": "B1"
+                        },
+                        {
+                            "text": "SCALE: 1:1",
+                            "value": 1.0,
+                            "handle": "B2"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "concentric_1",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_1",
+                    "radial_pattern_1"
+                ],
+                "parameters": {
+                    "center": [
+                        210.0,
+                        148.5
+                    ],
+                    "inner_diameter": 12.0,
+                    "outer_diameter": 20.0
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "B1",
+                "text": "DWG NO: PLAS-PL05",
+                "position": [
+                    275.0,
+                    23.0
+                ]
+            },
+            {
+                "handle": "B2",
+                "text": "SCALE: 1:1",
+                "position": [
+                    345.0,
+                    23.0
+                ]
+            },
+            {
+                "handle": "DE",
+                "text": "3X DEFORMABLE CRUSH RIB\n \u00d810.0mm PRESS FIT",
+                "position": [
+                    245.0,
+                    183.5
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "BF",
+                "text": "%%C20.0mm OUTER BOSS",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "CE",
+                "text": "%%C12.0mm CLEARANCE ID",
+                "value": 12.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 1,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "CNC_WW09_VCarveBoundary",
+        "part_family": "CNC",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 140.0,
+            "height": 80.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "chamfer_1",
+                "feature_class": "chamfer",
+                "parameters": {
+                    "text": "OUTER BEVEL PATH\n 90\u00b0 V-BIT",
+                    "value": 90.0,
+                    "count": 1
+                }
+            },
+            {
+                "feature_id": "chamfer_2",
+                "feature_class": "chamfer",
+                "parameters": {
+                    "text": "INNER BEVEL PATH\n 60\u00b0 V-BIT",
+                    "value": 60.0,
+                    "count": 1
+                }
+            },
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 40.0,
+                    "pocket_length": 100.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "pocket_2",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 20.0,
+                    "pocket_length": 80.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "140MM STOCK X",
+                            "value": 140.0,
+                            "numbers": [
+                                140.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 140.0,
+                            "center": [
+                                70.0,
+                                0.0
+                            ],
+                            "handle": "94"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "140MM STOCK X",
+                            "value": 140.0,
+                            "handle": "94"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "B3",
+                "text": "OUTER BEVEL PATH\n 90\u00b0 V-BIT",
+                "position": [
+                    150.0,
+                    100.0
+                ]
+            },
+            {
+                "handle": "B5",
+                "text": "INNER BEVEL PATH\n 60\u00b0 V-BIT",
+                "position": [
+                    150.0,
+                    20.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "94",
+                "text": "140mm STOCK X",
+                "value": 140.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A3",
+                "text": "80mm STOCK Y",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 6,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Fluid_PF03_TManifold",
+        "part_family": "Fluid",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 100.0,
+            "height": 100.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "port_1",
+                "feature_class": "port",
+                "parameters": {
+                    "text": "\u00d820MM BRANCH PORT",
+                    "port_diameter": 20.0,
+                    "port_thread": null,
+                    "port_depth": null,
+                    "validation_status": "unvalidated",
+                    "source_annotation": "\u00d820MM BRANCH PORT"
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "100MM BLOCK WIDTH",
+                            "value": 100.0,
+                            "numbers": [
+                                100.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 100.0,
+                            "center": [
+                                50.0,
+                                0.0
+                            ],
+                            "handle": "98"
+                        },
+                        {
+                            "text": "100MM BLOCK HEIGHT",
+                            "value": 100.0,
+                            "numbers": [
+                                100.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 100.0,
+                            "center": [
+                                0.0,
+                                50.0
+                            ],
+                            "handle": "A7"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "100MM BLOCK WIDTH",
+                            "value": 100.0,
+                            "handle": "98"
+                        },
+                        {
+                            "text": "100MM BLOCK HEIGHT",
+                            "value": 100.0,
+                            "handle": "A7"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "B7",
+                "text": "\u00d820mm MAIN GALLERY",
+                "position": [
+                    20.0,
+                    15.0
+                ]
+            },
+            {
+                "handle": "B9",
+                "text": "\u00d820mm BRANCH PORT",
+                "position": [
+                    10.0,
+                    130.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "98",
+                "text": "100mm BLOCK WIDTH",
+                "value": 100.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A7",
+                "text": "100mm BLOCK HEIGHT",
+                "value": 100.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Gasket_GS05_GearboxSeal",
+        "part_family": "Gasket",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 160.0,
+            "height": 120.0
+        },
+        "topology": {
+            "contours": 5,
+            "nesting": 0,
+            "holes": 5,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "hole_group_d6",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 2,
+                    "diameter": 6.0,
+                    "positions": [
+                        [
+                            10.0,
+                            30.0
+                        ],
+                        [
+                            145.0,
+                            95.0
+                        ]
+                    ],
+                    "spacing_x": 135.0,
+                    "spacing_y": 65.0,
+                    "offset_x": 10.0,
+                    "offset_y": 30.0
+                }
+            },
+            {
+                "feature_id": "slot_array_1",
+                "feature_class": "slot_array",
+                "parameters": {
+                    "count": 1,
+                    "width": 10.0,
+                    "length": 40.0,
+                    "orientation": "horizontal",
+                    "positions": [
+                        {
+                            "center": [
+                                40.0,
+                                105.0
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 10.0,
+                    "pocket_length": 40.0,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [],
+                    "unknown_annotations": [
+                        {
+                            "text": "LUBRICATION RETURN SLOT",
+                            "value": null,
+                            "handle": "CB"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "C9",
+                "text": "2X \u00d86mm DOWEL ALIGNMENT",
+                "position": [
+                    -30.0,
+                    70.0
+                ]
+            },
+            {
+                "handle": "CB",
+                "text": "LUBRICATION RETURN SLOT",
+                "position": [
+                    -30.0,
+                    150.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "9B",
+                "text": "160mm CASTING W",
+                "value": 160.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AA",
+                "text": "120mm CASTING H",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B9",
+                "text": "90mm CTR TO CTR",
+                "value": 90.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 4,
+            "relationship_count": 0,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Gear_GR02_Spline",
+        "part_family": "Gear",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 140.0,
+            "height": 64.0
+        },
+        "topology": {
+            "contours": 1,
+            "nesting": 0,
+            "holes": 1,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 62.6014,
+                    "pocket_length": 62.6014,
+                    "perimeter_wall": null
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "\u00d850MM MINOR DIA",
+                            "value": 50.0,
+                            "numbers": [
+                                50.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 50.0,
+                            "center": [
+                                100.0,
+                                100.0
+                            ],
+                            "handle": "A1"
+                        },
+                        {
+                            "text": "\u00d864MM MAJOR DIA",
+                            "value": 64.0,
+                            "numbers": [
+                                64.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 64.0,
+                            "center": [
+                                100.0,
+                                100.0
+                            ],
+                            "handle": "B0"
+                        },
+                        {
+                            "text": "12-TOOTH INTERNAL SPLINE\n TO ISO 14",
+                            "value": 12.0,
+                            "numbers": [
+                                12.0,
+                                14.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "C0"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "\u00d850MM MINOR DIA",
+                            "value": 50.0,
+                            "handle": "A1"
+                        },
+                        {
+                            "text": "\u00d864MM MAJOR DIA",
+                            "value": 64.0,
+                            "handle": "B0"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "12-TOOTH INTERNAL SPLINE\n TO ISO 14",
+                            "value": 12.0,
+                            "handle": "C0"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "C0",
+                "text": "12-TOOTH INTERNAL SPLINE\n TO ISO 14",
+                "position": [
+                    160.0,
+                    40.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "92",
+                "text": "%%C140mm OVERALL HUB",
+                "value": 140.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A1",
+                "text": "%%C50mm MINOR DIA",
+                "value": 50.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B0",
+                "text": "%%C64mm MAJOR DIA",
+                "value": 64.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Hardware_HW02_SHCS",
+        "part_family": "Hardware",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 40.0,
+            "height": 16.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "thread_1",
+                "feature_class": "thread",
+                "parameters": {
+                    "thread_designation": "M10X1.5 - 6G",
+                    "nominal_diameter": 10.0,
+                    "thread_length": null,
+                    "pitch": 1.5,
+                    "thread_standard": "ISO Metric",
+                    "thread_pitch": 1.5,
+                    "thread_gender": "internal",
+                    "tolerance_class": "6G",
+                    "nominal_pipe_size": null,
+                    "major_diameter": 10.0,
+                    "pitch_tpi": null,
+                    "validation_status": "validated",
+                    "source_annotation": "M10X1.5 - 6G"
+                }
+            },
+            {
+                "feature_id": "hex_drive_1",
+                "feature_class": "hex_drive",
+                "parameters": {
+                    "size": 8.0
+                }
+            },
+            {
+                "feature_id": "screw_1",
+                "feature_class": "screw",
+                "parameters": {
+                    "length": 8.0,
+                    "head_diameter": 16.0,
+                    "nominal_diameter": 10.0,
+                    "drive_size": 8.0
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "B4",
+                "text": "M10x1.5 - 6g",
+                "position": [
+                    60.0,
+                    35.0
+                ]
+            },
+            {
+                "handle": "B6",
+                "text": "8mm HEX DRIVE",
+                "position": [
+                    10.0,
+                    35.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "95",
+                "text": "40mm OVERALL LENGTH",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A4",
+                "text": "%%C16mm HEAD OD",
+                "value": 16.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Motor_Bracket_MB03",
+        "part_family": "Motor",
+        "manufacturing_type": "sheet_metal",
+        "overall_dimensions": {
+            "width": 150.0,
+            "height": 80.0
+        },
+        "topology": {
+            "contours": 2,
+            "nesting": 0,
+            "holes": 2,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "concentric_bore_1",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 12.0,
+                    "outer_diameter": 20.0,
+                    "bore_diameter": 12.0,
+                    "center": [
+                        30.0,
+                        40.0
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "concentric_bore_2",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 12.0,
+                    "outer_diameter": 20.0,
+                    "bore_diameter": 12.0,
+                    "center": [
+                        120.0,
+                        40.0
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "hole_group_d12",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "linear_pattern",
+                    "pattern_type": "linear",
+                    "count": 2,
+                    "diameter": 12.0,
+                    "positions": [
+                        [
+                            30.0,
+                            40.0
+                        ],
+                        [
+                            120.0,
+                            40.0
+                        ]
+                    ],
+                    "spacing_x": 90.0,
+                    "spacing_y": 0.0,
+                    "offset_x": 30.0,
+                    "offset_y": 40.0,
+                    "text": "2X M12X1.75 - 6H THRU\n CBORE \u00d820MM X 8MM DEEP",
+                    "counterbore_diameter": 20.0,
+                    "counterbore_depth": 8.0
+                }
+            },
+            {
+                "feature_id": "thread_1",
+                "feature_class": "thread",
+                "parameters": {
+                    "thread_designation": "2X M12X1.75 - 6H THRU\n CBORE \u00d820MM X 8MM DEEP",
+                    "nominal_diameter": 12.0,
+                    "thread_length": null,
+                    "pitch": 1.75,
+                    "thread_standard": "ISO Metric",
+                    "thread_pitch": 1.75,
+                    "thread_gender": "internal",
+                    "tolerance_class": "6H",
+                    "nominal_pipe_size": null,
+                    "major_diameter": 12.0,
+                    "pitch_tpi": null,
+                    "validation_status": "validated",
+                    "source_annotation": "2X M12X1.75 - 6H THRU\n CBORE \u00d820MM X 8MM DEEP"
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "concentric_1",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_1",
+                    "radial_pattern_1"
+                ],
+                "parameters": {
+                    "center": [
+                        30.0,
+                        40.0
+                    ],
+                    "inner_diameter": 12.0,
+                    "outer_diameter": 20.0
+                }
+            },
+            {
+                "relationship_id": "concentric_2",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_2",
+                    "radial_pattern_2"
+                ],
+                "parameters": {
+                    "center": [
+                        120.0,
+                        40.0
+                    ],
+                    "inner_diameter": 12.0,
+                    "outer_diameter": 20.0
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 75.0,
+                    "pair_count": 4
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "C6",
+                "text": "2X M12x1.75 - 6H THRU\n CBORE \u00d820mm x 8mm DEEP",
+                "position": [
+                    160.0,
+                    10.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "98",
+                "text": "90mm %%P0.05 CRS",
+                "value": 90.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A7",
+                "text": "150mm OVERALL",
+                "value": 150.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B6",
+                "text": "80mm OVERALL",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 4,
+            "relationship_count": 3,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Optomech_OM01_FlexureHinge",
+        "part_family": "Optomech",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 100.0,
+            "height": 50.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "bend_relief_1",
+                "feature_class": "bend_relief",
+                "parameters": {
+                    "text": "2X R24.00MM PIVOT RELIEF",
+                    "value": 24.0,
+                    "count": 2
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "100.00MM BLOCK L",
+                            "value": 100.0,
+                            "numbers": [
+                                100.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 100.0,
+                            "center": [
+                                50.0,
+                                0.0
+                            ],
+                            "handle": "93"
+                        },
+                        {
+                            "text": "50.00MM BLOCK H",
+                            "value": 50.0,
+                            "numbers": [
+                                50.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 50.0,
+                            "center": [
+                                0.0,
+                                25.0
+                            ],
+                            "handle": "A2"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "100.00MM BLOCK L",
+                            "value": 100.0,
+                            "handle": "93"
+                        },
+                        {
+                            "text": "50.00MM BLOCK H",
+                            "value": 50.0,
+                            "handle": "A2"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "C3",
+                "text": "2X R24.00mm PIVOT RELIEF",
+                "position": [
+                    120.0,
+                    80.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "93",
+                "text": "100.00mm BLOCK L",
+                "value": 100.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A2",
+                "text": "50.00mm BLOCK H",
+                "value": 50.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B1",
+                "text": "2.000mm FLEXURE WEB",
+                "value": 2.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Optomech_OM02_SpannerRing",
+        "part_family": "Optomech",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 60.0,
+            "height": 60.0
+        },
+        "topology": {
+            "contours": 6,
+            "nesting": 0,
+            "holes": 5,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "radial_pattern_1",
+                "feature_class": "hole_pattern",
+                "parameters": {
+                    "pattern_type": "radial",
+                    "pcd": 50.0,
+                    "hole_count": 4,
+                    "hole_diameter": 4.0,
+                    "angular_spacing": 90.0,
+                    "center": [
+                        -0.0,
+                        0.0
+                    ],
+                    "positions": [
+                        [
+                            17.67766952966369,
+                            17.67766952966369
+                        ],
+                        [
+                            -17.677669529663685,
+                            17.67766952966369
+                        ],
+                        [
+                            -17.677669529663692,
+                            -17.677669529663685
+                        ],
+                        [
+                            17.677669529663685,
+                            -17.677669529663692
+                        ]
+                    ]
+                }
+            },
+            {
+                "feature_id": "concentric_bore_1",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 40.0,
+                    "outer_diameter": 60.0,
+                    "bore_diameter": 40.0,
+                    "center": [
+                        0.0,
+                        0.0
+                    ],
+                    "bore_type": "bearing",
+                    "pcd_reference_diameter": 50.0
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "concentric_1",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_1",
+                    "radial_pattern_1"
+                ],
+                "parameters": {
+                    "center": [
+                        0.0,
+                        0.0
+                    ],
+                    "inner_diameter": 40.0,
+                    "outer_diameter": 60.0
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": -0.0,
+                    "pair_count": 6
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": -0.0,
+                    "pair_count": 6
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "C0",
+                "text": "\u00d840mm CLEARANCE BORE",
+                "position": [
+                    40.0,
+                    40.0
+                ]
+            },
+            {
+                "handle": "C2",
+                "text": "4X \u00d84mm SPANNER HOLE",
+                "position": [
+                    60.0,
+                    10.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "A1",
+                "text": "%%C60mm SM02 THREAD OD",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B0",
+                "text": "%%C50mm PITCH CIRCLE",
+                "value": 50.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 3,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "PCB_PC02_BGAGrid",
+        "part_family": "PCB",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 80.0,
+            "height": 80.0
+        },
+        "topology": {
+            "contours": 35,
+            "nesting": 0,
+            "holes": 35,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "hole_group_d4",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 35,
+                    "diameter": 4.0,
+                    "positions": [
+                        [
+                            15.0,
+                            15.0
+                        ],
+                        [
+                            15.0,
+                            25.0
+                        ],
+                        [
+                            15.0,
+                            35.0
+                        ],
+                        [
+                            15.0,
+                            45.0
+                        ],
+                        [
+                            15.0,
+                            55.0
+                        ],
+                        [
+                            15.0,
+                            65.0
+                        ],
+                        [
+                            25.0,
+                            15.0
+                        ],
+                        [
+                            25.0,
+                            25.0
+                        ],
+                        [
+                            25.0,
+                            35.0
+                        ],
+                        [
+                            25.0,
+                            45.0
+                        ],
+                        [
+                            25.0,
+                            55.0
+                        ],
+                        [
+                            25.0,
+                            65.0
+                        ],
+                        [
+                            35.0,
+                            15.0
+                        ],
+                        [
+                            35.0,
+                            25.0
+                        ],
+                        [
+                            35.0,
+                            45.0
+                        ],
+                        [
+                            35.0,
+                            55.0
+                        ],
+                        [
+                            35.0,
+                            65.0
+                        ],
+                        [
+                            45.0,
+                            15.0
+                        ],
+                        [
+                            45.0,
+                            25.0
+                        ],
+                        [
+                            45.0,
+                            35.0
+                        ],
+                        [
+                            45.0,
+                            45.0
+                        ],
+                        [
+                            45.0,
+                            55.0
+                        ],
+                        [
+                            45.0,
+                            65.0
+                        ],
+                        [
+                            55.0,
+                            15.0
+                        ],
+                        [
+                            55.0,
+                            25.0
+                        ],
+                        [
+                            55.0,
+                            35.0
+                        ],
+                        [
+                            55.0,
+                            45.0
+                        ],
+                        [
+                            55.0,
+                            55.0
+                        ],
+                        [
+                            55.0,
+                            65.0
+                        ],
+                        [
+                            65.0,
+                            15.0
+                        ],
+                        [
+                            65.0,
+                            25.0
+                        ],
+                        [
+                            65.0,
+                            35.0
+                        ],
+                        [
+                            65.0,
+                            45.0
+                        ],
+                        [
+                            65.0,
+                            55.0
+                        ],
+                        [
+                            65.0,
+                            65.0
+                        ]
+                    ],
+                    "spacing_x": 50.0,
+                    "spacing_y": 50.0,
+                    "offset_x": 15.0,
+                    "offset_y": 15.0
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [],
+                    "unknown_annotations": [
+                        {
+                            "text": "CENTRAL VOID\n FOR VIA ROUTING",
+                            "value": null,
+                            "handle": "D3"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 40.0,
+                    "pair_count": 17
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 40.0,
+                    "pair_count": 17
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "D3",
+                "text": "CENTRAL VOID\n FOR VIA ROUTING",
+                "position": [
+                    50.0,
+                    60.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "B4",
+                "text": "50mm MATRIX ARRAY",
+                "value": 50.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "C3",
+                "text": "10mm BUMP PITCH",
+                "value": 10.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 2,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "PCB_PC09_Fiducial",
+        "part_family": "PCB",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 80.0,
+            "height": 80.0
+        },
+        "topology": {
+            "contours": 2,
+            "nesting": 0,
+            "holes": 2,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "concentric_bore_1",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 4.0,
+                    "outer_diameter": 12.0,
+                    "bore_diameter": 4.0,
+                    "center": [
+                        15.0,
+                        15.0
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "concentric_bore_2",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 4.0,
+                    "outer_diameter": 12.0,
+                    "bore_diameter": 4.0,
+                    "center": [
+                        65.0,
+                        65.0
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "hole_group_d4",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 2,
+                    "diameter": 4.0,
+                    "positions": [
+                        [
+                            15.0,
+                            15.0
+                        ],
+                        [
+                            65.0,
+                            65.0
+                        ]
+                    ],
+                    "spacing_x": 50.0,
+                    "spacing_y": 50.0,
+                    "offset_x": 15.0,
+                    "offset_y": 15.0
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "80MM BOARD DIM",
+                            "value": 80.0,
+                            "numbers": [
+                                80.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 80.0,
+                            "center": [
+                                0.0,
+                                40.0
+                            ],
+                            "handle": "99"
+                        },
+                        {
+                            "text": "\u00d84MM BARE COPPER FIDUCIAL\n \u00d812MM SOLDERMASK CLEARANCE",
+                            "value": 4.0,
+                            "numbers": [
+                                4.0,
+                                12.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "B8"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "80MM BOARD DIM",
+                            "value": 80.0,
+                            "handle": "99"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "\u00d84MM BARE COPPER FIDUCIAL\n \u00d812MM SOLDERMASK CLEARANCE",
+                            "value": 4.0,
+                            "handle": "B8"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "concentric_1",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_1",
+                    "radial_pattern_1"
+                ],
+                "parameters": {
+                    "center": [
+                        15.0,
+                        15.0
+                    ],
+                    "inner_diameter": 4.0,
+                    "outer_diameter": 12.0
+                }
+            },
+            {
+                "relationship_id": "concentric_2",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_2",
+                    "radial_pattern_2"
+                ],
+                "parameters": {
+                    "center": [
+                        65.0,
+                        65.0
+                    ],
+                    "inner_diameter": 4.0,
+                    "outer_diameter": 12.0
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "B8",
+                "text": "\u00d84mm BARE COPPER FIDUCIAL\n \u00d812mm SOLDERMASK CLEARANCE",
+                "position": [
+                    30.0,
+                    25.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "99",
+                "text": "80mm BOARD DIM",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A8",
+                "text": "50mm OPTICAL DATUM SPAN",
+                "value": 50.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 5,
+            "relationship_count": 2,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Plastic_PL02_ScrewBoss",
+        "part_family": "Plastic",
+        "manufacturing_type": "turned",
+        "overall_dimensions": {
+            "width": 60.0,
+            "height": 24.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "60MM SHELL SECTION",
+                            "value": 60.0,
+                            "numbers": [
+                                60.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 60.0,
+                            "center": [
+                                30.0,
+                                0.0
+                            ],
+                            "handle": "95"
+                        },
+                        {
+                            "text": "4.0MM NOMINAL WALL",
+                            "value": 4.0,
+                            "numbers": [
+                                4.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 4.0,
+                            "center": [
+                                0.0,
+                                2.0
+                            ],
+                            "handle": "A4"
+                        },
+                        {
+                            "text": "\u00d88.0MM BOSS OD",
+                            "value": 8.0,
+                            "numbers": [
+                                8.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 8.0,
+                            "center": [
+                                30.0,
+                                24.0
+                            ],
+                            "handle": "B5"
+                        },
+                        {
+                            "text": "\u00d84.0MM CORED ID",
+                            "value": 4.0,
+                            "numbers": [
+                                4.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 4.0,
+                            "center": [
+                                30.0,
+                                24.0
+                            ],
+                            "handle": "C4"
+                        },
+                        {
+                            "text": "1\u00b0 TOOLING DRAFT",
+                            "value": 1.0,
+                            "numbers": [
+                                1.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "D6"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "60MM SHELL SECTION",
+                            "value": 60.0,
+                            "handle": "95"
+                        },
+                        {
+                            "text": "4.0MM NOMINAL WALL",
+                            "value": 4.0,
+                            "handle": "A4"
+                        },
+                        {
+                            "text": "\u00d88.0MM BOSS OD",
+                            "value": 8.0,
+                            "handle": "B5"
+                        },
+                        {
+                            "text": "\u00d84.0MM CORED ID",
+                            "value": 4.0,
+                            "handle": "C4"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "1\u00b0 TOOLING DRAFT",
+                            "value": 1.0,
+                            "handle": "D6"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "D6",
+                "text": "1\u00b0 TOOLING DRAFT",
+                "position": [
+                    70.0,
+                    40.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "95",
+                "text": "60mm SHELL SECTION",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A4",
+                "text": "4.0mm NOMINAL WALL",
+                "value": 4.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B5",
+                "text": "%%C8.0mm BOSS OD",
+                "value": 8.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "C4",
+                "text": "%%C4.0mm CORED ID",
+                "value": 4.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Plastic_PL03_ShelledBox",
+        "part_family": "Plastic",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 100.0,
+            "height": 40.0
+        },
+        "topology": {
+            "contours": 2,
+            "nesting": 0,
+            "holes": 2,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "hole_group_d4",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "linear_pattern",
+                    "pattern_type": "linear",
+                    "count": 2,
+                    "diameter": 4.0,
+                    "positions": [
+                        [
+                            5.0,
+                            5.0
+                        ],
+                        [
+                            95.0,
+                            5.0
+                        ]
+                    ],
+                    "spacing_x": 90.0,
+                    "spacing_y": 0.0,
+                    "offset_x": 5.0,
+                    "offset_y": 5.0
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "100MM ENCLOSURE W",
+                            "value": 100.0,
+                            "numbers": [
+                                100.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 100.0,
+                            "center": [
+                                50.0,
+                                0.0
+                            ],
+                            "handle": "9E"
+                        },
+                        {
+                            "text": "40MM ENCLOSURE H",
+                            "value": 40.0,
+                            "numbers": [
+                                40.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 40.0,
+                            "center": [
+                                0.0,
+                                20.0
+                            ],
+                            "handle": "AD"
+                        },
+                        {
+                            "text": "3.0MM %%P0.1 WALL",
+                            "value": 3.0,
+                            "numbers": [
+                                3.0,
+                                0.1
+                            ],
+                            "orientation": "vertical",
+                            "span": 3.0,
+                            "center": [
+                                5.0,
+                                1.5
+                            ],
+                            "handle": "BC"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "100MM ENCLOSURE W",
+                            "value": 100.0,
+                            "handle": "9E"
+                        },
+                        {
+                            "text": "40MM ENCLOSURE H",
+                            "value": 40.0,
+                            "handle": "AD"
+                        },
+                        {
+                            "text": "3.0MM %%P0.1 WALL",
+                            "value": 3.0,
+                            "handle": "BC"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "concentric_1",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_1",
+                    "radial_pattern_1"
+                ],
+                "parameters": {
+                    "center": [
+                        5.0,
+                        5.0
+                    ],
+                    "inner_diameter": 4.0,
+                    "outer_diameter": 10.0
+                }
+            },
+            {
+                "relationship_id": "concentric_2",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_2",
+                    "radial_pattern_2"
+                ],
+                "parameters": {
+                    "center": [
+                        95.0,
+                        5.0
+                    ],
+                    "inner_diameter": 4.0,
+                    "outer_diameter": 10.0
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 50.0,
+                    "pair_count": 5
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "CE",
+                "text": "R5mm OUTER RADIUS",
+                "position": [
+                    20.0,
+                    -30.0
+                ]
+            },
+            {
+                "handle": "D0",
+                "text": "R2mm INNER RADIUS",
+                "position": [
+                    20.0,
+                    20.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "9E",
+                "text": "100mm ENCLOSURE W",
+                "value": 100.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AD",
+                "text": "40mm ENCLOSURE H",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BC",
+                "text": "3.0mm %%P0.1 WALL",
+                "value": 3.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 3,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Spring_SP04_LeafSpring",
+        "part_family": "Spring",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 300.0,
+            "height": 28.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "300MM SPRING SPAN",
+                            "value": 300.0,
+                            "numbers": [
+                                300.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 300.0,
+                            "center": [
+                                150.0,
+                                40.0
+                            ],
+                            "handle": "9C"
+                        },
+                        {
+                            "text": "120MM SHORT LEAF REACH",
+                            "value": 120.0,
+                            "numbers": [
+                                120.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 120.0,
+                            "center": [
+                                150.0,
+                                25.0
+                            ],
+                            "handle": "AB"
+                        },
+                        {
+                            "text": "20MM TOTAL LEAF PACK",
+                            "value": 20.0,
+                            "numbers": [
+                                20.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 20.0,
+                            "center": [
+                                0.0,
+                                35.0
+                            ],
+                            "handle": "BA"
+                        },
+                        {
+                            "text": "20MM REINFORCED U-BOLT BAND",
+                            "value": 20.0,
+                            "numbers": [
+                                20.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "CA"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "300MM SPRING SPAN",
+                            "value": 300.0,
+                            "handle": "9C"
+                        },
+                        {
+                            "text": "120MM SHORT LEAF REACH",
+                            "value": 120.0,
+                            "handle": "AB"
+                        },
+                        {
+                            "text": "20MM TOTAL LEAF PACK",
+                            "value": 20.0,
+                            "handle": "BA"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "20MM REINFORCED U-BOLT BAND",
+                            "value": 20.0,
+                            "handle": "CA"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 35.0,
+                    "pair_count": 2
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "CA",
+                "text": "20mm REINFORCED U-BOLT BAND",
+                "position": [
+                    90.0,
+                    60.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "9C",
+                "text": "300mm SPRING SPAN",
+                "value": 300.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AB",
+                "text": "120mm SHORT LEAF REACH",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BA",
+                "text": "20mm TOTAL LEAF PACK",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 1,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Spring_SP05_GarterSpring",
+        "part_family": "Spring",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 43.0,
+            "height": 31.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "\u00d843MM COIL CENTERLINE",
+                            "value": 43.0,
+                            "numbers": [
+                                43.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 43.0,
+                            "center": [
+                                31.5,
+                                10.0
+                            ],
+                            "handle": "B1"
+                        },
+                        {
+                            "text": "28MM COIL SEGMENT",
+                            "value": 28.0,
+                            "numbers": [
+                                28.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 28.0,
+                            "center": [
+                                0.0,
+                                24.0
+                            ],
+                            "handle": "C0"
+                        },
+                        {
+                            "text": "8X \u00d83MM GARTER WIRE SECTIONS",
+                            "value": 3.0,
+                            "numbers": [
+                                3.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "D0"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "\u00d843MM COIL CENTERLINE",
+                            "value": 43.0,
+                            "handle": "B1"
+                        },
+                        {
+                            "text": "28MM COIL SEGMENT",
+                            "value": 28.0,
+                            "handle": "C0"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "8X \u00d83MM GARTER WIRE SECTIONS",
+                            "value": 3.0,
+                            "handle": "D0"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 31.5,
+                    "pair_count": 8
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 25.5,
+                    "pair_count": 8
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "D0",
+                "text": "8X \u00d83mm GARTER WIRE SECTIONS",
+                "position": [
+                    -15.0,
+                    50.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "B1",
+                "text": "%%C43mm COIL CENTERLINE",
+                "value": 43.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "C0",
+                "text": "28mm COIL SEGMENT",
+                "value": 28.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 2,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Structural_ST08_Unistrut",
+        "part_family": "Structural",
+        "manufacturing_type": "structural",
+        "overall_dimensions": {
+            "width": 40.0,
+            "height": 40.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "structural_profile_1",
+                "feature_class": "structural_profile",
+                "parameters": {
+                    "profile_type": "HSS Tube",
+                    "web_thickness": null,
+                    "flange_thickness": null,
+                    "wall_thickness": 2.5,
+                    "fillet_radius": null,
+                    "inner_radius": null,
+                    "outer_radius": null
+                }
+            },
+            {
+                "feature_id": "pocket_1",
+                "feature_class": "pocket",
+                "parameters": {
+                    "pocket_width": 40.0,
+                    "pocket_length": 40.0,
+                    "perimeter_wall": 10.0
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "D0",
+                "text": "10mm RETURN LIP",
+                "position": [
+                    160.0,
+                    60.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "91",
+                "text": "40mm STRUT WIDTH",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A0",
+                "text": "40mm STRUT HEIGHT",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AF",
+                "text": "10mm OPENING",
+                "value": 10.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BE",
+                "text": "2.5mm WALL THK",
+                "value": 2.5,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Structural_ST12_Cruciform",
+        "part_family": "Structural",
+        "manufacturing_type": "structural",
+        "overall_dimensions": {
+            "width": 200.0,
+            "height": 200.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "structural_profile_1",
+                "feature_class": "structural_profile",
+                "parameters": {
+                    "profile_type": "structural_profile",
+                    "web_thickness": 40.0,
+                    "flange_thickness": null,
+                    "wall_thickness": null,
+                    "fillet_radius": 10.0,
+                    "inner_radius": null,
+                    "outer_radius": null
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "BF",
+                "text": "4X R10mm INTERNAL ROOT FILLET",
+                "position": [
+                    160.0,
+                    160.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "91",
+                "text": "200mm OVERALL SPAN",
+                "value": 200.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A0",
+                "text": "200mm OVERALL SPAN",
+                "value": 200.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AF",
+                "text": "40mm WEB THICKNESS",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 1,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Tooling_TL04_GridPlate",
+        "part_family": "Tooling",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 120.0,
+            "height": 120.0
+        },
+        "topology": {
+            "contours": 9,
+            "nesting": 0,
+            "holes": 9,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "hole_group_d10",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 9,
+                    "diameter": 10.0,
+                    "positions": [
+                        [
+                            30.0,
+                            30.0
+                        ],
+                        [
+                            30.0,
+                            60.0
+                        ],
+                        [
+                            30.0,
+                            90.0
+                        ],
+                        [
+                            60.0,
+                            30.0
+                        ],
+                        [
+                            60.0,
+                            60.0
+                        ],
+                        [
+                            60.0,
+                            90.0
+                        ],
+                        [
+                            90.0,
+                            30.0
+                        ],
+                        [
+                            90.0,
+                            60.0
+                        ],
+                        [
+                            90.0,
+                            90.0
+                        ]
+                    ],
+                    "spacing_x": 60.0,
+                    "spacing_y": 60.0,
+                    "offset_x": 30.0,
+                    "offset_y": 30.0,
+                    "text": "9X \u00d810.000MM H7\n TOOLING DOWEL BORE"
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "120MM PLATE WIDTH",
+                            "value": 120.0,
+                            "numbers": [
+                                120.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 120.0,
+                            "center": [
+                                60.0,
+                                0.0
+                            ],
+                            "handle": "AA"
+                        },
+                        {
+                            "text": "120MM PLATE HEIGHT",
+                            "value": 120.0,
+                            "numbers": [
+                                120.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 120.0,
+                            "center": [
+                                0.0,
+                                60.0
+                            ],
+                            "handle": "B9"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "120MM PLATE WIDTH",
+                            "value": 120.0,
+                            "handle": "AA"
+                        },
+                        {
+                            "text": "120MM PLATE HEIGHT",
+                            "value": 120.0,
+                            "handle": "B9"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 60.0,
+                    "pair_count": 9
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 60.0,
+                    "pair_count": 9
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "E7",
+                "text": "9X \u00d810.000mm H7\n TOOLING DOWEL BORE",
+                "position": [
+                    160.0,
+                    160.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "AA",
+                "text": "120mm PLATE WIDTH",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B9",
+                "text": "120mm PLATE HEIGHT",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "C8",
+                "text": "60mm TYP SPACING",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "D7",
+                "text": "60mm TYP SPACING",
+                "value": 60.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 2,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Turbo_AM02_FirTreeRoot",
+        "part_family": "Turbo",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 50.0,
+            "height": 70.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "20MM ROOT BASE",
+                            "value": 20.0,
+                            "numbers": [
+                                20.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 20.0,
+                            "center": [
+                                0.0,
+                                -50.0
+                            ],
+                            "handle": "92"
+                        },
+                        {
+                            "text": "70MM ROOT DEPTH",
+                            "value": 70.0,
+                            "numbers": [
+                                70.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 70.0,
+                            "center": [
+                                0.0,
+                                -15.0
+                            ],
+                            "handle": "A1"
+                        },
+                        {
+                            "text": "40MM NECK PLATFORM",
+                            "value": 40.0,
+                            "numbers": [
+                                40.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 40.0,
+                            "center": [
+                                0.0,
+                                20.0
+                            ],
+                            "handle": "B0"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "20MM ROOT BASE",
+                            "value": 20.0,
+                            "handle": "92"
+                        },
+                        {
+                            "text": "70MM ROOT DEPTH",
+                            "value": 70.0,
+                            "handle": "A1"
+                        },
+                        {
+                            "text": "40MM NECK PLATFORM",
+                            "value": 40.0,
+                            "handle": "B0"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "3X PRESSURE FLANK\n LOAD BEARING SURFACE",
+                            "value": null,
+                            "handle": "C0"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "C0",
+                "text": "3X PRESSURE FLANK\n LOAD BEARING SURFACE",
+                "position": [
+                    70.0,
+                    20.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "92",
+                "text": "20mm ROOT BASE",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A1",
+                "text": "70mm ROOT DEPTH",
+                "value": 70.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B0",
+                "text": "40mm NECK PLATFORM",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 2,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Turned_Shaft_TS01",
+        "part_family": "Turned",
+        "manufacturing_type": "turned",
+        "overall_dimensions": {
+            "width": 120.0,
+            "height": 30.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "thread_1",
+                "feature_class": "thread",
+                "parameters": {
+                    "thread_designation": "M20X1.5 - 6G THREAD",
+                    "nominal_diameter": 20.0,
+                    "thread_length": null,
+                    "pitch": 1.5,
+                    "thread_standard": "ISO Metric",
+                    "thread_pitch": 1.5,
+                    "thread_gender": "internal",
+                    "tolerance_class": "6G",
+                    "nominal_pipe_size": null,
+                    "major_diameter": 20.0,
+                    "pitch_tpi": null,
+                    "validation_status": "validated",
+                    "source_annotation": "M20X1.5 - 6G THREAD"
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "30MM THREAD LENGTH",
+                            "value": 30.0,
+                            "numbers": [
+                                30.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 30.0,
+                            "center": [
+                                15.0,
+                                -10.0
+                            ],
+                            "handle": "92"
+                        },
+                        {
+                            "text": "50MM JOURNAL LENGTH",
+                            "value": 50.0,
+                            "numbers": [
+                                50.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 50.0,
+                            "center": [
+                                55.0,
+                                -15.0
+                            ],
+                            "handle": "A1"
+                        },
+                        {
+                            "text": "\u00d830MM K6 PRESS FIT",
+                            "value": 30.0,
+                            "numbers": [
+                                30.0,
+                                6.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 30.0,
+                            "center": [
+                                55.0,
+                                0.0
+                            ],
+                            "handle": "CE"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "30MM THREAD LENGTH",
+                            "value": 30.0,
+                            "handle": "92"
+                        },
+                        {
+                            "text": "50MM JOURNAL LENGTH",
+                            "value": 50.0,
+                            "handle": "A1"
+                        },
+                        {
+                            "text": "\u00d830MM K6 PRESS FIT",
+                            "value": 30.0,
+                            "handle": "CE"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [],
+        "dimension_entities": [
+            {
+                "handle": "92",
+                "text": "30mm THREAD LENGTH",
+                "value": 30.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A1",
+                "text": "50mm JOURNAL LENGTH",
+                "value": 50.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B0",
+                "text": "120mm OVERALL LENGTH",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BF",
+                "text": "M20x1.5 - 6g THREAD",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "CE",
+                "text": "%%C30mm k6 PRESS FIT",
+                "value": 30.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "DD",
+                "text": "%%C20mm OUTPUT",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Turned_Shaft_TS04",
+        "part_family": "Turned",
+        "manufacturing_type": "turned",
+        "overall_dimensions": {
+            "width": 100.0,
+            "height": 20.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "chamfer_1",
+                "feature_class": "chamfer",
+                "parameters": {
+                    "text": "2MM X 45%%D CHAMFER BOTH ENDS",
+                    "value": 2.0,
+                    "count": 1
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "\u00d820MM M6",
+                            "value": 20.0,
+                            "numbers": [
+                                20.0,
+                                6.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 20.0,
+                            "center": [
+                                50.0,
+                                0.0
+                            ],
+                            "handle": "B0"
+                        },
+                        {
+                            "text": "\u00d816MM FLAT",
+                            "value": 16.0,
+                            "numbers": [
+                                16.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 16.0,
+                            "center": [
+                                0.0,
+                                0.0
+                            ],
+                            "handle": "BF"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "\u00d820MM M6",
+                            "value": 20.0,
+                            "handle": "B0"
+                        },
+                        {
+                            "text": "\u00d816MM FLAT",
+                            "value": 16.0,
+                            "handle": "BF"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [],
+        "dimension_entities": [
+            {
+                "handle": "90",
+                "text": "100mm OVERALL",
+                "value": 100.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "9F",
+                "text": "2mm",
+                "value": 2.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B0",
+                "text": "%%C20mm m6",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BF",
+                "text": "%%C16mm FLAT",
+                "value": 16.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "CE",
+                "text": "2mm x 45%%D CHAMFER BOTH ENDS",
+                "value": 2.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Weldment_WD04_MiterNode",
+        "part_family": "Weldment",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 120.0,
+            "height": 120.0
+        },
+        "topology": {
+            "contours": 2,
+            "nesting": 0,
+            "holes": 2,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "hole_group_d12",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 2,
+                    "diameter": 12.0,
+                    "positions": [
+                        [
+                            20.0,
+                            80.0
+                        ],
+                        [
+                            80.0,
+                            20.0
+                        ]
+                    ],
+                    "spacing_x": 60.0,
+                    "spacing_y": 60.0,
+                    "offset_x": 20.0,
+                    "offset_y": 20.0,
+                    "text": "2X \u00d812MM PLUG WELD BORE"
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "120MM SPLICE LEG",
+                            "value": 120.0,
+                            "numbers": [
+                                120.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 120.0,
+                            "center": [
+                                60.0,
+                                0.0
+                            ],
+                            "handle": "97"
+                        },
+                        {
+                            "text": "120MM SPLICE LEG",
+                            "value": 120.0,
+                            "numbers": [
+                                120.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 120.0,
+                            "center": [
+                                0.0,
+                                60.0
+                            ],
+                            "handle": "A6"
+                        },
+                        {
+                            "text": "40MM TUBE PROFILE",
+                            "value": 40.0,
+                            "numbers": [
+                                40.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 40.0,
+                            "center": [
+                                120.0,
+                                20.0
+                            ],
+                            "handle": "B5"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "120MM SPLICE LEG",
+                            "value": 120.0,
+                            "handle": "97"
+                        },
+                        {
+                            "text": "120MM SPLICE LEG",
+                            "value": 120.0,
+                            "handle": "A6"
+                        },
+                        {
+                            "text": "40MM TUBE PROFILE",
+                            "value": 40.0,
+                            "handle": "B5"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "C5",
+                "text": "2X \u00d812mm PLUG WELD BORE",
+                "position": [
+                    70.0,
+                    100.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "97",
+                "text": "120mm SPLICE LEG",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A6",
+                "text": "120mm SPLICE LEG",
+                "value": 120.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "B5",
+                "text": "40mm TUBE PROFILE",
+                "value": 40.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": true
+        }
+    },
+    {
+        "drawing_id": "Weldment_WD05_ScallopWeb",
+        "part_family": "Weldment",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 100.0,
+            "height": 100.0
+        },
+        "topology": {
+            "contours": 0,
+            "nesting": 0,
+            "holes": 0,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "bend_relief_1",
+                "feature_class": "bend_relief",
+                "parameters": {
+                    "text": "20X20MM SCALLOP RELIEF\n PREVENTS WELD INTERFERENCE",
+                    "value": 20.0,
+                    "count": 20
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "80MM BASE CONTACT",
+                            "value": 80.0,
+                            "numbers": [
+                                80.0
+                            ],
+                            "orientation": "horizontal",
+                            "span": 80.0,
+                            "center": [
+                                60.0,
+                                0.0
+                            ],
+                            "handle": "91"
+                        },
+                        {
+                            "text": "80MM VERTICAL CONTACT",
+                            "value": 80.0,
+                            "numbers": [
+                                80.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 80.0,
+                            "center": [
+                                0.0,
+                                60.0
+                            ],
+                            "handle": "A0"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "80MM BASE CONTACT",
+                            "value": 80.0,
+                            "handle": "91"
+                        },
+                        {
+                            "text": "80MM VERTICAL CONTACT",
+                            "value": 80.0,
+                            "handle": "A0"
+                        }
+                    ],
+                    "unknown_annotations": []
+                }
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "handle": "CE",
+                "text": "20x20mm SCALLOP RELIEF\n PREVENTS WELD INTERFERENCE",
+                "position": [
+                    70.0,
+                    70.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "91",
+                "text": "80mm BASE CONTACT",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "A0",
+                "text": "80mm VERTICAL CONTACT",
+                "value": 80.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "AF",
+                "text": "20",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            },
+            {
+                "handle": "BE",
+                "text": "20",
+                "value": 20.0,
+                "dimension_type": "linear",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 3,
+            "relationship_count": 0,
+            "has_hierarchy": false
+        }
+    },
+    {
+        "drawing_id": "Workbook_EX01_4LugFlange",
+        "part_family": "Workbook",
+        "manufacturing_type": "machined",
+        "overall_dimensions": {
+            "width": 120.8528,
+            "height": 120.8528
+        },
+        "topology": {
+            "contours": 5,
+            "nesting": 0,
+            "holes": 5,
+            "regions": 2
+        },
+        "features": [
+            {
+                "feature_id": "concentric_bore_1",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 27.5,
+                    "outer_diameter": 90.0,
+                    "bore_diameter": 27.5,
+                    "center": [
+                        150.0,
+                        150.0
+                    ],
+                    "bore_type": "bearing"
+                }
+            },
+            {
+                "feature_id": "concentric_bore_2",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0,
+                    "bore_diameter": 20.0,
+                    "center": [
+                        192.4264,
+                        192.4264
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "concentric_bore_3",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0,
+                    "bore_diameter": 20.0,
+                    "center": [
+                        107.5736,
+                        192.4264
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "concentric_bore_4",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0,
+                    "bore_diameter": 20.0,
+                    "center": [
+                        107.5736,
+                        107.5736
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "concentric_bore_5",
+                "feature_class": "concentric_bore",
+                "parameters": {
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0,
+                    "bore_diameter": 20.0,
+                    "center": [
+                        192.4264,
+                        107.5736
+                    ],
+                    "bore_type": "bushing"
+                }
+            },
+            {
+                "feature_id": "hole_group_d20",
+                "feature_class": "hole_group",
+                "parameters": {
+                    "group_type": "rectangular_pattern",
+                    "pattern_type": "rectangular",
+                    "count": 4,
+                    "diameter": 20.0,
+                    "positions": [
+                        [
+                            192.4264,
+                            192.4264
+                        ],
+                        [
+                            107.5736,
+                            192.4264
+                        ],
+                        [
+                            107.5736,
+                            107.5736
+                        ],
+                        [
+                            192.4264,
+                            107.5736
+                        ]
+                    ],
+                    "spacing_x": 84.8528,
+                    "spacing_y": 84.8528,
+                    "offset_x": 107.5736,
+                    "offset_y": 107.5736
+                }
+            },
+            {
+                "feature_id": "dimension_annotations",
+                "feature_class": "dimension_annotations",
+                "parameters": {
+                    "dimensions": [
+                        {
+                            "text": "R45 MAIN RING",
+                            "value": 90.0,
+                            "numbers": [
+                                45.0
+                            ],
+                            "orientation": "vertical",
+                            "span": 90.0,
+                            "center": [
+                                150.0,
+                                150.0
+                            ],
+                            "handle": "B5"
+                        },
+                        {
+                            "text": "4X R18 HOUSING LUGS",
+                            "value": 18.0,
+                            "numbers": [
+                                18.0
+                            ],
+                            "orientation": null,
+                            "span": null,
+                            "center": null,
+                            "handle": "C5"
+                        }
+                    ],
+                    "pattern_dimensions": []
+                }
+            },
+            {
+                "feature_id": "unknown_facts_container",
+                "feature_class": "unknown_facts",
+                "parameters": {
+                    "unknown_dimensions": [
+                        {
+                            "text": "R45 MAIN RING",
+                            "value": 45.0,
+                            "handle": "B5"
+                        }
+                    ],
+                    "unknown_annotations": [
+                        {
+                            "text": "4X R18 HOUSING LUGS",
+                            "value": 18.0,
+                            "handle": "C5"
+                        }
+                    ]
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "relationship_id": "concentric_1",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_1",
+                    "radial_pattern_1"
+                ],
+                "parameters": {
+                    "center": [
+                        150.0,
+                        150.0
+                    ],
+                    "inner_diameter": 55.0,
+                    "outer_diameter": 90.0
+                }
+            },
+            {
+                "relationship_id": "concentric_2",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_2",
+                    "radial_pattern_2"
+                ],
+                "parameters": {
+                    "center": [
+                        192.4264,
+                        192.4264
+                    ],
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0
+                }
+            },
+            {
+                "relationship_id": "concentric_3",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_3",
+                    "radial_pattern_3"
+                ],
+                "parameters": {
+                    "center": [
+                        107.5736,
+                        192.4264
+                    ],
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0
+                }
+            },
+            {
+                "relationship_id": "concentric_4",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_4",
+                    "radial_pattern_4"
+                ],
+                "parameters": {
+                    "center": [
+                        107.5736,
+                        107.5736
+                    ],
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0
+                }
+            },
+            {
+                "relationship_id": "concentric_5",
+                "relationship_type": "concentric",
+                "feature_ids": [
+                    "concentric_bore_5",
+                    "radial_pattern_5"
+                ],
+                "parameters": {
+                    "center": [
+                        192.4264,
+                        107.5736
+                    ],
+                    "inner_diameter": 20.0,
+                    "outer_diameter": 36.0
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_vertical",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "vertical",
+                    "axis_position": 150.0,
+                    "pair_count": 8
+                }
+            },
+            {
+                "relationship_id": "mirror_symmetry_horizontal",
+                "relationship_type": "mirror_symmetry",
+                "feature_ids": [],
+                "parameters": {
+                    "axis": "horizontal",
+                    "axis_position": 150.0,
+                    "pair_count": 8
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "handle": "C5",
+                "text": "4X R18 HOUSING LUGS",
+                "position": [
+                    240.0,
+                    240.0
+                ]
+            }
+        ],
+        "dimension_entities": [
+            {
+                "handle": "A6",
+                "text": "R27.5 THRU BORE",
+                "value": 27.5,
+                "dimension_type": "radius",
+                "points": null
+            },
+            {
+                "handle": "B5",
+                "text": "R45 MAIN RING",
+                "value": 45.0,
+                "dimension_type": "radius",
+                "points": null
+            }
+        ],
+        "engineering_constraints": [],
+        "metadata": {
+            "feature_count": 8,
+            "relationship_count": 7,
+            "has_hierarchy": true
+        }
+    }
+]

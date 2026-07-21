@@ -1,0 +1,693 @@
+{
+  "final_dataset": {
+    "drawing_id": "Corrected_Circular_Flange_FL02",
+    "final_samples": [
+      {
+        "sample_id": "smp_00001",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00004"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 58.0948
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 58.0948
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 3
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              10.0,
+              60.0,
+              60.0
+            ],
+            "count": 3
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 60.0
+        },
+        "meta": {
+          "entity_id": "ent_00001",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00002",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00004"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 58.0948
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 58.0948
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 3
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              10.0,
+              60.0,
+              60.0
+            ],
+            "count": 3
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 60.0
+        },
+        "meta": {
+          "entity_id": "ent_00002",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00003",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00002"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 60.0
+            },
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 58.0948
+        },
+        "meta": {
+          "entity_id": "ent_00003",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00004",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00002"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 60.0
+            },
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 4
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 58.0948
+        },
+        "meta": {
+          "entity_id": "ent_00004",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00005",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 3
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              10.0,
+              60.0,
+              60.0
+            ],
+            "count": 3
+          },
+          "contour_hierarchy": {
+            "contour_role": "outer",
+            "nesting_depth": 0,
+            "child_count": 0,
+            "has_parent": false
+          },
+          "other_dimensions": [
+            {
+              "dimension_type": "diameter",
+              "value": 20.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 10.0
+        },
+        "meta": {
+          "entity_id": "ent_00005",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": true,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00006",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 3
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              10.0,
+              60.0,
+              60.0
+            ],
+            "count": 3
+          },
+          "contour_hierarchy": {
+            "contour_role": "outer",
+            "nesting_depth": 0,
+            "child_count": 0,
+            "has_parent": false
+          },
+          "other_dimensions": [
+            {
+              "dimension_type": "radius",
+              "value": 10.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "diameter",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00005",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": true,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00007",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 150.0
+        },
+        "meta": {
+          "entity_id": "ent_00006",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      },
+      {
+        "sample_id": "smp_00008",
+        "drawing_id": "Corrected_Circular_Flange_FL02",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 150.0
+        },
+        "meta": {
+          "entity_id": "ent_00007",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      }
+    ],
+    "statistics": {
+      "total_samples": 8,
+      "leakage_free": 8,
+      "with_topology_evidence": 4,
+      "with_repetition_evidence": 0,
+      "with_concentric_evidence": 4,
+      "with_feature_evidence": 4,
+      "with_hierarchy_evidence": 2,
+      "signal_distribution": {
+        "3": 4,
+        "1": 2,
+        "0": 2
+      },
+      "signal_strength": {
+        "strong": 4,
+        "medium": 2,
+        "weak": 2
+      }
+    }
+  },
+  "supervision": {
+    "supervision_entities": [
+      {
+        "entity_id": "ent_00008",
+        "entity_type": "DIMENSION",
+        "value": 120.0,
+        "dimension_type": "linear",
+        "text": "%%C120mm TURNED OD"
+      },
+      {
+        "entity_id": "ent_00009",
+        "entity_type": "DIMENSION",
+        "value": 105.0,
+        "dimension_type": "linear",
+        "text": "105mm ACROSS FLATS"
+      },
+      {
+        "entity_id": "ent_00011",
+        "entity_type": "MTEXT",
+        "value": 20.0,
+        "dimension_type": "thread_callout",
+        "text": "M20x2.5 - 6H THRU"
+      },
+      {
+        "entity_id": "ent_00012",
+        "entity_type": "MTEXT",
+        "value": 1.0,
+        "dimension_type": "dimension_value",
+        "text": "NOTES:\n1. MATL: 30mm THK 6061-T6 ALUMINUM\n2. BREAK ALL SHARP EDGES 0.5mm MAX"
+      }
+    ],
+    "geometry_entities_count": 7,
+    "computable_dimensions": [
+      {
+        "entity_id": "ent_00001",
+        "dimension_type": "radius",
+        "value": 60.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00002",
+        "dimension_type": "radius",
+        "value": 60.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00003",
+        "dimension_type": "length",
+        "value": 58.0948,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00004",
+        "dimension_type": "length",
+        "value": 58.0948,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00005",
+        "dimension_type": "radius",
+        "value": 10.0,
+        "derivation": "circle_radius"
+      },
+      {
+        "entity_id": "ent_00005",
+        "dimension_type": "diameter",
+        "value": 20.0,
+        "derivation": "circle_diameter"
+      },
+      {
+        "entity_id": "ent_00006",
+        "dimension_type": "length",
+        "value": 150.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00007",
+        "dimension_type": "length",
+        "value": 150.0,
+        "derivation": "line_endpoint_distance"
+      }
+    ],
+    "supervision_mappings": [
+      {
+        "supervision_entity_id": "ent_00011",
+        "geometry_entity_id": "ent_00005",
+        "supervision_value": 20.0,
+        "mapping_method": "geometric_association"
+      }
+    ],
+    "unmapped_supervision": [
+      {
+        "supervision_entity_id": "ent_00008",
+        "supervision_value": 120.0,
+        "reason": "no_geometric_match"
+      },
+      {
+        "supervision_entity_id": "ent_00009",
+        "supervision_value": 105.0,
+        "reason": "no_geometric_match"
+      },
+      {
+        "supervision_entity_id": "ent_00012",
+        "supervision_value": 1.0,
+        "reason": "no_geometric_match"
+      }
+    ],
+    "statistics": {
+      "total_supervision_entities": 4,
+      "total_geometry_entities": 7,
+      "total_computable_dimensions": 8,
+      "total_mapped": 1,
+      "total_unmapped": 3
+    }
+  },
+  "targets": {
+    "targets": [
+      {
+        "target_id": "tgt_00001",
+        "entity_id": "ent_00001",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 60.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00002",
+        "entity_id": "ent_00002",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 60.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00003",
+        "entity_id": "ent_00003",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 58.0948,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00004",
+        "entity_id": "ent_00004",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 58.0948,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00005",
+        "entity_id": "ent_00005",
+        "entity_type": "CIRCLE",
+        "dimension_type": "radius",
+        "target_value": 10.0,
+        "derivation": "circle_radius_attribute",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00006",
+        "entity_id": "ent_00005",
+        "entity_type": "CIRCLE",
+        "dimension_type": "diameter",
+        "target_value": 20.0,
+        "derivation": "circle_diameter_computed",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00007",
+        "entity_id": "ent_00006",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 150.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00008",
+        "entity_id": "ent_00007",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 150.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      }
+    ],
+    "statistics": {
+      "total_targets": 8,
+      "eligible_targets": 8,
+      "ineligible_targets": 0,
+      "by_type": {
+        "radius": 3,
+        "length": 4,
+        "diameter": 1
+      },
+      "by_entity_type": {
+        "ARC": 2,
+        "LINE": 4,
+        "CIRCLE": 2
+      }
+    }
+  },
+  "training_context": {
+    "geometry_count": 7,
+    "topology_edges": 4,
+    "feature_count": 1,
+    "repetition_count": 0,
+    "concentric_groups": 1,
+    "hole_candidates": 1,
+    "slot_candidates": 0,
+    "radial_patterns": 0
+  },
+  "statistics": {
+    "supervision": {
+      "total_supervision_entities": 4,
+      "total_geometry_entities": 7,
+      "total_computable_dimensions": 8,
+      "total_mapped": 1,
+      "total_unmapped": 3
+    },
+    "targets": {
+      "total_targets": 8,
+      "eligible_targets": 8,
+      "ineligible_targets": 0,
+      "by_type": {
+        "radius": 3,
+        "length": 4,
+        "diameter": 1
+      },
+      "by_entity_type": {
+        "ARC": 2,
+        "LINE": 4,
+        "CIRCLE": 2
+      }
+    },
+    "conditioning": {
+      "total_samples": 8,
+      "leakage_issues": 0,
+      "leakage_free": 8
+    },
+    "final_dataset": {
+      "total_samples": 8,
+      "leakage_free": 8,
+      "with_topology_evidence": 4,
+      "with_repetition_evidence": 0,
+      "with_concentric_evidence": 4,
+      "with_feature_evidence": 4,
+      "with_hierarchy_evidence": 2,
+      "signal_distribution": {
+        "3": 4,
+        "1": 2,
+        "0": 2
+      },
+      "signal_strength": {
+        "strong": 4,
+        "medium": 2,
+        "weak": 2
+      }
+    },
+    "context": {
+      "geometry_entities": 7,
+      "topology_edges": 4,
+      "feature_candidates": 1,
+      "repetition_groups": 0,
+      "context_packages": 7
+    }
+  }
+}

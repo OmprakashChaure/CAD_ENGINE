@@ -86,7 +86,7 @@ class StructuralPipeline:
 
         # Stage 5: Contour hierarchy (containment analysis)
         hierarchy_analyzer = ContourHierarchy()
-        hierarchy_result = hierarchy_analyzer.analyze(entities)
+        hierarchy_result = hierarchy_analyzer.analyze(entities, loop_result.get("loops", []))
 
         # Combined statistics
         statistics = {

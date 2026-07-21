@@ -1,0 +1,1801 @@
+{
+  "final_dataset": {
+    "drawing_id": "Bearing_Housing_BH03",
+    "final_samples": [
+      {
+        "sample_id": "smp_00001",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00004",
+            "ent_00009",
+            "ent_00015",
+            "ent_00016"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00009",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00015",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00016",
+              "dimension_type": "length",
+              "value": 20.0
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 4
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              20.0,
+              20.0,
+              40.0,
+              40.0
+            ],
+            "count": 4
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 40.0
+        },
+        "meta": {
+          "entity_id": "ent_00001",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00002",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00010",
+            "ent_00015",
+            "ent_00016"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00010",
+              "dimension_type": "radius",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00015",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00016",
+              "dimension_type": "length",
+              "value": 20.0
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 4
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              20.0,
+              20.0,
+              40.0,
+              40.0
+            ],
+            "count": 4
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00002",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00003",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00005",
+            "ent_00009",
+            "ent_00011",
+            "ent_00015"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00005",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00009",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00011",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00015",
+              "dimension_type": "length",
+              "value": 20.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00003",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00004",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00006",
+            "ent_00009",
+            "ent_00012",
+            "ent_00016"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00006",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00009",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00012",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00016",
+              "dimension_type": "length",
+              "value": 20.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00004",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00005",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00007",
+            "ent_00011"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00007",
+              "dimension_type": "length",
+              "value": 60.0
+            },
+            {
+              "neighbor_id": "ent_00011",
+              "dimension_type": "length",
+              "value": 15.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 15.0
+        },
+        "meta": {
+          "entity_id": "ent_00005",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00006",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00004",
+            "ent_00008",
+            "ent_00012"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00008",
+              "dimension_type": "length",
+              "value": 60.0
+            },
+            {
+              "neighbor_id": "ent_00012",
+              "dimension_type": "length",
+              "value": 15.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 15.0
+        },
+        "meta": {
+          "entity_id": "ent_00006",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00007",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00005",
+            "ent_00008"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00005",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00008",
+              "dimension_type": "length",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 60.0
+        },
+        "meta": {
+          "entity_id": "ent_00007",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00008",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00006",
+            "ent_00007"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00006",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00007",
+              "dimension_type": "length",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 60.0
+        },
+        "meta": {
+          "entity_id": "ent_00008",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00009",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00003",
+            "ent_00004",
+            "ent_00015",
+            "ent_00016"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00015",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00016",
+              "dimension_type": "length",
+              "value": 20.0
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 4
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              20.0,
+              20.0,
+              40.0,
+              40.0
+            ],
+            "count": 4
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 40.0
+        },
+        "meta": {
+          "entity_id": "ent_00009",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00010",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "ARC",
+          "topology_neighbors": [
+            "ent_00002",
+            "ent_00015",
+            "ent_00016"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00015",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00016",
+              "dimension_type": "length",
+              "value": 20.0
+            }
+          ],
+          "feature_context": {
+            "candidate_id": "hc_00001",
+            "candidate_type": "multi_radius",
+            "radius_count": 4
+          },
+          "repetition_context": null,
+          "concentric_context": {
+            "group_id": "conc_00001",
+            "radii": [
+              20.0,
+              20.0,
+              40.0,
+              40.0
+            ],
+            "count": 4
+          },
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00010",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": true,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00011",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00003",
+            "ent_00005",
+            "ent_00013"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00005",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00013",
+              "dimension_type": "length",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 15.0
+        },
+        "meta": {
+          "entity_id": "ent_00011",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00012",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00004",
+            "ent_00006",
+            "ent_00014"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00006",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00014",
+              "dimension_type": "length",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 15.0
+        },
+        "meta": {
+          "entity_id": "ent_00012",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00013",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00011",
+            "ent_00014"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00011",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00014",
+              "dimension_type": "length",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 60.0
+        },
+        "meta": {
+          "entity_id": "ent_00013",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00014",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00012",
+            "ent_00013"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00012",
+              "dimension_type": "length",
+              "value": 15.0
+            },
+            {
+              "neighbor_id": "ent_00013",
+              "dimension_type": "length",
+              "value": 60.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 60.0
+        },
+        "meta": {
+          "entity_id": "ent_00014",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00015",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00002",
+            "ent_00003",
+            "ent_00009",
+            "ent_00010"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00003",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00009",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00010",
+              "dimension_type": "radius",
+              "value": 20.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00015",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00016",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [
+            "ent_00001",
+            "ent_00002",
+            "ent_00004",
+            "ent_00009",
+            "ent_00010"
+          ],
+          "neighbor_dimensions": [
+            {
+              "neighbor_id": "ent_00001",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00002",
+              "dimension_type": "radius",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00004",
+              "dimension_type": "length",
+              "value": 20.0
+            },
+            {
+              "neighbor_id": "ent_00009",
+              "dimension_type": "radius",
+              "value": 40.0
+            },
+            {
+              "neighbor_id": "ent_00010",
+              "dimension_type": "radius",
+              "value": 20.0
+            }
+          ],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 16
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 20.0
+        },
+        "meta": {
+          "entity_id": "ent_00016",
+          "leakage_free": true,
+          "has_topology_evidence": true,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 1,
+          "signal_strength": "medium"
+        }
+      },
+      {
+        "sample_id": "smp_00017",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00002",
+            "candidate_type": "single_radius",
+            "radius_count": 1
+          },
+          "repetition_context": {
+            "group_id": "rep_00001",
+            "repetition_count": 2,
+            "signature": "hole:(4.0,)"
+          },
+          "concentric_context": null,
+          "contour_hierarchy": {
+            "contour_role": "outer",
+            "nesting_depth": 0,
+            "child_count": 0,
+            "has_parent": false
+          },
+          "other_dimensions": [
+            {
+              "dimension_type": "diameter",
+              "value": 8.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 4.0
+        },
+        "meta": {
+          "entity_id": "ent_00017",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": true,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": true,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00018",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00002",
+            "candidate_type": "single_radius",
+            "radius_count": 1
+          },
+          "repetition_context": {
+            "group_id": "rep_00001",
+            "repetition_count": 2,
+            "signature": "hole:(4.0,)"
+          },
+          "concentric_context": null,
+          "contour_hierarchy": {
+            "contour_role": "outer",
+            "nesting_depth": 0,
+            "child_count": 0,
+            "has_parent": false
+          },
+          "other_dimensions": [
+            {
+              "dimension_type": "radius",
+              "value": 4.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "diameter",
+          "value": 8.0
+        },
+        "meta": {
+          "entity_id": "ent_00017",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": true,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": true,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00019",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00003",
+            "candidate_type": "single_radius",
+            "radius_count": 1
+          },
+          "repetition_context": {
+            "group_id": "rep_00001",
+            "repetition_count": 2,
+            "signature": "hole:(4.0,)"
+          },
+          "concentric_context": null,
+          "contour_hierarchy": {
+            "contour_role": "outer",
+            "nesting_depth": 0,
+            "child_count": 0,
+            "has_parent": false
+          },
+          "other_dimensions": [
+            {
+              "dimension_type": "diameter",
+              "value": 8.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "radius",
+          "value": 4.0
+        },
+        "meta": {
+          "entity_id": "ent_00018",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": true,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": true,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00020",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "CIRCLE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": {
+            "candidate_id": "hc_00003",
+            "candidate_type": "single_radius",
+            "radius_count": 1
+          },
+          "repetition_context": {
+            "group_id": "rep_00001",
+            "repetition_count": 2,
+            "signature": "hole:(4.0,)"
+          },
+          "concentric_context": null,
+          "contour_hierarchy": {
+            "contour_role": "outer",
+            "nesting_depth": 0,
+            "child_count": 0,
+            "has_parent": false
+          },
+          "other_dimensions": [
+            {
+              "dimension_type": "radius",
+              "value": 4.0
+            }
+          ],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "diameter",
+          "value": 8.0
+        },
+        "meta": {
+          "entity_id": "ent_00018",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": true,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": true,
+          "has_hierarchy_evidence": true,
+          "reasoning_signal_count": 3,
+          "signal_strength": "strong"
+        }
+      },
+      {
+        "sample_id": "smp_00021",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 140.0
+        },
+        "meta": {
+          "entity_id": "ent_00019",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      },
+      {
+        "sample_id": "smp_00022",
+        "drawing_id": "Bearing_Housing_BH03",
+        "input": {
+          "entity_type": "LINE",
+          "topology_neighbors": [],
+          "neighbor_dimensions": [],
+          "feature_context": null,
+          "repetition_context": null,
+          "concentric_context": null,
+          "contour_hierarchy": null,
+          "other_dimensions": [],
+          "region_size": 1
+        },
+        "output": {
+          "dimension_type": "length",
+          "value": 140.0
+        },
+        "meta": {
+          "entity_id": "ent_00020",
+          "leakage_free": true,
+          "has_topology_evidence": false,
+          "has_repetition_evidence": false,
+          "has_concentric_evidence": false,
+          "has_feature_evidence": false,
+          "has_hierarchy_evidence": false,
+          "reasoning_signal_count": 0,
+          "signal_strength": "weak"
+        }
+      }
+    ],
+    "statistics": {
+      "total_samples": 22,
+      "leakage_free": 22,
+      "with_topology_evidence": 16,
+      "with_repetition_evidence": 4,
+      "with_concentric_evidence": 4,
+      "with_feature_evidence": 8,
+      "with_hierarchy_evidence": 4,
+      "signal_distribution": {
+        "3": 8,
+        "1": 12,
+        "0": 2
+      },
+      "signal_strength": {
+        "strong": 8,
+        "medium": 12,
+        "weak": 2
+      }
+    }
+  },
+  "supervision": {
+    "supervision_entities": [
+      {
+        "entity_id": "ent_00021",
+        "entity_type": "DIMENSION",
+        "value": 80.0,
+        "dimension_type": "linear",
+        "text": "%%C80mm BOSS"
+      },
+      {
+        "entity_id": "ent_00022",
+        "entity_type": "DIMENSION",
+        "value": 40.0,
+        "dimension_type": "linear",
+        "text": "%%C40mm BORE"
+      },
+      {
+        "entity_id": "ent_00023",
+        "entity_type": "DIMENSION",
+        "value": 30.0,
+        "dimension_type": "linear",
+        "text": "30mm SPLIT"
+      },
+      {
+        "entity_id": "ent_00024",
+        "entity_type": "DIMENSION",
+        "value": 20.0,
+        "dimension_type": "linear",
+        "text": "20mm LUG W"
+      },
+      {
+        "entity_id": "ent_00025",
+        "entity_type": "DIMENSION",
+        "value": 100.0,
+        "dimension_type": "linear",
+        "text": "100mm BOLT SPACING"
+      },
+      {
+        "entity_id": "ent_00026",
+        "entity_type": "DIMENSION",
+        "value": 8.0,
+        "dimension_type": "linear",
+        "text": "2X %%C8mm"
+      },
+      {
+        "entity_id": "ent_00027",
+        "entity_type": "DIMENSION",
+        "value": 120.0,
+        "dimension_type": "linear",
+        "text": "120mm OVERALL"
+      },
+      {
+        "entity_id": "ent_00028",
+        "entity_type": "DIMENSION",
+        "value": 15.0,
+        "dimension_type": "linear",
+        "text": "15mm FLANGE Y"
+      }
+    ],
+    "geometry_entities_count": 20,
+    "computable_dimensions": [
+      {
+        "entity_id": "ent_00001",
+        "dimension_type": "radius",
+        "value": 40.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00002",
+        "dimension_type": "radius",
+        "value": 20.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00003",
+        "dimension_type": "length",
+        "value": 20.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00004",
+        "dimension_type": "length",
+        "value": 20.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00005",
+        "dimension_type": "length",
+        "value": 15.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00006",
+        "dimension_type": "length",
+        "value": 15.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00007",
+        "dimension_type": "length",
+        "value": 60.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00008",
+        "dimension_type": "length",
+        "value": 60.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00009",
+        "dimension_type": "radius",
+        "value": 40.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00010",
+        "dimension_type": "radius",
+        "value": 20.0,
+        "derivation": "arc_radius"
+      },
+      {
+        "entity_id": "ent_00011",
+        "dimension_type": "length",
+        "value": 15.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00012",
+        "dimension_type": "length",
+        "value": 15.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00013",
+        "dimension_type": "length",
+        "value": 60.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00014",
+        "dimension_type": "length",
+        "value": 60.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00015",
+        "dimension_type": "length",
+        "value": 20.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00016",
+        "dimension_type": "length",
+        "value": 20.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00017",
+        "dimension_type": "radius",
+        "value": 4.0,
+        "derivation": "circle_radius"
+      },
+      {
+        "entity_id": "ent_00017",
+        "dimension_type": "diameter",
+        "value": 8.0,
+        "derivation": "circle_diameter"
+      },
+      {
+        "entity_id": "ent_00018",
+        "dimension_type": "radius",
+        "value": 4.0,
+        "derivation": "circle_radius"
+      },
+      {
+        "entity_id": "ent_00018",
+        "dimension_type": "diameter",
+        "value": 8.0,
+        "derivation": "circle_diameter"
+      },
+      {
+        "entity_id": "ent_00019",
+        "dimension_type": "length",
+        "value": 140.0,
+        "derivation": "line_endpoint_distance"
+      },
+      {
+        "entity_id": "ent_00020",
+        "dimension_type": "length",
+        "value": 140.0,
+        "derivation": "line_endpoint_distance"
+      }
+    ],
+    "supervision_mappings": [
+      {
+        "supervision_entity_id": "ent_00021",
+        "geometry_entity_id": "ent_00003",
+        "supervision_value": 80.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00022",
+        "geometry_entity_id": "ent_00015",
+        "supervision_value": 40.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00023",
+        "geometry_entity_id": "ent_00005",
+        "supervision_value": 30.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00024",
+        "geometry_entity_id": "ent_00004",
+        "supervision_value": 20.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00026",
+        "geometry_entity_id": "ent_00017",
+        "supervision_value": 8.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00027",
+        "geometry_entity_id": "ent_00003",
+        "supervision_value": 120.0,
+        "mapping_method": "geometric_association"
+      },
+      {
+        "supervision_entity_id": "ent_00028",
+        "geometry_entity_id": "ent_00005",
+        "supervision_value": 15.0,
+        "mapping_method": "geometric_association"
+      }
+    ],
+    "unmapped_supervision": [
+      {
+        "supervision_entity_id": "ent_00025",
+        "supervision_value": 100.0,
+        "reason": "no_geometric_match"
+      }
+    ],
+    "statistics": {
+      "total_supervision_entities": 8,
+      "total_geometry_entities": 20,
+      "total_computable_dimensions": 22,
+      "total_mapped": 7,
+      "total_unmapped": 1
+    }
+  },
+  "targets": {
+    "targets": [
+      {
+        "target_id": "tgt_00001",
+        "entity_id": "ent_00001",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 40.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00002",
+        "entity_id": "ent_00002",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 20.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00003",
+        "entity_id": "ent_00003",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 20.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00004",
+        "entity_id": "ent_00004",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 20.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00005",
+        "entity_id": "ent_00005",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 15.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00006",
+        "entity_id": "ent_00006",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 15.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00007",
+        "entity_id": "ent_00007",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 60.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00008",
+        "entity_id": "ent_00008",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 60.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00009",
+        "entity_id": "ent_00009",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 40.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00010",
+        "entity_id": "ent_00010",
+        "entity_type": "ARC",
+        "dimension_type": "radius",
+        "target_value": 20.0,
+        "derivation": "arc_radius_attribute",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": true,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00011",
+        "entity_id": "ent_00011",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 15.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00012",
+        "entity_id": "ent_00012",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 15.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00013",
+        "entity_id": "ent_00013",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 60.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00014",
+        "entity_id": "ent_00014",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 60.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00015",
+        "entity_id": "ent_00015",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 20.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00016",
+        "entity_id": "ent_00016",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 20.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "topology_connected",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": true,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00017",
+        "entity_id": "ent_00017",
+        "entity_type": "CIRCLE",
+        "dimension_type": "radius",
+        "target_value": 4.0,
+        "derivation": "circle_radius_attribute",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": true,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00018",
+        "entity_id": "ent_00017",
+        "entity_type": "CIRCLE",
+        "dimension_type": "diameter",
+        "target_value": 8.0,
+        "derivation": "circle_diameter_computed",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": true,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00019",
+        "entity_id": "ent_00018",
+        "entity_type": "CIRCLE",
+        "dimension_type": "radius",
+        "target_value": 4.0,
+        "derivation": "circle_radius_attribute",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": true,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00020",
+        "entity_id": "ent_00018",
+        "entity_type": "CIRCLE",
+        "dimension_type": "diameter",
+        "target_value": 8.0,
+        "derivation": "circle_diameter_computed",
+        "structural_justification": "feature_candidate_member",
+        "has_repetition_constraint": true,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00021",
+        "entity_id": "ent_00019",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 140.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      },
+      {
+        "target_id": "tgt_00022",
+        "entity_id": "ent_00020",
+        "entity_type": "LINE",
+        "dimension_type": "length",
+        "target_value": 140.0,
+        "derivation": "line_endpoint_distance",
+        "structural_justification": "measurable_linear_geometry",
+        "has_repetition_constraint": false,
+        "has_concentric_constraint": false,
+        "has_topology_context": false,
+        "eligible": true
+      }
+    ],
+    "statistics": {
+      "total_targets": 22,
+      "eligible_targets": 22,
+      "ineligible_targets": 0,
+      "by_type": {
+        "radius": 6,
+        "length": 14,
+        "diameter": 2
+      },
+      "by_entity_type": {
+        "ARC": 4,
+        "LINE": 14,
+        "CIRCLE": 4
+      }
+    }
+  },
+  "training_context": {
+    "geometry_count": 20,
+    "topology_edges": 28,
+    "feature_count": 3,
+    "repetition_count": 1,
+    "concentric_groups": 1,
+    "hole_candidates": 3,
+    "slot_candidates": 0,
+    "radial_patterns": 0
+  },
+  "statistics": {
+    "supervision": {
+      "total_supervision_entities": 8,
+      "total_geometry_entities": 20,
+      "total_computable_dimensions": 22,
+      "total_mapped": 7,
+      "total_unmapped": 1
+    },
+    "targets": {
+      "total_targets": 22,
+      "eligible_targets": 22,
+      "ineligible_targets": 0,
+      "by_type": {
+        "radius": 6,
+        "length": 14,
+        "diameter": 2
+      },
+      "by_entity_type": {
+        "ARC": 4,
+        "LINE": 14,
+        "CIRCLE": 4
+      }
+    },
+    "conditioning": {
+      "total_samples": 22,
+      "leakage_issues": 0,
+      "leakage_free": 22
+    },
+    "final_dataset": {
+      "total_samples": 22,
+      "leakage_free": 22,
+      "with_topology_evidence": 16,
+      "with_repetition_evidence": 4,
+      "with_concentric_evidence": 4,
+      "with_feature_evidence": 8,
+      "with_hierarchy_evidence": 4,
+      "signal_distribution": {
+        "3": 8,
+        "1": 12,
+        "0": 2
+      },
+      "signal_strength": {
+        "strong": 8,
+        "medium": 12,
+        "weak": 2
+      }
+    },
+    "context": {
+      "geometry_entities": 20,
+      "topology_edges": 28,
+      "feature_candidates": 3,
+      "repetition_groups": 1,
+      "context_packages": 20
+    }
+  }
+}

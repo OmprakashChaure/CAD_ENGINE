@@ -1,0 +1,174 @@
+{
+  "confidence": {
+    "confidence_scores": [
+      {
+        "candidate_id": "sc_00001",
+        "candidate_type": "slot",
+        "structural_confidence": 0.6,
+        "confidence_factors": {
+          "moderate_aspect": true,
+          "closed_contour": true
+        }
+      },
+      {
+        "candidate_id": "sc_00002",
+        "candidate_type": "slot",
+        "structural_confidence": 0.6,
+        "confidence_factors": {
+          "moderate_aspect": true,
+          "closed_contour": true
+        }
+      },
+      {
+        "candidate_id": "sc_00003",
+        "candidate_type": "slot",
+        "structural_confidence": 0.7,
+        "confidence_factors": {
+          "high_aspect": true,
+          "closed_contour": true
+        }
+      }
+    ],
+    "statistics": {
+      "total_scored": 3,
+      "average_confidence": 0.633,
+      "high_confidence": 1,
+      "medium_confidence": 2,
+      "low_confidence": 0
+    }
+  },
+  "hierarchy": {
+    "hierarchy_nodes": [],
+    "root_candidates": [],
+    "statistics": {
+      "total_nodes": 0,
+      "root_count": 0,
+      "max_depth": 0,
+      "pattern_children": 0
+    }
+  },
+  "conflicts": {
+    "conflicts": [
+      {
+        "entity_id": "ent_00003",
+        "claiming_candidates": [
+          "sc_00001",
+          "sc_00003"
+        ],
+        "claim_count": 2,
+        "severity": "low"
+      },
+      {
+        "entity_id": "ent_00005",
+        "claiming_candidates": [
+          "sc_00002",
+          "sc_00003"
+        ],
+        "claim_count": 2,
+        "severity": "low"
+      }
+    ],
+    "conflict_free_entities": 2,
+    "statistics": {
+      "total_conflicts": 2,
+      "high_severity": 0,
+      "medium_severity": 0,
+      "low_severity": 2,
+      "conflict_free_entities": 2,
+      "total_claimed_entities": 4
+    }
+  },
+  "repetitions": {
+    "repetition_groups": [
+      {
+        "group_id": "rep_00001",
+        "signature": "slot:(4.0, 10.0)",
+        "candidate_ids": [
+          "sc_00001",
+          "sc_00002"
+        ],
+        "repetition_count": 2,
+        "candidate_type": "slot"
+      }
+    ],
+    "unique_candidates": [
+      "sc_00003"
+    ],
+    "statistics": {
+      "total_repetition_groups": 1,
+      "total_repeated_candidates": 2,
+      "total_unique_candidates": 1,
+      "max_repetition": 2
+    }
+  },
+  "ambiguity": {
+    "ambiguous_candidates": [
+      {
+        "candidate_id": "sc_00001",
+        "ambiguity_reason": "entity_conflict",
+        "structural_confidence": 0.6,
+        "conflict_count": 1
+      },
+      {
+        "candidate_id": "sc_00003",
+        "ambiguity_reason": "entity_conflict",
+        "structural_confidence": 0.7,
+        "conflict_count": 2
+      },
+      {
+        "candidate_id": "sc_00002",
+        "ambiguity_reason": "entity_conflict",
+        "structural_confidence": 0.6,
+        "conflict_count": 1
+      }
+    ],
+    "ambiguity_summary": {
+      "total_ambiguous": 3,
+      "by_reason": {
+        "entity_conflict": 3
+      },
+      "ambiguity_ratio": 1.0
+    },
+    "statistics": {
+      "total_ambiguous": 3,
+      "total_candidates_analyzed": 3,
+      "ambiguity_threshold": 0.5,
+      "ambiguity_ratio": 1.0
+    }
+  },
+  "statistics": {
+    "confidence": {
+      "total_scored": 3,
+      "average_confidence": 0.633,
+      "high_confidence": 1,
+      "medium_confidence": 2,
+      "low_confidence": 0
+    },
+    "hierarchy": {
+      "total_nodes": 0,
+      "root_count": 0,
+      "max_depth": 0,
+      "pattern_children": 0
+    },
+    "conflicts": {
+      "total_conflicts": 2,
+      "high_severity": 0,
+      "medium_severity": 0,
+      "low_severity": 2,
+      "conflict_free_entities": 2,
+      "total_claimed_entities": 4
+    },
+    "repetitions": {
+      "total_repetition_groups": 1,
+      "total_repeated_candidates": 2,
+      "total_unique_candidates": 1,
+      "max_repetition": 2
+    },
+    "ambiguity": {
+      "total_ambiguous": 3,
+      "total_candidates_analyzed": 3,
+      "ambiguity_threshold": 0.5,
+      "ambiguity_ratio": 1.0
+    }
+  }
+}

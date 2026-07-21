@@ -82,7 +82,7 @@ class TestSemanticIntegration(unittest.TestCase):
         phase4_result = {}
         phase5_result = {}
 
-        features = map_features(
+        features, _ = map_features(
             entities, phase3_result, phase4_result, phase5_result
         )
 

@@ -52,3 +52,29 @@ iso_286_g6_shafts:
   - range: [80.0, 120.0]
     upper_deviation: -12
     lower_deviation: -34
+
+iso_286_h7_shafts:
+  - range: [0.0, 3.0]
+    upper_deviation: 0
+    lower_deviation: -10
+  - range: [3.0, 6.0]
+    upper_deviation: 0
+    lower_deviation: -12
+  - range: [6.0, 10.0]
+    upper_deviation: 0
+    lower_deviation: -15
+  - range: [10.0, 18.0]
+    upper_deviation: 0
+    lower_deviation: -18
+  - range: [18.0, 30.0]
+    upper_deviation: 0
+    lower_deviation: -21
+  - range: [30.0, 50.0]
+    upper_deviation: 0
+    lower_deviation: -25
+  - range: [50.0, 80.0]
+    upper_deviation: 0
+    lower_deviation: -30
+  - range: [80.0, 120.0]
+    upper_deviation: 0
+    lower_deviation: -35

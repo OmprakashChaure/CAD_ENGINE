@@ -1,0 +1,155 @@
+{
+  "hole_candidates": {
+    "hole_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "single_radius_candidates": 0,
+      "multi_radius_candidates": 0
+    }
+  },
+  "slot_candidates": {
+    "slot_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "polylines_analyzed": 16,
+      "contours_analyzed": 0
+    }
+  },
+  "radial_patterns": {
+    "radial_patterns": [],
+    "statistics": {
+      "total_patterns": 0,
+      "candidates_analyzed": 0
+    }
+  },
+  "symmetry": {
+    "symmetry_groups": [
+      {
+        "group_id": "sym_00001",
+        "axis": "vertical",
+        "axis_position": 31.5,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00004"
+          ],
+          [
+            "ent_00006",
+            "ent_00008"
+          ],
+          [
+            "ent_00010",
+            "ent_00012"
+          ],
+          [
+            "ent_00014",
+            "ent_00016"
+          ],
+          [
+            "ent_00018",
+            "ent_00020"
+          ],
+          [
+            "ent_00022",
+            "ent_00024"
+          ],
+          [
+            "ent_00026",
+            "ent_00028"
+          ],
+          [
+            "ent_00030",
+            "ent_00032"
+          ]
+        ],
+        "pair_count": 8
+      },
+      {
+        "group_id": "sym_00002",
+        "axis": "horizontal",
+        "axis_position": 25.5,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00030"
+          ],
+          [
+            "ent_00004",
+            "ent_00032"
+          ],
+          [
+            "ent_00006",
+            "ent_00026"
+          ],
+          [
+            "ent_00008",
+            "ent_00028"
+          ],
+          [
+            "ent_00010",
+            "ent_00022"
+          ],
+          [
+            "ent_00012",
+            "ent_00024"
+          ],
+          [
+            "ent_00014",
+            "ent_00018"
+          ],
+          [
+            "ent_00016",
+            "ent_00020"
+          ]
+        ],
+        "pair_count": 8
+      }
+    ],
+    "statistics": {
+      "total_groups": 2,
+      "vertical_pairs": 8,
+      "horizontal_pairs": 8,
+      "entities_analyzed": 17
+    }
+  },
+  "feature_regions": {
+    "feature_regions": [],
+    "unassigned_candidates": {
+      "holes": [],
+      "slots": [],
+      "patterns": []
+    },
+    "statistics": {
+      "total_feature_regions": 0,
+      "total_assigned_candidates": 0,
+      "total_unassigned_candidates": 0
+    }
+  },
+  "statistics": {
+    "holes": {
+      "total_candidates": 0,
+      "single_radius_candidates": 0,
+      "multi_radius_candidates": 0
+    },
+    "slots": {
+      "total_candidates": 0,
+      "polylines_analyzed": 16,
+      "contours_analyzed": 0
+    },
+    "radial_patterns": {
+      "total_patterns": 0,
+      "candidates_analyzed": 0
+    },
+    "symmetry": {
+      "total_groups": 2,
+      "vertical_pairs": 8,
+      "horizontal_pairs": 8,
+      "entities_analyzed": 17
+    },
+    "feature_regions": {
+      "total_feature_regions": 0,
+      "total_assigned_candidates": 0,
+      "total_unassigned_candidates": 0
+    }
+  }
+}

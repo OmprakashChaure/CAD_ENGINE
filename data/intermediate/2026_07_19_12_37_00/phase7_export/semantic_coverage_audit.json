@@ -1,0 +1,626 @@
+[
+  {
+    "field": "alignment_tab.count",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "alignment_tab.value",
+    "semantic_count": 4,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "bend_relief.count",
+    "semantic_count": 8,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "bend_relief.value",
+    "semantic_count": 7,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "bolt.across_flats",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "bolt.grip_length",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "bolt.nominal_diameter",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "chamfer.count",
+    "semantic_count": 7,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "chamfer.value",
+    "semantic_count": 7,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "channel.channel_width",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.base_diameter",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.bore_diameter",
+    "semantic_count": 67,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.bore_type",
+    "semantic_count": 67,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.boss_diameter",
+    "semantic_count": 10,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.diameter",
+    "semantic_count": 9,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.flange_diameter",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.inner_diameter",
+    "semantic_count": 56,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.outer_diameter",
+    "semantic_count": 56,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "concentric_bore.pcd_reference_diameter",
+    "semantic_count": 7,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "containment.concentric",
+    "semantic_count": 62,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "containment.parent_child",
+    "semantic_count": 47,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "cope.cope_radius",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fillet_group.count",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fillet_group.radius",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fitting.across_flats",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fitting.flange_thickness",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fitting.hex_height",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fitting.neck_length",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "fitting.taper_length",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "heatsink_core.diameter",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "heatsink_fin.count",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "heatsink_fin.pitch",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "heatsink_fin.thickness",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hex_drive.size",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hex_head.across_flats",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hierarchy.node",
+    "semantic_count": 252,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.count",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.counterbore_depth",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.counterbore_diameter",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.diameter",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.group_type",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.offset_x",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.offset_y",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.pattern_type",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.spacing_x",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_group.spacing_y",
+    "semantic_count": 34,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.angular_spacing",
+    "semantic_count": 10,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.counterbore_depth",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.counterbore_diameter",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.hole_count",
+    "semantic_count": 10,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.hole_diameter",
+    "semantic_count": 10,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.pattern_type",
+    "semantic_count": 10,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "hole_pattern.pcd",
+    "semantic_count": 10,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "keyway.depth",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "keyway.width",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "lube_port.diameter",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "o_ring.o_ring_diameter",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "o_ring.source_annotation",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "o_ring.validation_status",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "overall_dimensions.height",
+    "semantic_count": 145,
+    "train_count": 608,
+    "status": "CONTEXT"
+  },
+  {
+    "field": "overall_dimensions.width",
+    "semantic_count": 145,
+    "train_count": 608,
+    "status": "CONTEXT"
+  },
+  {
+    "field": "pocket.perimeter_wall",
+    "semantic_count": 19,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "pocket.pocket_length",
+    "semantic_count": 76,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "pocket.pocket_width",
+    "semantic_count": 76,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "port.port_depth",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "port.port_diameter",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "port.port_thread",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "port.source_annotation",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "port.validation_status",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "relationships.concentric",
+    "semantic_count": 62,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "relationships.mirror_symmetry",
+    "semantic_count": 87,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "rib.value",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "screw.drive_size",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "screw.head_diameter",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "screw.length",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "screw.nominal_diameter",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "sheet_metal_bend.angle",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "sheet_metal_bend.count",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "sheet_metal_bend.radius",
+    "semantic_count": 3,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "shoulder.shoulder_diameter",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "shoulder.shoulder_length",
+    "semantic_count": 2,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "slot_array.count",
+    "semantic_count": 8,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "slot_array.length",
+    "semantic_count": 8,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "slot_array.orientation",
+    "semantic_count": 8,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "slot_array.width",
+    "semantic_count": 8,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.fillet_radius",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.flange_thickness",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.inner_radius",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.outer_radius",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.profile_type",
+    "semantic_count": 15,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.wall_thickness",
+    "semantic_count": 4,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "structural_profile.web_thickness",
+    "semantic_count": 8,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "symmetry.mirror_symmetry",
+    "semantic_count": 87,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.major_diameter",
+    "semantic_count": 11,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.nominal_diameter",
+    "semantic_count": 11,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.pitch",
+    "semantic_count": 11,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.source_annotation",
+    "semantic_count": 12,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.thread_designation",
+    "semantic_count": 12,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.thread_gender",
+    "semantic_count": 12,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.thread_length",
+    "semantic_count": 1,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.thread_pitch",
+    "semantic_count": 11,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.thread_standard",
+    "semantic_count": 12,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.tolerance_class",
+    "semantic_count": 5,
+    "train_count": 0,
+    "status": "LOST"
+  },
+  {
+    "field": "thread.validation_status",
+    "semantic_count": 12,
+    "train_count": 0,
+    "status": "LOST"
+  }
+]

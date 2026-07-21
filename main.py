@@ -272,14 +272,7 @@ def main():
             f"test={metadata['splits']['test']['count']}"
         )
         
-        # Phase 8: Stage 3 Reasoning Pipeline Execution
-        try:
-            from pipeline.reasoning_pipeline import ReasoningPipeline
-            reasoning_pipeline = ReasoningPipeline(str(run_dir))
-            reasoning_result = reasoning_pipeline.run()
-            logger.info("Stage 3 Reasoning Pipeline completed successfully.")
-        except Exception as exc:
-            logger.error(f"Reasoning Pipeline failed: {exc}")
+        # Phase 8: Stage 3 Reasoning Pipeline Execution - DELETED as redundant after parameter recovery refactoring
 
 
 if __name__ == "__main__":

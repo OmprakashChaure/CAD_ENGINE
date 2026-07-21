@@ -1,0 +1,40 @@
+{
+  "total_drawings": 143,
+  "total_features": 512,
+  "total_relationships": 147,
+  "feature_class_distribution": {
+    "fillet_group": 4,
+    "pocket": 72,
+    "hole_pattern": 10,
+    "concentric_bore": 67,
+    "slot_array": 7,
+    "dimension_annotations": 110,
+    "unknown_facts": 114,
+    "hole_group": 34,
+    "rib": 5,
+    "chamfer": 7,
+    "lube_port": 1,
+    "port": 5,
+    "bend_relief": 8,
+    "structural_profile": 15,
+    "alignment_tab": 5,
+    "thread": 12,
+    "bolt": 3,
+    "hex_head": 5,
+    "fitting": 6,
+    "o_ring": 2,
+    "keyway": 3,
+    "hex_drive": 1,
+    "screw": 1,
+    "shoulder": 2,
+    "channel": 2,
+    "sheet_metal_bend": 3,
+    "heatsink_core": 3,
+    "heatsink_fin": 3,
+    "cope": 2
+  },
+  "relationship_type_distribution": {
+    "mirror_symmetry": 85,
+    "concentric": 62
+  }
+}

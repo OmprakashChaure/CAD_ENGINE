@@ -1,0 +1,57 @@
+[
+  {
+    "drawing_id": "Thermal_HS01_CombHeatsink",
+    "task_name": "infer_spacing",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '10.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-18T16:03:27.552087"
+  },
+  {
+    "drawing_id": "Gasket_GS02_FlangeTab",
+    "task_name": "infer_profile_dimension",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '20.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-18T16:03:28.561406"
+  },
+  {
+    "drawing_id": "PCB_PC05_EdgeConnector",
+    "task_name": "infer_profile_dimension",
+    "failed_stage": "Stage 8",
+    "failed_rule": "Traceability",
+    "severity": "CRITICAL",
+    "reason": "Untraceable engineering values 10 rendered in prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Ensure prompt rendering templates do not introduce synthetic/unmapped measurements.",
+    "timestamp": "2026-07-18T16:03:28.581584"
+  },
+  {
+    "drawing_id": "SheetMetal_SM07_HemmedEdge",
+    "task_name": "infer_profile_dimension",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '10.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-18T16:03:28.596206"
+  },
+  {
+    "drawing_id": "Weldment_WD05_ScallopWeb",
+    "task_name": "infer_profile_dimension",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '20.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-18T16:03:29.300379"
+  }
+]

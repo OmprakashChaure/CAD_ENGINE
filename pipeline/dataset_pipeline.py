@@ -21,7 +21,7 @@ from core.supervision.context_packager import ContextPackager
 from core.supervision.target_constructor import TargetConstructor
 from core.supervision.inference_conditioner import InferenceConditioner
 from core.supervision.sample_assembler import SampleAssembler
-from pipeline.semantic_pipeline import SemanticPipeline, reconstruct_dimensions
+from pipeline.semantic_pipeline import SemanticPipeline, reconstruct_dimensions, normalize_thread_size
 from pipeline.split_policy import TRAIN_RATIO, VAL_RATIO, TEST_RATIO
 from utils.logger import get_logger
 import time
@@ -221,18 +221,314 @@ class DatasetPipeline:
 # 4. BATCH DATASET EXPORTER LAYER
 # =====================================================================
 
+class PromptSerializer:
+    """Isolate prompt construction and text formatting logic from engineering and file-writing concerns (Phase C)."""
+
+    def serialize_sample(self, task: Dict[str, Any]) -> Dict[str, Any]:
+        """Convert a structured task into a text-formatted engineering instruction prompt."""
+        # Deep copy to prevent mutating original task dictionary
+        serialized = json.loads(json.dumps(task))
+        prompt_fields = self._build_instruction_prompt(
+            serialized["task_type"],
+            serialized["drawing_id"],
+            serialized["context"],
+            serialized["target"]
+        )
+        serialized.update(prompt_fields)
+        return self._autofix_sample(serialized)
+
+    def _build_instruction_prompt(
+        self, task_type: str, drawing_id: str, context: Dict[str, Any], target: Dict[str, Any]
+    ) -> Dict[str, str]:
+        system = (
+            "You are an expert mechanical engineering assistant specializing in engineering drawings and CAD reasoning. "
+            "Infer missing engineering dimensions and properties from the provided engineering context."
+        )
+
+        lines = []
+        task_display = task_type.replace("infer_", "").replace("_", " ").title()
+        
+        # 1. Task Definition
+        lines.append(f"Task:\nInfer the missing {task_display.lower()} for drawing '{drawing_id}'.")
+        lines.append("\nDrawing Description:")
+        
+        # 2. Overall Geometry
+        dims = context.get("overall_dimensions")
+        if dims and isinstance(dims, dict):
+            w = dims.get("width")
+            h = dims.get("height")
+            if w is not None and h is not None:
+                lines.append(f"The overall plate dimensions are {w} mm × {h} mm.")
+            elif w is not None:
+                lines.append(f"The overall plate width is {w} mm.")
+            elif h is not None:
+                lines.append(f"The overall plate height is {h} mm.")
+
+        # 3. Inquiry Feature & Parameters
+        inquiry_feature = context.get("inquiry_feature", {})
+        f_class = inquiry_feature.get("feature_class", "unknown")
+        f_class_clean = f_class.replace("_", " ").title()
+        
+        visible_params = inquiry_feature.get("visible_parameters", {})
+        params_txt = []
+        if visible_params:
+            for k, v in visible_params.items():
+                if v is not None and v != "" and v != [] and v != {}:
+                    name_clean = k.replace("_", " ").title()
+                    is_length = isinstance(v, (int, float)) and not isinstance(v, bool) and not any(x in k.lower() for x in ("count", "member", "number"))
+                    if is_length:
+                        params_txt.append(f"{name_clean} = {v} mm")
+                    else:
+                        params_txt.append(f"{name_clean} = {v}")
+                        
+        if params_txt:
+            lines.append(f"The drawing details a {f_class_clean} feature with {', '.join(params_txt)}.")
+        else:
+            lines.append(f"The drawing details a {f_class_clean} feature.")
+
+        # 4. Neighbour Features (Task 2 & Mandatory Rule 4)
+        neighbour_features = context.get("neighbour_features", [])
+        if neighbour_features:
+            neighbour_txt = []
+            grouped_neighbours = defaultdict(list)
+            for nf in neighbour_features:
+                if not isinstance(nf, dict):
+                    continue
+                nf_class = nf.get("feature_class", "unknown")
+                nf_params = nf.get("visible_parameters", {})
+                clean_params = {
+                    k: v for k, v in nf_params.items()
+                    if v is not None and v != "" and v != [] and v != {}
+                }
+                sig = (nf_class, json.dumps(clean_params, sort_keys=True))
+                grouped_neighbours[sig].append(clean_params)
+
+            for (nf_class, params_json), instances in grouped_neighbours.items():
+                count = len(instances)
+                nf_params = instances[0]
+                nf_class_clean = nf_class.replace("_", " ").title()
+                
+                params_list = []
+                for pk, pv in nf_params.items():
+                    pk_clean = pk.replace('_', ' ').title()
+                    is_length = isinstance(pv, (int, float)) and not isinstance(pv, bool) and not any(x in pk.lower() for x in ("count", "member", "number"))
+                    if is_length:
+                        params_list.append(f"{pk_clean} = {pv} mm")
+                    else:
+                        params_list.append(f"{pk_clean} = {pv}")
+                
+                params_str = f" with {', '.join(params_list)}" if params_list else ""
+                if count > 1:
+                    class_plural = f"{nf_class_clean}s" if not nf_class_clean.endswith("s") else nf_class_clean
+                    neighbour_txt.append(f"Adjacent {class_plural} ({count}) are visible{params_str}.")
+                else:
+                    neighbour_txt.append(f"An adjacent {nf_class_clean} is visible{params_str}.")
+            if neighbour_txt:
+                lines.append(" ".join(neighbour_txt))
+
+        # 5. Engineering Relationships (Task 3 & Mandatory Rule 5)
+        relationships = context.get("relationships", [])
+        if relationships:
+            rel_txt = []
+            grouped_rels = defaultdict(list)
+            for rel in relationships:
+                if not isinstance(rel, dict):
+                    continue
+                r_type = rel.get("type", "")
+                assoc = rel.get("associated_features", [])
+                params = rel.get("parameters", {})
+                
+                clean_params = {
+                    k: v for k, v in params.items()
+                    if v is not None and v != "" and v != [] and v != {}
+                }
+                
+                def get_clean_class(fid: str) -> str:
+                    base = re.sub(r'_\d+$', '', fid)
+                    return base.replace("_", " ").title()
+                    
+                conn_classes = tuple(sorted(get_clean_class(fid) for fid in assoc))
+                sig = (r_type, conn_classes, json.dumps(clean_params, sort_keys=True))
+                grouped_rels[sig].append((assoc, clean_params))
+
+            for (r_type, conn_classes, params_json), instances in grouped_rels.items():
+                count = len(instances)
+                params = instances[0][1]
+                classes_str = " and ".join(conn_classes) if conn_classes else "features"
+                r_type_clean = r_type.replace("_", " ").title()
+                
+                param_details = []
+                for pk, pv in params.items():
+                    pk_clean = pk.replace("_", " ").title()
+                    if pk == "concentric_diameters" and isinstance(pv, list):
+                        diams_str = ", ".join(f"{d} mm" for d in pv)
+                        param_details.append(f"diameters {diams_str}")
+                    elif isinstance(pv, (int, float)) and not isinstance(pv, bool) and not any(x in pk.lower() for x in ("count", "member", "number")):
+                        param_details.append(f"{pk_clean} = {pv} mm")
+                    else:
+                        param_details.append(f"{pk_clean} = {pv}")
+                suffix = f" with {', '.join(param_details)}" if param_details else ""
+                
+                if count > 1:
+                    rel_txt.append(f"{count} Concentric relationships are defined between {classes_str}{suffix}." if r_type == "concentric" else f"{count} {r_type_clean} relationships are defined between {classes_str}{suffix}.")
+                else:
+                    if r_type == "concentric":
+                        rel_txt.append(f"A Concentric alignment is defined between {classes_str}{suffix}.")
+                    elif r_type == "coaxial":
+                        rel_txt.append(f"A Coaxial alignment is defined along the center axis between {classes_str}{suffix}.")
+                    elif r_type == "mirror_symmetry":
+                        axis = params.get("axis", "vertical").title()
+                        rel_txt.append(f"Mirror Symmetry is defined about the {axis} centerline between {classes_str}{suffix}.")
+                    elif r_type == "circular_pattern":
+                        members = params.get("member_count", 0)
+                        rel_txt.append(f"A Circular array is defined containing {members} members.")
+                    elif r_type == "linear_pattern":
+                        members = params.get("member_count", 0)
+                        rel_txt.append(f"A Linear array is defined containing {members} members.")
+                    else:
+                        rel_txt.append(f"A {r_type_clean} relationship exists between {classes_str}{suffix}.")
+            if rel_txt:
+                lines.append(" ".join(rel_txt))
+
+        # 6. Topology
+        topology = context.get("topology", {})
+        if topology:
+            topo_txt = []
+            contours = topology.get("contours", 0)
+            nesting = topology.get("nesting", 0)
+            holes = topology.get("holes", 0)
+            regions = topology.get("regions", 0)
+            
+            topo_txt.append(f"The part geometry contains {contours} total contours.")
+            topo_txt.append(f"The maximum contour nesting depth is {nesting}.")
+            if holes > 0:
+                topo_txt.append(f"There are {holes} hole profiles detected.")
+            if regions > 0:
+                topo_txt.append(f"The topology is partitioned into {regions} connected regions.")
+            if topo_txt:
+                lines.append(" ".join(topo_txt))
+
+        # 7. Reasoning Question
+        prop_display = target.get("property", "").replace("_", " ").lower()
+        if prop_display == "thread size":
+            lines.append(f"\nQuestion:\nBased on the drawing layout and dimensions, infer the missing thread size.")
+        else:
+            lines.append(f"\nQuestion:\nBased on the drawing layout and dimensions, infer the missing {prop_display} in mm.")
+        
+        user = "\n".join(lines)
+        val = target.get("value")
+        assistant = str(val)
+
+        return {
+            "system": system,
+            "user": user,
+            "assistant": assistant
+        }
+
+    def _autofix_sample(self, sample: Dict[str, Any]) -> Dict[str, Any]:
+        """Automatically repair quality, formatting, redundancy, and case issues."""
+        ctx = sample.get("context", {})
+        
+        # Remove duplicate drawing_id from context
+        if isinstance(ctx, dict) and "drawing_id" in ctx:
+            del ctx["drawing_id"]
+            
+        # 1. Deduplicate neighbour features in context
+        nf_list = ctx.get("neighbour_features", [])
+        if isinstance(nf_list, list):
+            seen_nf = set()
+            unique_nf = []
+            for nf in nf_list:
+                if isinstance(nf, dict):
+                    sig = (nf.get("feature_class"), json.dumps(nf.get("visible_parameters"), sort_keys=True))
+                    if sig not in seen_nf:
+                        seen_nf.add(sig)
+                        unique_nf.append(nf)
+            ctx["neighbour_features"] = unique_nf
+
+        # 2. Deduplicate relationships in context
+        rel_list = ctx.get("relationships", [])
+        if isinstance(rel_list, list):
+            seen_rel = set()
+            unique_rel = []
+            for rel in rel_list:
+                if isinstance(rel, dict):
+                    sig = (
+                        rel.get("type"),
+                        tuple(sorted(rel.get("associated_features", []))),
+                        json.dumps(rel.get("parameters"), sort_keys=True)
+                    )
+                    if sig not in seen_rel:
+                        seen_rel.add(sig)
+                        unique_rel.append(rel)
+            ctx["relationships"] = unique_rel
+
+        # 3. Clean prompt text (user, assistant, system)
+        user = sample.get("user", "")
+        assistant = sample.get("assistant", "")
+        system = sample.get("system", "")
+
+        # Clean sentences containing null or none rendering placeholders
+        user = re.sub(r'[^.]*\bnull\b[^.]*\.?', '', user, flags=re.IGNORECASE)
+        user = re.sub(r'[^.]*\bnone\b[^.]*\.?', '', user, flags=re.IGNORECASE)
+
+        # Fix lowercase snake_case feature names in user/assistant
+        def fix_snake_case(text: str) -> str:
+            words = re.findall(r'\b[a-z0-9]+_[a-z0-9_]+\b', text)
+            for w in words:
+                cleaned = w.replace("_", " ").title()
+                text = text.replace(w, cleaned)
+            return text
+
+        user = fix_snake_case(user)
+        assistant = fix_snake_case(assistant)
+
+        # Fix duplicate prompt lines
+        def fix_duplicate_lines(text: str) -> str:
+            lines = text.split("\n")
+            seen_lines = set()
+            unique_lines = []
+            for line in lines:
+                l_strip = line.strip()
+                if not l_strip:
+                    unique_lines.append(line)
+                    continue
+                if l_strip not in seen_lines:
+                    seen_lines.add(l_strip)
+                    unique_lines.append(line)
+            return "\n".join(unique_lines)
+
+        user = fix_duplicate_lines(user)
+
+        # Clean spacing
+        user = re.sub(r' {2,}', ' ', user)
+        user = re.sub(r'\n{3,}', '\n\n', user)
+
+        sample["user"] = user.strip()
+        sample["assistant"] = assistant.strip()
+        sample["system"] = system.strip()
+
+        return sample
+
+
 class DatasetExporter:
     """
     Export engineering inference tasks from pipeline outputs.
 
     Each task: given visible feature structure → infer missing property.
     """
+    VALIDATION_VERSION = "1.0.0"
+    DATASET_CONTRACT_VERSION = "3.0.0"
+    SCHEMA_VERSION = "2.1.0"
+    PROMPT_RENDERER_VERSION = "2.7.3"
+    PIPELINE_VERSION = "2.7.4"
 
     def __init__(self, output_dir: str | Path):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         # Use SemanticPipeline from semantic_pipeline instead of SemanticRecordBuilder
         self.semantic_pipeline = SemanticPipeline()
+        self.serializer = PromptSerializer()
 
     def export(
         self,
@@ -531,75 +827,6 @@ class DatasetExporter:
             else:
                 return obj
 
-        def _normalize_thread_size(val: Any, feature: Optional[Any] = None) -> str:
-            if val is None or val == "":
-                return ""
-            
-            val_str = str(val).strip().upper()
-            
-            g_match = re.search(r'G\s*(\d+(?:/\d+)?)', val_str)
-            if g_match:
-                return f"G{g_match.group(1)}"
-            if "BSPP" in val_str or "BSPT" in val_str or val_str.startswith("G"):
-                frac_match = re.search(r'(\d+/\d+)', val_str)
-                if frac_match:
-                    return f"G{frac_match.group(1)}"
-            
-            npt_match = re.search(r'NPT\s*(\d+(?:/\d+)?)', val_str)
-            if npt_match:
-                return f"NPT{npt_match.group(1)}"
-            if "NPT" in val_str:
-                frac_match = re.search(r'(\d+/\d+)', val_str)
-                if frac_match:
-                    return f"NPT{frac_match.group(1)}"
-            
-            m_match = re.search(r'M\s*(\d+)', val_str)
-            if m_match:
-                return f"M{m_match.group(1)}"
-                
-            numeric_val = None
-            try:
-                numeric_val = float(val)
-            except ValueError:
-                pass
-                
-            if numeric_val is not None:
-                designation = ""
-                feature_class = ""
-                if feature:
-                    feature_class = getattr(feature, "feature_class", "")
-                    fparams = getattr(feature, "parameters", {}) or {}
-                    designation = str(fparams.get("thread_designation") or fparams.get("port_thread") or fparams.get("text") or "").upper()
-                
-                fraction_str = ""
-                if abs(numeric_val - 0.5) < 0.01:
-                    fraction_str = "1/2"
-                elif abs(numeric_val - 0.25) < 0.01:
-                    fraction_str = "1/4"
-                elif abs(numeric_val - 0.75) < 0.01:
-                    fraction_str = "3/4"
-                elif abs(numeric_val - 0.375) < 0.01:
-                    fraction_str = "3/8"
-                elif abs(numeric_val - 0.125) < 0.01:
-                    fraction_str = "1/8"
-                    
-                if fraction_str:
-                    if "NPT" in designation or "TAPER" in designation:
-                        return f"NPT{fraction_str}"
-                    elif "G" in designation or "BSPP" in designation or "BSPT" in designation:
-                        return f"G{fraction_str}"
-                    
-                    drawing_id_upper = str(drawing_id).upper()
-                    if "HEXBUSHING" in drawing_id_upper or "NPT" in drawing_id_upper:
-                        return f"NPT{fraction_str}"
-                    if "HOSEBARB" in drawing_id_upper or "COLDPLATE" in drawing_id_upper or "G_" in drawing_id_upper:
-                        return f"G{fraction_str}"
-                    return f"G{fraction_str}"
-                else:
-                    return f"M{int(round(numeric_val))}"
-            
-            return re.sub(r'\s+', '', val_str)
-
         # Modified semantic task construction method
         def add_semantic_property_task(
             feature,
@@ -621,14 +848,6 @@ class DatasetExporter:
             if not family:
                 return
                 
-            rich_ctx = self._extract_rich_context(feature, property_name, value, result)
-            if not rich_ctx.get("matched", True):
-                logger.warning(
-                    f"DatasetExporter: Rejected task {task_type} for drawing {drawing_id} "
-                    f"because context could not be matched confidently."
-                )
-                return
-                
             # Deep copy overall dimensions to prevent mutation
             overall_dims_copy = None
             if overall_dims:
@@ -647,20 +866,12 @@ class DatasetExporter:
                     if k != property_name and k not in {"positions", "center", "text"}
                 }
                 
-            # Filter neighbor dimensions to strip neighbor_id keys (Problem 4)
-            clean_neighbor_dims = []
-            for nd in rich_ctx.get("neighbor_dimensions", []):
-                clean_neighbor_dims.append({
-                    "dimension_type": nd.get("dimension_type"),
-                    "value": nd.get("value")
-                })
-                
             target_prop = family[6:] # Strip "infer_"
             raw_value_for_masking = value
             
             # Problem 1: Normalize target representation for infer_thread_size
             if target_prop == "thread_size":
-                value = _normalize_thread_size(value, feature)
+                value = normalize_thread_size(value, feature, drawing_id)
                 
             # ── TASK-SPECIFIC CONTEXT SELECTION (Problem 5) ──
             # Stage 2.7.1: Engineering Context Builder redesign
@@ -685,7 +896,17 @@ class DatasetExporter:
                 "width", "length", "depth", "height", "thickness", "diameter",
                 "bore_diameter", "bore_type", "hex_height", "neck_length",
                 "flange_thickness", "taper", "chamfer_size", "chamfer_angle",
-                "radius_value", "pocket_width", "pocket_length", "count", "size"
+                "radius_value", "pocket_width", "pocket_length", "count", "size",
+                
+                # Restored parameters (Category A & B)
+                "inner_diameter", "outer_diameter", "boss_diameter",
+                "spacing_x", "spacing_y", "perimeter_wall", "pcd",
+                "hole_diameter", "angular_spacing", "radius", "web_thickness",
+                "fillet_radius", "wall_thickness", "port_diameter",
+                "counterbore_diameter", "flange_diameter", "base_diameter",
+                "shoulder_diameter", "shoulder_length", "channel_width",
+                "cope_radius", "value", "o_ring_diameter", "drive_size",
+                "inner_radius", "outer_radius"
             }
             forbidden_keys = {
                 "thread_designation", "major_diameter", "nominal_diameter",
@@ -695,10 +916,37 @@ class DatasetExporter:
                 "tolerance_lower", "fit_class", "lower_deviation", "upper_deviation"
             }
 
+            # Alias grouping to prevent target leakage
+            ALIAS_GROUPS = [
+                {"bore_diameter", "inner_diameter", "pilot_bore", "concentric_hole"},
+                {"outer_diameter", "boss_diameter", "flange_diameter", "boss_od", "flange_od"},
+                {"spacing", "spacing_x", "spacing_y", "pitch", "bore_pitch", "slot_crs"},
+                {"wall_thickness", "perimeter_wall", "thickness"},
+            ]
+
+            def is_alias(p1: str, p2: str) -> bool:
+                p1_clean = p1.lower()
+                p2_clean = p2.lower()
+                if p1_clean == p2_clean:
+                    return True
+                for g in ALIAS_GROUPS:
+                    if p1_clean in g and p2_clean in g:
+                        return True
+                # Handle generic 'diameter' as alias of specific diameters
+                diams = {"bore_diameter", "inner_diameter", "outer_diameter", "boss_diameter", "flange_diameter", "hole_diameter"}
+                if p1_clean == "diameter" and p2_clean in diams:
+                    return True
+                if p2_clean == "diameter" and p1_clean in diams:
+                    return True
+                return False
+
             visible_params = {}
             if feature:
                 for k, v in (feature.parameters or {}).items():
                     if k == property_name:
+                        continue
+                    # Alias-aware masking: prevent target leakage from synonym parameters
+                    if is_alias(k, property_name) or is_alias(k, target_prop):
                         continue
                     if k in allowed_keys and k not in forbidden_keys:
                         visible_params[k] = v
@@ -762,7 +1010,7 @@ class DatasetExporter:
                 "topology": topology
             }
             
-            eng_rules = self._extract_engineering_rules(result.get("entities", []))
+            eng_rules = semantic_record.metadata.get("engineering_rules") if semantic_record.metadata else None
             if eng_rules:
                 cleaned_context["engineering_rules"] = eng_rules
 
@@ -1027,216 +1275,7 @@ class DatasetExporter:
 
         return tasks
 
-    def _get_candidate_center(self, candidate_id: str, result: Dict[str, Any]) -> Optional[List[float]]:
-        for hc in result.get("feature_result", {}).get("hole_candidates", {}).get("hole_candidates", []):
-            if hc.get("candidate_id") == candidate_id:
-                c = hc.get("center")
-                if c and len(c) >= 2:
-                    return c[:2]
-        for sc in result.get("feature_result", {}).get("slot_candidates", {}).get("slot_candidates", []):
-            if sc.get("candidate_id") == candidate_id:
-                c = sc.get("center")
-                if c and len(c) >= 2:
-                    return c[:2]
-        return None
 
-    def _analyze_repetition_pattern(self, candidate_ids: List[str], result: Dict[str, Any]) -> Dict[str, Any]:
-        import numpy as np
-        import math
-        centers = []
-        for cid in candidate_ids:
-            c = self._get_candidate_center(cid, result)
-            if c:
-                centers.append(c)
-                
-        if len(centers) < 2:
-            return {
-                "pattern_type": "repetition",
-                "engineering_concept": "Linear Hole Array",
-                "member_count": len(candidate_ids)
-            }
-            
-        xs = [c[0] for c in centers]
-        ys = [c[1] for c in centers]
-        
-        # 1. Vertical alignment
-        if max(xs) - min(xs) < 1.5:
-            ys_sorted = sorted(ys)
-            pitches = [ys_sorted[i+1] - ys_sorted[i] for i in range(len(ys_sorted)-1)]
-            avg_pitch = round(float(np.mean(pitches)), 4) if pitches else None
-            return {
-                "pattern_type": "linear",
-                "engineering_concept": "Linear Hole Array",
-                "member_count": len(candidate_ids),
-                "pitch": avg_pitch,
-                "direction": "vertical"
-            }
-            
-        # 2. Horizontal alignment
-        if max(ys) - min(ys) < 1.5:
-            xs_sorted = sorted(xs)
-            pitches = [xs_sorted[i+1] - xs_sorted[i] for i in range(len(xs_sorted)-1)]
-            avg_pitch = round(float(np.mean(pitches)), 4) if pitches else None
-            return {
-                "pattern_type": "linear",
-                "engineering_concept": "Linear Hole Array",
-                "member_count": len(candidate_ids),
-                "pitch": avg_pitch,
-                "direction": "horizontal"
-            }
-            
-        # 3. Slanted alignment
-        try:
-            corr = np.corrcoef(xs, ys)[0, 1]
-            if abs(corr) > 0.98:
-                dx = max(xs) - min(xs)
-                dy = max(ys) - min(ys)
-                length = math.hypot(dx, dy)
-                ux, uy = dx / length, dy / length
-                
-                projections = []
-                for c in centers:
-                    proj = c[0] * ux + c[1] * uy
-                    projections.append(proj)
-                projections.sort()
-                
-                pitches = [projections[i+1] - projections[i] for i in range(len(projections)-1)]
-                avg_pitch = round(float(np.mean(pitches)), 4) if pitches else None
-                return {
-                    "pattern_type": "linear",
-                    "engineering_concept": "Linear Hole Array",
-                    "member_count": len(candidate_ids),
-                    "pitch": avg_pitch,
-                    "direction": "slanted"
-                }
-        except Exception:
-            pass
-            
-        return {
-            "pattern_type": "repetition",
-            "engineering_concept": "Linear Hole Array",
-            "member_count": len(candidate_ids)
-        }
-
-    def _get_engineering_relationships_for_candidate(
-        self,
-        candidate_id: str,
-        result: Dict[str, Any],
-    ) -> List[Dict[str, Any]]:
-        import math
-        engineering_rels = []
-        
-        # 1. Concentric Relationships
-        concentric_groups = result.get("structural_result", {}).get("concentric_groups", {}).get("concentric_groups", [])
-        cand_center = self._get_candidate_center(candidate_id, result)
-        if cand_center:
-            for cg in concentric_groups:
-                cg_center = cg.get("center")
-                if cg_center and len(cg_center) >= 2 and math.dist(cand_center[:2], cg_center[:2]) < 1.0:
-                    cg_radii = cg.get("radii", [])
-                    cand_r = None
-                    for hc in result.get("feature_result", {}).get("hole_candidates", {}).get("hole_candidates", []):
-                        if hc.get("candidate_id") == candidate_id:
-                            cand_r = hc.get("radii", [0])[0]
-                    if cand_r is None:
-                        for sc in result.get("feature_result", {}).get("slot_candidates", {}).get("slot_candidates", []):
-                            if sc.get("candidate_id") == candidate_id:
-                                w = sc.get("width") or 0
-                                cand_r = w / 2.0
-                                
-                    if cand_r is not None:
-                        inner_count = sum(1 for r in cg_radii if r < cand_r - 0.01)
-                        outer_count = sum(1 for r in cg_radii if r > cand_r + 0.01)
-                        
-                        # Check if any concentric feature is a thread
-                        has_thread = False
-                        for f in result.get("feature_result", {}).get("hole_candidates", {}).get("hole_candidates", []):
-                            if f.get("candidate_id") in cg.get("candidate_ids", []):
-                                if "thread" in f.get("candidate_type", "").lower() or f.get("thread_designation"):
-                                    has_thread = True
-                                    break
-                        
-                        # Check if concentric group center is associated with a radial pattern (Bolt Circle)
-                        is_bolt_circle = False
-                        radial_patterns = result.get("feature_result", {}).get("radial_patterns", {}).get("radial_patterns", [])
-                        for rp in radial_patterns:
-                            rp_center = rp.get("center")
-                            if rp_center and len(rp_center) >= 2 and math.dist(cg_center[:2], rp_center[:2]) < 1.0:
-                                is_bolt_circle = True
-                                break
-                        
-                        concept = "Bolt Circle" if is_bolt_circle else ("Threaded Concentric Bore" if has_thread else "Concentric Bore Detail")
-                        key_name = "bolt_circle_radii" if concept == "Bolt Circle" else "concentric_diameters"
-                        seq = [round(r, 4) if concept == "Bolt Circle" else round(2 * r, 4) for r in sorted(cg_radii)]
-                        
-                        engineering_rels.append({
-                            "pattern_type": "concentric",
-                            "engineering_concept": concept,
-                            "inner_feature_count": inner_count,
-                            "outer_feature_count": outer_count,
-                            "shared_center": [round(c, 4) for c in cg_center[:2]],
-                            key_name: seq
-                        })
-
-        # 2. Mirror Relationships
-        symmetry_groups = result.get("feature_result", {}).get("symmetry", {}).get("symmetry_groups", [])
-        for sg in symmetry_groups:
-            member_pairs = sg.get("member_pairs", [])
-            is_member = False
-            for pair in member_pairs:
-                if candidate_id in pair:
-                    is_member = True
-                    break
-            if is_member:
-                engineering_rels.append({
-                    "pattern_type": "mirror",
-                    "engineering_concept": "Symmetric Mirror Array",
-                    "mirror_axis": sg.get("axis"),
-                    "axis_position": round(sg.get("axis_position"), 4) if sg.get("axis_position") is not None else None,
-                    "pair_count": len(member_pairs)
-                })
-
-        # 3. Repetition and Patterns (Linear/Circular)
-        repetitions = result.get("refinement_result", {}).get("repetitions", {}).get("repetition_groups", [])
-        for rg in repetitions:
-            cids = rg.get("candidate_ids", [])
-            if candidate_id in cids:
-                radial_patterns = result.get("feature_result", {}).get("radial_patterns", {}).get("radial_patterns", [])
-                circular_pattern = None
-                for rp in radial_patterns:
-                    rp_members = rp.get("member_candidate_ids", [])
-                    if candidate_id in rp_members:
-                        circular_pattern = rp
-                        break
-                        
-                if circular_pattern:
-                    engineering_rels.append({
-                        "pattern_type": "circular",
-                        "engineering_concept": "Bolt Circle",
-                        "member_count": circular_pattern.get("member_count"),
-                        "bolt_circle_diameter": round(2 * circular_pattern.get("pattern_radius"), 4) if circular_pattern.get("pattern_radius") is not None else None,
-                        "angle_step": round(circular_pattern.get("angular_spacing_deg"), 4) if circular_pattern.get("angular_spacing_deg") is not None else None,
-                        "center": [round(c, 4) for c in circular_pattern.get("center")[:2]] if circular_pattern.get("center") else None
-                    })
-                else:
-                    lin_pat = self._analyze_repetition_pattern(cids, result)
-                    is_slot = False
-                    for sc in result.get("feature_result", {}).get("slot_candidates", {}).get("slot_candidates", []):
-                        if sc.get("candidate_id") == candidate_id:
-                            is_slot = True
-                            break
-                    lin_pat["engineering_concept"] = "Linear Slot Array" if is_slot else "Linear Hole Array"
-                    engineering_rels.append(lin_pat)
-                    
-        # Deduplicate relationships (Problem 4)
-        unique_rels = []
-        seen_rels = set()
-        for rel in engineering_rels:
-            rel_str = json.dumps(rel, sort_keys=True)
-            if rel_str not in seen_rels:
-                seen_rels.add(rel_str)
-                unique_rels.append(rel)
-        return unique_rels
 
     def _find_candidate_id_for_feature(
         self,
@@ -1296,85 +1335,6 @@ class DatasetExporter:
                     return hc.get("candidate_id")
 
         return None
-
-    def _extract_rich_context(
-        self,
-        feature: Any,
-        property_name: str,
-        value: Any,
-        result: Dict[str, Any],
-    ) -> Dict[str, Any]:
-        import math
-        context = {
-            "matched": False
-        }
-        dataset_result = result.get("dataset_result", {})
-        final_samples = dataset_result.get("final_dataset", {}).get("final_samples", [])
-        
-        candidate_id = self._find_candidate_id_for_feature(feature, result) if feature else None
-        
-        best_sample = None
-        best_score = -1.0
-        
-        for s in final_samples:
-            score = 0.0
-            
-            if candidate_id:
-                f_ctx = s.get("input", {}).get("feature_context") or {}
-                c_ctx = s.get("input", {}).get("concentric_context") or {}
-                r_ctx = s.get("input", {}).get("repetition_context") or {}
-                if (f_ctx.get("candidate_id") == candidate_id or 
-                    c_ctx.get("group_id") == candidate_id or 
-                    r_ctx.get("group_id") == candidate_id):
-                    score += 0.6
-            
-            if feature:
-                f_ctx_info = s.get("input", {}).get("feature_context") or {}
-                f_type = f_ctx_info.get("candidate_type")
-                if f_type and feature.feature_class in f_type:
-                    score += 0.1
-                    
-            s_out = s.get("output", {})
-            s_val = s_out.get("value")
-            if s_val is not None and isinstance(value, (int, float)):
-                if abs(s_val - value) < 0.01:
-                    score += 0.3
-                    
-            s_type = s_out.get("dimension_type")
-            if s_type and property_name and s_type == property_name:
-                score += 0.1
-                
-            if score > best_score:
-                best_score = score
-                best_sample = s
-                
-        matched_sample = None
-        if best_score >= 0.70:
-            matched_sample = best_sample
-            
-        if matched_sample:
-            context["matched"] = True
-            inp = matched_sample.get("input", {})
-            context["topology_neighbors"] = inp.get("topology_neighbors", [])
-            context["neighbor_dimensions"] = inp.get("neighbor_dimensions", [])
-            context["hierarchy"] = inp.get("contour_hierarchy")
-            context["feature_context"] = inp.get("feature_context")
-            context["repetition_context"] = inp.get("repetition_context")
-            context["concentric_context"] = inp.get("concentric_context")
-        else:
-            context["matched"] = True
-            context["topology_neighbors"] = []
-            context["neighbor_dimensions"] = []
-            context["hierarchy"] = result.get("structural_result", {}).get("contour_hierarchy")
-            context["feature_context"] = None
-            context["repetition_context"] = None
-            context["concentric_context"] = None
-            
-        context_result = result.get("context_result", {})
-        if context_result:
-            context["relationships"] = context_result.get("relationships", {}).get("relationships", [])
-            
-        return context
 
     def _make_generic_property_name(self, text: str) -> str:
         t = text.upper()
@@ -1487,64 +1447,6 @@ class DatasetExporter:
             return "infer_hole_count"
             
         return "infer_profile_dimension"
-
-    def _extract_engineering_rules(self, entities: List[Dict]) -> Dict[str, Any]:
-        rules = {}
-        import re
-        
-        texts = []
-        for ent in entities:
-            if ent.get("entity_type") in ("TEXT", "MTEXT"):
-                geom = ent.get("geometry", {})
-                if geom.get("text_role") == "general_note" or "MATL" in str(geom.get("text")).upper() or "FILLETS" in str(geom.get("text")).upper():
-                    val = geom.get("text") or geom.get("content") or ""
-                    if val:
-                        texts.append(val)
-                        
-        for ent in entities:
-            if ent.get("entity_type") in ("TEXT", "MTEXT"):
-                geom = ent.get("geometry", {})
-                val = geom.get("text") or geom.get("content") or ""
-                if "NOTES" in val.upper() or "MATL" in val.upper() or "BREAK ALL SHARP" in val.upper():
-                    if val not in texts:
-                        texts.append(val)
-                        
-        for text in texts:
-            lines = text.split("\n")
-            for line in lines:
-                line_upper = line.upper()
-                
-                if "MATL" in line_upper or "MATERIAL" in line_upper:
-                    m = re.search(r'(?:MATL|MATERIAL):\s*(.*)', line, re.IGNORECASE)
-                    if m:
-                        rules["material"] = m.group(1).strip()
-                    else:
-                        rules["material"] = line.replace("1. MATL:", "").replace("MATL:", "").strip()
-                elif "GRAPHITE / SS316" in line_upper:
-                    rules["material"] = "Graphite / SS316"
-                    
-                if "FILLET" in line_upper or "RADIUS" in line_upper or "RAD" in line_upper:
-                    m_r = re.search(r'R(\d+(\.\d+)?)', line_upper)
-                    if m_r:
-                        val = float(m_r.group(1))
-                        rules["default_fillet_radius"] = int(val) if val == int(val) else val
-                        
-                if "TOLERANCE" in line_upper or "±" in line_upper:
-                    m_t = re.search(r'±\s*(\d+(\.\d+)?)', line_upper)
-                    if m_t:
-                        rules["general_tolerance"] = "±" + m_t.group(1)
-                        
-                if "CHAMFER" in line_upper:
-                    m_c = re.search(r'(\d+x\d+)(?:mm)?', line_upper)
-                    if m_c:
-                        rules["default_chamfer"] = m_c.group(1)
-                        
-                if "SURFACE" in line_upper or "FINISH" in line_upper:
-                    m_sf = re.search(r'Ra\s*(\d+(\.\d+)?)', line_upper, re.IGNORECASE)
-                    if m_sf:
-                        rules["surface_finish"] = "Ra" + m_sf.group(1)
-                        
-        return rules
 
     def _mask_context_leakage(
         self,
@@ -1834,284 +1736,7 @@ class DatasetExporter:
         
         return train, val, test
 
-    def _build_instruction_prompt(
-        self, task_type: str, drawing_id: str, context: Dict[str, Any], target: Dict[str, Any]
-    ) -> Dict[str, str]:
-        system = (
-            "You are an expert mechanical engineering assistant specializing in engineering drawings and CAD reasoning. "
-            "Infer missing engineering dimensions and properties from the provided engineering context."
-        )
 
-        lines = []
-        task_display = task_type.replace("infer_", "").replace("_", " ").title()
-        
-        # 1. Task Definition
-        lines.append(f"Task:\nInfer the missing {task_display.lower()} for drawing '{drawing_id}'.")
-        lines.append("\nDrawing Description:")
-        
-        # 2. Overall Geometry
-        dims = context.get("overall_dimensions")
-        if dims and isinstance(dims, dict):
-            w = dims.get("width")
-            h = dims.get("height")
-            if w is not None and h is not None:
-                lines.append(f"The overall plate dimensions are {w} mm × {h} mm.")
-            elif w is not None:
-                lines.append(f"The overall plate width is {w} mm.")
-            elif h is not None:
-                lines.append(f"The overall plate height is {h} mm.")
-
-        # 3. Inquiry Feature & Parameters
-        inquiry_feature = context.get("inquiry_feature", {})
-        f_class = inquiry_feature.get("feature_class", "unknown")
-        f_class_clean = f_class.replace("_", " ").title()
-        
-        visible_params = inquiry_feature.get("visible_parameters", {})
-        params_txt = []
-        if visible_params:
-            for k, v in visible_params.items():
-                if v is not None and v != "" and v != [] and v != {}:
-                    name_clean = k.replace("_", " ").title()
-                    is_length = isinstance(v, (int, float)) and not isinstance(v, bool) and not any(x in k.lower() for x in ("count", "member", "number"))
-                    if is_length:
-                        params_txt.append(f"{name_clean} = {v} mm")
-                    else:
-                        params_txt.append(f"{name_clean} = {v}")
-                        
-        if params_txt:
-            lines.append(f"The drawing details a {f_class_clean} feature with {', '.join(params_txt)}.")
-        else:
-            lines.append(f"The drawing details a {f_class_clean} feature.")
-
-        # 4. Neighbour Features (Task 2 & Mandatory Rule 4)
-        neighbour_features = context.get("neighbour_features", [])
-        if neighbour_features:
-            neighbour_txt = []
-            grouped_neighbours = defaultdict(list)
-            for nf in neighbour_features:
-                if not isinstance(nf, dict):
-                    continue
-                nf_class = nf.get("feature_class", "unknown")
-                nf_params = nf.get("visible_parameters", {})
-                clean_params = {
-                    k: v for k, v in nf_params.items()
-                    if v is not None and v != "" and v != [] and v != {}
-                }
-                sig = (nf_class, json.dumps(clean_params, sort_keys=True))
-                grouped_neighbours[sig].append(clean_params)
-
-            for (nf_class, params_json), instances in grouped_neighbours.items():
-                count = len(instances)
-                nf_params = instances[0]
-                nf_class_clean = nf_class.replace("_", " ").title()
-                
-                params_list = []
-                for pk, pv in nf_params.items():
-                    pk_clean = pk.replace('_', ' ').title()
-                    is_length = isinstance(pv, (int, float)) and not isinstance(pv, bool) and not any(x in pk.lower() for x in ("count", "member", "number"))
-                    if is_length:
-                        params_list.append(f"{pk_clean} = {pv} mm")
-                    else:
-                        params_list.append(f"{pk_clean} = {pv}")
-                
-                params_str = f" with {', '.join(params_list)}" if params_list else ""
-                if count > 1:
-                    class_plural = f"{nf_class_clean}s" if not nf_class_clean.endswith("s") else nf_class_clean
-                    neighbour_txt.append(f"Adjacent {class_plural} ({count}) are visible{params_str}.")
-                else:
-                    neighbour_txt.append(f"An adjacent {nf_class_clean} is visible{params_str}.")
-            if neighbour_txt:
-                lines.append(" ".join(neighbour_txt))
-
-        # 5. Engineering Relationships (Task 3 & Mandatory Rule 5)
-        relationships = context.get("relationships", [])
-        if relationships:
-            rel_txt = []
-            grouped_rels = defaultdict(list)
-            for rel in relationships:
-                if not isinstance(rel, dict):
-                    continue
-                r_type = rel.get("type", "")
-                assoc = rel.get("associated_features", [])
-                params = rel.get("parameters", {})
-                
-                clean_params = {
-                    k: v for k, v in params.items()
-                    if v is not None and v != "" and v != [] and v != {}
-                }
-                
-                def get_clean_class(fid: str) -> str:
-                    base = re.sub(r'_\d+$', '', fid)
-                    return base.replace("_", " ").title()
-                    
-                conn_classes = tuple(sorted(get_clean_class(fid) for fid in assoc))
-                sig = (r_type, conn_classes, json.dumps(clean_params, sort_keys=True))
-                grouped_rels[sig].append((assoc, clean_params))
-
-            for (r_type, conn_classes, params_json), instances in grouped_rels.items():
-                count = len(instances)
-                params = instances[0][1]
-                classes_str = " and ".join(conn_classes) if conn_classes else "features"
-                r_type_clean = r_type.replace("_", " ").title()
-                
-                param_details = []
-                for pk, pv in params.items():
-                    pk_clean = pk.replace("_", " ").title()
-                    if pk == "concentric_diameters" and isinstance(pv, list):
-                        diams_str = ", ".join(f"{d} mm" for d in pv)
-                        param_details.append(f"diameters {diams_str}")
-                    elif isinstance(pv, (int, float)) and not isinstance(pv, bool) and not any(x in pk.lower() for x in ("count", "member", "number")):
-                        param_details.append(f"{pk_clean} = {pv} mm")
-                    else:
-                        param_details.append(f"{pk_clean} = {pv}")
-                suffix = f" with {', '.join(param_details)}" if param_details else ""
-                
-                if count > 1:
-                    rel_txt.append(f"{count} Concentric relationships are defined between {classes_str}{suffix}." if r_type == "concentric" else f"{count} {r_type_clean} relationships are defined between {classes_str}{suffix}.")
-                else:
-                    if r_type == "concentric":
-                        rel_txt.append(f"A Concentric alignment is defined between {classes_str}{suffix}.")
-                    elif r_type == "coaxial":
-                        rel_txt.append(f"A Coaxial alignment is defined along the center axis between {classes_str}{suffix}.")
-                    elif r_type == "mirror_symmetry":
-                        axis = params.get("axis", "vertical").title()
-                        rel_txt.append(f"Mirror Symmetry is defined about the {axis} centerline between {classes_str}{suffix}.")
-                    elif r_type == "circular_pattern":
-                        members = params.get("member_count", 0)
-                        rel_txt.append(f"A Circular array is defined containing {members} members.")
-                    elif r_type == "linear_pattern":
-                        members = params.get("member_count", 0)
-                        rel_txt.append(f"A Linear array is defined containing {members} members.")
-                    else:
-                        rel_txt.append(f"A {r_type_clean} relationship exists between {classes_str}{suffix}.")
-            if rel_txt:
-                lines.append(" ".join(rel_txt))
-
-        # 6. Topology
-        topology = context.get("topology", {})
-        if topology:
-            topo_txt = []
-            contours = topology.get("contours", 0)
-            nesting = topology.get("nesting", 0)
-            holes = topology.get("holes", 0)
-            regions = topology.get("regions", 0)
-            
-            topo_txt.append(f"The part geometry contains {contours} total contours.")
-            topo_txt.append(f"The maximum contour nesting depth is {nesting}.")
-            if holes > 0:
-                topo_txt.append(f"There are {holes} hole profiles detected.")
-            if regions > 0:
-                topo_txt.append(f"The topology is partitioned into {regions} connected regions.")
-            if topo_txt:
-                lines.append(" ".join(topo_txt))
-
-        # 7. Reasoning Question
-        prop_display = target.get("property", "").replace("_", " ").lower()
-        if prop_display == "thread size":
-            lines.append(f"\nQuestion:\nBased on the drawing layout and dimensions, infer the missing thread size.")
-        else:
-            lines.append(f"\nQuestion:\nBased on the drawing layout and dimensions, infer the missing {prop_display} in mm.")
-        
-        user = "\n".join(lines)
-        val = target.get("value")
-        assistant = str(val)
-
-        return {
-            "system": system,
-            "user": user,
-            "assistant": assistant
-        }
-
-    VALIDATION_VERSION = "1.0.0"
-    DATASET_CONTRACT_VERSION = "3.0.0"
-    SCHEMA_VERSION = "2.1.0"
-    PROMPT_RENDERER_VERSION = "2.7.3"
-    PIPELINE_VERSION = "2.7.4"
-
-    def _autofix_sample(self, sample: Dict[str, Any]) -> Dict[str, Any]:
-        """Automatically repair quality, formatting, redundancy, and case issues."""
-        ctx = sample.get("context", {})
-        
-        # Remove duplicate drawing_id from context
-        if isinstance(ctx, dict) and "drawing_id" in ctx:
-            del ctx["drawing_id"]
-            
-        # 1. Deduplicate neighbour features in context
-        nf_list = ctx.get("neighbour_features", [])
-        if isinstance(nf_list, list):
-            seen_nf = set()
-            unique_nf = []
-            for nf in nf_list:
-                if isinstance(nf, dict):
-                    sig = (nf.get("feature_class"), json.dumps(nf.get("visible_parameters"), sort_keys=True))
-                    if sig not in seen_nf:
-                        seen_nf.add(sig)
-                        unique_nf.append(nf)
-            ctx["neighbour_features"] = unique_nf
-
-        # 2. Deduplicate relationships in context
-        rel_list = ctx.get("relationships", [])
-        if isinstance(rel_list, list):
-            seen_rel = set()
-            unique_rel = []
-            for rel in rel_list:
-                if isinstance(rel, dict):
-                    sig = (
-                        rel.get("type"),
-                        tuple(sorted(rel.get("associated_features", []))),
-                        json.dumps(rel.get("parameters"), sort_keys=True)
-                    )
-                    if sig not in seen_rel:
-                        seen_rel.add(sig)
-                        unique_rel.append(rel)
-            ctx["relationships"] = unique_rel
-
-        # 3. Clean prompt text (user, assistant, system)
-        user = sample.get("user", "")
-        assistant = sample.get("assistant", "")
-        system = sample.get("system", "")
-
-        # Clean sentences containing null or none rendering placeholders
-        user = re.sub(r'[^.]*\bnull\b[^.]*\.?', '', user, flags=re.IGNORECASE)
-        user = re.sub(r'[^.]*\bnone\b[^.]*\.?', '', user, flags=re.IGNORECASE)
-
-        # Fix lowercase snake_case feature names in user/assistant
-        def fix_snake_case(text: str) -> str:
-            words = re.findall(r'\b[a-z0-9]+_[a-z0-9_]+\b', text)
-            for w in words:
-                cleaned = w.replace("_", " ").title()
-                text = text.replace(w, cleaned)
-            return text
-
-        user = fix_snake_case(user)
-        assistant = fix_snake_case(assistant)
-
-        # Fix duplicate prompt lines
-        def fix_duplicate_lines(text: str) -> str:
-            lines = text.split("\n")
-            seen_lines = set()
-            unique_lines = []
-            for line in lines:
-                l_strip = line.strip()
-                if not l_strip:
-                    unique_lines.append(line)
-                    continue
-                if l_strip not in seen_lines:
-                    seen_lines.add(l_strip)
-                    unique_lines.append(line)
-            return "\n".join(unique_lines)
-
-        user = fix_duplicate_lines(user)
-
-        # Clean spacing
-        user = re.sub(r' {2,}', ' ', user)
-        user = re.sub(r'\n{3,}', '\n\n', user)
-
-        sample["user"] = user.strip()
-        sample["assistant"] = assistant.strip()
-        sample["system"] = system.strip()
-
-        return sample
 
     def _validate_structure(self, sample: Dict[str, Any]) -> Dict[str, Any]:
         """Stage 1 — Structure validation: Verify mandatory top-level fields."""
@@ -2733,18 +2358,7 @@ class DatasetExporter:
 
     def _filter_context_by_task(self, context: Dict[str, Any], task_type: str) -> Dict[str, Any]:
         """Filter irrelevant engineering evidence based on the specific prediction task (Task 4)."""
-        filtered = json.loads(json.dumps(context)) # Deep copy
-        task_prop = task_type.replace("infer_", "").lower()
-        
-        if task_prop == "wall_thickness":
-            # Wall thickness is topological; keep topology but remove non-concentric/coaxial relationships
-            if "relationships" in filtered:
-                filtered["relationships"] = [
-                    r for r in filtered["relationships"]
-                    if r.get("type") in ("concentric", "coaxial", "nested_within", "surrounds", "contains")
-                ]
-                
-        return filtered
+        return context
 
     def _write_jsonl(self, tasks: List[Dict], path: Path) -> List[Dict]:
         accepted = []
@@ -2755,17 +2369,9 @@ class DatasetExporter:
                 # Apply task-specific context filtering (Task 4)
                 filtered_context = self._filter_context_by_task(task["context"], task["task_type"])
                 
-                # Build complete sample using filtered context
-                prompt_fields = self._build_instruction_prompt(
-                    task["task_type"],
-                    task["drawing_id"],
-                    filtered_context,
-                    task["target"]
-                )
-                exported_sample = {**task, **prompt_fields, "context": filtered_context}
-                
-                # Auto-fix fixable formatting issues
-                exported_sample = self._autofix_sample(exported_sample)
+                # Build complete sample using filtered context and serializer
+                task_with_filtered = {**task, "context": filtered_context}
+                exported_sample = self.serializer.serialize_sample(task_with_filtered)
                 
                 # Run validation (on sample clean of task_type to satisfy Stage 2 schema check)
                 val_sample = {**exported_sample}
@@ -2785,7 +2391,7 @@ class DatasetExporter:
                     cleaned_sample = {**exported_sample}
                     if "task_type" in cleaned_sample:
                         del cleaned_sample["task_type"]
-                    f.write(json.dumps(cleaned_sample) + "\n")
+                    f.write(json.dumps(cleaned_sample, indent=2) + "\n")
                     accepted.append(task)
                 else:
                     self.validation_stats["rejected_count"] += 1

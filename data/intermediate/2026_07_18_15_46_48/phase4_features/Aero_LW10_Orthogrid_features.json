@@ -1,0 +1,107 @@
+{
+  "hole_candidates": {
+    "hole_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "single_radius_candidates": 0,
+      "multi_radius_candidates": 0
+    }
+  },
+  "slot_candidates": {
+    "slot_candidates": [],
+    "statistics": {
+      "total_candidates": 0,
+      "polylines_analyzed": 5,
+      "contours_analyzed": 0
+    }
+  },
+  "radial_patterns": {
+    "radial_patterns": [],
+    "statistics": {
+      "total_patterns": 0,
+      "candidates_analyzed": 0
+    }
+  },
+  "symmetry": {
+    "symmetry_groups": [
+      {
+        "group_id": "sym_00001",
+        "axis": "vertical",
+        "axis_position": 80.0,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00003"
+          ],
+          [
+            "ent_00004",
+            "ent_00005"
+          ]
+        ],
+        "pair_count": 2
+      },
+      {
+        "group_id": "sym_00002",
+        "axis": "horizontal",
+        "axis_position": 80.0,
+        "member_pairs": [
+          [
+            "ent_00002",
+            "ent_00004"
+          ],
+          [
+            "ent_00003",
+            "ent_00005"
+          ]
+        ],
+        "pair_count": 2
+      }
+    ],
+    "statistics": {
+      "total_groups": 2,
+      "vertical_pairs": 2,
+      "horizontal_pairs": 2,
+      "entities_analyzed": 7
+    }
+  },
+  "feature_regions": {
+    "feature_regions": [],
+    "unassigned_candidates": {
+      "holes": [],
+      "slots": [],
+      "patterns": []
+    },
+    "statistics": {
+      "total_feature_regions": 0,
+      "total_assigned_candidates": 0,
+      "total_unassigned_candidates": 0
+    }
+  },
+  "statistics": {
+    "holes": {
+      "total_candidates": 0,
+      "single_radius_candidates": 0,
+      "multi_radius_candidates": 0
+    },
+    "slots": {
+      "total_candidates": 0,
+      "polylines_analyzed": 5,
+      "contours_analyzed": 0
+    },
+    "radial_patterns": {
+      "total_patterns": 0,
+      "candidates_analyzed": 0
+    },
+    "symmetry": {
+      "total_groups": 2,
+      "vertical_pairs": 2,
+      "horizontal_pairs": 2,
+      "entities_analyzed": 7
+    },
+    "feature_regions": {
+      "total_feature_regions": 0,
+      "total_assigned_candidates": 0,
+      "total_unassigned_candidates": 0
+    }
+  }
+}

@@ -2167,6 +2167,15 @@ class SemanticPipeline:
         part_type = determine_part_type(features)
 
         # Step 6: Assemble Record
+        eng_rules = extract_engineering_rules(entities)
+        metadata = {
+            "feature_count": len(features),
+            "relationship_count": len(relationships),
+            "has_hierarchy": hierarchy is not None
+        }
+        if eng_rules:
+            metadata["engineering_rules"] = eng_rules
+
         record = SemanticRecord(
             drawing_id=drawing_id,
             part_type=part_type,
@@ -2174,11 +2183,7 @@ class SemanticPipeline:
             features=features,
             relationships=relationships,
             hierarchy=hierarchy,
-            metadata={
-                "feature_count": len(features),
-                "relationship_count": len(relationships),
-                "has_hierarchy": hierarchy is not None
-            }
+            metadata=metadata
         )
 
         # Step 7: Validate Record
@@ -2202,3 +2207,133 @@ class SemanticPipeline:
                 logger.error(f"Validation failed: feature {feature.feature_id} parameters not a dict")
                 return False
         return True
+
+
+def extract_engineering_rules(entities: List[Dict]) -> Dict[str, Any]:
+    rules = {}
+    import re
+    
+    texts = []
+    for ent in entities:
+        if ent.get("entity_type") in ("TEXT", "MTEXT"):
+            geom = ent.get("geometry", {})
+            if geom.get("text_role") == "general_note" or "MATL" in str(geom.get("text")).upper() or "FILLETS" in str(geom.get("text")).upper():
+                val = geom.get("text") or geom.get("content") or ""
+                if val:
+                    texts.append(val)
+                    
+    for ent in entities:
+        if ent.get("entity_type") in ("TEXT", "MTEXT"):
+            geom = ent.get("geometry", {})
+            val = geom.get("text") or geom.get("content") or ""
+            if "NOTES" in val.upper() or "MATL" in val.upper() or "BREAK ALL SHARP" in val.upper():
+                if val not in texts:
+                    texts.append(val)
+                    
+    for text in texts:
+        lines = text.split("\n")
+        for line in lines:
+            line_upper = line.upper()
+            
+            if "MATL" in line_upper or "MATERIAL" in line_upper:
+                m = re.search(r'(?:MATL|MATERIAL):\s*(.*)', line, re.IGNORECASE)
+                if m:
+                    rules["material"] = m.group(1).strip()
+                else:
+                    rules["material"] = line.replace("1. MATL:", "").replace("MATL:", "").strip()
+            elif "GRAPHITE / SS316" in line_upper:
+                rules["material"] = "Graphite / SS316"
+                
+            if "FILLET" in line_upper or "RADIUS" in line_upper or "RAD" in line_upper:
+                m_r = re.search(r'R(\d+(\.\d+)?)', line_upper)
+                if m_r:
+                    val = float(m_r.group(1))
+                    rules["default_fillet_radius"] = int(val) if val == int(val) else val
+                    
+            if "TOLERANCE" in line_upper or "±" in line_upper:
+                m_t = re.search(r'±\s*(\d+(\.\d+)?)', line_upper)
+                if m_t:
+                    rules["general_tolerance"] = "±" + m_t.group(1)
+                    
+            if "CHAMFER" in line_upper:
+                m_c = re.search(r'(\d+x\d+)(?:mm)?', line_upper)
+                if m_c:
+                    rules["default_chamfer"] = m_c.group(1)
+                    
+            if "SURFACE" in line_upper or "FINISH" in line_upper:
+                m_sf = re.search(r'Ra\s*(\d+(\.\d+)?)', line_upper, re.IGNORECASE)
+                if m_sf:
+                    rules["surface_finish"] = "Ra" + m_sf.group(1)
+                    
+    return rules
+
+
+def normalize_thread_size(val: Any, feature: Optional[Any] = None, drawing_id: Optional[str] = None) -> str:
+    import re
+    if val is None or val == "":
+        return ""
+    
+    val_str = str(val).strip().upper()
+    
+    g_match = re.search(r'G\s*(\d+(?:/\d+)?)', val_str)
+    if g_match:
+        return f"G{g_match.group(1)}"
+    if "BSPP" in val_str or "BSPT" in val_str or val_str.startswith("G"):
+        frac_match = re.search(r'(\d+/\d+)', val_str)
+        if frac_match:
+            return f"G{frac_match.group(1)}"
+    
+    npt_match = re.search(r'NPT\s*(\d+(?:/\d+)?)', val_str)
+    if npt_match:
+        return f"NPT{npt_match.group(1)}"
+    if "NPT" in val_str:
+        frac_match = re.search(r'(\d+/\d+)', val_str)
+        if frac_match:
+            return f"NPT{frac_match.group(1)}"
+    
+    m_match = re.search(r'M\s*(\d+)', val_str)
+    if m_match:
+        return f"M{m_match.group(1)}"
+        
+    numeric_val = None
+    try:
+        numeric_val = float(val)
+    except ValueError:
+        pass
+        
+    if numeric_val is not None:
+        designation = ""
+        feature_class = ""
+        if feature:
+            feature_class = getattr(feature, "feature_class", "")
+            fparams = getattr(feature, "parameters", {}) or {}
+            designation = str(fparams.get("thread_designation") or fparams.get("port_thread") or fparams.get("text") or "").upper()
+        
+        fraction_str = ""
+        if abs(numeric_val - 0.5) < 0.01:
+            fraction_str = "1/2"
+        elif abs(numeric_val - 0.25) < 0.01:
+            fraction_str = "1/4"
+        elif abs(numeric_val - 0.75) < 0.01:
+            fraction_str = "3/4"
+        elif abs(numeric_val - 0.375) < 0.01:
+            fraction_str = "3/8"
+        elif abs(numeric_val - 0.125) < 0.01:
+            fraction_str = "1/8"
+            
+        if fraction_str:
+            if "NPT" in designation or "TAPER" in designation:
+                return f"NPT{fraction_str}"
+            elif "G" in designation or "BSPP" in designation or "BSPT" in designation:
+                return f"G{fraction_str}"
+            
+            drawing_id_upper = str(drawing_id).upper() if drawing_id else ""
+            if "HEXBUSHING" in drawing_id_upper or "NPT" in drawing_id_upper:
+                return f"NPT{fraction_str}"
+            if "HOSEBARB" in drawing_id_upper or "COLDPLATE" in drawing_id_upper or "G_" in drawing_id_upper:
+                return f"G{fraction_str}"
+            return f"G{fraction_str}"
+        else:
+            return f"M{int(round(numeric_val))}"
+            
+    return ""

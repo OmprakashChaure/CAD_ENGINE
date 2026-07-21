@@ -1,0 +1,92 @@
+{
+  "validation_version": "1.0.0",
+  "dataset_contract_version": "3.0.0",
+  "schema_version": "2.1.0",
+  "prompt_renderer_version": "2.7.3",
+  "pipeline_version": "2.7.4",
+  "total_processed": 612,
+  "accepted_count": 608,
+  "rejected_count": 4,
+  "rejection_breakdown": {
+    "Stage 5 \u2014 Target Leakage": 3,
+    "Stage 8 \u2014 Traceability": 1
+  },
+  "average_prompt_length": 948.17,
+  "average_context_length": 865.08,
+  "processing_duration": 2.8001,
+  "peak_memory": 0.0,
+  "timestamp": "2026-07-19T12:37:22.108809",
+  "version": "3.0.0",
+  "format": "semantic_engineering_supervision",
+  "total_tasks": 608,
+  "task_types": {
+    "infer_pocket_dimension": 83,
+    "infer_wall_thickness": 58,
+    "infer_spacing": 72,
+    "infer_hole_count": 47,
+    "infer_hole_diameter": 46,
+    "infer_bore_diameter": 59,
+    "infer_outer_diameter": 32,
+    "infer_slot_dimension": 26,
+    "infer_feature_span": 83,
+    "infer_profile_dimension": 82,
+    "infer_thread_size": 20
+  },
+  "drawings": 122,
+  "splits": {
+    "train": {
+      "count": 390,
+      "task_types": {
+        "infer_pocket_dimension": 53,
+        "infer_wall_thickness": 37,
+        "infer_spacing": 50,
+        "infer_hole_count": 31,
+        "infer_hole_diameter": 30,
+        "infer_bore_diameter": 38,
+        "infer_outer_diameter": 26,
+        "infer_slot_dimension": 14,
+        "infer_feature_span": 53,
+        "infer_profile_dimension": 47,
+        "infer_thread_size": 11
+      }
+    },
+    "validation": {
+      "count": 120,
+      "task_types": {
+        "infer_pocket_dimension": 19,
+        "infer_wall_thickness": 9,
+        "infer_spacing": 13,
+        "infer_hole_count": 10,
+        "infer_hole_diameter": 9,
+        "infer_bore_diameter": 11,
+        "infer_outer_diameter": 3,
+        "infer_slot_dimension": 2,
+        "infer_feature_span": 17,
+        "infer_profile_dimension": 23,
+        "infer_thread_size": 4
+      }
+    },
+    "test": {
+      "count": 98,
+      "task_types": {
+        "infer_pocket_dimension": 11,
+        "infer_wall_thickness": 12,
+        "infer_spacing": 9,
+        "infer_hole_count": 6,
+        "infer_hole_diameter": 7,
+        "infer_bore_diameter": 10,
+        "infer_outer_diameter": 3,
+        "infer_slot_dimension": 10,
+        "infer_feature_span": 13,
+        "infer_profile_dimension": 12,
+        "infer_thread_size": 5
+      }
+    }
+  },
+  "schema": {
+    "task_type": "engineering inference task category",
+    "context": "visible engineering structure",
+    "target": "hidden engineering property to infer"
+  },
+  "total_semantic_records": 145
+}

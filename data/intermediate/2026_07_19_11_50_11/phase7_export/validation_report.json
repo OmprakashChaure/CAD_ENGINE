@@ -1,0 +1,46 @@
+[
+  {
+    "drawing_id": "Thermal_HS01_CombHeatsink",
+    "task_name": "infer_spacing",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '10.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-19T11:50:27.549348"
+  },
+  {
+    "drawing_id": "Gasket_GS01_CylinderHead",
+    "task_name": "infer_hole_diameter",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '12.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-19T11:50:27.900752"
+  },
+  {
+    "drawing_id": "Thermal_HS02_RadialHeatsink",
+    "task_name": "infer_bore_diameter",
+    "failed_stage": "Stage 5",
+    "failed_rule": "Target Leakage",
+    "severity": "CRITICAL",
+    "reason": "Target value '16.0' leaked in instruction prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Update the prompt renderer to strip annotation values for target features.",
+    "timestamp": "2026-07-19T11:50:28.118914"
+  },
+  {
+    "drawing_id": "PCB_PC05_EdgeConnector",
+    "task_name": "infer_profile_dimension",
+    "failed_stage": "Stage 8",
+    "failed_rule": "Traceability",
+    "severity": "CRITICAL",
+    "reason": "Untraceable engineering values 10 rendered in prompt text.",
+    "failure_location": "root.user",
+    "recommendation": "Ensure prompt rendering templates do not introduce synthetic/unmapped measurements.",
+    "timestamp": "2026-07-19T11:50:28.541990"
+  }
+]

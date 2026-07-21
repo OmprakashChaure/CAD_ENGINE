@@ -1,0 +1,469 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent_00001",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "90",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            40.0,
+            0.0
+          ],
+          [
+            40.0,
+            40.0
+          ],
+          [
+            0.0,
+            40.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00002",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "91",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          20.0,
+          20.0
+        ],
+        "radius": 6.5,
+        "diameter": 13.0,
+        "area": 132.73228961416876
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00003",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LINE",
+      "handle": "92",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          5.0,
+          20.0
+        ],
+        "end": [
+          35.0,
+          20.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00004",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LINE",
+      "handle": "93",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          20.0,
+          5.0
+        ],
+        "end": [
+          20.0,
+          35.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00005",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "94",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            140.0,
+            0.0
+          ],
+          [
+            180.0,
+            0.0
+          ],
+          [
+            180.0,
+            40.0
+          ],
+          [
+            140.0,
+            40.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00006",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "CIRCLE",
+      "handle": "95",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "center": [
+          160.0,
+          20.0
+        ],
+        "radius": 6.5,
+        "diameter": 13.0,
+        "area": 132.73228961416876
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00007",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LINE",
+      "handle": "96",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          145.0,
+          20.0
+        ],
+        "end": [
+          175.0,
+          20.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00008",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LINE",
+      "handle": "97",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          160.0,
+          5.0
+        ],
+        "end": [
+          160.0,
+          35.0
+        ],
+        "length": 30.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00010",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LWPOLYLINE",
+      "handle": "99",
+      "layer": "GEOMETRY",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "points": [
+          [
+            40.0,
+            5.0
+          ],
+          [
+            140.0,
+            5.0
+          ],
+          [
+            140.0,
+            35.0
+          ],
+          [
+            40.0,
+            35.0
+          ]
+        ],
+        "closed": true,
+        "has_arcs": false
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00011",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "LINE",
+      "handle": "9A",
+      "layer": "CENTERLINES",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "start": [
+          -20.0,
+          20.0
+        ],
+        "end": [
+          200.0,
+          20.0
+        ],
+        "length": 220.0
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00012",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "9B",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 180.0,
+        "text": "180mm FREE LENGTH",
+        "position": [
+          0.0,
+          -40.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            180.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00013",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "AA",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 40.0,
+        "text": "40mm TERMINAL WIDTH",
+        "position": [
+          -40.0,
+          0.0
+        ],
+        "target_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00014",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "DIMENSION",
+      "handle": "B9",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "dimension_type": "linear",
+        "value": 100.0,
+        "text": "100mm FLEXIBLE MESH ZONE",
+        "position": [
+          40.0,
+          60.0
+        ],
+        "target_points": [
+          [
+            40.0,
+            35.0
+          ],
+          [
+            140.0,
+            35.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    },
+    {
+      "entity_id": "ent_00016",
+      "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+      "entity_type": "MTEXT",
+      "handle": "C9",
+      "layer": "DIMENSIONS",
+      "linetype": "BYLAYER",
+      "color": 256,
+      "geometry": {
+        "text": "LAMINATED COPPER SHUNT\n VIBRATION DAMPING",
+        "position": [
+          90.0,
+          100.0
+        ],
+        "height": null,
+        "text_role": "general_note",
+        "numeric_value": null
+      },
+      "supported": true,
+      "possible_overlap": false,
+      "overlap_confidence": 0.0
+    }
+  ],
+  "quarantined_entities": [
+    {
+      "entity": {
+        "entity_id": "ent_00009",
+        "source_file": "Electrical_BB04_FlexibleShunt.dxf",
+        "entity_type": "HATCH",
+        "handle": "98",
+        "layer": "HATCH",
+        "linetype": "BYLAYER",
+        "color": 7,
+        "geometry": null,
+        "supported": false,
+        "possible_overlap": false,
+        "overlap_confidence": 0.0
+      },
+      "reason": "unsupported_geometry_type:HATCH",
+      "confidence": 0.5
+    }
+  ],
+  "removed_entities": [],
+  "filter_reports": [
+    {
+      "filter": "TextFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 15,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DegenerateFilter",
+      "statistics": {
+        "input_entities": 15,
+        "kept_entities": 14,
+        "quarantined_entities": 1,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "DuplicateFilter",
+      "statistics": {
+        "input_entities": 14,
+        "kept_entities": 14,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "LayerFilter",
+      "statistics": {
+        "input_entities": 14,
+        "kept_entities": 14,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    },
+    {
+      "filter": "BorderFilter",
+      "statistics": {
+        "input_entities": 14,
+        "kept_entities": 14,
+        "quarantined_entities": 0,
+        "removed_entities": 0
+      }
+    }
+  ]
+}
